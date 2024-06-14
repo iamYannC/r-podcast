@@ -11,4 +11,5 @@ This is an open-source project, feel free to mess with everything you find here 
 [R Weekly Highlights](https://serve.podhome.fm/r-weekly-highlights) 
 
 
-[Email Me](mailto:yannco5@gmail.com?subject=Hello%20Yann!&body=What%20is%20the%20ultimate%20answer?)
+Yann [yannco5@gmail.com](mailto:yannco5@gmail.com)
+
