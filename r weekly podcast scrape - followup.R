@@ -3,10 +3,10 @@
 if(!'all_episodes_data' %in% ls()) stop('all_episodes_data is required.')
 
 
-time_talked <-   all_trans |> left_join(select(all_episodes,-4),by = c('trans_episode'='ep_name')) |> 
+time_talked <-   all_transcript |> left_join(select(all_episodes,-4)) |> 
   mutate(seconds_talked = lead(as.integer(trans_timestamp),default = 0) - as.integer(trans_timestamp),
          words_said = stri_count_words(trans_text),
-         .by = trans_episode) |> 
+         .by = ep_name) |> 
     # fix last row of each episode
     mutate(
       seconds_talked = ifelse(seconds_talked < 0,as.integer(ep_duration) - as.integer(trans_timestamp),seconds_talked)
@@ -18,7 +18,7 @@ time_talked |> reframe(tot_time_talked = sum(seconds_talked) |> hms::hms(),
                        .by = trans_speaker)
 
 
-all_trans |> tidytext::unnest_tokens(word,input = trans_text,strip_numeric = TRUE) |> 
+all_transcript |> tidytext::unnest_tokens(word,input = trans_text,strip_numeric = TRUE) |> 
   dplyr::filter(!word %in% c(stopwords::data_stopwords_stopwordsiso[['en']],'thomas','eric')) |> 
   dplyr::count(trans_speaker,word) |> tidylo::bind_log_odds(set = trans_speaker,feature =  word,n = n) |> 
   slice_max(log_odds_weighted,n=5,with_ties = F,by = trans_speaker)
@@ -27,11 +27,11 @@ all_trans |> tidytext::unnest_tokens(word,input = trans_text,strip_numeric = TRU
 # Let's verify by taking key word in context
 
 # Filter text with the word 'sort' to remove rows before kwic
-all_trans |> 
+all_transcript |> 
   dplyr::filter(stri_detect_fixed(trans_text,"sort")) |> nrow() 
 
 # Sanity check to verify there are still same number of occurrences of 'sort' for Mike, 165
-all_trans |>
+all_transcript |>
   dplyr::filter(stri_detect_fixed(trans_text,"sort")) |>
   tidytext::unnest_tokens(word,input = trans_text,strip_numeric = TRUE) |>
   dplyr::filter(!word %in% c(stopwords::data_stopwords_stopwordsiso[['en']],'thomas','eric')) |>
@@ -41,7 +41,7 @@ all_trans |>
 
 # should probably become a test..
 
-sort_kwic <- all_trans |> 
+sort_kwic <- all_transcript |> 
   dplyr::filter(stri_detect_fixed(trans_text,"sort")) |> pull(trans_text) |> stri_c(collapse = "@\n@") |> 
   quanteda::tokens(remove_punct = TRUE) |> quanteda::kwic("sort",window = 2)
 

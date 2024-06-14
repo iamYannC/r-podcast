@@ -47,16 +47,22 @@ get_ep_data <- function(episode_index) {
   ep_link <- episode[episode_index, "link"]
   ep_name <- episode[episode_index, "name"]
   ep_html <- ep_link |> read_html()
-  episode_data <- vector("list", length = 5) # Optimise to set names only at the end
+  episode_data <- vector("list", length = 5) # Optimize to set names only at the end
   
   episode_data[[1]] <- all_episodes[episode_index,]
   
-  episode_data[[2]] <- ep_html |>
+  
+  description_long <- ep_html |>
     html_elements("#descriptionTab") |>
     html_text2()
-  episode_data[[3]] <- ep_html |>
+  episode_data[[2]] <- tibble(ep_name = all_episodes$ep_name[episode_index],description_long)
+  
+  links <- 
+    ep_html |>
     html_elements("#descriptionTab a") |>
     html_attr("href")
+  episode_data[[3]] <- tibble(ep_name = all_episodes$ep_name[episode_index],links)
+  
   # INNER FUNCTION FOR TRANSCRIPT #
   full_transcript <- ep_html |>
     html_elements("#transcriptTab") |>
@@ -64,24 +70,24 @@ get_ep_data <- function(episode_index) {
   
   
   inner_get_text_chunck <- function(full_transcript) {
-    # timestamp#
+    # timestamp #
     time_stamps_pat <- "\\[(\\d{2}:\\d{2}:\\d{2})\\]"
     time_stamps <- stri_match_all_regex(full_transcript, time_stamps_pat)[[1]][, 2] |> hms()
     # speaker#
     speaker_pattern <- "\r [A-Z][a-z]+ [A-Z][a-z]+:\r"
     speaker <- stri_match_all_regex(full_transcript, speaker_pattern)[[1]][, 1] |> stri_trim_both()
-
-    # text#
+    
+    # text #
     pattern <- "\\[\\W+\\]|\\s*:\\r?\\n" # changed from  "\\[[^\\]]*\\]" to current since it took also the [email protected]
     text_chunck <- stri_split_regex(full_transcript, pattern) |>
       map(stri_trim_both) %>%
       .[[1]]
     indx_remove <- which(map_lgl(text_chunck, \(x) nchar(x) < 5))
     if (!is_empty(indx_remove)) text_chunck <- text_chunck[-indx_remove]
-
-    # table#
+    
+    # table #
     tibble(
-      trans_episode = ep_name,
+      ep_name = ep_name,
       trans_timestamp = time_stamps,
       trans_speaker = speaker,
       trans_text = text_chunck[-1]
@@ -92,17 +98,17 @@ get_ep_data <- function(episode_index) {
         trans_speaker = stri_replace_all_fixed(trans_speaker, ":", "")
       )
   }
-
+  
   
   episode_data[[4]] <- inner_get_text_chunck(full_transcript)
-
+  
   # INNER FUNCTION FOR CHAPTERS #
   inner_get_chapters_chunck <- function(ep_link) {
     link_text <- ep_html |>
       html_elements("#chapterTab p") |>
       html_text2()
     if (is_empty(link_text)) link_text <- NA
-
+    
     link_timestamp <- ep_html |>
       html_elements("#chapterTab a") |>
       html_text2()
@@ -111,7 +117,7 @@ get_ep_data <- function(episode_index) {
       map(\(x) x[[1]]) |> hms()
     link_timestamp <- link_timestamp[complete.cases(link_timestamp)]
     if (is_empty(link_timestamp)) link_timestamp <- NA
-
+    
     link_href <- ep_html |>
       html_elements(xpath = "//*[@class='column']") |>
       html_elements("a") |>
@@ -135,29 +141,42 @@ get_ep_data <- function(episode_index) {
         link_href <- add_na(link_href)
       }
     }
-
+    
     tibble(
-      chap_episode = ep_name,
+      ep_name = ep_name,
       chap_timestamp = link_timestamp,
       chap_text = link_text,
       chap_href = link_href
     )
   }
   episode_data[[5]] <- inner_get_chapters_chunck(ep_link)
-
+  
   # return list of all episode data ive collected
   names(episode_data) <- c("metadata","description_long", "links", "transcript", "chapters")
   return(episode_data)
 }
-
 all_episodes_data <- map(1:nrow(episode),get_ep_data,.progress = TRUE)
 
 # END OF CORE FUNCTIONALITY # 
-  # Join all transcripts
-all_trans <- map(1:nrow(episode),\(x) all_episodes_data[[x]]$transcript) |> list_rbind()
-episode_duration <- as.integer(all_episodes_data[[1]]$metadata$ep_duration)
 
 
-json_ep <- all_episodes_data |> jsonlite::toJSON(pretty = T)
-jsonlite::write_json(json_ep, "episode_data.json")
+# Save to JSON and XLSX
+  # Json
+    json_ep <- all_episodes_data |> jsonlite::toJSON(pretty = T)
+    jsonlite::write_json(json_ep, "data/all_data.json")
 
+  # Excel Workbook
+
+    for(name in names(all_episodes_data[[1]])){
+      tmp_file <- map(1:length(all_episodes_data),\(x) all_episodes_data[[x]][[name]]) |> list_rbind()
+      assign(paste0('all_',name),tmp_file)
+    }
+    rm(tmp_file)
+    all_list <- list(all_metadata, all_description_long,all_links,all_transcript,all_chapters)
+    
+    # Save data to one XL workbook
+    library(openxlsx)
+    wb <- createWorkbook()
+    map(names(all_episodes_data[[1]]),\(name) addWorksheet(wb, name))
+    map(1:length(all_list),\(i) writeData(wb, i, all_list[[i]]))
+    saveWorkbook(wb, "data/all_data.xlsx", overwrite = TRUE)
