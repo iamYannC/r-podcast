@@ -1,6 +1,6 @@
 # having fun with the data..
 
-if(!'all_episodes_data' %in% ls()) stop('all_episodes_data is required.')
+if(!'all_transcript' %in% ls()) stop('all_transcript is required.')
 
 
 time_talked <-   all_transcript |> left_join(select(all_episodes,-4)) |> 
