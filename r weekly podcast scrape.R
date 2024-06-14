@@ -1,4 +1,3 @@
-# library(tidyverse)
 library(collapse)
 library(rvest)
 library(stringi)
@@ -159,4 +158,6 @@ all_trans <- map(1:nrow(episode),\(x) all_episodes_data[[x]]$transcript) |> list
 episode_duration <- as.integer(all_episodes_data[[1]]$metadata$ep_duration)
 
 
+json_ep <- all_episodes_data |> jsonlite::toJSON(pretty = T)
+jsonlite::write_json(json_ep, "episode_data.json")
 
