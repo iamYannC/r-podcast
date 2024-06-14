@@ -1,6 +1,6 @@
 # having fun with the data..
 
-stopifnot('all_episodes_data' %in% ls());stop('all_episodes_data is required.')
+if(!'all_episodes_data' %in% ls()) stop('all_episodes_data is required.')
 
 
 time_talked <-   all_trans |> left_join(select(all_episodes,-4),by = c('trans_episode'='ep_name')) |> 
@@ -75,4 +75,4 @@ p +
                    
                    all_episodes$ep_duration[year(all_episodes$ep_date)==2024] |> as.numeric() |> min() |> hms::hms() |> stri_replace_all_regex("^\\d+:","") #omg wth
   )
-
+ggsave('episode_duration.png',width = 14,height = 8,dpi = 300)
