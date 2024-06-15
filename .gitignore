@@ -52,3 +52,5 @@ rsconnect/
 .Rdata
 .DS_Store
 .quarto
+send_email.R
+iamyannc_creds
