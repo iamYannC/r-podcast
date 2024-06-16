@@ -1,7 +1,7 @@
 name: Check if pocast changed
-on:
-  schedule:
-    - cron: '*/15 * * * *' # At 00:00 on Sunday
+on: push
+  #schedule:
+   # - cron: '*/15 * * * *' # At 00:00 on Sunday
 
 jobs:
   run-r-script:
@@ -14,12 +14,11 @@ jobs:
       - name: Install R packages
         run: Rscript -e 'install.packages(c("collapse", "rvest","stringi","tidyverse","snakecase","jsonlite","blastula"))'
       - name: Run R script
-        run: Rscript "C:/Users/97253/Documents/R/r-podcast/send_email.R
+        run: Rscript send_email.R
       - name: Commit and push if changes
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add "C:/Users/97253/Documents/R/r-podcast/data/all_data.xlsx
-          git add "C:/Users/97253/Documents/R/r-podcast/data/all_data.json
+          git add data/*
           git commit -m "Update XL & JSON outputs" || echo "No changes to commit"
           git push origin main || echo "No changes to commit"
