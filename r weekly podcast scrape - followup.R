@@ -30,7 +30,7 @@ all_transcript |> tidytext::unnest_tokens(word,input = trans_text,strip_numeric 
 all_transcript |> 
   dplyr::filter(stri_detect_fixed(trans_text,"sort")) |> nrow() 
 
-# Sanity check to verify there are still same number of occurrences of 'sort' for Mike, 165
+# Sanity check to verify there are still same number of occurrences of 'sort' for Mike, 186
 all_transcript |>
   dplyr::filter(stri_detect_fixed(trans_text,"sort")) |>
   tidytext::unnest_tokens(word,input = trans_text,strip_numeric = TRUE) |>
