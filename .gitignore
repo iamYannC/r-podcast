@@ -53,4 +53,5 @@ rsconnect/
 .DS_Store
 .quarto
 send_email.R
+send_email_helper.R
 iamyannc_creds

@@ -1,6 +1,6 @@
 # having fun with the data..
 
-if(!'all_transcript' %in% ls()) stop('all_transcript is required.')
+if(!'all_transcript' %in% ls()) source('r weekly podcast scrape.R')
 
 
 time_talked <-   all_transcript |> left_join(select(all_episodes,-4)) |> 
@@ -26,10 +26,6 @@ all_transcript |> tidytext::unnest_tokens(word,input = trans_text,strip_numeric 
 
 # Let's verify by taking key word in context
 
-# Filter text with the word 'sort' to remove rows before kwic
-all_transcript |> 
-  dplyr::filter(stri_detect_fixed(trans_text,"sort")) |> nrow() 
-
 # Sanity check to verify there are still same number of occurrences of 'sort' for Mike, 186
 all_transcript |>
   dplyr::filter(stri_detect_fixed(trans_text,"sort")) |>
@@ -49,7 +45,7 @@ sort_kwic[[6]] # token after 'of' is pretty revealing as well
 
 
 # Basic plot of episode duration over time
-(p <- all_episodes |> # convery Period class to minutes
+(p <- all_episodes |> # convert Period class to minutes
   mutate(ep_duration_m = as.numeric(ep_duration) / 60) |> 
   ggplot(aes(x = ep_date, y = ep_duration_m ))+geom_path(lwd = 1,color="navyblue")+
   theme_light(base_size = 13)+
