@@ -39,7 +39,7 @@ all_transcript |>
   # slice_max(log_odds_weighted,n=5,with_ties = F,by = trans_speaker) |>
   dplyr::filter(word=='sort')
 
-# should probably become a test..
+# should probably become a test.. but not now
 
 sort_kwic <- all_transcript |> 
   dplyr::filter(stri_detect_fixed(trans_text,"sort")) |> pull(trans_text) |> stri_c(collapse = "@\n@") |> 
