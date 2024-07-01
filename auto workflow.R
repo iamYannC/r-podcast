@@ -6,3 +6,6 @@ if(length(r_weekly |> html_elements(".episodeLink")) > n_episdoes){
 
 # re-run the whole scrape
 source('r weekly podcast scrape - followup.R')
+} else{
+  print("No new episodes found")
+}
