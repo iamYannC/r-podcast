@@ -19,5 +19,6 @@ jobs:
     - name: Stage and commit data changes
       run: |
         git add data/*
-        git commit -m "Automated commit of data files"
+        git commit -m "Automated commit of data files"|| echo "No changes to commit"
         git push origin main || echo "No changes to commit"
+ 
