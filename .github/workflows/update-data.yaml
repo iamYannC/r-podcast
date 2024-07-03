@@ -1,8 +1,9 @@
 name: Check if pocast changed
 on:
   workflow_dispatch:
+
 jobs:
-  attempt-for-data:
+  try:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
