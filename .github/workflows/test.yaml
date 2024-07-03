@@ -2,6 +2,9 @@ name: test
 on:
   workflow_dispatch:
 jobs:
+jobs:
+  test-workflow:
+    steps:
     - name: Commit results
     run: |
               git config --local user.email "actions@github.com"
