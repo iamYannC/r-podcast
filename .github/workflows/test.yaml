@@ -1,15 +1,24 @@
-name: test
+name: Push Data to Main
+
 on:
   workflow_dispatch:
+
 jobs:
   push-data:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
-      - uses: actions/checkout@v3
-    run: |
-              git config --local user.email "actions@github.com"
-              git config --local user.name "GitHub Actions"
-              git add data/*
-              git commit -m 'test succed' || echo "No changes to commit"
-              git push origin || echo "No changes to commit"
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Git
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+
+    - name: Stage and commit data changes
+      run: |
+        cd data
+        git add .
+        git commit -m "Automated commit of data files"
+        git push origin main || echo "No changes to commit"
