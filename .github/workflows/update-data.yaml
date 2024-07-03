@@ -5,7 +5,7 @@ on:
     - cron: '0 12 * * *' # At 12:00 UTC
 
 jobs:
-  import-data:
+  attempt-for-data:
     runs-on: ubuntu-latest
 
     steps:
