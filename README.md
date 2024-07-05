@@ -8,7 +8,7 @@ author: 'Yann Cohen'
 
 This is a fun, educational, and open-source project.
 Users are encouraged to maintain ethical standards when accessing the information.
-If you find anything that you find interesting, feel free to submit a PR or contact me :)
+If you find anything interesting, feel free to submit a PR or contact me :)
 
 
 ### Personally, I exercised the following:
