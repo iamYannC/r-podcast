@@ -4,13 +4,26 @@ output: html_document
 author: 'Yann Cohen'
 ```
 
-A fun mini-project scraping the r-weekly highlight podcast.
+### A fun mini-project scraping the r-weekly highlight podcast.
 
-This is an open-source project, feel free to mess with everything you find here (share cool insights!). Make sure to maintain ethical standards :)
+Personally, I exercised the following:
+- Scraping
+- Automation
 
-[R Weekly Highlights](https://serve.podhome.fm/r-weekly-highlights)
+There are 3 outputs for reproducibility:
+- A JSON file
+- An XLSX file with multiple tabs
+- An RDS file
 
-[Yannco5\@gmail.com](mailto:yannco5@gmail.com?subject=Hello%20Yann!&body=What%20is%20the%20ultimate%20answer?)
+
+This is a fun, educational, and open-source project.
+Users are encouraged to maintain ethical standards when accessing the information.
+If you find anything that you find interesting, feel free to submit a PR or contact me :)
+
+
+[Source - R Weekly Highlights](https://serve.podhome.fm/r-weekly-highlights)
+
+[Contact me - Yannco5\@gmail.com](mailto:yannco5@gmail.com?subject=Hello%20Yann!&body=What%20is%20the%20ultimate%20answer?)
 
 <img src="episode_duration.png" alt="Episode duration over time" width="1200"/>
 
