@@ -7,8 +7,9 @@ author: 'Yann Cohen'
 ### A fun mini-project scraping the r-weekly highlight podcast.
 
 Personally, I exercised the following:
-- Scraping
-- Automation
+- Scraping using rvest, CSS selectors and XML paths
+- Automation using GitHub actions and activation R file.
+Scraper runs every Monday at Midnight (UTC) - check auto.yaml for the exact details. 
 
 There are 3 outputs for reproducibility:
 - A JSON file
