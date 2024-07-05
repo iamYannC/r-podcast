@@ -160,10 +160,13 @@ all_episodes_data <- map(1:nrow(episode),get_ep_data,.progress = TRUE)
 # END OF CORE FUNCTIONALITY # 
 
 
-# Save to JSON and XLSX
+# Save to JSON, RDS and XLSX
   # Json
     json_ep <- all_episodes_data |> jsonlite::toJSON(pretty = T)
     write_lines(json_ep, "data/all_data.json")
+
+  # RDS
+    write_rds(all_episodes_data, "data/all_data.rds")
 
   # Excel Workbook
 
