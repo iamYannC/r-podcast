@@ -13,13 +13,13 @@ If you find anything interesting, feel free to submit a PR or contact me :)
 
 ### Personally, I exercised the following:
 - Scraping using rvest, CSS selectors and XML paths
-- Automation using GitHub actions and activation R file.
-Scraper runs every Monday at Midnight (UTC) - check auto.yaml for the exact details. 
+- Automation using GitHub actions.
+Scraper runs every Monday at Midnight (UTC) - check `auto.yaml` for the exact details. 
 
 ### There are 3 R files:
-- r weekly podcast scrape - main script
-- r weekly podcast scrape - followup - Minor analysis. subject to many changes
-- auto workflow - The activation file. If a new episode is detected, runs both scripts to update 3 Output files:
+- `r weekly podcast scrape` - main script
+- `r weekly podcast scrape - followup` - Minor analysis. subject to many changes
+- `auto workflow` - The activation file. If a new episode is detected, runs both scripts to update 3 Output files:
     - A JSON file
     - An XLSX file with multiple tabs
     - An RDS file
