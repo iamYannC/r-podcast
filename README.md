@@ -1,10 +1,10 @@
 ```         
 title: 'Welcome!'
-description: 'A fun mini-project scraping the r-weekly highlight podcast.'
 output: html_document
 author: 'Yann Cohen'
-tags: ['r-weekly', 'scraping']
 ```
+
+## A fun mini-project scraping the r-weekly highlight podcast.
 
 This is a fun, educational, and open-source project.
 Users are encouraged to maintain ethical standards when accessing the information.
