@@ -9,6 +9,8 @@ source('r weekly podcast scrape - followup.R')
 
 } else{
 x <- Sys.time()
-writeLines(paste('generated @',x),'data/last run.txt')
+writeLines(paste('workflow ran, still only', n_episdoes,'episodes @',x) |> 
+          sub("\\..*","",x = _)
+          ,'data/last run.txt')
 
 }
