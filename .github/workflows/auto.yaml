@@ -1,0 +1,25 @@
+name: Push Data to Main
+
+on:
+  workflow_dispatch:
+
+jobs:
+  push-data:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Git
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+    - name: Stage and commit data changes
+      run: |
+        git add data/*
+        git commit -m "Automated commit of data files"|| echo "No changes to commit"
+        git push origin main || echo "No changes to commit"
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          username: github-actions
