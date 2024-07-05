@@ -1,13 +1,17 @@
-name: Re-run scrape
+name: Run workflow
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 1' # min 0, hour 0, any day any month, 1st day of week (Monday)
+  
 
 jobs:
   push-data:
     runs-on: windows-latest
     permissions:
       contents: write  
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -24,6 +28,7 @@ jobs:
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
+
     - name: Stage and commit data changes
       run: |
         git add data/ --verbose
