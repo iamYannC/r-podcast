@@ -1,25 +1,29 @@
 ```         
 title: 'Welcome!'
+description: 'A fun mini-project scraping the r-weekly highlight podcast.'
 output: html_document
 author: 'Yann Cohen'
+tags: ['r-weekly', 'scraping']
 ```
-
-### A fun mini-project scraping the r-weekly highlight podcast.
-
-Personally, I exercised the following:
-- Scraping using rvest, CSS selectors and XML paths
-- Automation using GitHub actions and activation R file.
-Scraper runs every Monday at Midnight (UTC) - check auto.yaml for the exact details. 
-
-There are 3 outputs for reproducibility:
-- A JSON file
-- An XLSX file with multiple tabs
-- An RDS file
-
 
 This is a fun, educational, and open-source project.
 Users are encouraged to maintain ethical standards when accessing the information.
 If you find anything that you find interesting, feel free to submit a PR or contact me :)
+
+
+### Personally, I exercised the following:
+- Scraping using rvest, CSS selectors and XML paths
+- Automation using GitHub actions and activation R file.
+Scraper runs every Monday at Midnight (UTC) - check auto.yaml for the exact details. 
+
+### There are 3 R files:
+- r weekly podcast scrape - main script
+- r weekly podcast scrape - followup - Minor analysis. subject to many changes
+- auto workflow - The activation file. If a new episode is detected, runs both scripts to update 3 Output files:
+    - A JSON file
+    - An XLSX file with multiple tabs
+    - An RDS file
+
 
 
 [Source - R Weekly Highlights](https://serve.podhome.fm/r-weekly-highlights)
