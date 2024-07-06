@@ -1,0 +1,64 @@
+{
+  "cells": [
+    {
+      "cell_type": "raw",
+      "metadata": {},
+      "source": [
+        "---         \n",
+        "title: 'Welcome!'\n",
+        "output: html_document\n",
+        "author: 'Yann Cohen'\n",
+        "toc: true\n",
+        "---"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## A fun mini-project scraping the r-weekly highlight podcast.\n",
+        "\n",
+        "This is a fun, educational, and open-source project.\n",
+        "Users are encouraged to maintain ethical standards when accessing the information.\n",
+        "If you find anything interesting, feel free to submit a PR or contact me :)\n",
+        "\n",
+        "\n",
+        "### Personally, I exercised the following:\n",
+        "- Scraping using rvest, CSS selectors and XML paths\n",
+        "- Automation using GitHub actions.\n",
+        "Scraper runs every Monday at Midnight (UTC) - check `auto.yaml` for the exact details. \n",
+        "\n",
+        "### There are 3 R files:\n",
+        "- `r weekly podcast scrape` - main script\n",
+        "- `r weekly podcast scrape - followup` - Minor analysis. subject to many changes\n",
+        "- `auto workflow` - The activation file. If a new episode is detected, runs both scripts to update 3 Output files:\n",
+        "    - A JSON file\n",
+        "    - An XLSX file with multiple tabs\n",
+        "    - An RDS file\n",
+        "\n",
+        "\n",
+        "\n",
+        "[Source - R Weekly Highlights](https://serve.podhome.fm/r-weekly-highlights)\n",
+        "\n",
+        "[Contact me - Yannco5\\@gmail.com](mailto:yannco5@gmail.com?subject=Hello%20Yann!&body=What%20is%20the%20ultimate%20answer?)\n",
+        "\n",
+        "<img src=\"episode_duration.png\" alt=\"Episode duration over time\" width=\"1200\"/>\n",
+        "\n",
+        "#### Here is a preview of how the XL Workbook looks like.\n",
+        "\n",
+        "Note the tabs. each corresponds to a different part of the episode and can be easily joined via primary key ep_name (episode name).\n",
+        "\n",
+        "<img src=\"xl_preview.png\" alt=\"XL Preview\" width=\"1000\"/>"
+      ]
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 4
+}
