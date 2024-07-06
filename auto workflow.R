@@ -12,7 +12,7 @@ x <- Sys.time()
 writeLines(paste('Number of episodes:', n_episdoes,'@',x) |> 
           sub("\\..*","",x = _)
           ,'data/last run.txt')
-  
+  require(ggplot2)
   test_plot <- ggplot(mtcars,aes(qsec,mpg))+geom_point()
   ggsave('plot.png')
 
