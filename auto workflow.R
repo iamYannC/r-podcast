@@ -9,8 +9,11 @@ source('r weekly podcast scrape - followup.R')
 
 } else{
 x <- Sys.time()
-writeLines(paste('workflow ran, still only', n_episdoes,'episodes @',x) |> 
+writeLines(paste('Number of episodes:', n_episdoes,'@',x) |> 
           sub("\\..*","",x = _)
           ,'data/last run.txt')
+  
+  test_plot <- ggplot(mtcars,aes(qsec,mpg))+geom_point()
+  ggsave('plot.png')
 
 }
