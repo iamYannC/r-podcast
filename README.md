@@ -32,7 +32,6 @@ Scraper runs every Monday at Midnight (UTC) - check `auto.yaml` for the exact de
 
 <img src="episode_duration.png" alt="Episode duration over time" width="1200"/>
 
-<img src="plot.png" alt = "test"/>
 #### Here is a preview of how the XL Workbook looks like.
 
 Note the tabs. each corresponds to a different part of the episode and can be easily joined via primary key ep_name (episode name).
