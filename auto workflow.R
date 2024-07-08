@@ -9,7 +9,7 @@ source('r weekly podcast scrape - followup.R')
 
 } else{
 x <- Sys.time()
-writeLines(paste('Number of episodes:', n_episdoes,'@',x) |> 
+writeLines(paste('Number of episodes:', n_episdoes-1,'@',x) |> 
           sub("\\..*","",x = _)
           ,'data/last run.txt')
 }
