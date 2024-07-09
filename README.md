@@ -1,6 +1,12 @@
 # Welcome!
 Yann Cohen
 
+- [A fun mini-project scraping the r-weekly highlight
+  podcast.](#a-fun-mini-project-scraping-the-r-weekly-highlight-podcast)
+  - [Personally, I exercised the
+    following:](#personally-i-exercised-the-following)
+  - [There are 3 R files:](#there-are-3-r-files)
+
 ## A fun mini-project scraping the r-weekly highlight podcast.
 
 This is an educational and open-source project. Users are encouraged to
