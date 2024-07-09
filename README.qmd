@@ -3,7 +3,6 @@ title: "Welcome!"
 format: gfm
 author: "Yann Cohen"
 output-file: README.md
-toc: true
 ---
 
 ## A fun mini-project scraping the r-weekly highlight podcast.
