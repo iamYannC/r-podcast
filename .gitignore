@@ -55,5 +55,5 @@ rsconnect/
 
 # automation
 automate/
-# previous readme
-README.md
+# any markdown files
+*.md
