@@ -3,7 +3,7 @@ name: Run workflow
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * 2' # min 0, hour 0, any day any month, 2nd day of week (Tuesday)
+    - cron: '0 16 * * *' # Everyday at 4 pm
   
 
 jobs:
