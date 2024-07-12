@@ -8,7 +8,7 @@ if (length(r_weekly |> html_elements(".episodeLink")) > n_episdoes) {
 } else {
   x <- Sys.time()
   writeLines(
-    paste("Number of episodes:", n_episdoes - 1, "@", x) |>
+    paste("Number of episodes:", n_episdoes, "@", x) |>
       sub("\\..*", "", x = _),
           "data/last run.txt"
   )
