@@ -66,4 +66,4 @@ automate/
 *.aac
 *.aiff
 archive/
-__pycache__/
+Py/__pycache__/
