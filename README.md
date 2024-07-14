@@ -42,4 +42,4 @@ Please note that I am not an official member of the R-Weekly team. Everything yo
 
 I am by no means a python programmer, but I played with it a bit (and some help from our dear GenAI agents) and created a few not very pleasent looking audio plots. I should probably do something with it...
 
-![Audio Plot](Py/figures/24-w26 - chunk_1_analysis.png)
+![Audio Plot](https://github.com/iamYannC/r-podcast/blob/main/Py/figures/24-w26%20-%20chunk_1_analysis.png?raw=true)
