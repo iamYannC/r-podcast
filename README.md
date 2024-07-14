@@ -12,9 +12,9 @@ Please note that I am not an official member of the R-Weekly team. Everything yo
 
 ### What you will find here
 
--   \`r_weekly_podcast_scrape.R\` - the main script where all the scraping happens.
+-   `r_weekly_podcast_scrape.R` - the main script where all the scraping happens.
 
--   \`r_weekly_podcast_scra[e_followup.R\` - a few simple follow-up analysis i have conducted. it's subject to changes and you are most welcome to get inspired and do new things!
+-   `r_weekly_podcast_scra[e_followup.R` - a few simple follow-up analysis i have conducted. it's subject to changes and you are most welcome to get inspired and do new things!
 
 -   `auto_workflow.R` - this is just the activation file that is ran by `auto workflow.yml`.
 
