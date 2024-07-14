@@ -37,3 +37,9 @@ Please note that I am not an official member of the R-Weekly team. Everything yo
 ![Episode Duration Over Time](episode_duration.png)
 
 ![Preview of the XL Workbook](xl_preview.png) Note the tabs—each corresponds to a different part of the episode and can be easily joined via the primary key `ep_name` (episode name).
+
+## Experimental - Python
+
+I am by no means a python programmer, but I played with it a bit (and some help from our dear GenAI agents) and created a few not very pleasent looking audio plots. I should probably do something with it...
+
+![Audio Plot](Py/figures/24-w26 - chunk_1_analysis.png)
