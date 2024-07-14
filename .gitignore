@@ -62,8 +62,7 @@ automate/
 *.ogg
 *.flac
 *.m4a
-
-# Ignore additional music formats (optional)
 *.wma
 *.aac
 *.aiff
+archive/
