@@ -55,3 +55,15 @@ rsconnect/
 
 # automation
 automate/
+
+# Ignore audio files
+*.mp3
+*.wav
+*.ogg
+*.flac
+*.m4a
+
+# Ignore additional music formats (optional)
+*.wma
+*.aac
+*.aiff
