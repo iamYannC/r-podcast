@@ -1,4 +1,5 @@
 #TODO: Automate downloading of episodes
+#TODO: Handle memory allocation
 
 from os import chdir
 chdir("Py")
