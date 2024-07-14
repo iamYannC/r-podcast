@@ -30,9 +30,9 @@ Please note that I am not an official member of the R-Weekly team. Everything yo
 
     -   links
 
-Personal Contributions: Scraping Techniques: Utilized rvest, CSS selectors, and XML paths. Automation: Set up GitHub actions to run the scraper every Monday at midnight (UTC). Check auto.yaml for exact details. R Files: r_weekly_podcast_scrape (Main Script): Handles the primary scraping process. r_weekly_podcast_scrape_followup (Minor Analysis): Subject to frequent changes. auto_workflow (Activation File): Detects new podcast episodes and runs both scripts. Updates three output files: A JSON file An XLSX file with multiple tabs An RDS file Source - R Weekly Highlights
+Source - [R Weekly Highlights](https://serve.podhome.fm/r-weekly-highlights)
 
-Contact me - [Yannco5\@gmail.com](mailto:Yannco5@gmail.com){.email}
+[Contact me](mailto:Yannco5@gmail.com)
 
 ![Episode Duration Over Time](episode_duration.png)
 
