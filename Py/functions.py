@@ -29,7 +29,8 @@ def split_mp3(input_file, output_folder, chunk_length_ms=600000):
         chunk = audio[start:end]
         
         # Generate output filename
-        output_file = os.path.join(output_folder, f"chunk_{i+1}.mp3")
+        base_name = os.path.splitext(os.path.basename(input_file))[0]
+        output_file = os.path.join(output_folder, f"{base_name} - chunk_{i+1}.mp3")
         
         # Export the chunk
         chunk.export(output_file, format="mp3")
