@@ -1,5 +1,6 @@
 #TODO: Automate downloading of episodes
 #TODO: Handle memory allocation
+#TODO: Something is off in figures `output` > 1. spectrogram disappeared and sound intensity is weird.
 
 from os import chdir
 chdir("Py")
