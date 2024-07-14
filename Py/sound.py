@@ -1,5 +1,8 @@
 #TODO: Automate downloading of episodes
 
+from os import chdir
+chdir("Py")
+
 from imports import *
 from functions import *
 
