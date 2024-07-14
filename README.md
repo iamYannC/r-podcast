@@ -1,82 +1,32 @@
-{
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {},
-      "source": [
-        "{\n",
-        "  \"cells\": [\n",
-        "    {\n",
-        "      \"cell_type\": \"markdown\",\n",
-        "      \"metadata\": {},\n",
-        "      \"source\": [\n",
-        "        \"# Welcome!\\n\",\n",
-        "        \"Yann Cohen\\n\",\n",
-        "        \"\\n\",\n",
-        "        \"## A fun mini-project scraping the r-weekly highlight podcast.\\n\",\n",
-        "        \"\\n\",\n",
-        "        \"This is an educational and open-source project. Users are encouraged to\\n\",\n",
-        "        \"maintain ethical standards when accessing the information. If you find\\n\",\n",
-        "        \"anything interesting, feel free to submit a PR or contact me :)\\n\",\n",
-        "        \"\\n\",\n",
-        "        \"I am not an official member of the r-weekly team, everything that you\\n\",\n",
-        "        \"find here is un-related to the podcast/weekly highlights team.\\n\",\n",
-        "        \"\\n\",\n",
-        "        \"### Personally, I exercised the following:\\n\",\n",
-        "        \"\\n\",\n",
-        "        \"- Scraping using rvest, CSS selectors and XML paths\\n\",\n",
-        "        \"- Automation using GitHub actions. Scraper runs every Monday at Midnight\\n\",\n",
-        "        \"  (UTC) - check `auto.yaml` for the exact details.\\n\",\n",
-        "        \"\\n\",\n",
-        "        \"### There are 3 R files:\\n\",\n",
-        "        \"\\n\",\n",
-        "        \"- `r weekly podcast scrape` - main script\\n\",\n",
-        "        \"- `r weekly podcast scrape - followup` - Minor analysis. subject to many\\n\",\n",
-        "        \"  changes\\n\",\n",
-        "        \"- `auto workflow` - The activation file. If a new episode is detected,\\n\",\n",
-        "        \"  runs both scripts to update 3 Output files:\\n\",\n",
-        "        \"  - A JSON file\\n\",\n",
-        "        \"  - An XLSX file with multiple tabs\\n\",\n",
-        "        \"  - An RDS file\\n\",\n",
-        "        \"\\n\",\n",
-        "        \"[Source - R Weekly\\n\",\n",
-        "        \"Highlights](https://serve.podhome.fm/r-weekly-highlights)\\n\",\n",
-        "        \"\\n\",\n",
-        "        \"[Contact me -\\n\",\n",
-        "        \"Yannco5@gmail.com](mailto:yannco5@gmail.com?subject=Hello%20Yann!&body=What%20is%20the%20ultimate%20answer?)\\n\",\n",
-        "        \"\\n\",\n",
-        "        \"<img src=\\\"episode_duration.png\\\" width=\\\"1200\\\"\\n\",\n",
-        "        \"alt=\\\"Episode duration over time\\\" />\\n\",\n",
-        "        \"\\n\",\n",
-        "        \"#### Here is a preview of how the XL Workbook looks like.\\n\",\n",
-        "        \"\\n\",\n",
-        "        \"Note the tabs. each corresponds to a different part of the episode and\\n\",\n",
-        "        \"can be easily joined via primary key ep_name (episode name).\\n\",\n",
-        "        \"\\n\",\n",
-        "        \"<img src=\\\"xl_preview.png\\\" width=\\\"1000\\\" alt=\\\"XL Preview\\\" />\"\n",
-        "      ]\n",
-        "    }\n",
-        "  ],\n",
-        "  \"metadata\": {\n",
-        "    \"kernelspec\": {\n",
-        "      \"name\": \"python3\",\n",
-        "      \"language\": \"python\",\n",
-        "      \"display_name\": \"Python 3 (ipykernel)\"\n",
-        "    }\n",
-        "  },\n",
-        "  \"nbformat\": 4,\n",
-        "  \"nbformat_minor\": 4\n",
-        "}"
-      ]
-    }
-  ],
-  "metadata": {
-    "kernelspec": {
-      "name": "python3",
-      "language": "python",
-      "display_name": "Python 3 (ipykernel)"
-    }
-  },
-  "nbformat": 4,
-  "nbformat_minor": 4
-}
+Welcome!
+Yann Cohen
+
+A Fun Mini-Project: Scraping the R-Weekly Highlight Podcast
+This educational and open-source project involves scraping the R-Weekly highlight podcast. Users are encouraged to maintain ethical standards when accessing the information. If you find anything interesting, feel free to submit a PR or contact me! 😊
+
+Please note that I am not an official member of the R-Weekly team. Everything you find here is unrelated to the podcast/weekly highlights team.
+
+Personal Contributions:
+Scraping Techniques:
+Utilized rvest, CSS selectors, and XML paths.
+Automation:
+Set up GitHub actions to run the scraper every Monday at midnight (UTC). Check auto.yaml for exact details.
+R Files:
+r_weekly_podcast_scrape (Main Script):
+Handles the primary scraping process.
+r_weekly_podcast_scrape_followup (Minor Analysis):
+Subject to frequent changes.
+auto_workflow (Activation File):
+Detects new podcast episodes and runs both scripts.
+Updates three output files:
+A JSON file
+An XLSX file with multiple tabs
+An RDS file
+Source - R Weekly Highlights
+
+Contact me - Yannco5@gmail.com
+
+![Episode Duration Over Time](episode_duration.png)
+
+![Preview of the XL Workbook](xl_preview.png)
+Note the tabs—each corresponds to a different part of the episode and can be easily joined via the primary key ep_name (episode name).
