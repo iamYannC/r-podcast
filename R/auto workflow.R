@@ -17,7 +17,7 @@ n_new_eps <- eps_in_last_pg + (n_pages-1) * 10
 
 if (n_new_eps > n_episdoes) {
   # re-run the whole scrape
-  source("r weekly podcast scrape - followup.R")
+  source("R/r weekly podcast scrape - followup.R")
 } else {
   x <- Sys.time()
   writeLines(

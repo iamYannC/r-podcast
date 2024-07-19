@@ -1,6 +1,6 @@
 # having fun with the data..
 
-if(!'all_transcript' %in% ls()) source('r weekly podcast scrape.R')
+if(!'all_transcript' %in% ls()) source('R/r weekly podcast scrape.R')
 
 
 time_talked <-   all_transcript |> left_join(select(all_episodes,-4)) |> 
