@@ -18,7 +18,7 @@ Please note that I am not an official member of the R-Weekly team. Everything yo
 
 -   `auto_workflow.R` - this is just the activation file that is ran by `auto workflow.yml`.
 
--   In data folder - `all_data.json`, `all_data.rds` and `all_data.xlsx` with all the information regarding each episode:
+-   In data folder - `all_data.*` [`json`, `rds` and `.xlsx`] with all the information regarding each episode:
 
     -   episode duration
 
