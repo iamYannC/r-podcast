@@ -1,21 +1,41 @@
 library(collapse)
 library(rvest)
 library(stringi)
+library(glue)
 library(tidyverse)
-r_weekly <- read_html("https://serve.podhome.fm/r-weekly-highlights")
 
-get_ep_metadata <- function(r_weekly){
-  
-  eps <- r_weekly |> html_elements(".episodeLink") |> html_attr("href")
+url <- "https://serve.podhome.fm/r-weekly-highlights"
+r_weekly <- read_html(url)
+
+# Get number of pages to then iterate over each page
+page_count <- '.pagination-link'
+n_pages <- r_weekly |> html_elements(page_count) |> length()
+
+# Inner functions to extract data from html based on css selectors, either text or href
+get_href <- function(css_selector){
+  map(1:n_pages,\(n_pg) {
+    page_html <- read_html(glue("{url}?currentPage={n_pg}&searchTerm="))
+    page_html |> html_elements(css_selector) |> html_attr("href") 
+  }) |> unlist()
+}
+get_text2 <- function(css_selector){
+  map(1:n_pages,\(n_pg) {
+    page_html <- read_html(glue("{url}?currentPage={n_pg}&searchTerm="))
+    page_html |> html_elements(css_selector) |> html_text2()
+  }) |> unlist()
+}
+#
+
+get_ep_metadata <- function(){
+  # Vector of links to all episodes
+  eps <- get_href(".episodeLink")
   
   ep_link <- paste0("https://serve.podhome.fm", eps) 
   ep_name <-  ep_link |> stri_replace_last_regex("^.*/","") |> snakecase::to_snake_case()
   
   episode <<- matrix(data = c(ep_link, ep_name),ncol=2,dimnames = list(NULL, c("link", "name"))) # exported to global environemnt, as it will be then used by the other function.
   
-  date_duration <- r_weekly |>
-    html_elements(".is-tablet+ .has-text-grey") |>
-    html_text2()
+  date_duration <- get_text2(".is-tablet+ .has-text-grey")
   
   # split date and duration
   date_duration <- map(date_duration, \(s) s |>
@@ -25,19 +45,19 @@ get_ep_metadata <- function(r_weekly){
   ep_date <- map_chr(date_duration, \(x) x[[1]]) |> dmy()
   ep_duration <- map_chr(date_duration, \(x) x[[2]]) |> hms()
   
-  
   # get short description
-  ep_description_short <- r_weekly |>
-    html_elements(".is-hidden-touch") |>
-    html_text2()
-  ep_description_short <- ep_description_short[seq(2, length(ep_description_short), 2)] |> stri_trim_both() # some duplications, plus the first one is not an episode description
+  ep_desc_short <- get_text2(".is-hidden-touch")
+  ep_desc_short <- ep_desc_short[seq(2, length(ep_desc_short), 2)] |> stri_trim_both() # some duplication, plus the first one is not an episode description
+  # A fix due to multiple pages: need to filter header from each page
+  indx_remove <- stri_detect_fixed(ep_desc_short,'Contact') |> which()
+  ep_description_short <- ep_desc_short[-indx_remove]
   
   tibble::tibble(ep_name, ep_date, ep_duration, ep_description_short)
-
 }
 
+
 # put it all in a nice table
-all_episodes <- get_ep_metadata(r_weekly)
+all_episodes <- get_ep_metadata()
 
 
 
