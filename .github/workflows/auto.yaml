@@ -21,7 +21,7 @@ jobs:
       uses: r-lib/actions/setup-renv@v2
 
     - name: Run automation
-      run: Rscript -e 'source("auto workflow.R")'
+      run: Rscript -e 'source("R/auto workflow.R")'
 
 
     - name: Set up Git
