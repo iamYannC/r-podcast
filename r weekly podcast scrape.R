@@ -181,25 +181,25 @@ all_episodes_data <- map(1:nrow(episode),get_ep_data,.progress = TRUE)
 
 
 # Save to JSON, RDS and XLSX
-  # Json
-    json_ep <- all_episodes_data |> jsonlite::toJSON(pretty = T)
-    write_lines(json_ep, "data/all_data.json")
+# Json
+json_ep <- all_episodes_data |> jsonlite::toJSON(pretty = T)
+write_lines(json_ep, "data/all_data.json")
 
-  # RDS
-    write_rds(all_episodes_data, "data/all_data.rds")
+# RDS
+write_rds(all_episodes_data, "data/all_data.rds")
 
-  # Excel Workbook
+# Excel Workbook
 
-    for(name in names(all_episodes_data[[1]])){
-      tmp_file <- map(1:length(all_episodes_data),\(x) all_episodes_data[[x]][[name]]) |> list_rbind()
-      assign(paste0('all_',name),tmp_file)
-    }
-    rm(tmp_file)
-    all_list <- list(all_metadata, all_description_long,all_links,all_transcript,all_chapters)
-    
-    # Save data to one XL workbook
-    library(openxlsx)
-    wb <- createWorkbook()
-    map(names(all_episodes_data[[1]]),\(name) addWorksheet(wb, name))
-    map(1:length(all_list),\(i) writeData(wb, i, all_list[[i]]))
-    saveWorkbook(wb, "data/all_data.xlsx", overwrite = TRUE)
+for(name in names(all_episodes_data[[1]])){
+  tmp_file <- map(1:length(all_episodes_data),\(x) all_episodes_data[[x]][[name]]) |> list_rbind()
+  assign(paste0('all_',name),tmp_file)
+}
+rm(tmp_file)
+all_list <- list(all_metadata, all_description_long,all_links,all_transcript,all_chapters)
+
+# Save data to one XL workbook
+library(openxlsx)
+wb <- createWorkbook()
+map(names(all_episodes_data[[1]]),\(name) addWorksheet(wb, name))
+map(1:length(all_list),\(i) writeData(wb, i, all_list[[i]]))
+saveWorkbook(wb, "data/all_data.xlsx", overwrite = TRUE)

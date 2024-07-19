@@ -23,6 +23,6 @@ if (n_new_eps > n_episdoes) {
   writeLines(
     paste("Number of episodes:", n_episdoes, "@", x) |>
       sub("\\..*", "", x = _),
-          "data/last run.txt"
+    "data/last run.txt"
   )
 }
