@@ -9,7 +9,7 @@ n_episdoes <- nrow(readxl::read_xlsx("data/all_data.xlsx"))
 page_count <- '.pagination-link'
 n_pages <- r_weekly |> html_elements(page_count) |> length()
 # Number of episodes in the last page
-page_html <- read_html(glue("{url}?currentPage={n_pages}&searchTerm="))
+page_html <- read_html(glue::glue("{url}?currentPage={n_pages}&searchTerm="))
 eps_in_last_pg <- page_html |> html_elements(".episodeLink") |> html_text2() |> length()
 
 # Number of episodes based on 10 episodes per page
