@@ -2,6 +2,258 @@
   {
     "metadata": [
       {
+        "ep_name": "issue_2024_w_28_highlights",
+        "ep_date": "2024-07-18",
+        "ep_duration": 10,
+        "ep_description_short": "The world of web-assembly in R continues to move fast with key updates to the webrcli & spidyr packages, and what has us excited about the mapgl package for producing amazing spatial visualizations. Episode Links This week's curator: Batool Almarzouq - @batool664 (X/Twitter) webrcli & spidyr: What’s new Create a Compare slider widget Entire issue…"
+      }
+    ],
+    "description_long": [
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "description_long": "\r \r The world of web-assembly in R continues to move fast with key updates to the webrcli & spidyr packages, and what has us excited about the mapgl package for producing amazing spatial visualizations. \nEpisode Links\n\nThis week's curator: Batool Almarzouq - @batool664 (X/Twitter)\nwebrcli & spidyr: What’s new\nCreate a Compare slider widget\nEntire issue available at rweekly.org/2024-W28\nSupplement Resources\n\nmapgl package site https://walker-data.com/mapgl\nMike's migrate package https://ketchbrookanalytics.github.io/migrate/\nSupporting the show\n\nUse the contact page at https://serve.podhome.fm/custompage/r-weekly-highlights/contact to send us your feedback\nR-Weekly Highlights on the Podcastindex.org - You can send a boost into the show directly in the Podcast Index. First, top-up with Alby, and then head over to the R-Weekly Highlights podcast entry on the index.\nA new way to think about value: https://value4value.info \nGet in touch with us on social media\n \nEric Nantz: @[email protected] (Mastodon) and @theRcast (X/Twitter)\n \nMike Thomas: @mike[email protected] (Mastodon) and @mikeketchbrook (X/Twitter) \nMusic credits powered byOCRemix\n\nSuper Buck II - Super Mario Bros 2 - Estradasphere - https://ocremix.org/remix/OCR00577"
+      }
+    ],
+    "links": [
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "links": "https://twitter.com/batool664"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "links": "https://colinfay.me/webrcli-and-spidyr-whats-new/"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "links": "https://walker-data.com/mapgl/reference/compare.html"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "links": "https://rweekly.org/2024-W28.html"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "links": "https://walker-data.com/mapgl"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "links": "https://ketchbrookanalytics.github.io/migrate/"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "links": "https://serve.podhome.fm/custompage/r-weekly-highlights/contact"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "links": "https://podcastindex.org/podcast/1062040"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "links": "https://getalby.com/"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "links": "https://value4value.info"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "links": "https://podcastindex.social/@rpodcast"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "links": "https://twitter.com/theRcast"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "links": "https://fosstodon.org/@mike_thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "links": "https://twitter.com/mike_ketchbrook"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "links": "https://ocremix.org/"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "links": "https://ocremix.org/remix/OCR00577"
+      }
+    ],
+    "transcript": [
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 3,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Hello, friends. Did you miss us? Yes. We are finally back with another episode of the Our Weekly Highlights podcast.\r \r This is the show where we talk about the latest and greatest new packages,\r \r blog posts, other terrific resources that are featured\r \r in the highlights section of this week's Our Weekly Issue.\r \r My name is Eric Nance. And yes, we had a little bit of\r \r a break, both self\r \r imposed and some unexpected reasons for the break. But nonetheless, we were coming back hopefully refreshed. And,\r \r for me personally, I was able to take the family on a little road trip to Niagara Falls early in July. It was a spectacular time. And if you haven't been in that area, if you have the means to do it, I highly recommend that as a future vacation. It was a, I drove there, so that was a long drive, but\r \r made it through in one piece, which is sometimes a miracle in itself when you have 2 kids that are angry at, you know, on highways going through farmland as the Midwest typically is. But nonetheless,\r \r back here in the humble boat here, and I'm very pleased as always to be joined from my awesome co host, Mike, who's had his own adventures both good and probably not so good lately. But, Mike, how are you doing? I'm doing well, Eric. I am as equally impressed in your r and shiny skills as I am in your skills taking your family halfway cross country,\r \r\n\n[00:01:24] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 24,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "with 2 young boys,\r \r in a car for for that long. So kudos to you in a successful\r \r vacation. I got some vacation time with my family,\r \r in Vermont as well over the 4th July here, our Independence Day. And, yeah,\r \r happy that we were able to have the break, but also very happy to, be back.\r \r\n\n[00:01:44] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 44,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Absolutely.\r \r Yeah. I was I was thinking, yeah, just doesn't seem right. No. All is right with the world. It's a great recording session with you. And we've got a couple awesome highlights to talk about today. And this issue\r \r has been curated by Batool Almarsakh, another one of our longtime contributors to the rweekly project. And as always, she had tremendous help from our fellow rweekly team members and contributors like you all around the world for poll requests and other suggestions.\r \r So let's\r \r dive right into it. And our first highlight today is a callback from something that we\r \r put the spotlight on in episode a 156.\r \r\n\nYou can check out the back catalog for that. But,\r \r you know me, and if you heard the podcast recently,\r \r I've been\r \r espousing my,\r \r affection and really big enthusiasm\r \r for web assembly and web are in the world of our and web development.\r \r And there are a lot of different ways to spin this now. We've been historically talking about\r \r the amazing work that George Stagg at at Posit's been doing with the WebR package,\r \r the web assembly framework tie ins with WebR\r \r is just immensely powerful.\r \r But there are some other perspectives that you can take\r \r and really massage these tools to do some interesting use cases.\r \r\n\nAnd way back in episode 156\r \r earlier this year, we had talked about Colin phase adventures\r \r with building his own rappers on top of WebR\r \r and combining with no JS to kind of fill a perspective\r \r of how to efficiently\r \r expose\r \r functions and are from say in our package,\r \r what looks to be native functions\r \r and a no JS runtime.\r \r And so we got some follow-up on that in our first highlight today because, yes, Colin Faye is back at blogging his recent updates\r \r to his web r COI and spider utilities,\r \r encoded up in in JavaScript\r \r to help with this perspective\r \r of exposing\r \r these great R functions that you can compile with web R into a no JS runtime.\r \r\n\nSo what's new? Well, as usual, as you get things bootstrap for the first time and you start iterating on it, you see some ways to make things more efficient and also\r \r helping the new user get onboarded more efficiently.\r \r Their first of which is that\r \r the web are COI package\r \r combined with spider will help bootstrap a template file\r \r for you to start that kind of boilerplate integration\r \r of the R functions from a package into the node JS runtime.\r \r And he's been able to simplify\r \r the template a bit so that it's about now maybe what 10, 11 lines of code.\r \r And he's hopeful that even if you're not an expert at JavaScript just yet, they'll be able to grok what's happening here. And I dare say he's got,\r \r he's mission accomplished on making that a lot more\r \r easy to grasp. I mean, he\r \r decomposes the explanations of the template in the blog post\r \r where there is a bit of setup to initialize\r \r these spider projects that's gonna help with the hand off, help with that integration,\r \r and then helping to import the r functions that have been bootstrapped into\r \r the directory where this project is being bootstrapped from. And then you can see then for a simple hello world example,\r \r you just put a prefix of our funds\r \r dot hello underscore world if that's the name of your r function,\r \r And there you go. Now you just called\r \r that r function from JavaScript.\r \r\n\nAnd what's interesting about that actual execution of it is that this actually doesn't need our at that point to do the execution. It's all already been pre compiled\r \r\n\n[00:05:37] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 37,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "in the JavaScript. That's just bonkers to me, but it's amazing. Yeah. No. That that's that was probably the most interesting part of this whole article to me\r \r is that there's no R session running while the Node. Js app is running. It it's the spider package imports an R function\r \r converted to a native JS. So I guess that must happen beforehand.\r \r\n\n[00:05:57] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 57,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "That's my understanding is in that bootstrapping process as you initialize a project. I believe it's compiling all that in in that initial pre step. So then the Node. Js side of it when you're just executing these functions,\r \r it's treated no differently than any other JavaScript function you would run-in that. That's just, again, amazing to me. Mind blown. 101. Yes. And Colin does it again. We we should be used to this by now from him after all the GOLM exploits, but, boy, he always teaches us something new.\r \r And then other tidbits in the post here that I think are gonna be great from a reproducibility\r \r standpoint\r \r and efficiency\r \r is kinda taking a page of how we do dependency management\r \r is making sure\r \r that when you bootstrap a WebR COI\r \r project\r \r that it will store\r \r the packages that are being installed in a packages dot JSON file\r \r so that then\r \r if you say move this to another computing environment or whatnot, as long as you version control that lock file, that JSON file, not to dissimilar what you would do with our end than the typical r setup, It'll bootstrap these these packages\r \r back down if they're not installed already. So I think that's paving the way for more efficient dependency management in this new workflow.\r \r\n\nSo he's got a nice schematic towards the end of the post where he kind of shows the workflow in a nutshell,\r \r which I believe is gonna be kind of the source of some\r \r additional documentation that he plans to author as he wants to have more than an end of one of users for this framework. He claims he's the only one using it. I highly doubt that. I'm sure there are others that are putting it through the paces. But he's got some other future items that I'm gonna keep an eye on for this is that\r \r in terms of reproducibility,\r \r he wants to make sure that when you initialize these projects\r \r that you can actually specify\r \r the web r version\r \r itself\r \r during that bootstrapping\r \r process. I mean, that will be, again, huge as web r takes more fruition as companies or organizations\r \r start to use this\r \r in critical pipelines\r \r just like with r itself. You wanna be to say, okay, I built this on web R version, you know, 4 dot whatever. I want to make sure that I can standardize on that for the future.\r \r\n\nAnd another tidbit I'll keep a close eye on, we've seen George Stagg mentioned he's been plugging in ways\r \r to install\r \r package, you know, WebR\r \r compliant our packages from our universe.\r \r That's been a new thing that he and your own have been working on. Colin wants to make sure that in this framework, in the WebR CLI,\r \r that you can install WebR compliant r packages from our universe as well. That will be massive for opening the door for additional functionality,\r \r down the road. So sounds like he's not stopping anytime soon with this. So I'm very curious where he goes. And again, the perspective here, I think, is definitely important, especially\r \r as many in in software development, you know, data science pipelines,\r \r you may have a team that is writing very intricate, very powerful code via our functions and hence our packages.\r \r\n\nAnd maybe they have the luxury\r \r of a separate team that's doing all the web interface layouts in their preferred JavaScript framework.\r \r This is tailor made for that scenario. The data science team can configure the business logic and r and doing all the powerful model fitting and everything.\r \r And then they just give this\r \r compiled with WebR COI to the web dev team. They're they they're no worse for wear so to speak. They just call it like they would any JavaScript function. I think it's gonna open a lot of possibilities for, again, using WebR and WebAssembly\r \r\n\n[00:09:50] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 50,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "in even more context than initially we realized. Are you insinuating that the web dev team won't be writing in Shiny?\r \r What?\r \r No. You know, I I think one of the really\r \r interesting things that's going starting to go on right now, and obviously Colin is one of the folks who's spearheading\r \r that effort, is we have pretty good frameworks for building, you know, what, Eric, you and I call, like, production grade\r \r Shiny applications,\r \r right, that have a have sort of a dedicated server,\r \r component to them.\r \r And now that we're moving on to to WebR and Shiny Live and things like that, that dedicated server kind of goes away. But, you know, up until till now, and I I don't think we're quite there yet,\r \r a lot of the,\r \r you know, things that you really need to go from, you know, just a a toy POC\r \r app to production, like, you know, environment variables and authentication and and things like that haven't really existed in in this new WebR and Shiny Live world, but it seems like we're slowly but surely starting to get there and maybe there is a day coming.\r \r\n\nI don't know how how near or far in the future where essentially everything that we can do in in WebR,\r \r is equivalent to what we could do, you know, with the\r \r old, quote, unquote\r \r framework for for building Shiny apps with a dedicated server. And and as Colin notes, I believe it's in his WebR CLI\r \r utility that there is a share n,\r \r function that allows\r \r the user to copy 1, several, or all environment variables\r \r from node to the WebR\r \r instance, I think, which is is really interesting. It's really important. I don't really build any Shiny apps these days\r \r that don't,\r \r leverage environment variables for, you know, secure authentication to a database or or something like that.\r \r\n\nSo that's a huge, you know, hurdle that I sometimes need to need to get over when we're looking at new frameworks\r \r like this. And it looks like, you know, Colin's already thought about some of this stuff, to be able to help us out when we we do get to that point. And I have not dove too deep yet, admittedly, into WebR and and Shiny Live. But, yeah, besides seeing what others in the community, like yourself, Eric, are doing,\r \r and building, but I am pretty confident that it's it's not gonna be too far in my future where I'm I'm not gonna necessarily have a choice and and going to have to start, learning about that because I think that there are quite quite a lot of benefits here depending on your use case,\r \r to to leverage that that WebRamp framework. And it's just getting better and better\r \r every every month, every day, every week, it seems like.\r \r\n\n\n\n[00:12:29] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 29,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. I always whenever I see in my notifications, I'm massing out a new post from George. You know, I'm always like, okay. Read it now because it's gonna be something that I think I'll be able to benefit from very quickly. Yes. I this is a new world to us\r \r as I've been, you know, thinking about framing my talk for the upcoming positconf, and I talk about our adventures of WebR and WebAssembly\r \r and your consortium pilot submissions. I've always been trying to think of an intuitive way to describe\r \r this paradigm shift. Maybe it's not so much a paradigm shift, but it is a\r \r traditional server side hosting process to what is now being exposed.\r \r\n\nIn essence, the user's web browser is the new engine. It's the new server. That's where everything's being\r \r conducted.\r \r And what are the benefits and trade offs of that? A lot of benefits that we're seeing. I mean, you've heard me mention on previous episodes or we're seeing in quarto,\r \r what we're seeing and be able to build these educational type materials\r \r showcasing\r \r the the native execution of our code so the users cannot just see examples,\r \r but literally play with it in their browser\r \r without that need of a shiny like server on the back end. That's still one of those use cases that I think is just beginning to really take fruition.\r \r And I think it's just\r \r only a matter of time as those principles get built into what we're doing in data science pipelines\r \r that we've historically done with shiny and still, of course, who's the number one fan of shine wearing their t shirt today for goodness sakes. Of course, I love my shiny and to be able to combine it with WebR. I mean, that's still this intersection that I'm very passionate about and certainly to be abreast of this technology,\r \r abreast of what we can do in this space.\r \r\n\nThings of what Colin's doing here with WebR CLI and Spider\r \r along with the adventures that Bob Rudis has had on his various blog posts and what he's been doing with WebR. He's been just as excited about this as anyone else. So it's great to be well rounded into, like, the different ways you can spin\r \r this technology.\r \r And, again, the end product,\r \r you're gonna be able to build these very sophisticated\r \r web our web assembly powered apps\r \r in many different frameworks. That's the key here. Right? We're opening so many doors for every teams to get into this. So, yeah, I'm it sometimes be it sometimes makes me shake my head just how fast this is moving. But once that initial hurdle got overcame last year,\r \r with bringing WebR\r \r to the r, you know, web assembly to the r process itself,\r \r the floodgates have opened, and I'm here for it. Me too.\r \r\n\nAnd rounding out our highlights today, we're gonna dive into the world of spatial visualizations,\r \r which we touched on quite a few times with some of the amazing efforts\r \r in the art community to expose some very powerful frameworks\r \r in the mapping and geospatial\r \r space. And we got another highlight\r \r that is actually more of a function that's exposed into an overall effort that I think is gonna be very important for those that are looking to take advantage\r \r of innovations and web technology\r \r in the spatial visualization\r \r space into there are processes.\r \r\n\nCertainly, this has a nice fit for shiny too that we may touch on as well. And we're talking about the mapgl\r \r package,\r \r which has been authored by Kyle Walker who has been featured on previous Arrukia highlights in the past. He runs, I believe, his own consulting company. We're gonna do a lot of spatial visualization\r \r analysis and visualization,\r \r and the map GL package.\r \r This looks\r \r really nifty to me because\r \r it is, Mike, many in the HTML widget ecosystem\r \r trying to get the our user and intuitive interface to an extremely powerful web based visualization\r \r platform.\r \r\n\nAnd there are 2 of them to be exact that this package exposes.\r \r It's the Mapbox GL and the Map Libre\r \r GL mapping services.\r \r They age are slightly different, but yet they're very important use cases\r \r and map GL is a framework to bring that to the our user\r \r very efficiently.\r \r And, Mike, I don't know if you had a chance to look at their getting started vignette that Kyle has on the website.\r \r Holy moly. Some of the visuals he can produce in this are extremely powerful here. Yeah. It's absolutely incredible, and I've seen Kyle quite active\r \r\n\n[00:17:09] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 9,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "sharing the progress on this package, this mapgl package\r \r on, I think, Mastodon primarily, maybe LinkedIn as well is is where I've seen it, and\r \r the amount of new features and development that's going on in the packages is incredible.\r \r You know, it seems like they're they're rolling out functionality\r \r constantly.\r \r And one thing I think that strikes me, you know, it's a big takeaway from a lot of what Kyle has been sharing on social media\r \r is really the the performance,\r \r of this package and what you're getting from I think the underlying APIs, the Mapbox,\r \r GL JavaScript\r \r and Map Vibre\r \r GL JavaScript APIs.\r \r\n\nIf I'm not mistaken,\r \r those 2 API services\r \r are are paid. Maybe you can get a free free version, but you will need an an access token,\r \r I believe.\r \r\n\n[00:18:00] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 0,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yep. Yep. You need an access token depending which features you wanna utilize. I believe you have to pay for at least the first one, the map library one. I'm not so sure. I haven't played with it, you know, carefully, but I know to get started. And once you get the access token, you're good to go for a course set of features. I\r \r\n\n[00:18:17] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 17,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "think, you know, one of the things that folks doing, you know, pretty heavy geospatial\r \r data science,\r \r run into sometimes\r \r is performance because there's a lot going on on screen when it comes to geospatial data. The data can be large in and of itself and sort of heavy when your your data is representing polygons and things like that, not just\r \r individual points.\r \r And then obviously the the visual component as well. Right? Your maps are are complex\r \r visualizations\r \r and\r \r traditionally maybe not the the quickest visuals\r \r to render. But what we're seeing out of the the mapgl,\r \r package right now that Kyle his team have put together is some incredible enhancements, and it looks like those underlying APIs,\r \r though those services have have done a lot of work to try to make, these\r \r geospatial visuals as performant\r \r as possible. And one of the ones, you know, that we're calling out today in the rweekly highlights is this compare function,\r \r from mapgl.\r \r\n\nIt allows you to\r \r create a comparison view between 2 Mapbox GL or map libre\r \r GL Maps and what it'll do is it'll provide this sort of horizontal bar\r \r in the middle of the visual itself that you can drag to one side or the other,\r \r to be able to expose\r \r more of either the left map or the right map, and compare those 2 sort of side by side. This is something that, we have actually done, you know, quite a bit when we have sort of an overlay often of of the same,\r \r geographic\r \r area,\r \r but we're trying to\r \r maybe represent, you know, 2 different,\r \r you know, data\r \r sets on top of that same geographic area. So maybe 2 separate surveys in the same area,\r \r something like that, and you're comparing,\r \r one to the other. So you have those things side by side and you can go go left and right, 2 different simulations,\r \r you know, of, an ecosystem or something like that. That's things that we have done in the past leveraging that compare slider widget in the leaflet ecosystem\r \r and this seems to be pretty comparable\r \r to a function\r \r in leaflet called add map pane.\r \r\n\nI don't know if there's a more recent one but that's the last time that I was working, with leaflet on exactly that that type of problem. We were able to create like a left map and a right map and the function that we used was add map panes. This looks, this compare function from mapgl\r \r looks quite equivalent to that.\r \r Again, you know, these maps look beautiful. The ability to drag left and right is something that, users of our apps that have done that when we've implemented it in leaflet\r \r have absolutely loved.\r \r I I think it's probably one of the the the most favorite pieces of functionality\r \r that our end users\r \r let us know that they really like on our geospatial data science project. So it's pretty cool to see that also exist here\r \r in, the mapgl GL package. And, you know, from everything that I'm seeing,\r \r if you did wanted to migrate from Leaflet to, you know, this map GL package, it looks fairly straightforward. A lot of the syntax, a lot of the,\r \r arguments to some of these functions look quite similar.\r \r\n\nAnd obviously, the visuals at the end of the day aren't necessarily too far apart. So you may be able to to migrate fairly quickly and and pick up some of those performance gains that it looks like MapGL\r \r is able to offer or maybe there are just some aspects of MapGL that sort of make more sense, to you,\r \r to use,\r \r as opposed to, you know, the traditional leaflet or other geospatial packages. So if you haven't had a chance to check it out and take a look at everything that Kyle and his team have put together in mapgl,\r \r I highly recommend it because it is looking like quite a powerful\r \r R package that I I believe is gonna rise to the to the surface here pretty quickly within the r ecosystem.\r \r\n\n\n\n[00:22:08] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 8,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. And then we'll put a link in the show notes to the the the vignette section of this package. Kyle's done a spectacular job of documentation here as somebody well, I was telling Mike in the pre show. I'm still pretty new to the spatial visualization space. This is definitely something if I was getting in this field, I would take a close look at because I always have a bias towards towards\r \r those packages that are putting attention to detail in that user experience of getting onboarded quickly. So on top of the getting started vignette, he's got a great section on how to efficiently use the wear layering system, which again, be very familiar to anybody coming from these special packages,\r \r the fundamentals of how to design your maps with mapgl.\r \r\n\nAnd, yes, he does mention one of his original motivations was to plug this into shiny in the first place, and he wanted to put all this into a concise package\r \r that then could be sourced in the shiny quite easily. And he's got a whole vignette\r \r dedicated to that about the inputs that are being exposed. So, of course, Mike Mike and I know you can do almost anything you want with shiny once you get access to these inputs. So he's got a couple great, great little, teaser\r \r apps in in the vignette that you can get started with. So I think, yeah, this is something that we'll be we'll be paying close attention to in this space. It's all open source. So if you feel so inclined to get involved yourself, there's there's 7 issues out there that I'm sure Kyle would,\r \r appreciate some help on. So definitely check it out. Absolutely. So, again, links in the show notes and, yeah,\r \r I'm really impressed with what Kyle has accomplished here. And Kyle is just one of many in the r community that we're impressed with, and we're very fortunate to r weekly. Every single week features these great innovations from everybody in the community because this is a community project and this is where we'll take a couple of minutes to tow out some additional fines we've seen either in the issue or\r \r elsewhere. And from this particular issue, I do wanna\r \r I I had a couple ideas, but again, I'm I've been on a a kick recently with some of the great packaging that Bruno Rodriguez has been doing with the Knicks ecosystem. I'm not talking about Knicks here. I'm talking about a video that he's put into the issue.\r \r\n\nWhy as an our user,\r \r you might want to invest into using GitHub actions.\r \r So it's a great 20 minute video and it's,\r \r great if you're new to this. Because I think a lot of people may have heard about GitHub actions, but they just don't know where to start. They don't know what's in it for them. Bruno does a terrific job of summarizing it. I will mention, now this may be not so much applies to his video, more of my random exploits.\r \r The bugging GitHub actions can sometimes feel like you're in the wilderness without any line of sight, and I\r \r had that a couple times in the last couple of weeks where I was, troubleshooting,\r \r get a failure, don't know why, rinse and repeat.\r \r\n\nThe YAML is like the engine to the GitHub actions that there's a YAML file where you put in all the steps of your workflow and any\r \r associated parameters. So hopefully,\r \r the teams behind these different steps have good documentation and unfortunate that most of the workflows I was using were authored by EverPosit or other members of the community where it was pretty\r \r pretty well easily understood how to grok the options and stuff. But sometimes when you try to do things a little different, be prepared for a little debugging time. But once you get it working,\r \r my goodness, the peace of mind to say, okay, guess what? That's gonna run like once a week, and that's gonna run on every PR.\r \r\n\nI'm doing this with shiny testing recently. I finally got it working.\r \r I was an achievement unlock with shiny test 2 and GitHub actions, but I finally cracked that nugget. That's just one way you could use GitHub actions. Well, like I said, lots of different ways you can use it from, like, you know, automated processes or scraping data\r \r from an online source. I do this with that fancy,\r \r podcast index dashboard that was a runner-up in the table contest recently. So I've been putting that, putting that through the paces quite a bit, but it's been a fun learning journey for me. So Bruno does a terrific job of highlighting that in his video. And I'm not sure if we touched on it last time we spoke because it's been a little while, but congratulations on your runner-up and in the table contest. Your your app was awesome.\r \r\n\n[00:26:20] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 20,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "They were all incredible. The winner of the Spotify app was absolutely incredible too.\r \r So great job by everybody who participated in that. It's really cool to see the community sort of come together\r \r for things like that, which is awesome.\r \r One of the blogs that I wanted to shout out is is one from Absalon this week, and it is on the power of transitioning to a\r \r verse approach in your r package development.\r \r It's, you know, it was a really interesting blog post about, you know, whether you\r \r should take the packages that you may have developed internally\r \r and create a sort of tidyverse or pharmaverse\r \r around them that would allow you to install,\r \r multiple\r \r of those packages\r \r at one time. And they talk about sort of the pros and the cons of that. Right? Obviously, if there are\r \r sort of\r \r breaking changes,\r \r in one package, then you might,\r \r you know, sort of be be hit by that a little harder if you are sort of\r \r leveraging this verse approach in a lot of your applications. But,\r \r they they call out companies like Apple that choose to introduce on purpose breaking features with every other OS\r \r iteration,\r \r you know, and they sort of effectively\r \r eliminate their need to support the legacy\r \r software that they create.\r \r\n\nSo it it sort of depend That hurts, but it's so true. It sort of depends how much you wanna support your your legacy software and your your legacy products a little bit. How,\r \r sort of what the benefits would be for your end users if they were able to, you know, install dot packages from a a verse as opposed to specifying\r \r each one individually\r \r every time. I have mixed feelings about this, but I can definitely see some particular use cases where it would make sense and and some particular use cases where it wouldn't make sense. So it was a really interesting read. It's, sort of a topic that I haven't seen discussed very often, so kudos to the Appsilon team.\r \r And in particular,\r \r Fabian He for putting that blog post together. I will do sort of a self indulgent shout out as well.\r \r\n\nWe had a R package that got a very significant update after 3 years, I think was the last release. It's called migrate for building state transition matrices. So if that's something that you you do, if you work in an insurance or credit risk or something like that, Maybe of interest to you, some pretty exciting enhancements there. Oh, congratulations,\r \r\n\n[00:28:44] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 44,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Mike. That is awesome. 3 years in the making, That that's a lot of updates there. Yes. Yes. A lot of updates, a lot of\r \r\n\n[00:28:52] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 52,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "user enhancement requests that people had been very patiently\r \r very patiently waiting on that hopefully, we've gotten across the finish line now.\r \r\n\n[00:29:00] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 0,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Oh, that's awesome. And I, yeah, this this resonates with me back in my dissertation research. I was looking at state transitions of these mark off processes.\r \r So, yeah, I can definitely see a ton of value into this. So we'll make sure to put a link to your updated package in the show notes because it is, you know, great job with the vignette, my friend. You are you're putting the attention to detail\r \r\n\n[00:29:24] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 24,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "The transition matrices for Markov processes, that's what it's all about. Sorry. We didn't sorry. We didn't make it sooner for you, Eric.\r \r\n\n[00:29:31] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 31,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "You know, you were just about 20 some years too too late, but that's okay. That's okay. I'm not I'm old enough. I don't need to say anymore. But, nonetheless,\r \r I'm gonna definitely check that out if I delve into that world again. But, also, we invite all of you to check out the rest of the our weekly issue. And, yeah, we were off for a couple weeks. So don't forget to check that back catalog\r \r too. There are a ton of great resources ever shared recently. Really some terrific highlights\r \r from the past couple weeks. So everything's available at ourweekly.org.\r \r You'll You'll find a link to this issue right at the front page as well as all the other issues\r \r that we that we curate throughout the years, and it's been many years, and the project\r \r keeps on going, but it keeps going because of your support in the community. So, again, if you've authored a great new package or updated as another package, if you've done a great resource online that you wanna share, getting it on the issue is just a poll request away. All linked at the upper right corner of the r wiki dotorg\r \r homepage. It's all marked down all the time.\r \r\n\nMarkdown is where I live when I can. I do admit I've had a couple,\r \r instances this past week or 2 where I've had to go back to PowerPoint and it just doesn't feel right. I love making my stuff in markdown. It's just so much better. What can I say? I thought you're gonna say Microsoft Word.\r \r Well, that too, but not not as in-depth as the slide making nightmare that I've had to put myself through. But,\r \r I I went down a rabbit hole.\r \r Who's ready for story time with our\r \r\n\n[00:31:00] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 0,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "podcast?\r \r Bebe. I'm\r \r\n\n[00:31:06] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 6,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "in a story time here. I was trying\r \r to convert a PowerPoint to have, like, these placeholder boxes\r \r for\r \r putting, like, text of, like, you know, we call these 1 pager summaries or whatnot.\r \r It was I thought, hey. You know what that looks like?\r \r That looks like a portal dashboard with the cards, you know, just kinda neatly arranged. And I got close, my friend. I got really\r \r close, but they want PDF exports of it, and I couldn't quite print it effectively to keep the formatting. But had they stuck a web based formats, it would have been perfect. But\r \r ran into the dead end on that one, so them's the brakes.\r \r\n\nI've been there. I've been there. Luckily, you won't find those, pitfalls when you contribute our weekly. We're not gonna switch formats on you. It's all marked down. It's staying that way. That's the wave of the future if you dare say if I dare say so myself.\r \r So links to that at r o g dot r o g. And, of course, you can get a hold of us in different ways. We have a contact page directly linked in the episode show notes. You can send us a shout out or a question or a comment.\r \r We love hearing from you, especially how you're using these resources in your daily work or your daily\r \r exploits and are. And, also, you can get a hold of us on the social medias. I am on Mastodon where I'm at our podcast at podcast index.social\r \r as well as sporadically on the Twitter weapon x thing with at the r cast, and I'm on LinkedIn. Just search for my name, and you'll find me there. Mike, where can the listeners get a hold of you?\r \r\n\n\n\n[00:32:34] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 34,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "You can find me on Mastodon at [email protected],\r \r or you can find me on LinkedIn if you search Catchbrook Analytics, ketchb\r \r\n\n[00:32:44] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "trans_timestamp": 44,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "r o o k. You can see what I'm up to lately. Yep. That's where I got. One of your awesome, package updates. So, yes, stay tuned for more great stuff from from you on that platform. And, yep, with that, we're able to dust off the cobwebs, I think, pretty efficiently this week. So we're back in the saddle again, and great to have you joining us or listening to this episode.\r \r And we hope to see you again for our next episode of our weekly highlights\r \r next week."
+      }
+    ],
+    "chapters": [
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "chap_timestamp": 14,
+        "chap_text": "webrcli & spidyr update",
+        "chap_href": "https://colinfay.me/webrcli-and-spidyr-whats-new/"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "chap_timestamp": 20,
+        "chap_text": "mapgl overview",
+        "chap_href": "https://walker-data.com/mapgl"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "chap_timestamp": 5,
+        "chap_text": "GitHub Actions for R Users",
+        "chap_href": "https://www.youtube.com/watch?v=aZ38ph9plOU"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "chap_timestamp": 35,
+        "chap_text": "Building a package verse",
+        "chap_href": "https://www.appsilon.com/post/the-power-of-transitioning-to-a-verse"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "chap_timestamp": 22,
+        "chap_text": "Migrate 0.5.0!",
+        "chap_href": "https://ketchbrookanalytics.github.io/migrate/"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "chap_timestamp": 54,
+        "chap_text": "Story Time!"
+      },
+      {
+        "ep_name": "issue_2024_w_28_highlights",
+        "chap_timestamp": 45,
+        "chap_text": "Episode Wrapup"
+      }
+    ]
+  },
+  {
+    "metadata": [
+      {
         "ep_name": "issue_2024_w_26_highlights",
         "ep_date": "2024-06-26",
         "ep_duration": 56,
