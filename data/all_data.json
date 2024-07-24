@@ -2,6 +2,317 @@
   {
     "metadata": [
       {
+        "ep_name": "issue_2024_w_30_highlights",
+        "ep_date": "2024-07-24",
+        "ep_duration": 25,
+        "ep_description_short": "Creating retro-gaming sprites rendered from the comforts of R? Yes we can! Plus an honest take on the utility of Github's Copilot Workspace in the context of package development, and taking the concept of code trees to another level with treesitter. Episode Links This week's curator: Ryo Nakagawara - @[email protected] (Mastodon) & @RbyRyo)…"
+      }
+    ],
+    "description_long": [
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "description_long": "\r \r Creating retro-gaming sprites rendered from the comforts of R? Yes we can! Plus an honest take on the utility of Github's Copilot Workspace in the context of package development, and taking the concept of code trees to another level with treesitter.\nEpisode Links\n\nThis week's curator: Ryo Nakagawara - @Rby[email protected] (Mastodon) & @RbyRyo) (X/Twitter)\nTile-style sprite delight\nSome thoughts after a trial run of GitHub's Copilot Workspace\nExtracting names of functions defined in a script with treesitter\nEntire issue available at rweekly.org/2024-W30\nSupplement Resources\n\ntree-sitter-r https://github.com/r-lib/tree-sitter-r\nShiny.telemetry 0.3.0 https://www.appsilon.com/post/shiny-telemetry-0-3-0-update\nIntroduction to R with the Tidyverse https://introduction-r-tidyverse.netlify.app/session1_notes\nSupporting the show\n\nUse the contact page at https://serve.podhome.fm/custompage/r-weekly-highlights/contact to send us your feedback\nR-Weekly Highlights on the Podcastindex.org - You can send a boost into the show directly in the Podcast Index. First, top-up with Alby, and then head over to the R-Weekly Highlights podcast entry on the index.\nA new way to think about value: https://value4value.info \nGet in touch with us on social media\nEric Nantz: @[email protected] (Mastodon) and @theRcast (X/Twitter)\nMike Thomas: @mike[email protected] (Mastodon) and @mikeketchbrook (X/Twitter) \nMusic credits powered byOCRemix\n\nMoonlight Vibin' - Mega Man X5 - DCT - https://ocremix.org/remix/OCR02053\nForest Through the Trees - Shea's Violin - Final Fantasy Mystic Quest - https://ocremix.org/remix/OCR04484"
+      }
+    ],
+    "links": [
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://mstdn.social/@R_by_Ryo"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://twitter.com/R_by_Ryo"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://www.rostrum.blog/posts/2024-07-14-tilebased/index.html"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://epiverse-trace.github.io/posts/copilot-workspace/"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://masalmon.eu/2024/07/18/extract-function-names-treesitter/"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://rweekly.org/2024-W30.html"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://github.com/r-lib/tree-sitter-r"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://www.appsilon.com/post/shiny-telemetry-0-3-0-update"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://introduction-r-tidyverse.netlify.app/session1_notes"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://serve.podhome.fm/custompage/r-weekly-highlights/contact"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://podcastindex.org/podcast/1062040"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://getalby.com/"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://value4value.info"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://podcastindex.social/@rpodcast"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://twitter.com/theRcast"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://fosstodon.org/@mike_thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://twitter.com/mike_ketchbrook"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://ocremix.org/"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://ocremix.org/remix/OCR02053"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "links": "https://ocremix.org/remix/OCR04484"
+      }
+    ],
+    "transcript": [
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 3,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Hello, friends. We're back with episode a 172 of the Art Wicked Highlights podcast.\r \r If you're new to the show, this is the weekly podcast where we talk about the latest highlights and awesome additional resources that are shared every single week in this week's our weekly issue. My name is Eric Nantz, and I'm delighted that you join us wherever you are around the world. It's hard to believe July is almost over, but, of course, we got a lot more great art content to talk about with you today.\r \r And I never do this alone as you know. So at the virtual hip right here on this split screen here is my cohost, Mike Thomas. Mike, how are you doing today? Doing well, Eric, at the virtual hip.\r \r Only for a couple weeks until we get to see each other again in Seattle maybe? That's right. Yeah. Her her the countdown is on, so I gotta get all my bits sorted out and hopefully get that get that talk ready to go, but all all in good time. But, yes, the you might say the nerves are starting to hit a little bit, but again, it'd be great to see you again and see all the the wonderful peeps in data science and other sectors that frequent that conference every year.\r \r\n\n\n\n[00:01:06] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 6,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yes. I'm super excited as well. We have a ton of clients that are going to this conference\r \r this year, so I think it's gonna be a big one. I'm I'm almost surprised how many folks I I know that are gonna be there. So it's gonna be it's gonna be a party.\r \r\n\n[00:01:19] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 19,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. Party as well. Yeah. You're gonna be high in demand, my friend. I hope they even get a few minutes of you after all that.\r \r\n\n[00:01:26] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 26,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Quick short story is last time that last year when we were at Pawsit Conference,\r \r Eric and I met and it wasn't 2 minutes after, you know, we met, I guess, for the first time in real life that somebody came up and asked me to take a picture of you and them because you are the celebrity at this conference,\r \r Certainly not me. So Oh. Goodness. Goodness. Yeah. That was how it started.\r \r\n\n[00:01:49] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 49,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "That's yeah. That's how it always starts. Yeah. But you know, I think the tables will turn this time around. But, nonetheless, we're gonna have fun connecting with everybody. And, yeah, we're we're both gonna we're gonna have a lot going on there, but we got a lot going on here, my friend, with the mic in our hands. So let's get going here. Our issue this week was curated by Ryo Nakagorua,\r \r another one of our OG\r \r curators and longtime contributors to our weekly.\r \r And as always, he had tremendous help from our fellow Rwicky team members\r \r and contributors like you all around the world with your poll requests and suggestions.\r \r\n\nAs you may have heard in previous episodes,\r \r I admit the teas has input ever over like a few months ago\r \r that I think who needs that like\r \r game development engine, like unreal or anything. We can use our developer games. And there is yet another milestone in this workflow here that we're gonna talk about leading off this episode. And we are talking about the latest blog post from Matt Dre who has been on this quest\r \r to leverage not only tooling that he's creating, but also augmenting some of the awesome tooling that's being created by Mike Chang who you may also known as cool but useless on the social interwebs.\r \r\n\n[00:03:01] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 1,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "So probably the highlight of this blog post is that we know the full name of of Mike FC. Cool but useless. Right?\r \r\n\n[00:03:08] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 8,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "You are correct, sir. This may be the first time we've ever seen that spelled out. So\r \r I guess the mystery is over.\r \r\n\n[00:03:15] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 15,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "I know. I apologize to Mike if he was trying to, keep that from us for because I he did a pretty good job for a long time,\r \r until\r \r this blog by Matt has come along.\r \r\n\n[00:03:26] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 26,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. You know, I I liken this to, you know, for those of you that follow pro wrestling, there are always that those days in the eighties where you didn't know that Hulk Hogan is really named Terry Beleja\r \r until, like, you were much older. Maybe it's just one of those reveals, like the gimmick the gimmick. The time's up for the gimmick, but nonetheless, we we know who you are, Mike, nonetheless.\r \r But, Yes. You've been you've been hard at work on these packages. So what Matt talks about in this post here is that\r \r he is leverage what Micah's created\r \r called the Nara package, which is\r \r basically super charging R's ability to produce raster based graphics, but\r \r tailor made to things like pixel art.\r \r\n\nAnd he, and Matt what Matt has done is he's augmented the narrow package tooling\r \r with his previous package called rogue like, which if you recall from a highlight episode probably 4 or 5 months ago,\r \r was a way in r to create these, in essence, randomly generated\r \r dungeon crawlers all in text based format. So you get a nice ASCII art of the dungeon with the layouts, and it would respond to your key presses\r \r to have you as the player with a little, you know, maybe p symbol in the middle there going up, down, left, right, and then the randomly\r \r generated enemies or other artifacts\r \r would move along alongside you.\r \r\n\nSo he simply now merged the ability to do this, but now instead of the textual representation of those dungeons,\r \r he is augmenting\r \r some nice retro style looking sprites here. In fact, he's leveraging\r \r an open source framework,\r \r from a,\r \r username Kenny.\r \r He has what's called a tiny asset pack of all these different sprite arts that are 16 by 16 pickle\r \r pixels. So\r \r really, really nice, and if you ever played those\r \r RPGs of yesteryear, like, say, dragon warrior or final fantasy, yeah, these are gonna look right at home\r \r in those in those artwork.\r \r\n\nSo how does this actually work? Well, as I mentioned,\r \r there is a lot of the underpinnings have already been made by Matt in this roguelike package,\r \r But now instead of the textual representation,\r \r he is mapping\r \r that mesh\r \r which basically is a matrix\r \r of, you know, 16 by 16 or whatever dimension\r \r where each cell has either\r \r a movable space\r \r or an obstacle,\r \r the player or the enemy.\r \r And so that's already randomly generated up the front, but then that is being trans translated into these tiles that are being created\r \r by the narrow package.\r \r So in the blog post, you see the textual structure of it, which again will look very similar to if you use Matt's roguelike package, but then that handoff\r \r is then translated, like I said, into this tile based\r \r board. And now you see the nice image\r \r going going under the matrix representation.\r \r\n\nIt just looks literally\r \r picked out of a retro game. It it really is\r \r absolutely amazing what's going on here.\r \r And you can do all sorts of things of this. Obviously, you can make this as big or small as you want,\r \r but there is a lot more that is coming, and that's, tooling here.\r \r He wants to make, you know, really a true loop of the game, which if you played\r \r RPGs or roguelike dungeon crawlers in the past, you know that as you move along the board, you get a random encounter with an enemy, do the battle, win or lose, rinse and repeat. But, of course, it's almost like an infinite loop per se.\r \r So he's looking at ways of having that true kind of gaming style loop\r \r in the back end here. And of course, like any RPG, you're gonna have it after your inventory at some point. Right? You gotta have those weapons, those potions,\r \r those antidotes when you get poisoned or whatnot. So,\r \r obviously, this is probably gonna be a huge rabbit hole if they choose to go down this route. But I am very much eagerly watching this. But, of course, the first major step is what the user actually sees.\r \r\n\nSo what's seen here with this, package that's Matt's created, he now calls a tile based. This is the start, folks.\r \r Like I said,\r \r who needs to pay for that unreal engine or that unity engine? Boot up your r console and go to town. Right, Mike? Absolutely. And it's you know, just reminds me of the old adage that\r \r\n\n[00:08:02] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 2,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "R is only a programming language for statistical analysis. Right, Eric? Can't can't do anything else well. Yeah. Not at all. Not at all. And this also throws me back to,\r \r I think these graphics are like equivalent to\r \r at least, you know, the the Game Boy Color\r \r at times of the world. This is reminding me of my Pokemon Blue game that I used to to play on long car rides quite often. Oh, yes. I think the graphics\r \r are are quite akin to that. It's it's pretty incredible that I think, as you mentioned, Eric, there's only\r \r like 4 they look like emojis, but I guess we're calling them,\r \r the these objects from\r \r a tiny asset pack which is some resource\r \r out there\r \r that has all of these different 16 by 16 pixels\r \r that you can use. I imagine that they're like Creative Commons licensed or something like that, which is why\r \r Matt chose to to use them and incorporate them and this whole entire game it looks like the graphics are just made from these 4 different emojis if you want to call that which is it's pretty incredible.\r \r\n\nThe idea that you know\r \r the the things that we're looking forward to here in the next iterations of this\r \r potentially could be, as you mentioned, a true game loop, a way to have some sort of an inventory system.\r \r The sound generation is really cool to be able to have some sort of a soundtrack\r \r to this game as well. I think I've seen some some more things from Mike FC coming out on Mastodon lately, if I'm not,\r \r if I'm not mistaken,\r \r around our packages that are doing some audio things.\r \r So maybe there's a potential chance that that could get integrated into this package as well\r \r but, you know, it's it's hard to do this justice in audio form. You really have to check out the blog post, see the visuals that are there,\r \r install the package from GitHub yourself, and try not to waste a couple hours,\r \r going down, you know, playing games in R. I I I dare you to try. And so this is this is really really cool stuff. I think it's a fun way to start off the highlights, this week, and I'm looking forward to what else is to come here. Yeah. The creativity\r \r\n\n[00:10:09] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 9,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "possibilities\r \r here are practically\r \r endless. And, of course, I as I'm watching this, I'm wondering,\r \r well, how would you be able to distribute this?\r \r Can you imagine a web assembly app that puts all this together? Good grief. I mean, I've seen, you know, maybe I shouldn't say too much here on audio, but I'll say it anyway. There are even on the Internet archives, some of these web assembly powered,\r \r you know, emulators of the classic arcade games that have long passed your IP\r \r windows, but it's all in your browser. It's like using native JavaScript to do it. Just imagine if, you know well, you know, we've been watching the WebAssembly space quite a bit.\r \r I wouldn't put a pass either me or someone else maybe working with Matt or Mike to throw their hand at this and see what happens because\r \r just imagine how easily you could distribute something like this. Just mind blowing possibilities here. Absolutely. No. Sort of reminds me that that\r \r\n\n[00:11:04] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 4,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "the shiny contest is back. I probably should have saved that for my additional highlight, but I saw that, yesterday. I'm come across on my social media feeds, but it sort of reminds me of that the Appsilon app. I believe that was like the shark or underwater. That's right. The Shark Attack app. Yeah. That was awesome. That can be hosted on WebAssembly.\r \r Ivan from my team has recently, you know, published his first shiny live experimental app that's a card game.\r \r So, yeah, I think the the gaming Shiny Live,\r \r you know, crossover\r \r here is is gonna happen pretty soon.\r \r\n\n\n\n[00:11:39] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 39,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "It's not a matter of if, Mike. It's when.\r \r\n\n[00:11:43] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 43,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Sounds like you found your next side project.\r \r\n\n[00:11:55] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 55,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Speaking of trying things out, unless you've been living under a rock, you know that some of the biggest advancements in our world attack have been the use of generative AI and large language models to help with all sorts of things in our daily lives and especially in the world of software development.\r \r You've sure you've heard about efforts such as what Microsoft at piloted years ago with what's called copilot,\r \r which if you opt into that in your IDE such as visual studio code, also there are plugins to this with, say, our studio and whatnot. You'll get these, you know, auto completed like suggestions as you're typing out code. Maybe it's some boiler plate for a function call. Maybe it's helping flesh out some additional parameters or whatnot.\r \r Well, there obviously this space is moving quite fast and our next highway today talks about some recent findings\r \r that have been explored by the Epiverse team\r \r on their explorations of what's called the copilot workspace initiative.\r \r\n\nSo as I mentioned, this is coming from the epiverse blog. It's got a set of authors here. We got Joshua Lambert,\r \r James Azzam, Pratik Gupta, and Adam Kucharski. Hopefully, I said those right. They have teamed up here to talk about as they've been watching this space of how\r \r AI and LOM models are helping with development.\r \r What would be the what would be the situation\r \r of trying to leverage this new copilot workspace,\r \r which is kinda taking\r \r what was mentioned earlier by me in this copilot initiative to the next level\r \r and not just auto complete code as you're typing,\r \r but actually take a set of requirements that are surface Savia GitHub issue\r \r and just see how to actually produce the code or produce a solution to the problem at hand.\r \r\n\nSo they decide, let's do an experiment here. They teamed up with a group of professors and their organization\r \r to do 3 different experiments with this copilot workspace to see how it works in the real world.\r \r The first experiment, and they tried to go, I guess, from easy to difficult as we go through this\r \r is\r \r say, they have a function in their r package\r \r that has been internal up to this point, but maybe they got user feedback and says, hey. You know what? That's a useful function. Maybe we should export that.\r \r So using their epi now 2 package,\r \r they looked at an existing issue that was, again, was already filed about,\r \r hey, this function called epi now 2_cme\r \r c m d stand underscore model function\r \r should be exported.\r \r\n\nSo they let the copilot workspace turn loose on this\r \r and\r \r it did get the job done, albeit\r \r in ways that probably aren't as intuitive to an R user. So let me explain a bit by bit here.\r \r The Copilot workspace\r \r did determine that, oh, you know what? We need to replace that keyword of internal in the r oxygen documentation of that function\r \r and replace that with export\r \r and also having to update the namespace.\r \r Now there were some little shenanigans\r \r here because apparently it does change the formatting one of their other function arguments.\r \r I guess doing some text tidying up, which again, yeah, that's fine and all.\r \r\n\nBut in the end, it did technically get the job done.\r \r But this Copilot workspace is not intelligent enough to understand\r \r how documentation is updated with the modern r tooling for package development,\r \r such as using things like dev tools document\r \r or, you know, more natively of our oxygen to the re reupdate the name space dynamically. It did it itself manually like you would maybe in the early days of package development.\r \r Package development.\r \r So context itself, not quite there yet,\r \r but you can't say it didn't get the job done with this. It just did it in a much more\r \r manual fashion. So, you know, so far, you know, pretty promising.\r \r\n\nLet's take the difficulty up a notch, Mike, because now in the next experiment, they wanna add\r \r a new model\r \r to the package,\r \r albeit not too difficult from a complexity\r \r perspective, but this is upping the ante into what the Copilot workspace can do. How did this one fare? What do you think? Yeah. Not quite as well, Eric. They wanted to add what's called a simple epidemic model,\r \r\n\n[00:16:21] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 21,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "to the r package,\r \r that contains, you know, a bunch of different models as well. So they, I believe, created a new issue if I'm mistaken, to add a basic SIR model, it's called, with a couple sentences on exactly what they were looking for.\r \r What happened was get Copilot created\r \r a script,\r \r a an R script\r \r with a naming convention that followed the naming convention of the other modeling scripts that they had. This one was, you know, within the R directory which was good\r \r and, the name of the script was model_sir\r \r which again, you know, follow the the naming conventions that they've used in this epidemicsr package\r \r that they have right now.\r \r\n\nAnd I think this follows a lot of sort of the the same things that I've seen, you know, over and over again with Copilot, with chatGPT,\r \r with some of this,\r \r it gets you close to the right answer and puts down, you know, some of the the the right things that you would want there, but not in the way that you would necessarily\r \r want that things organized,\r \r if you will.\r \r You know, so the code that was generated, you know, constructed that basic SIR model,\r \r used roxigeon 2 as as well,\r \r to document the code,\r \r but but a lot of aspects of the code, you know, didn't match what they asked for in that issue.\r \r The code contained what they call some inadvisable coding practices in R, you know, what we like to call code smells,\r \r and the model it self, you know, followed the standard set of of differential equations that are solved using the the desolve\r \r which is one,\r \r that they had actually requested\r \r in their issue, but it didn't have any options to input, you know, things that are are really important to them like interventions,\r \r which is, you know, what they the the Copilot\r \r had suggested that it would actually include but but failed to do so.\r \r\n\nThe other downside is that they they use the require,\r \r dissolve\r \r they use the require function to import the dissolve action,\r \r function package, excuse me, in the body of the generated code. And as you know, Eric, when we are developing\r \r our packages,\r \r that's not something that you want to include in your function. Right? Yeah. The smell was stronger that one. Oh, my goodness. That one stinks to high heaven.\r \r And you know, we use a lot of utility functions\r \r like from the dev tools and they use this package if we want to leverage a new package within our our package\r \r in\r \r a right in a proper way we could do you know use this use underscore package dissolve Right? And that'll add that to our description file.\r \r\n\nIt might add it to the namespace where appropriate.\r \r And obviously, we could,\r \r request the use of that package in our roxygen, right, import or import from\r \r code decoration\r \r above that particular function. So that's a pretty bad one right there as well.\r \r So you know a a few different code smells here. I don't think that the function itself accomplished exactly what they were looking for that model\r \r to do as well as, you know, some of the kind of ugly best practice\r \r things. So we're we're starting to head a little bit in the wrong direction here as we get into experiment 3.\r \r\n\n[00:19:44] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 44,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. And so talk about upping the ante a little bit, but, yeah, it's something that is very relatable to every one of us that are developing, you know, intricate code bases.\r \r They wanted to see if this Copilot works makes it actually do an intelligently\r \r driven\r \r code review of the package itself. As you know, as you get, you know, maybe new features put in bug fixes or whatnot, you get that,\r \r point of eventual re release, maybe an update you wanna release on crayon or whatnot.\r \r You wanna have that code review to make sure that all the things are looking good. You're being efficient with memory usage, efficient with coding best practices.\r \r I always saw a little glimpse that, yeah, it may not be the best at coding practices.\r \r\n\nSo what they are expecting to see is hopefully in this issue of asking it to do the code review, they would have a documented set with, you know, links to particular snippets of code or maybe things could be\r \r optimized or maybe even just asking questions about the code or whatnot.\r \r Well, bad news is it didn't actually do any analysis of the code itself.\r \r It basically\r \r regurgitated\r \r some of the changes that were already described in the poll request\r \r and looking at change log, I e, from the news file and just kinda\r \r bundling all that together as a narrative,\r \r which in essence means that it does a great job of reading\r \r the news that is\r \r not so much looking at the actual code\r \r than the thing changes that could be made to make the code better.\r \r\n\nSo this is where, you know, humans aren't being replaced on this one by by a long shot.\r \r But what I do appreciate is a, they gave this, you know, 3,\r \r again, realistic use cases\r \r and not all difficult. I would say that the first one, the first experiment is definitely the easiest one, and it did get the job done.\r \r Just not in the way\r \r of you as an our developer\r \r wouldn't carry that out. So I think the takeaway here is that\r \r as we as I agree with them and their takeaways here, there's a long ways to go.\r \r There are avenues of success here, but I think you as the end user\r \r definitely need to be vigilant\r \r on making sure that whatever prompts or requirements you're feeding into these\r \r are being accurately,\r \r you know, addressed in the results you get. And if you're getting code back,\r \r yes, you definitely should not take that blindly, so to speak. You need to make sure\r \r does that fit your overall paradigm of a code base, your stylist,\r \r you know, your style guides, if you will, your best practices for your team.\r \r\n\nObviously,\r \r there's much more work to be done to make these, in my opinion, more dynamic so that\r \r as it looks at the code base for a package or maybe even a set of packages\r \r that it can really\r \r grok if you will.\r \r What are the key paradigms that are governing that code base instead of relying on a whole bunch of additional sources of who knows where it gets it with respect to this effort.\r \r I think being intelligent enough about what's actually being done in the project is is the way to go\r \r For research software engineering context, like what this is based on,\r \r yeah, maybe some help, but in the end,\r \r sometimes\r \r you you just can't get away from doing some of this manually\r \r right now. But this space is moving fast. And again, I really appreciate\r \r their their attention to detail\r \r to put it through the paces.\r \r\n\nBut in the end, I'm not I'm not moves asleep over the fact that the AI bots are gonna take over package development anytime soon. What do you think? Me neither, Eric. You know, I I'm trying to be, like, open minded\r \r\n\n[00:23:28] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 28,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "about it and I think as long as you have the expertise to be able to to sniff out the good from the bad,\r \r running your code, you know, through Copilot\r \r for any of these purposes,\r \r can still be useful. Right? I'm not sure if I want it to actually physically make these changes,\r \r to my code in any way, but maybe, you know, it's not such a bad thing for it to\r \r provide me with suggestions. Right? There might be something if I ask it to do a full blown code review, there might be a little thing that it finds that I missed or or somebody in our team missed, because, you know, programmatically\r \r pouring through the the code, having a computer do that, might be able to catch things easier than, you know, we can catch with the naked eye.\r \r\n\nEven looking at our our code for a little while. So I think I'm open to suggestions, let me put it that way, from Copilot and from the chat GPTs\r \r of the world, but I'm still in a place right now where I am going to to often take those with a grain of salt and, you know, leverage sort of my expertise\r \r over in what's coming back from those types of models.\r \r\n\n[00:24:34] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 34,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. One use case I'm seeing more and more often in many industries or many organizations\r \r is\r \r the process\r \r of maybe refactoring\r \r from, like, one type of code base to another, especially when you're shifting languages.\r \r A lot of companies are turning to LLMs and AI to help with that conversion.\r \r I've always had a little bit of spider senses tingling at this because\r \r with that new code,\r \r will it look like somebody with competent skills and whether it's r, Python, JavaScript, or whatnot,\r \r will it look like they wrote it, or is gonna look like a hodgepodge of tutorials that have found online and trying to do all, like you said, these\r \r mix mash of different coding styles and practices. So\r \r I think we're still a ways there but I know that is a hot topic in many circles\r \r to see how fast it can get you to that next step And there may be cases where it gets you really close and you just have to maybe enough or 10% of your time to revise it. There may be other cases where it just gives you absolute garbage, you might as well throw it away.\r \r\n\nSo in any event, I think keeping an open mind and being realistic,\r \r I think are very important in these\r \r still early stages of this whole tech sector or this whole industry.\r \r But I think I think good things are coming. Just gotta use it responsibly, of course.\r \r\n\n[00:25:54] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 54,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "We'll see.\r \r\n\n[00:26:04] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 4,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "And then rounding out our highlights today, speaking of refactoring things, you may have a situation\r \r where there are some things you could do manually,\r \r but then as you do it over and over again,\r \r especially as you're dealing with a large code base, maybe not even the one you wrote yourself,\r \r you wonder there's got to be something that can help me get there even faster.\r \r So our last highlight today comes from a frequent contributor, Myel Salman, from her recent blog\r \r about her recent journey\r \r to look at all the names of functions under defined in a script or set of scripts and a new approach that is new to her and frankly new to me as well.\r \r So this is fresh off the recent USAR conference where I'm seeing some of the videos of that come online, and it sound like it was a terrific event. Of course, I have a little FOMO every time I see that because I still haven't been to a user yet, but someday that will be checked off the bucket list. It just wasn't able to this year.\r \r\n\nBut one of the talks that my old discovered that she didn't see live, but she heard about after the fact\r \r is, Davis Vaughn,\r \r from the PASA team\r \r talked about a framework called tree sitter.\r \r What tree sitter actually is is a mechanism\r \r to parse code\r \r for somewhat like what we've heard in the past with things like abstract syntax trees and trying to parse either variable names, function names, or whatnot.\r \r Apparently, tree sitter is a c library and I guess maybe other libraries as well\r \r to help with that mechanism of parsing, you know, code intelligently.\r \r So her use case was a following is that\r \r she\r \r wanted to help out,\r \r finding\r \r wanted help finding functions\r \r in pat in, in the package eye graph. And if you know what an eye graph is, it's kind of like the standard bearer of doing network\r \r visual\r \r network, you know, data representation,\r \r which you can turn into network diagrams, you know, very much like tree setups are very\r \r intricate networks.\r \r\n\nI graph has a long history. We've covered it before on the show and it is a massive code base.\r \r So she wanted\r \r to have a use case of okay what functions and I graph\r \r now there is a certain operator that I graph has. It's like a bracket or square operator.\r \r She wanted to see\r \r how many functions were only using within this special operator.\r \r So she had to literally go within this operator function to find all the utility functions throughout.\r \r The example she has in the post only has a couple of them just for kicks, but imagine there's, like, a whole bunch of them.\r \r And she wanted to be able to she had to refactor these, but she wanted to or at least get to the point of refactoring them, And she didn't want to manually copy paste all these function names or discover them.\r \r\n\nSo\r \r she has used things like XML parse data in the past. We've covered on a previous episode\r \r of our expirations without the parse, a complicated function.\r \r She wanted to see what it'll look like with tree sitter to do that similar\r \r operation. So she talks about her for use case here. She loads the package,\r \r and then she loads the parser for the r language and that\r \r reads in that function text or that script that has the function text.\r \r And then she wanted to figure out, okay,\r \r where is the root of that tree that is now gonna govern all the child nodes\r \r of that function.\r \r\n\nSo\r \r this gets a little in the weeds here, but there is a function in tree sort of called query\r \r that you can feed in kind of a snippet of code that you wanted to look for.\r \r And there is like a little kind of YAML like structure to it. You define\r \r what's on the left side,\r \r what's on the right side, and you give it kind of like the plain text like label of that, wherever it's identifier,\r \r a definition,\r \r and then you kinda give it looks like a regex kind of comparison\r \r about what you wanna match it to. This is all news to me. I've never seen the tree sitter syntax before.\r \r But sure enough, when you run that\r \r and then you get a nested list back in r,\r \r that gives you the text of what it found\r \r versus the the actual text itself,\r \r the expression that's kinda more translated to the tree sitter notation of it. And then\r \r you've got\r \r you gotta step it away there. She didn't find the children functions yet,\r \r but guess what? There is more\r \r It's almost like you have to do a nested query to get to that point.\r \r\n\nYou then do the similar kind of syntax. You're looking at the left side and the right side definitions,\r \r finding another query of the previous query and then she was able to find\r \r the names of these different functions,\r \r again, internal functions\r \r that are in this Square operator. And that's a huge list that after that point.\r \r But then through some gripping to that, she was able to get\r \r all of those hidden function names\r \r in that square operator.\r \r There's about 5 or 6 of these in in\r \r intact, but this this all programmatically\r \r shouldn't have to look at all this herself.\r \r\n\nSo you can imagine if you scale this up to, like, a 100 times this size\r \r with a huge r package,\r \r this might be a great way to kind of do this kind of, like, unique query language\r \r with TreeSetter\r \r to get to what you need.\r \r Admittedly, I have never even ventured near these rabbit holes before,\r \r but I could see for our legacy Go base. And, again, I stress maybe one that you yourself didn't write as you're getting familiar of it. Because I've looked at iGRAPH before, and, yeah, there there's a lot going on under the hood on that one. So I wouldn't know where to look with trying to pick out these internal functions.\r \r Looks like tree sitter is something to to take a look at. And fun fact about tree sitter that I discovered after briefly looking at Davis's talk,\r \r this is being incorporated directly\r \r into posit's new IDE\r \r positron\r \r as part of its base for when you look at, say, the outline view of a script and getting those function definitions, which we've seen in our studio as well. But now I believe tree sitter is doing the heavy lifting to grab all those\r \r contexts around those functions. So it looks like tree sitter is here to stay for sure, but, what an interesting use case here to have to take a note of if I have to deal with legacy code based discovery in the future.\r \r\n\n\n\n[00:32:34] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 34,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yeah. Eric, I feel like Mal always brings us some pretty interesting use cases on the highlights. This is actually quite similar to a blog post that she authored\r \r a little while back where she did something very similar but,\r \r in XML\r \r instead using an XML parsed data\r \r R package,\r \r I believe. So this is if you wanna take a look at that blog post and this one side by side, I think it'll give you 2 different\r \r approaches to essentially doing the same thing.\r \r And it looks like there's about, you know, 5 or 6 different functions from the tree sitter\r \r package,\r \r that Maelle is is really leveraging here. And she does note that, you know, she went through a lot of different emotions as a beginner to this tree sitter package and not all of them were positive. One of them that I must have imagined taking a lot of tinkering with is where she does define that that sort of\r \r string that she's looking to to parse\r \r which involves, as you said, this this regular expression\r \r type of notation that we're looking at to try to,\r \r call out sort of the the particular function definitions that we're interested\r \r in here\r \r and being able to return that as a list that is is parsable.\r \r\n\nAnd so I think sort of the the chief different functions that she's employing from tree sitter after she does that are the the query, the query captures,\r \r and then, this node text which I I think sort of turn this list that gets returned\r \r into something that's a little more easily parsable, if you will, within r and obviously at some point in here we're leveraging per because, we are out outputting a list, the the map character function,\r \r to be able to break things down into just this final, you know, simple handful of of sip 6 different names of functions,\r \r that she's interested in. There is one footnote in this blog post. It says, no, I have not installed positron yet. So my l is doing this\r \r all from the RStudio IDE\r \r at this point. Yeah. But it's interesting to hear that TreeSitter is\r \r obviously gaining some some ground. I'm not sure how new in and of itself the the TreeSitter\r \r C utility\r \r is but it's something that we're we're new to seeing I think in the R Eco system as there's recently been some other blog posts as as you mentioned that you know the folks at Positron\r \r are using it as well. Well. So it's\r \r very interesting to me. Obviously, you know, I I could see if we have some large code bases where you have to do some sort of, you know, profiling of that that code base or extracting of\r \r of particular\r \r portions of that code in a way that just really isn't,\r \r you know, useful to do manually, the old copy and paste method, and it makes more sense to do that programmatically.\r \r\n\n\n\n[00:35:23] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 23,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Grateful to the fact that my EL has now given us 2 different ways to go about doing that. Yeah. And I'm looking at this tree sitter repo, and I will put this in the show notes if you haven't heard of this before. Like, we didn't hear about this before. It looks like a pretty mature project\r \r of a lot of modern bindings,\r \r nonetheless, and they're trying to be\r \r dependency free to start. But then if you wanna hook it in the rust, guess what? You can. Wanna hook it in the WASM or web assembly? Yes. You can. Even has its own COI to boot. So there is a lot going on under the hood with this, and the best part is\r \r you can use this wherever you're comfortable with. It doesn't have to be in positron as you said. This could be in any r session. You can put it as on Versus code or whatnot. So, again, what I appreciate is, yeah, being able to learn about these discoveries, but then to be able to use this in my preferred environment. So this will be great. Again, I think the trial with a low friction way to get start and there's an r package now that has been author. We'll put a link to the r package itself in the show notes that ties ties all this together. But, yeah, you never I guess you'll never look at your code the same way again when you're looking in the forest, getting the forest from the trees or whatever it says.\r \r\n\n\n\n[00:36:32] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 32,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Exactly. Exactly. And that's a that's a good, tree related pun\r \r\n\n[00:36:35] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 35,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "here. Yeah. I know. I try I try I try. But, you well, you hopefully, you don't get lost then as the rest of this\r \r because there's a lot a lot of great content here. But as always, we put these in nice sections for you to digest,\r \r whether it's new insights, you know, uses in the real world, package updates,\r \r tutorials, or whatnot. There's always something for everybody here. So it'll take a couple minutes for our additional finds before we close out here. And\r \r for me, a reality in my industry, and I'm sure many others as well\r \r as they're building enterprise apps, maybe those that don't necessarily go outside the firewall, so to speak. But yet you have\r \r leadership,\r \r you know, stakeholders that are asking, hey. You built this great tool.\r \r\n\nWhat's been the user adoption? You know, what where are areas that people are spending their time in the most?\r \r Not always questions I really want to have to answer, but if I do have to answer, I wanna make it as easy as possible for me to get those metrics.\r \r And that's where Epsilon has pushed an update, a major update to their shiny dot telemetry\r \r package version 0 dot 3\r \r comes in with a lot of great updates here,\r \r including\r \r some very nice\r \r quality of life improvements, like actually\r \r checking whether it's an authenticated\r \r based app\r \r to get the user ID, if you will, of that session, which can be great as you're looking at different usage patterns or whatnot\r \r and to be more transparent about what you actually want to track. Because but if you don't wanna track all the inputs in your app, you wanna be able to wait to exclude them but not have to exclude them name by name, you can now do a regex if you have all your inputs name of a certain prefix in front or whatnot that you don't wanna\r \r include in, you can, you can throw a reg X that way too.\r \r\n\nOther enhancements\r \r include\r \r actually tracking the errors that can occur in your app. And boy, that can be very helpful for diagnostics.\r \r Not that I would ever have an app that crashes. Wink wink.\r \r But also\r \r if you wanna take advantage of an unstructured database to put these metrics in or these uses patterns in, They now support from MongoDB, which, of course, is very popular\r \r for unstructured\r \r nested type data data representation.\r \r So lots more under the hood with that, but they also have updated their package documentation\r \r with 3 different vignettes all about the different use cases that you can have for shiny telemetry. So really kudos to them. Looks like a great package, and, yep, this is some idea with\r \r every single day. I roll a new app out, so I'll be keeping a close eye on this.\r \r\n\n\n\n[00:39:07] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 7,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Me as well, Eric. That sounds really, really exciting. It's something that a lot of our clients are always asking for, right? You you finally get over the hump and build your your beautiful app and deploy it out to the world and then almost immediately, we get the question, oh, you know, can we get some user metrics\r \r on this app as well? So I'm excited to check out those new enhancements.\r \r An additional find that that I saw in the highlights this week are from, doctor Sophie Lee, who's the founder and director of s cubed,\r \r a statistician and educator. Now has a 2 day introduction to R with the Tidyverse course.\r \r\n\nIt looks fantastic.\r \r I'm seeing some,\r \r really, really nice,\r \r visuals here\r \r on this website which I believe are probably borrowed from,\r \r who who's the the person in the art ecosystem? I think she may work for observable\r \r now. Is it Alison Horst? Alison Horst. Yeah. Alison Horst that used to make the the really nice R,\r \r you know, types of of graphics and and imagery. So I see one of those here and that just tells me all I need to know that this is gonna be a fantastic,\r \r 2 day training\r \r here from November,\r \r or excuse me, September 24th\r \r to September 26th. So if that's something that that you're interested in or somebody in your team might be interested in, it's gonna cover everything from, R to R studio, data management,\r \r visualization, and and ggplot and EDA, and then some best practices for doing re reproducible\r \r research. So,\r \r you know, I think we cover a lot of in the weeds things sometimes on the highlights and I wanna make sure that we don't forget about those particularly\r \r new or or trying to, learn about ours. So this might be a good opportunity\r \r to to try to make that jump if that sounds like you.\r \r\n\n\n\n[00:40:55] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 55,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. Fantastic\r \r resource here. I'm I'm looking at it. It's a definitely a portal based site and the the styling is fantastic,\r \r easy to navigate. So, yeah, yeah, kudos to her and the team. This looks like a fantastic\r \r thing to highlight here, and thanks for calling that out. And, boy, we love to call everything out, but, yeah, we're there's always so much time in the day, folks. But, again, that's why we put this link in the show notes. All the highlights you've seen, you've heard us talk about today and those additional resources are all in the show notes and also\r \r at arugia.org.\r \r\n\nIt's the easiest place to bookmark to find all these all these, terrific content and the back catalog of issues as well. And so if you wanna help the project, the best way to help is to share those new resources you found wherever you created them or someone in the community has created them. And it's just a poll request away, all marked down all the time. There's a link in the upper right corner. That fancy little octa octa con cat, whatever you call it is in the upper right corner. Just click that, take them directly to get help pull requests. You don't need an AI bot to fill this out. It is all marked down all the time. Very easy. They get started quickly. We have an issue template to get you up and running quite quickly as well.\r \r And if you wanna get a hold of us, we have a few ways to do that. We have a contact page directly in this episode show notes. We are on all the major podcast providers, so you should be able to find us wherever your favorite preferred listening,\r \r preferences.\r \r\n\nAnd, also, you can get a hold of us on these social medias as well. I am at our podcast at podcast index dot social on the Mastodon servers.\r \r I'm on the weapon x thingy sometimes with at the r cast. I'm mostly on LinkedIn as well. Search by name. You will find me there. And, Mike, where can the listeners get a hold of you? Yep. You can find me on mastodon@[email protected].\r \r\n\n[00:42:42] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 42,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Or you can find me on LinkedIn if you search Catchbrook Analytics, ketchbrook,\r \r or you can find me in Seattle in a couple weeks. Shoot me a message if you're gonna be there and and would love to to chat all things are.\r \r\n\n[00:42:56] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "trans_timestamp": 56,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Likewise. Yeah. Yeah. Like I said, the time is coming close. So, yeah,\r \r not packing just yet, but that's not too far away, to be honest. And I always bring some tech gadgets too. Who knows? I might, maybe, I might bring a couple mics with me. I'll I'm just saying. I'm just saying. We'll find out. But, nonetheless, we're gonna close-up shop here for this episode of our wicked hot lights. We thank you so much again for listening to our humble little banter here, and we will see you back here for another episode of our weekly highlights\r \r next week."
+      }
+    ],
+    "chapters": [
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "chap_timestamp": 23,
+        "chap_text": "Putting the R in RPG Graphics",
+        "chap_href": "https://www.rostrum.blog/posts/2024-07-14-tilebased/index.html"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "chap_timestamp": 55,
+        "chap_text": "GitHub's Copilot Workspace with R projects",
+        "chap_href": "https://epiverse-trace.github.io/posts/copilot-workspace/"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "chap_timestamp": 4,
+        "chap_text": "Code trees with treesitter",
+        "chap_href": "https://masalmon.eu/2024/07/18/extract-function-names-treesitter/"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "chap_timestamp": 0,
+        "chap_text": "shiny.telemetry 0.3.0",
+        "chap_href": "https://www.appsilon.com/post/shiny-telemetry-0-3-0-update"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "chap_timestamp": 30,
+        "chap_text": "Intro to R with the Tidyverse",
+        "chap_href": "https://scubed.netlify.app/courses/1_intro_r_tidyverse/"
+      },
+      {
+        "ep_name": "issue_2024_w_30_highlights",
+        "chap_timestamp": 11,
+        "chap_text": "Episode Wrapup"
+      }
+    ]
+  },
+  {
+    "metadata": [
+      {
         "ep_name": "issue_2024_w_28_highlights",
         "ep_date": "2024-07-18",
         "ep_duration": 10,
