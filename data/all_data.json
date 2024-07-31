@@ -2,6 +2,251 @@
   {
     "metadata": [
       {
+        "ep_name": "issue_2024_w_31_highlights",
+        "ep_date": "2024-07-31",
+        "ep_duration": 46,
+        "ep_description_short": "Episode Links This week's curator: Jon Calder - @[email protected] (Mastodon) & @jonmcalder (X/Twitter) Let's Talk About the Weather 2024 Shiny Contest Entire issue available at rweekly.org/2024-W31 Supplement Resources https://lorenzwalthert.github.io/precommit/index.html https://www.kenkoonwong.com/blog/llm-rag/ Supporting the show Use the…"
+      }
+    ],
+    "description_long": [
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "description_long": "\r \r Episode Links\n\nThis week's curator: Jon Calder - @[email protected] (Mastodon) & @jonmcalder (X/Twitter)\nLet's Talk About the Weather\n2024 Shiny Contest\nEntire issue available at rweekly.org/2024-W31\nSupplement Resources\n\nhttps://lorenzwalthert.github.io/precommit/index.html\nhttps://www.kenkoonwong.com/blog/llm-rag/\nSupporting the show\n\nUse the contact page at https://serve.podhome.fm/custompage/r-weekly-highlights/contact to send us your feedback\nR-Weekly Highlights on the Podcastindex.org - You can send a boost into the show directly in the Podcast Index. First, top-up with Alby, and then head over to the R-Weekly Highlights podcast entry on the index.\nA new way to think about value: https://value4value.info \nGet in touch with us on social media\nEric Nantz: @[email protected] (Mastodon) and @theRcast (X/Twitter) \nMike Thomas: @mike[email protected] (Mastodon) and @mikeketchbrook (X/Twitter) \nMusic credits powered byOCRemix\n\nA Flea and His Giant - Megaman X: Maverick Rising - Chuck Dietz - https://maverick.ocremix.org/music.php"
+      }
+    ],
+    "links": [
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "links": "https://fosstodon.org/@jonmcalder"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "links": "https://twitter.com/jonmcalder"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "links": "https://jcarroll.com.au/2024/07/27/let-s-talk-about-the-weather/"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "links": "https://posit.co/blog/announcing-the-2024-shiny-contest/"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "links": "https://rweekly.org/2024-W31.html"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "links": "https://lorenzwalthert.github.io/precommit/index.html"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "links": "https://www.kenkoonwong.com/blog/llm-rag/"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "links": "https://serve.podhome.fm/custompage/r-weekly-highlights/contact"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "links": "https://podcastindex.org/podcast/1062040"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "links": "https://getalby.com/"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "links": "https://value4value.info"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "links": "https://podcastindex.social/@rpodcast"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "links": "https://twitter.com/theRcast"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "links": "https://fosstodon.org/@mike_thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "links": "https://twitter.com/mike_ketchbrook"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "links": "https://ocremix.org/"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "links": "https://maverick.ocremix.org/music.php"
+      }
+    ],
+    "transcript": [
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 3,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Hello, friends. We're back with episode 173 of the R Weekly Highlights podcast. This is the weekly podcast where we talk about the terrific resources that are being shared every single week at rweekly.org.\r \r My name is Eric Nantz, and I'm delighted you're joining us today. And I admit I look at the calendar at the top of my screen as I record this, and I cannot believe it's July 30th already. We are almost in August, which means my kids are almost in which might be a little bit of normalcy for those parents out there,\r \r if you can relate to that. But, nonetheless, we're here to talk about all things are in our weekly. And I don't do this alone as always. I'm joined by my awesome co host, Mike Thomas.\r \r\n\nMike, where did the time go?\r \r\n\n[00:00:43] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 43,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "I don't know, Eric, but, I imagine\r \r potentially like you you may be also scrambling,\r \r to put a presentation together for a conference in August. That's sort of where I'm at. These conferences have come up quite quickly.\r \r And,\r \r Yeah. It's crunch time.\r \r\n\n[00:01:00] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 0,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "It is crunch time. Yes. I'm gonna frantically put in the finishing touches on my\r \r upcoming talk about WebAssembly.\r \r Very excited for it. Having some initial good feedback, so I won't put any spoilers out here, but I got some good stories to tell with that with that effort.\r \r But, yeah, less than 2 weeks from now. So as you heard from last week weeks before, Mike and I will be there at Positconf, and definitely\r \r welcome for you to come say hi. And I cannot confirm or deny that I might have some stickers with me. We'll find out, but nonetheless,\r \r come say hi nonetheless. We're always all connecting to the listeners\r \r over at these events, and, yeah, this will be an exciting time.\r \r\n\n\n\n[00:01:38] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 38,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yes. Absolutely. I have a presentation not at Pazitconf, a different conference.\r \r It's on the topic of AI\r \r and you're gonna like this. My first slide is you might not need AI.\r \r\n\n[00:01:50] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 50,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Good. Hit them quick with it.\r \r Really setting the tone. You should. You should. That that's terrific. Now I I but, yeah, who knows? And, you know, give or take here here and there, but there are some\r \r fluffy efforts going on in various industries. So, yeah, you keep it real, Mike. You keep it real. That's what we do. That's all we do. And what else keeps it real? Well, it's organically real in terms of the awesome content at our weekly every single week. And as you know, we have a rotating set of curators that pitch in\r \r on different weeks to help, assemble the issue.\r \r\n\nAnd this week's our curator is John Calder,\r \r another one of our OGs, if you will, of the our weekly team. And as always, he had tremendous help from our fellow our weekly team members and contributors like\r \r all of you around the world.\r \r And our first highlight just happens to come from one of our fellow curators.\r \r And looking at this a phenomenon that unfortunately can occur\r \r when we grab our data from online sources and things get kind of uprooted from us, but the community\r \r comes to the rescue once again.\r \r This blog post is coming from Jonathan Carroll, who again, on top of his awesome efforts of our weekly\r \r is always looking at new things to learn in his blog. And it's always a fascinating read.\r \r\n\nWell, he's taken a bit of a detour from his programming language\r \r exploits and other languages. He's gonna talk to us a bit about the weather in Australia,\r \r and he's actually looked at this for quite a while now. In fact, since the mid 20 tens,\r \r he's been grabbing weather data from Australia that's been\r \r exposed by the Bureau of Meteorology.\r \r He says don't call it the bomb.\r \r I won't do that.\r \r But this has been keeping track of weather for a good while now.\r \r And but there's a bit of a bad news is that\r \r unlike other services,\r \r maybe you shouldn't be surprised about this. They may have an official API to download all this.\r \r\n\nSo Jonathan would leverage his scraping skills using the various utilities that we've covered\r \r many times in this podcast and elsewhere.\r \r There are many awesome packages in order to help with web scraping\r \r in particular, like the Arvest package, but there's many others in this space.\r \r Well, he's been doing that for a good bit.\r \r But there was a recent,\r \r mishap, if you will,\r \r where the service\r \r back in 2021,\r \r his function to do the scraping was not working anymore.\r \r No code changes. What gives? Right?\r \r Well, turns out as he did a little investigation\r \r in terms of user agents and other pits here,\r \r There was an official statement that was released.\r \r\n\nIt says, and I quote, the bureau is monitoring screen scraping activity on the site and will commence interrupting\r \r and eventually blocking\r \r this activity\r \r on this site from Wednesday, 3rd March 2021.\r \r Well,\r \r epic fail. Right?\r \r That's not good.\r \r And now, rightfully so, John's a little peeved about this because this is from a government site. You know, Australia, like other countries, we have taxes. We're open to pay the government from these kind of services. So\r \r oh, kinda throw your hands up on that one.\r \r Mike's biting his tongue here. I can tell there. Yep. Been yep. Yep. We've we've been there with these things getting uprooted\r \r from various sectors and government.\r \r\n\nBut\r \r the community comes to the rescue once again, unfortunately, where Adam Sparks, who's also been interested\r \r in weather data from Australia as well,\r \r he discovered yet another site that was kind of filling the niche of what was happening with the bureau site\r \r called silo.\r \r And he and Adam has built a new our package, which also is actually included in this our weekly issue\r \r called weather Oz\r \r and actually has an accompanying paper in the journal of, statistical software, the boots. So lots of lots of effort behind this,\r \r which helps have a compliant R package to grab the weather data from this silo site.\r \r\n\nTerrific. Okay. Back of business, John says. Now he can leverage this new package\r \r to have a very handy function called get stations metadata,\r \r which he's able to put in the station name\r \r and then which API to use. And by default, I believe it is a silo API.\r \r And sure enough, you get a tidy data frame back of the various metadata\r \r associated with this.\r \r And once you get the station code, then he can actually grab more of the data itself.\r \r And this is where he started now updating his functions\r \r to grab, you know, the various metadata associated with temperatures and whatnot, longitude, latitude,\r \r lots of other metrics here. I'm looking at the glimpse of the data frame here. There is a lot going on here. So if you're a weather junkie or weather nerd, this one's for you. There's lots going on in this space.\r \r\n\nSo he was able to grab almost 50,000\r \r observations\r \r over the last 135 years. So there you go. You got yourself some time series, if I do say so myself.\r \r So after a bit of tidying up, he decides, okay. You know what? I used to do some plots of this in the past as I was investigating some questions. Let me run these again. And sure enough with the new data and the tiny format, a little bit of g two code, and he's got a nice set of charts, Mike. Why don't you walk us through what he's trying to visualize here?\r \r\n\n[00:07:21] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 21,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Sure. So it looks like John originally had tried to create these chart charts\r \r using a package called Bombrang,\r \r which I was not familiar but appears to be be superseded,\r \r and now we're transitioning to ggplot, and I really really enjoy the ggplot\r \r code that he's written here. 1st, he's taking a look at the daily maximum temperatures and as you said, Eric, there is a lot of data here. We're we're going back, from 2024\r \r back to 18/89.\r \r So we have a scatterplot here with a beautiful curve on it, that shows, you know, has a different point for the day of the year,\r \r for each year between 18/89\r \r and 2024 and what the temperature\r \r was on the y axis,\r \r and we have some some color gradients based upon the decade\r \r as well, which I I think is a really\r \r unique and sort of interesting way to,\r \r add this additional dimension to the data as well. And it produces this really nice curve really beautifully done in g ggplot. We're we're using Viridis,\r \r to accommodate the color blind folks out there. So I can't say enough about this. It has a great caption on it as well. One of the things that I really appreciate,\r \r that John does, you know, throughout some of the other plots in this, chart\r \r is the use of I don't know if you would call them, like, Lambda functions for for additional filtering. But within the ggplot\r \r syntax you can pass,\r \r starting with like a a tilde a dplyr filter statement where the data frame itself that's being used by ggplot\r \r is, you know, referenced by this dotx placeholder.\r \r\n\nAnd there's multiple examples here in the code of how John goes about doing that and it's a really clean, nice syntax. It's probably something that I don't use enough.\r \r So if you are starting to get into, you know, a little more complicated\r \r ggplot visualizations,\r \r where in certain aspects of the plot or certain layers you you wanna use a portion,\r \r only a portion of the data and not the entire dataset,\r \r such as, in this daily minimum temperatures plot that John creates. He wants to highlight\r \r specifically in red so that these points stand out, you know, really really obviously\r \r to the user. All the observations,\r \r from June onward\r \r in the year 2024,\r \r so that you can see those really on top of the the rest of the Viridis, you know, gradiented,\r \r points on this daily minimum temperatures\r \r plot. And it's it's really\r \r simple\r \r syntax, I would say. Just this really nice dplyr filter statement and it's it's great that we have this beautiful concise\r \r interoperability\r \r sort of between ggplot and dplyr,\r \r to allow us to use those tools together to add these layers, you know, some that have a filtered context and and some that do not. Then we move into fastening as well where he has a daily maximum temperature plot,\r \r fasted by each month of the year. And one of the nice things here, again, is where we are,\r \r again, sort of calling out a specific point\r \r on each facet based upon a dplyr filter context where we're we're actually slicing the max, the the highest particular temperature across all\r \r 100 plus years, whatever that math is, between 18/89\r \r and 2004.\r \r\n\nAnd we're coloring that particular point red and we're sticking a geomtext label on top of it to let us know what year,\r \r that highest temperature in that particular fasted month took place in. So it makes it really, really easy to consume and take a look at this this chart to see the the temperatures,\r \r over time in a particular month, but then also call out the year that had the highest temperature\r \r in that month. It's it's really, really well done data visualization and he does the same thing, with the daily minimum temperature.\r \r And one sort of neat visual trick is that instead of,\r \r highlighting those those, you know, maximum\r \r or highest, temperature\r \r dots with the color red,\r \r as he did in the maximum temperature side, he will,\r \r highlight those with the color blue because these minimum temperatures are the the coldest temperatures,\r \r that that took place or that the year that had the the coldest temperature in that particular month I thought that was that was really nifty and something that I probably would not have thought to do but it's really interesting. And the the captions here and really the attention to detail\r \r are are beautiful and it's just a one of those really nice data visualization,\r \r blog posts, Eric, that I know you and I really love and appreciate because I'm a visual learner. This stuff stands out to me. Most of the work that we do for our our clients,\r \r ends or or, you know, utilizes some sort of data visualization as well to get our point across because it's it's one of the the ways that we communicate data the most effectively. So if you are just looking to either up your ggplot game or just get a little refresher and and take a look at what, John has put together here and some of his ggplot work. I can't recommend this blog post enough.\r \r\n\n\n\n[00:12:24] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 24,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. It's such a great introduction\r \r to a very concise EDA with a novel dataset too and very logically exploring\r \r these trends that he has seen as the years have gone by.\r \r Can we see, like, a seasonal type pattern in terms of the variation of these temperatures? And, yeah, he has noted that it's been a\r \r 2024. Apparently one of these lowest points was a negative 5 degrees Celsius. And yeah, that's a bit chilly.\r \r And, someone who who's lived in Michigan over my formative years. Yeah. I know how cold things can get. But,\r \r yeah, it's interesting to see. Again, the facets really show the story of how the spread tightens in the middle of the year and then spreads more out at the extremes or, I should say, the beginnings\r \r and ends of the year. Yeah. Really, really novel use. Like I said, that way, I'm the like functionality.\r \r\n\nThe key point there is these geomes in these data arguments. As long as you're getting a data frame back, you don't have to do this pre computed in fashion. You can do it in line, so to speak, in the geo, which again is great, especially if you're doing this EDA and you wanna iterate on this pretty quickly and with some pretty concise code. So I think it's a novel technique that, like you, Mike, I have not utilized this enough.\r \r So I have to take a take a bit of learning here as I revamp my simulation\r \r or visualizations of simulations that we're trying to do a better job of these days.\r \r\n\n\n\n[00:13:51] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 51,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yep. And you know me, Eric, you know, in terms of code review and things like that and collaborating with the team, I'm always trying to arrive at code that is\r \r as concise\r \r as possible while getting, you know, the point obviously\r \r across as effectively as possible about what it's trying to accomplish. And I I think this is a great example of doing that.\r \r\n\n[00:14:12] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 12,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yep. And and John never just stops there. He's got a\r \r a truckload of other amazing posts in his learning adventures. So if you really wanna get into the the nuts and bolts of other programming languages and how from an our user's perspective\r \r that he relates to them, there is a lot going on in his his blog. So if you haven't bookmarked it before, you absolutely should.\r \r\n\n[00:14:36] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 36,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yeah. And his session info, he's got the the OS.\r \r\n\n[00:14:39] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 39,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "The OS says pop, p o p with an Yes. Information on the pop up list. That's what I'm using on this very machine, PopOS.\r \r A Linux. It's a Linux distribution. It's,\r \r made by the vendor called System 76 who makes hardware dedicated to Linux. So this, box I'm talking to you right now is called a Feilio PC\r \r that they make right here in the US and Colorado.\r \r And I've had it for about 4 years. Yep. If not longer, actually. Yep.\r \r So Very cool. A fellow PopOS user. That's awesome.\r \r He's a he's a fellow Linux nerd. So that's awesome. Love it.\r \r You know, Mike, I always wonder if someone was kind of missing this year as the months have gone by. Well,\r \r there is a tradition\r \r that certainly a shiny enthusiasts are very eager to see happen, and it is back. What am I talking about?\r \r\n\nIt is the 2024\r \r shiny contest\r \r run by posit is officially\r \r up and underway.\r \r And this blog post comes from us from the author of shiny himself, Joe Chang, as well as our posit, community manager, Curtis Kephart.\r \r And then the blog post is pretty short and sweet. If you've familiar with the contest before, there's not a lot of changes. But if you're new to this, this is the annual tradition where they are reaching out to the community and inviting them to submit their entries of their innovative\r \r ways of creating\r \r and and deploying shiny applications.\r \r\n\nThere are a set of requirements to be aware of is that both the data and the code\r \r behind the app should be open source publicly available.\r \r So, obviously, it goes about saying you probably don't wanna use your company's internal data for this, but that's neither here nor there.\r \r And they also invite you to deploy the application\r \r on this time around\r \r the recently launched posit connect cloud service, which I believe just went publicly available a month ago or so. In the past, that's been Shiny apps. Io. But if I'm, you know, that's the usual evolution of a enterprise and their software products, I must say. And that you store the code in a public repository that could be GitHub, get lab, that bucket, whatever have you.\r \r And there is a set of judges, which I don't believe, you know, the names just yet, but there will be a set of judges that evaluate\r \r each of the applications based on a set of metrics.\r \r\n\nI speak a little bit of,\r \r experience on this because it was like a few years ago, I was a judge on one of these contests and\r \r my goodness,\r \r the submissions were such high quality. It was really tough.\r \r Great to see the applications, but, man, trying to find\r \r trying to judge these in a fair way when you just wanna say they're all great. Right? So it's a there's a set of judges to help compete with these metrics and a lot of nice awards at the end there with you are a runner-up or an honorable mention and the grand prizes. They have all the details there. Yes. There will be a bunch of stickers being thrown your way,\r \r and the grand prize winner actually gets a half hour\r \r private meeting with members of the shiny team. So my goodness. That's a that's an awesome opportunity in and of itself to go over your app and what you can do in the future.\r \r\n\nSo you may wonder\r \r where can I go to look? Well, I will say that but and the nice thing in this post is they've linked to the previous blog post where they talked about the winners\r \r and runners up all the way back to 2019.\r \r I still remember that you're very fondly of being like, okay. I'm all over this.\r \r I had fun creating a Lego mosaic app as part of a shiny contest of yesteryear. That was a that was a fun time. Of course, if you look at that code now compared to what I do now, just don't judge too harshly.\r \r But, nonetheless, it's a great time of year. We're always excited to see what the community comes, comes to bear with this. So,\r \r yeah, if you're a shiny\r \r and a shiny enthusiast, this is this is a great opportunity to test your might if you will and see what you can bring into the community.\r \r\n\n\n\n[00:18:53] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 53,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "I agree here. I can I feel like there's\r \r so many more\r \r options\r \r in the shiny ecosystem\r \r nowadays and so many different sort of branches and paths that you could pursue as as you you know make your entry into this contest you know is it are you just going to have the the repository\r \r are you going to deploy your app somewhere is it going to be on shiny apps that I owe or is it going to be on shiny live right\r \r you know\r \r leveraging the web our framework are you going to use shiny for Python or are you going to use shiny for our or are you going to use that the teal framework for building shiny apps which is popular among folks you know in your space Eric and and farm on in life sciences\r \r and they did note that they are going to have a special recognition for developers\r \r shiny so if you were someone just getting started with shiny don't be intimidated by this contest actually embrace it because you could potentially get the the special recognition for for giving it a shot\r \r and I\r \r believe that that you will find if you are a new developer to shiny and you take place, in this contest and you participate\r \r in it, you know, one of the I think sort of where this is hosted is is the posit community? Correct. So I would recommend that you ask any questions that you have along the way within that Posit community forum. People are really responsive.\r \r\n\nI hope and I would, you know, based upon my experience, I think that you'll find it welcoming. I think that you will find, folks pretty responsive to a lot of your questions,\r \r especially, you know, within the context of of this particular contest and everybody\r \r trying to put their best work forward. So,\r \r welcome\r \r everyone, 1 and all. It's put your submission in. I think the deadline is, Eric, when did we\r \r when does it look like the deadline is? Let me take a look. I should know that. Check this out beforehand.\r \r Deadline for submission is September 15th at midnight,\r \r anywhere on earth.\r \r\n\nSo you've got a little bit of time. It looks like we've got about a month and a half here, if my math is correct, based upon the time that we'll put this, this episode\r \r out. So\r \r get to developing.\r \r\n\n[00:21:06] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 6,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "That's right. And and certainly kudos to the shiny team and Curtis for\r \r working with, like like you mentioned earlier, this is the first time that we're really calling out the opportunity in the life sciences space to leverage the t o framework,\r \r which is making huge waves in our industry to help build these\r \r very comprehensive shiny ass of a modular structure\r \r that are tailored for reviewing the, you know, the types of clinical data that we deal with on a daily basis. So this is an awesome opportunity to see what you can do with that. And I've even seen others in the community that are not not necessarily part of pharma levers teal to do some really fun exploratory\r \r data analysis of a shiny front end. So, yeah, definitely, if you're a teal enthusiast,\r \r like, that's growing pretty rapidly. Yeah. This is a great opportunity to put your put your work out there as well. And certainly, like you mentioned earlier, for our friends in the Python space,\r \r Shawnee 1 dot over Python was just released. So another great opportunity if you've been wanting to test your mind with the Python side of things. This is a great place to do it. I always think in general,\r \r finding,\r \r a dataset\r \r or or a domain that you're interested in\r \r in and having an opportunity like this is such a great learning opportunity too. Because again, you're going to see\r \r not just your submission being put into the queue. You're going to see in real time as these submissions come in, there will be a post on posit community\r \r dedicated or a category dedicated to this contest and you'll see these start to trickle in and you get can get really inspired to see what what everybody's up to. So I remember\r \r going down to the wire on my Lego one and seeing just the, the, the high quality submissions\r \r and have admittedly a first time have low imposter syndrome. Like, oh my gosh, I can't believe this. But then again, I'm liking it to great learning opportunity\r \r and it's an, someone else will benefit from what you're putting out there. It always happens. So I remember\r \r getting some nice, comments on my submission, but then many others were providing\r \r questions and comments on these posts. So, again,\r \r very big emphasis on learning and having fun learning, I might add.\r \r\n\n\n\n[00:23:17] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 17,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Absolutely. I can't wait to\r \r get my hands on keyboard and see what our team can come up with for a submission. I'm gonna hold myself to it.\r \r\n\n[00:23:24] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 24,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. Yeah. Once the dust settles on deposit comp, I might have some more geeky opportunities to do shiny stuff with podcasting data again. We'll see. We'll see.\r \r But, yeah, we're on this podcast now. Right? And we wish we could talk about the rest of Arwek issue, but, there's always so much that we have time in today. So we're gonna wrap up here. Well, a couple of our additional fines that we saw in this week's issue, which again is always linked in the show notes of this episode.\r \r And I've always been, you know, trying my best to leverage, get effectively,\r \r especially with, you know, nice commit messages, you know, following, you know, standards\r \r that we maybe code reviews are gonna make easier if we follow the standards of\r \r one area that I admit I don't do enough of\r \r is there is a mechanism and get\r \r that will basically check before you commit\r \r run, I should say, a custom script\r \r that might check for various things, such as maybe number of files you're committing, maybe number of lines, maybe the type of commit message, maybe you have, like, a a very formal framework of\r \r it. You can build what are called pre commit hooks in your local Git repository\r \r to help be that kind of frontline check before you actually do the commit.\r \r\n\nWell, there is a new package in your ecosystem called pre commit, which will let you author these pre commit\r \r hooks from the comfort of your r installation itself.\r \r And there is also, I believe, a little bit of requirement for Python as well.\r \r So this might be using reticulate under the hood. I'm not quite sure.\r \r But once you have everything set up, you're gonna be able to do, you know, a very nice, there's a nice package documentation site that we'll link to in the show notes going from the motivation of why you want to leverage this as well as some built in hooks that you can leverage\r \r such as for styling,\r \r such as making sure your read me is up to date if you're doing our markdown for your read me, making sure you're not leaving\r \r a browser statement in your code because who would ever do that? Oh goodness gracious. Who would ever push that into production? I don't\r \r know. My goodness. Where was this few years ago? But, yeah, there's a lot to choose from here, so,\r \r I may need this. What do you think, Mike?\r \r\n\n\n\n[00:25:42] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 42,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "That's an awesome resource, Eric, and I may need that as well.\r \r Yeah. That that could have saved me many many many times over so I need to check that out.\r \r I found a really really cool blog post called llama llama oh give me a sign what's in the latest IDSA\r \r guideline.\r \r And I could probably just leave it at that. That's such a cool blog post title but I won't. Right. This\r \r this one is authored by Ken Koon Wong\r \r and it is all about leveraging,\r \r you know, open source, I believe,\r \r LLM,\r \r RAG to be able to ask questions\r \r of the latest guidelines from the Infectious Diseases,\r \r Society of America\r \r and it is incredibly\r \r comprehensive.\r \r\n\nIt,\r \r uses Reticulate as well to interrupt R and\r \r Python to be able to to stand this solution up and lots of gifts, lots of content,\r \r it's an incredibly\r \r of blog post and if if this is something, that you might find interesting in using LLMs and and rag to be able to ask questions or or summarize\r \r a particular\r \r document or set of documents or or guidance that's out there such as,\r \r the the Infectious Diseases Society of America guidelines.\r \r I would highly recommend checking out, how can went about doing this. It's incredibly comprehensive.\r \r\n\n[00:27:05] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 5,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Oh, this is incredibly useful too because in many enterprises,\r \r it's not just about trying to be, quote, unquote, future proofing your questions, but taking what you already have,\r \r whether it's these documents of, like, important information\r \r or metadata associated with, like, infrastructure\r \r or where you're designing experiments or whatnot.\r \r Being this is a great pose. I'll kind of walk through what is that process of feeding those documents in,\r \r creating under the hood what these vector databases they caused. So then the LM\r \r will use that as a source to help answer these questions. So this is a a very hot topic. And and and my industry is we deal with, you know, thousands upon thousands of study documents and patient\r \r documents and whatnot to be able to, you know, effectively put an LM in front of that to explore what we have.\r \r\n\nHeck, you know what? Even in the podcasting space, there's been talks of trying to consume our show notes and having an LOM in front of that to maybe figure out, Hey, when did Mike and Mike and Eric talk about that, that, that new shiny package or that or that new, portal thing? You know? Boy, that would be the dream. Right? That little bot in front of that. I don't know. Just saying. Sweet.\r \r It's all the metadata is there, folks. This may maybe we'll help to build that, but this post is a good good way to get us started, I think.\r \r\n\n[00:28:27] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 27,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Add us to the side project list.\r \r\n\n[00:28:29] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 29,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "As if it wasn't long enough already. What am I doing to myself? And on top of that, I'm trying to learn Nicks to boot on this. So my gosh. What what am I doing to myself?\r \r Nonetheless,\r \r no side project\r \r elsewhere here. We're gonna\r \r tell you about how you can contribute to rweekly itself. That doesn't have to be as in-depth as a side project. We are just a pull request away.\r \r If you find a great new resource, new package, new blog post, whatever have you, we it's all marked down that comprises the our weekly site. So if you know how to put a link in our markdown or markdown itself, you know how to contribute to our weekly. It's basically that easy. You have a template and a GitHub issue,\r \r or a poll request template to navigate you through the requirements. Again, very straightforward. We welcome all your contributions.\r \r\n\nAnd, of course, we welcome hearing from you as well. As we mentioned in a couple weeks, Mike and I will be in Seattle for Positomp. But in the meantime, if you wanna get a hold of us, there's a few ways to do that. We have a contact page in the episode show notes when you download this in your favorite podcasting software of choice. You also if you're on a modern podcast app like Podverse or Fountain, you can send us a little boost along the way as well. We got details\r \r on how to do that in the show notes, and you can find us on the various spheres of social media\r \r circles.\r \r\n\nI am mostly on Mastodon these days with [email protected].\r \r You can also find me on LinkedIn. You search my name. You'll find me causing lots of fun stuff there potentially\r \r and on that weapon exiting from time to time with at the r cast. Mike, where can listeners get a hold of you? You could find me on mastodon@[email protected],\r \r\n\n[00:30:09] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 9,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "or you can find me on LinkedIn if you search Catchbrook Analytics, k e t c h b r o o k. You can see what I'm up to.\r \r\n\n[00:30:17] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "trans_timestamp": 17,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Very good. I'm always every time I boot up in the morning, I'm looking looking for Mike's newest adventures, so I'm always pleased when I see that.\r \r Nonetheless, yeah, lots of adventures that we have to get on to the rest of our day. But, of course, we thank you so much for listening from wherever you are around the world. We really enjoy doing this every week, but we're gonna close-up the the proverbial mics here, and then we're gonna invite you to join us for another episode of our weekly highlights\r \r next week."
+      }
+    ],
+    "chapters": [
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "chap_timestamp": 36,
+        "chap_text": "Unpredictable weather",
+        "chap_href": "https://jcarroll.com.au/2024/07/27/let-s-talk-about-the-weather/"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "chap_timestamp": 27,
+        "chap_text": "Shiny Contest 2024",
+        "chap_href": "https://posit.co/blog/announcing-the-2024-shiny-contest/"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "chap_timestamp": 51,
+        "chap_text": "Precommit",
+        "chap_href": "https://lorenzwalthert.github.io/precommit/index.html"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "chap_timestamp": 52,
+        "chap_text": "llamas all around",
+        "chap_href": "https://www.kenkoonwong.com/blog/llm-rag/"
+      },
+      {
+        "ep_name": "issue_2024_w_31_highlights",
+        "chap_timestamp": 38,
+        "chap_text": "Episode Wrapup"
+      }
+    ]
+  },
+  {
+    "metadata": [
+      {
         "ep_name": "issue_2024_w_30_highlights",
         "ep_date": "2024-07-24",
         "ep_duration": 25,
