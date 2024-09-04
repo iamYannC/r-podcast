@@ -2,6 +2,342 @@
   {
     "metadata": [
       {
+        "ep_name": "issue_2024_w_36_highlights",
+        "ep_date": "2024-09-04",
+        "ep_duration": 58,
+        "ep_description_short": "A peek behind the curtain of how R handles that batch of code you send to the console, an adventure in automating the translation of Quarto documents to multiple languages, and there's no time like the present to give your code a little linting love. Episode Links This week's curator: Sam Parmar - @[email protected] (Mastodon) & @parmsam_…"
+      }
+    ],
+    "description_long": [
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "description_long": "\r \r A peek behind the curtain of how R handles that batch of code you send to the console, an adventure in automating the translation of Quarto documents to multiple languages, and there's no time like the present to give your code a little linting love.\nEpisode Links\n\nThis week's curator: Sam Parmar - @[email protected] (Mastodon) & @parmsam_ (X/Twitter)\nLong input lines\nTranslating Quarto (and other markdown files) into Any Language\nGet your codebase lint-free forever with lintr\nEntire issue available at rweekly.org/2024-W36\nSupplement Resources\n\nNews from R Submissions Working Group – Pilot 3 Successfully Reviewed by FDA\nMastodon Accounts Posting About #RStats\nSupporting the show\n\nUse the contact page at https://serve.podhome.fm/custompage/r-weekly-highlights/contact to send us your feedback\nR-Weekly Highlights on the Podcastindex.org - You can send a boost into the show directly in the Podcast Index. First, top-up with Alby, and then head over to the R-Weekly Highlights podcast entry on the index.\nA new way to think about value: https://value4value.info \nGet in touch with us on social media\nEric Nantz: @[email protected] (Mastodon) and @theRcast (X/Twitter)\nMike Thomas: @mike[email protected] (Mastodon) and @mikeketchbrook (X/Twitter) \nMusic credits powered byOCRemix\n\nTorvus Clockwork - Metroid Prime 2: Echoes - DarkeSword - https://ocremix.org/remix/OCR01507\nSleep, My Sephy (Judgement Day) - Final Fantasy VII: Voices of the Lifestream - Pot Hocket - https://ff7.ocremix.org/"
+      }
+    ],
+    "links": [
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "links": "https://fosstodon.org/@parmsam"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "links": "https://twitter.com/parmsam_"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "links": "https://blog.r-project.org/2024/08/30/long-input-lines/"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "links": "https://edenian-prince.github.io/blog/posts/2024-08-21-translate-md-files/"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "links": "https://masalmon.eu/2024/08/28/lintr-3-steps/"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "links": "https://rweekly.org/2024-W36.html"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "links": "https://www.r-consortium.org/blog/2024/08/26/news-from-r-submissions-working-group-pilot-3-successfully-reviewed-by-fda"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "links": "https://apps.machlis.com/shiny/rstats/"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "links": "https://serve.podhome.fm/custompage/r-weekly-highlights/contact"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "links": "https://podcastindex.org/podcast/1062040"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "links": "https://getalby.com/"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "links": "https://value4value.info"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "links": "https://podcastindex.social/@rpodcast"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "links": "https://twitter.com/theRcast"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "links": "https://fosstodon.org/@mike_thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "links": "https://twitter.com/mike_ketchbrook"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "links": "https://ocremix.org/"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "links": "https://ocremix.org/remix/OCR01507"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "links": "https://ff7.ocremix.org/"
+      }
+    ],
+    "transcript": [
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 3,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Hello, friends. We are back with episode 177\r \r of the R Weekly Highlights podcast. This is the weekly podcast where we talk about the awesome highlights and other resources that are shared\r \r every single week at rweekly.org.\r \r My name is Eric Nantz, and as always, I am delighted you join us from wherever you are around the world.\r \r\n\n[00:00:21] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 21,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "And you know what, folks? All is right with the world because I am not flying the plane solo this week. I am my awesome cohost, Mike Thomas, making his triumphant return to the podcast. Mike, how have you been? Been doing well, Eric. Yes. Speaking about from around the world. I feel like I've been around the world a little bit. I was fortunate enough to be able to attend posit comp and and see you there and I know we weren't able to record that week, and then I sort of went straight from there to more conferences\r \r in Boston\r \r and elsewhere and and finally just getting my feet back in the on the ground at home, back in the office. And,\r \r I apologize to to you for having to make you do it for a couple weeks, on your own, but you did a great job. And,\r \r looking forward to\r \r being back at it today.\r \r\n\n\n\n[00:01:07] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 7,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah.\r \r I survived, but, I think the listeners will agree that things are more correct now with you here. But,\r \r yeah. Back in it was a couple episodes ago, I gave my kind of, conference experience. I wanna make sure you got some time to talk about what you thought about Positconf and anything you wanna share with the audience about what you took away from that. Sure. Well, it's always just so\r \r\n\n[00:01:30] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 30,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "sort of invigorating to get to be around other, you know, data scientists and and like minded folks and listen to talks and just connect and and collaborate and be in that community face to face together. So I I thought they did a great job putting on the conference.\r \r\n\n[00:01:46] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 46,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "I was able to to see some of my team members at Catch Brook that I actually hadn't seen in person before Yeah. Which is really special and really I was able to be at the table when you saw him for the first time. That was awesome. Yeah.\r \r\n\n[00:01:58] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 58,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "That's right. Shout out Ivan.\r \r And it it was it was a fantastic experience you know some of the highlights for me I guess on the shiny side were you know really Joe Chang's,\r \r talk about\r \r leveraging\r \r you know large language models within your your Shiny app that are able to\r \r essentially put together a DuckDV query\r \r show you that DuckDV query\r \r just from natural language\r \r and return the results on screen to you which was pretty incredible I think we have\r \r probably no less than a 1000000000\r \r opportunities,\r \r to incorporate that into some Shiny apps that we have have currently,\r \r but you know there were a bunch of fantastic talks. I think it's easy to\r \r not\r \r or take for granted all of the work that goes into\r \r putting together these talks and and how hard folks work to be able to put these presentations together for us. So just a big shout out to to everyone that that participated and,\r \r gave a talk this year and was able to provide us with some fantastic content. So I had a had a great time. I I got to see a little bit more of Seattle\r \r as well, than I had seen in the past. Sometimes at these conferences, it's it's tricky because you're, you know, you're just sort of glued to the conference and sometimes it's hard to to make it out of the hotel but I was able to go out with a few clients as well finally was able to see the the big Pike Place Market I think downtown there which was cool and did a little walking around\r \r and enjoyed enjoyed\r \r getting out to the West Coast and seeing Seattle. So we'll see what, I guess, Atlanta brings next year.\r \r\n\n\n\n[00:03:30] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 30,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "That's right. You're going to Hotlanta next year, so it'll be my my first time there. But, yeah, I'm seeing it's always funny trying to get a read of the room whenever they make those announcements. It's always, you know, mostly cheers, sometimes a couple groans, but in either way, it should be a good time nonetheless.\r \r I don't think there were any boos, so that's good. Yeah. That's true. Yeah. Yeah. No no heat, so to speak, from that announcement. But, yeah, that was that was, yeah, so that will be here before we know it because I know the the months go by fast. But, yeah, it was, again, terrific to see you once again and, just to hang out with you a bit. And, yeah, like you said, I was in I was pulled in in many different directions. So I didn't get to see as much as Seattle as I would like, but who knows? Maybe I'll be back there next year for other events or whatnot. But, nonetheless, it was it was awesome. And and, yeah, I hope that the hype I I put around Joe's shiny announcement was worth it because I for the listeners, I I had a sneak preview of that before Joe made that presentation.\r \r And poor Mike here was just asking me, any hints, any hints, any hints, and when's it coming? When's it coming? It's like, stay tuned for Wednesday. And, yep, it seems like it didn't disappoint.\r \r\n\n\n\n[00:04:37] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 37,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yep. For anybody that needs this information, Eric, it's a great great secret keeper.\r \r\n\n[00:04:44] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 44,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "When when I'm told to zip the lips, I know how to zip the lips, usually. Usually.\r \r But this time, I honor good old Joe on that one. But, nonetheless, yeah, amazing experience. And, you know, we gotta get get to business here. We got our fun our weekly issue to talk about here. This has been curated by Sam Parmer who was also at the at the POSIT Conf. I got a chance to hang out with him multiple times, and I actually had some nice dinner with him one of the nights too just walking around the Seattle area, but he and I always have lots to talk about. And for this, he had tremendous help as always from our fellow iRwerky team members and contributors like all of you around the world with your poll requests\r \r and other resource suggestions.\r \r\n\nWe're gonna go technical here, Mike, on this first one in areas that, admittedly, I kinda take for granted, but I guess could bite you if you're not careful.\r \r Now with r, r is one of those you might call interpreted languages, which means that when you launch r, whether it's through the console directly,\r \r through its own GUI interface on Windows, or through an IDE like pod you know, RStudio or the new positron or whatever have you,\r \r you're gonna get a REPL,\r \r which is kind of what the r console looks like. But if you don't know what repl is, and believe me, even when I first got in, because I had no idea what that is, that is the read,\r \r eval, print loop. And both r and Python and other languages come with this so that you can type a command,\r \r hit enter, and then you get the result.\r \r\n\nSometimes\r \r when you have a long command,\r \r you can actually\r \r space this out to multiple lines if you want and just hit enter, and you'll get with a little plus sign,\r \r not plus an addition, but plus to the new line that you're adding\r \r to that\r \r that console input.\r \r And you can do this for as much as you want, albeit you might get tired if you do this a lot in the console directly. So for most of the time, we end up writing our scripts or Python scripts depending on which language you are. And that way, you can run the whole file or you could send certain bits of that file into the into the console itself.\r \r Apparently, recently, there has been a user that\r \r had sent\r \r a lot of input to this console\r \r or to the the interpreter itself\r \r ended up being hitting a limit that r has had for\r \r historically for a while\r \r of 4,096\r \r bytes. And I did a little crack research before this. Apparently, a byte is a character, so it's kind of a one to one translation, which means that this user\r \r was sending\r \r a string of command that was over 4,096\r \r bytes\r \r in that in that session.\r \r\n\n\n\n[00:07:37] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 37,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "It might not actually be that long, though. Right? If it's a character, it's not like it's 4,000 lines.\r \r How many characters in a if you you get your 80,\r \r your 80 width. Right? It's what we try to adhere to. Well, yeah. For styling, sure. Yeah. For styling purposes. So in a regular 80\r \r 80,\r \r width set of lines, that's gonna be let me do some quick math here. Oh, boy.\r \r\n\n[00:08:01] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 1,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Dangerous.\r \r\n\n[00:08:02] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 2,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "51\r \r lines?\r \r\n\n[00:08:05] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 5,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Well, there may be something else going on here, and this is where, again, we're gonna\r \r get into the weeds a little bit by the author of this post that comes directly from the r blog.\r \r Thomas Calabrera, who is one of the members of the r core team,\r \r apparently has been diving into this issue as a result of this report that went on the r develop mailing list.\r \r And, apparently, now there have been advancements in our the development version\r \r to help get to, quote unquote, unlimited lines so you can throw through the parser.\r \r So I'm gonna give you my take on how this works. This is a lot of machinery here that, admittedly, I've not gotten into as much. But one has to wonder just what process was generating that massive\r \r set of input\r \r that was causing all these bytes to be limited. And, again, maybe I have it completely wrong on what a character translates to bytes, but, nonetheless,\r \r let's talk about how\r \r when you send a command to r, how it actually gets in there.\r \r\n\nSo, first, Thomas is quick to point out that the parser is not the issue here\r \r because the parser\r \r needs the functionality\r \r to look at code\r \r with input of technically unlimited length that could span multiple lines.\r \r And one concrete example that he highlights here\r \r is an if statement.\r \r Because in an if statement,\r \r you need to look at that entire if statement, everything going into that to know what to do in terms of the rest of the console input.\r \r So\r \r that is always going to have to be parsed\r \r in the theory of an unlimited length depending on how extensive that is.\r \r So that's where\r \r that needs that needs to happen.\r \r\n\nBut then there's not just the parser at play here. There's also the REPL itself,\r \r which, again, as I mentioned, is getting\r \r input from either the user or maybe copying pasting that code\r \r into the console.\r \r And there is under a hood an API function in r itself. They call it r underscore read console,\r \r which is modeled after a c function called fgets, again, outside of my\r \r wheelhouse here.\r \r But, apparently,\r \r that has\r \r that has a capability\r \r to know\r \r whether it's getting one massive line or if it's getting multiple lines that was separated by, say, a carriage return.\r \r Hence, like I mentioned earlier, when you type a line, hit enter, but you're not done yet, you'll get that plus sign in the console. It's gonna know\r \r how to interpret that.\r \r\n\nBut that buffer\r \r that basically that empty space, if you will, that the repo uses to grab all this all this input\r \r has been\r \r in a constant definition for the limit length which has been 4,096\r \r bytes\r \r apparently since 2,008.\r \r And before that, it was actually\r \r 1024.\r \r So it was much smaller back then.\r \r So, apparently, there are ways up until recently\r \r where you could overflow\r \r this repo buffer.\r \r I don't think that's to be confused. I'm I'm abusing terminology here, but I often\r \r hear about buffer overruns when code crashes. I don't think this is quite the same, but, nonetheless,\r \r the consequence here up until recently\r \r is that if you had an input that was expanded past this 4,096\r \r limit,\r \r it would just truncate it. So it's as if you just didn't type in the rest of your code, so to speak.\r \r\n\nSo that that again, that's been a gotcha, apparently, that some people have seen, but now\r \r seems like that is a thing of the past in the development version. So there are\r \r improvements\r \r that have been made,\r \r but there are some nuances to keep in mind when term in terms of where you're actually interacting with r.\r \r So there is on Windows historically been, since my early days of r, the r GUI that comes when you install r on a Windows machine\r \r that has again, it looks like its own mini IDE, if you wanna call it that. It's got its own console in there,\r \r but there were issues that have been identified with that,\r \r that make it so that that buffer size\r \r was getting hit more often than it should.\r \r\n\nAnd now they fix that\r \r by giving kind of an intermediate interface between the user typing in, hitting enter, and then that going to the REPL and for interpretation\r \r to help\r \r account for lines that could exceed this this limit. So, apparently, that's landing\r \r soon in production r. We don't know when yet, but it looks like there have been some improvements on that side of it.\r \r And then the r term itself, another thing within Windows,\r \r that's like the console itself,\r \r which is getting enhancements as well to help\r \r circumvent some of these limitations.\r \r\n\nAgain, I'm not a Windows user anymore, so I don't know exactly if that will affect me day to day. My guess is not for those out there.\r \r And then Linux, you know, Unix in general also\r \r have a a function here because they use a\r \r read line library\r \r whenever you start typing in the console and then sending that to the r interpreter\r \r that\r \r has had,\r \r limits before.\r \r You may run into that\r \r give or take depending on what OS you're on.\r \r I mean, Mac OS also encounters this.\r \r But in in conclusion, Thomas says that there are ways you can defend yourself against this. I think the biggest way is to\r \r put everything in a file usually if you have a huge massive\r \r chunk of code.\r \r\n\nOtherwise, it looks like if you are grabbing this code from, say, another process that's generating it,\r \r I wonder if it was kind of akin to when you have JavaScript and you can make what's called a minified JavaScript file where it takes away all those carriage returns, but then you get this, like, massive\r \r wide text\r \r that the JavaScript\r \r parsers know how to deal with. I wonder if something like that was going on with this user, and they were just getting this massive, massive string\r \r of our code that was causing these limits. Again, speculation on my end,\r \r but it looks like these limitations\r \r are hopefully gonna be a thing of the past if you've encountered them before.\r \r\n\nSo, again, pretty we invite you to check out the blog post because I've only gone high level\r \r on what Thomas has outlined here. But if you find yourself in this situation,\r \r then, yeah, this this post may help you encourage you that the new versions of r will have a more unlimited\r \r limit, if you will, as opposed to this more truncated\r \r 4,096\r \r\n\n[00:15:10] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 10,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "limit. Well, I tried to do it justice anyway. Like, what are your thoughts on this? No, Eric. This is a tricky one and I think you, boiled it down for us as best as possible.\r \r I think it, again, reminds me of, like, how much actually goes on under the hood when you execute in our function. Alright. There's a lot of wizardry to compile that code and to get it to execute, right, that the actual c code, right, that is is getting run\r \r under the hood.\r \r And a lot of work goes into making this all work perfectly\r \r across different operating systems\r \r as well. So it's it's it's pretty incredible\r \r how easy it is for us to to take for granted about how well that works and it's a this is a limitation I haven't run into myself necessarily before. I've,\r \r I think, seen some strange things when I I try to copy and paste, you know, large\r \r amounts of code into the console and I certainly try to avoid that especially when I'm jumping between IDE's and RStudio versus Versus Code\r \r and dev containers and things like that. I'll I'll run into some strange issues. So I think as you said, you know, a best practice to keep in mind is is to just, you know, contain everything in scripts. If you have something really long that you want to execute, you can you can source that script if you want or just highlight the the code that you want to to run and execute that code, itself as opposed to, you know, copying and pasting large amounts of of, you know, code into directly\r \r into,\r \r your your console.\r \r\n\nIt this also brings me back to my early days of r and R GUI, which is something that I had not opened up in in quite a long time and it brought back some memories pretty quickly because that is admittedly\r \r where I started in R. I'm not even sure if RStudio\r \r existed\r \r\n\n[00:16:58] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 58,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "when I was getting started and are not to date myself too much but, at least Speak for yourself. My goodness. You know what ID is I'd use in the past? And\r \r\n\n[00:17:09] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 9,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "and you know when you do install our I was looking looking at my local R installation and and seeing, you know, our GUI dot exe, our term dot exe,\r \r and you know these are I guess things hanging around that we we sort of take for granted. Right? That that are packaged in with our local installation of R. But if you're using R Studio or if you're using Positron nowadays or or Versus Code or whatever it is, you know, these sort of legacy\r \r items, I I would imagine that our term is still applicable but probably our GUI,\r \r isn't applicable for folks using, you know, one of those those IDEs. These legacy,\r \r executables and applications, if you will,\r \r are still there, you know, if you wanted to get some nostalgia, pop into them and and try a little bit. I remember when I after I found our studio, I started a new job and and was working with somebody who was writing a little bit of our code, but we were sort of sort of siloed so we weren't working, together\r \r very well and I went over to his desk one day and he was using our GUI\r \r and didn't know that you could write in our script and, like, save in our script that you could rerun later so he thought that you just had to, you know, save\r \r commands in like a notepad text file or something like that and\r \r that was the way I guess that his professor taught him in in university. It never showed him that you could save in our script which is is a little scary but it makes me think about how far we've come\r \r but that really really interesting blog post, you know, it sounds like this is a potentially solved\r \r issue in the coming releases of our and maybe something that we don't necessarily have to to dive too deep in the weeds on in the future or or worry about because they're handling so much of this behind the scenes stuff for us.\r \r\n\n\n\n[00:18:53] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 53,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. Again, you know, all the machinery behind the the hood here, or under the hood of of our yeah. It there's we definitely need to appreciate it more in the fact that we can have modern tooling on top of it and still leverage, you know, the language\r \r in many different ways. Yeah. That's a it's a testament to how far things are going and, yeah, development is not slowing down anytime soon. So, yep, a lot of a lot of things that you can go down rabbit holes of, and and, certainly, this is this is one of those.\r \r And, yeah, speaking of having, like, modern interfaces on top of R and whatnot, of course, one of the the great interfaces\r \r or\r \r new add ons that many are using in terms of reproducible research and and then the like has been the quartile ecosystem, the quartile\r \r compilation engine for documents that can be coded up in markdown, but then have code embedded inside, whether it's r or Python and whatnot.\r \r\n\nAnd the but one of the best things about Quarto has always been the ability, of course, to write in markdown.\r \r I mean, we all I always joke kind of at the end of each episode, if you don't know how to write mark markdown in 5 minutes, e y c would give you $5.\r \r So remember that presentation in NBSW years ago.\r \r But, you know, markdown,\r \r of course, can be written in any language. Right?\r \r And we have a very diverse community in data science as we all well know.\r \r So what if you're in a situation\r \r where you've written this great mortal document\r \r and now you want to send that to collaborators that have a different you know, spoken language or primary language.\r \r\n\nWell, this next post is gonna give you some insights on how you can do just that with the advent of technology.\r \r This blog post is coming to us from Frank Aragona,\r \r and he talks about how he was able to translate Quiridon and ends any markdown file\r \r into any other language.\r \r So there are some services in play here that can account for this,\r \r but he did take a look at, you know, the existing services out there.\r \r Unfortunately, a lot of them, in his opinion, unfortunately,\r \r required\r \r API access that ends up even needing\r \r your credit card even if you're not planning on paying for it, services from Google\r \r and others like DeepL or whatnot.\r \r\n\nBut\r \r he did find into\r \r found another avenue called Hugging Face transformers,\r \r which do provide APIs\r \r to get pretrained\r \r models that are tailored for translation.\r \r And so now the key is, well, how do you actually use this thing?\r \r There is an existing R library for Hugging Face, but\r \r it required Conda to install some Python libraries. And\r \r like the author here,\r \r me and Conda don't quite get along, especially in my work environment. So, of course, I look for ways to simplify that.\r \r So he ended up coding up a more friendly wrapper to install these packages via Reticulate\r \r and the pip, you know, install interface for Python.\r \r\n\nAnd, of course, this does necessitate Reticulate.\r \r And then through his package, it'll download the hugging face transformer\r \r Python bindings,\r \r which, again, I'm not as familiar with.\r \r But once that's in there,\r \r he's got a Python package now or an R package called\r \r translatemd.\r \r He's got the coding in the blog post on how to get that onto your system once you have reticulate\r \r ready to go, but it's gonna spin up a virtual environment for you, which again in the Python world is like what we have for RM\r \r for containing your dependencies,\r \r calls it our transformers, but you can rename it whatever you like.\r \r\n\nAnd then once you have that ready to go, you can feed in a quartile document,\r \r and it will basically have a multi process approach. It'll parse the quartile document,\r \r apply the translation,\r \r and then in that kind of tidy form of the parsed translation,\r \r it'll then now rewrite\r \r to a new quartile file\r \r a new document\r \r of the translated language. So he's got a snippet of how this looks when you start parsing it, and much I already talked about in previous highlights when you talk about parsing code files,\r \r you do see\r \r different\r \r areas that have been parsed, whether it's the YAML,\r \r inline text,\r \r headings,\r \r more inline text, blocks of of of code or whatnot.\r \r\n\nAnd then once you unwrap that and then translate it, then you start to see you can see side by side in the post\r \r what he's gone from the English version\r \r to, I believe, the Spanish version.\r \r So that\r \r looking pretty good,\r \r and then he's got a little picture at the bottom of the post that shows the 2 documents side by side.\r \r But like everything, Mike, there are a little bit of gotchas here that you might want to be aware of before you translate this. Why don't you walk us through some of the little off bugs he's found here? Yeah. There's a couple a couple of bugs it seems like you might have to manually\r \r\n\n[00:24:21] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 21,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "adjust for and it's actually pretty some of them are somewhat evident,\r \r just from the 2 screenshots\r \r which are are really cool. I think an awesome feature this blog post showing\r \r on the left,\r \r the English translation or the original, I guess, quarto document if you will and then on the right side the equivalent\r \r Spanish translated\r \r version of the same quarto document. So it's really cool to see these 2 things side by side.\r \r One of the things that unfortunately happened during the translation\r \r is that a particular section header that had a single, you know, pound sign to be able to to have that as sort of an h one header,\r \r the pound sign got removed or for the the hashtag, for for the younger audience out there. So you can see sort of on the right side, that that bold heading that would correspond on the left side doesn't exist in the Spanish translation. Translation. So it's just something that you would have to go into,\r \r I think in in add that pound sign yourself. Not a huge deal,\r \r in a small document probably in a big document situation\r \r it would be a little painstaking to have to go through and do that in a lot of different places.\r \r\n\nWe just rolled out 9 reports, 9 quartile reports,\r \r that were due on the 31st that we rolled out to our clients and each one of them was about 77 pages long. So in that case would have been difficult for us to do but if you have a small little, you know quarto report it shouldn't be too big of a deal to go in and add those\r \r headers and there's there's always control f too, right, that we can try to find the particular\r \r header text and then go in there and just just stick that pound sign in front of it.\r \r The Light Parser package which is leveraged here has a a known bug as well with, quarto chunk YAML parameters and in particular if you have a chunk that is specified as eval eval false excuse me such that the code shows up but it actually doesn't get evaluated\r \r it translates that into eval no\r \r the n o instead of eval false\r \r So it looks like the Light Parser packages is working on rectifying\r \r that issue.\r \r\n\nI haven't looked into it yet. Frank,\r \r the author of this blog post, it says that hopefully this is fixed but maybe we can do a little follow-up next week to take a look at whether or not that bug still exists but,\r \r Frank also wraps up by letting you know that it's probably a good idea because we're potentially automating a lot here to go through\r \r the translated document and really with a fine tooth comb make sure that there are no other bugs because I think in situations like this right it can handle\r \r a lot for you you know maybe upwards of 90% but some of those edge cases depending on what you're trying to do in your quarto document,\r \r we do a lot of crazy stuff with include chunks,\r \r you know, child documents and things like that. So you never know,\r \r you know, if there are particular edge cases that\r \r this translator has not been able to solve yet at this point. So I think it's a good idea to to take your time and take a look at the output. Know that a lot of,\r \r you know, the the manual work that you would have had to have done has been taken care of for you, but there might still be some some little spots you might have to tune up.\r \r\n\n\n\n[00:27:36] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 36,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. It it's not\r \r a direct one to one analogy here, but I've been looking at things like this even for the production of this very show. The podcasting service that we use has\r \r a functionality where it'll\r \r produce a transcript for our episodes. Right? I mean, it's kind of like a translation from audio to to text, so it's not quite the same.\r \r But just like you said, Mike, about maybe doing a double check before you sign off on it, I even noticed that will mess up a a few keywords here and there that I tend to spot and then put a correction in, but there may be others that I don't catch. So you won't get everything perfect in these, but, of course,\r \r we we cannot, you know, understate\r \r how much\r \r time this can save, especially if you're gonna do this\r \r routinely to multiple languages. I think that's a huge win for accessibility\r \r and certainly depending on your needs. I could see a use case where maybe you have an application, whatever, Shiny or something else, and you're you know, the user's doing a bunch of stuff, and then you want them to download or reproduce a report of those findings. Hence, a cordial document or a markdown document, whatever have you, you could plug something like this in and then make have that report have multiple languages. There's lots of automation ideas you could have at play here.\r \r\n\n\n\n[00:28:49] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 49,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Very, very cool. Yeah. A little radio button allowing the user to pick which language they want, they wanna download the report in.\r \r\n\n[00:28:56] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 56,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. I think, yeah, the possibilities\r \r once you get your hands on these tailored models, there's just so much fun stuff we we can do with it. So credit to Frank here for another awesome use case of both automation and portal to\r \r to to check a lot of, nice solution here. Gotta love it.\r \r Last but certainly not least in our highlights,\r \r episode here, we've got\r \r another great use case of, speaking of cleaning things up sometimes.\r \r Yeah. Yours truly code sometimes needs to get cleaned up a little bit. I know, Mike, you write perfect code every time. Right? Right?\r \r I wish. You wish. Yep. You and me both. Well, that's where\r \r you could\r \r manually\r \r look at what you've messed up, which again, I often do and make the corrections,\r \r but there are ways that you can have something else scan your code and make your life a bit easier.\r \r\n\nAnd that, again, is our last, highlight for today. Another great blog post coming from the one and only Ma'al Salman who, again, has been a frequent contributor\r \r to the highlights for a very long time now where she talks about a really\r \r great way to get started\r \r with using\r \r winter, the winter package\r \r to get your code base up in tip top shape.\r \r And I admit when I first heard of linting, I didn't know what heads or tails this was all about. Now I'm starting to come around to it, but this is a post I wish I had seen years ago when I started to see this mention or I see this magical stuff being used in other people's dev sessions or selling their code with a keystroke just so it's perfect. And I'm like, how does that even work? Well, now we're gonna figure out how that works.\r \r So, again, the lint r package is what drives this in the r ecosystem, but many languages have equivalents\r \r in their in their, package ecosystems.\r \r\n\nThe first step is you need to tell winter what it's going to do, and that is through a configuration\r \r file.\r \r And so that is with the syntax\r \r name of dot winter. So it's by default a quote unquote hidden file. But if you put that at the root of the project that you're gonna use the linter on, you can then put different options\r \r here. And you can start by letting linter do everything it wants to do, and that's where in the snippet she has here\r \r in the post,\r \r there is a function called linters with tags,\r \r and tags is an optional parameter. If you make a null, it's gonna use everything,\r \r every check that it wants to do. And then also the encoding as well, which most of the time you can do UTF 8. Sorry for any Windows users that have to do something different in that, but that's usually what I stick with.\r \r\n\nAnd then once you have that,\r \r if, say, you're writing a package, like in the use case of this post,\r \r you wanna lint it. It's just lintrcoloncolonlint_package,\r \r and then it's gonna depend on the environment you're running in,\r \r say in RStudio ID, you're gonna get another tab appear next to your code or console\r \r where it'll highlight all the different issues that the linter has identified.\r \r And, yeah, yours truly sometimes has a long list of this, and I have to parse through this a little bit. So\r \r now you know what the issue is.\r \r What are you gonna do about it? So\r \r Miles outlines a few\r \r points here. Mike, why don't you take us through what you might wanna do once you found the problems?\r \r\n\n\n\n[00:32:45] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 45,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yeah. Once you've identified, you know, some of the problems,\r \r some of the things that you can do, I guess, for for one example that Mael\r \r provides here is is maybe you have a function that is is reading a super long path and sometimes,\r \r you know, hopefully, we're not doing too much of hard coding a specific path on our machine. We're using things like the here,\r \r the here package to be able to sort of build out that path, you know, relative\r \r to anyone else's system who might be running our code. But you can break that up instead of supplying that path directly within the function argument. You could define that path as a variable first\r \r and then pass that variable into the following function that is going to,\r \r you know,\r \r access that particular path or or apply the logic\r \r against that path. So it's it's interesting things like that, you know, some simple stuff that you can integrate.\r \r\n\nOne of the nice things,\r \r about the this linting functionality\r \r is that and I know that I always have, you know, particular edge cases in my code where maybe it's just not possible to get this line down to 80 characters, for example. Like, it's not feasible. I would have to use, you know, glue or or paste statements and it would start to get ugly and it's, you know, it's only 83 characters and it just really sort of makes sense to leave it the way it is. So if I wanna skip the linting for a particular line,\r \r you can actually add,\r \r this this string\r \r called no lint, and then the name of the linter exclusion\r \r to a specific line\r \r in your dotlinter file, I believe.\r \r\n\nOne of the cool things as well about the linter package is if I remember correctly\r \r that you can sort of set up,\r \r custom\r \r linting, you know, based upon\r \r the the styling\r \r guidelines that you might have internally.\r \r So, you know, depending on if you like your arguments written in wide format versus long format,\r \r there's only actually one correct answer there. It's long format but we could have a whole podcast about that sometime soon.\r \r So you you can do interesting things like that and then you know one of the I think final really nice things as well\r \r is the ability to,\r \r you know, put this all in a GitHub action for CICD purposes\r \r where you can just specifically lint\r \r changed files which is nice so that you're not running this CICD and spending your GitHub actions minutes\r \r on your entire,\r \r package repository or your entire just our repository if it's not necessarily a package but you can just run your linter against the new stuff,\r \r as part of your your CICD process and then\r \r get those warnings or corrections\r \r you know during that that pull request,\r \r before things end up in the main branch of your repository and headed to prod. I I think that's that's really interesting. It's something that we haven't leveraged\r \r at Catchbrook,\r \r before. You know, most of our,\r \r CICD is is just around either rebuilding the package down site or running unit tests, but but linting I think is a really cool additional additional use case for, you know, having these automated checks as part of your, you know, continuous integration workflows and I really appreciate my Elle\r \r calling out the ability, to be\r \r able to introduce,\r \r linting\r \r as part of your your CICD process\r \r and particularly only linting, the change stuff because that's something that we struggle with,\r \r as well on occasion is using up a lot of GitHub actions minutes,\r \r on code that's already been checked before.\r \r\n\n\n\n[00:36:13] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 13,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. One interesting thing about, you know, the relatively newer\r \r IDEs out there or new uses of IDEs out there is that even just writing our code itself depending on your settings,\r \r I'm thinking,\r \r of course, of the Versus code r extension,\r \r it will, by default, run linter already, and it will already highlight in your code where you're like, yeah, pass 80 character width or other things where things you're referencing a variable that hasn't been defined yet.\r \r And I admit there are times where, like, I don't wanna see that right away. I just wanted you to see that, like, maybe when I'm close to, like, my cleanup stage. So there there are ways that as as Mel's hotline here, you can turn certain checks off. I'm still getting to know, like, the best use cases of that\r \r for me. I admit I haven't put in GitHub actions yet because I always\r \r I don't wanna say I have trust issues, but it's like something that's gonna edit your code. You're kinda little nervous. Like, is it gonna get it right? When we just saw about the translation thing, it might not get all these translations correct. So but maybe I need to trust more. Trust the process as a old sports cliche goes.\r \r\n\n\n\n[00:37:21] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 21,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Me too, Eric. Yeah. It it's hard during development when you see, like, you know, in Versus Code,\r \r the the problems,\r \r panel. Right? Just just loaded down with all sorts of problems with the linting\r \r of your code and it can, you know cause you to to I guess spend some unnecessary\r \r time at the beginning of the process as opposed to doing that that final cleanup once things are in a better state. But maybe maybe that's just my workflow and maybe it's actually\r \r helpful to to rectify those things up front. So teach their own.\r \r\n\n[00:37:52] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 52,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yep. Exactly. I I still remember doing those,\r \r Twitch livestreams back in the day, and suddenly I'd boot up Versus Go and this file has, like, 10 or 20 these squigglies on their line. I'm like, oh, the poor the poor viewers are seeing my sloppy code. Oh, no. So then I quickly turn that winner off, and it looks like everything's perfect. Wink wink. Exactly. Not really.\r \r The they each your own. Exactly. But, yeah, as as always, the the tooling is there.\r \r It's your experience, right, how you wanna tweak it, but it's, again, great that we have all this at our disposal for sure. And we have a lot at our fingertips, if you will, when you look at the rest of the article we issued that Sam has curated for us. And we'll take a couple of minutes here for our additional fines.\r \r And a huge\r \r congratulations\r \r must go out to my\r \r fellow,\r \r members of the R Consortium\r \r submissions working group because\r \r the R Consortium submission pilot 3\r \r has officially been approved by the health authorities at the FDA.\r \r\n\nThis is monumental\r \r in this particular pilot.\r \r This was looking at the ways of using R\r \r to create what in the pharma industry we call\r \r ADaM datasets.\r \r That's a specific format that is kind of longitudinal\r \r in nature,\r \r but it's often a key intermediate\r \r layout that is used to populate,\r \r tables, figures, and listings that often go into our clinical study reports.\r \r So, again, a great way to show\r \r that, yes,\r \r we can use r in many aspects of the clinical submission process.\r \r This was certainly\r \r a key focus of my positconf talk on the efforts of Shiny and web assembly. But again, we're looking at all the different\r \r parts of a pharma\r \r submission process.\r \r\n\nAnd like always,\r \r they are all the materials are reproducible.\r \r All the materials are on GitHub. We wanna make sure it benefits\r \r all the entire industry.\r \r And again, we invite you to check out the blog post where it's got all the key contacts. I've been involved with this. So my thanks to everybody\r \r that led the project, go from the working group side\r \r and the regulator side. We could not do this without them. So, again, major congratulations.\r \r And that means I'm up next, so to speak. I'm on deck for pilot 4, so I'm super excited.\r \r\n\n[00:40:24] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 24,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Congratulations\r \r to everybody involved, Eric. That is monumental,\r \r really exciting to see, especially the industry that that you're working in really\r \r adopt are so heavily and, really sort of pushing the language to be able to to change the world in a lot of ways. So so that's fantastic. Really excited for you.\r \r One additional find that I had is\r \r a look what looks like a,\r \r you know, shiny live potentially app, that's hosted,\r \r by Sharon Machlis that she created,\r \r and it leverages\r \r the Artut API, which interacts with, Mastodon.\r \r And,\r \r what she has is a nice little interactive table here. It looks like d t,\r \r that posts that a list of all of the accounts\r \r on Mastodon\r \r that have made a post with the r stats hashtag at least twice in the last 30 days. So there's some familiar names on here.\r \r\n\nI see,\r \r I see Dirk Edelbuttel,\r \r Steven Sanderson,\r \r Luke Pembleton. I see a lot of folks that I follow in the r Kelly Baldwin data science community\r \r as well.\r \r So it's really cool little app to be able to explore\r \r and, I believe congratulations\r \r goes out to Sharon as well on her recent retirement, but it seems like she is not\r \r retiring from doing, continued r and data science exploration.\r \r\n\n[00:41:48] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 48,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. I got credit to her. She's always been\r \r very, enlightening her her work to the fall, and she seems to be enjoying her next stage of life. And she was recently on the, data science hangouts with with Rachel and Libby this past week. So, hopefully, the recording of that will be out soon for those that weren't able to tune in live on that. But, yeah, I always like to see these great resources shared. Again, taking advantage of technology,\r \r things like, again, compiling Shiny into a web browser. You cannot have it better than that.\r \r And Exactly. There's a whole bunch of more to choose from in this issue. We wish we could talk about it all, but we got our\r \r our day jobs to get back to. But we're gonna leave you with our usual,\r \r where do you find all this? It's at rok.org.\r \r\n\nThe for the current issue is always at the home page. And, of course, the archive is available too if you wanna check all the back catalog out as well. It was searchable bar if you wanna search for specific topics as well.\r \r And this project is driven by the community, so we invite you\r \r to share that great resource you found online wherever you wrote it or you found someone else's great resource.\r \r Please give us a poll request, which is linked at the top right corner ataruk.org,\r \r all marked down all the time. You won't need a fancy API to translate that. Just put in your link. You are all set to go. We have the template right there for you. And as well, we love to hear from you in the audience that is we got a few ways of doing that. So you can get in touch with us, via the contact page, which is linked in the episode show notes in your favorite podcast player that you're listening on.\r \r You can also send us a fun little boost if you have a modern podcast app as well.\r \r\n\nYou can also get in touch with us on these social medias,\r \r and the aforementioned mastodon is where you'll find me the most. I am at our podcast at podcast index on social.\r \r You'll also find me on LinkedIn. Just search my name, and you'll find me there.\r \r And on the x thingy, occasionally, we've got the r cast. Mike, where can the listeners find you? Sure. You can find me on mastodon@mike_thomas@fostodon\r \r\n\n[00:43:54] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 54,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "dot org, or you can find me on LinkedIn. If you search Catchbrook Analytics,\r \r k e t c h b r o o k, you can see what I'm up to.\r \r\n\n[00:44:03] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 3,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Very good. And, yeah, you got a lot of things cooking, man. It must have taken a lot of time to write all those quarter reports.\r \r Great job nonetheless.\r \r\n\n[00:44:10] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 10,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Thank goodness, for parameterization.\r \r\n\n[00:44:13] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 13,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Let's just put it that way. Oh, yeah. That was a hot topic on the last episode if you wanna listen to that as well. Yep. I've been using that a lot in my day job too. I cannot live without it. So\r \r we can't prioritize everything in our life, but we can prioritize reports. So\r \r with that, we're gonna close-up shop here again. Great to have you back in the saddle once again, Mike. It's great to not have to do this alone for a 3rd week in a row.\r \r\n\n[00:44:40] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 40,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "No. I'm back for a while now. That's awesome.\r \r\n\n[00:44:43] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "trans_timestamp": 43,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Awesome. Yeah. Exactly. So we're gonna close-up shop here, and I'll do it for episode 177\r \r of our weekly highlights. And we'll be back with episode 178\r \r of our weekly highlights\r \r next week."
+      }
+    ],
+    "chapters": [
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "chap_timestamp": 27,
+        "chap_text": "Mike's posit::conf takeaways",
+        "chap_href": "https://blog.r-project.org/2024/08/30/long-input-lines/"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "chap_timestamp": 27,
+        "chap_text": "Long lines of code",
+        "chap_href": "https://edenian-prince.github.io/blog/posts/2024-08-21-translate-md-files/"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "chap_timestamp": 35,
+        "chap_text": "Translating Quarto documents",
+        "chap_href": "https://masalmon.eu/2024/08/28/lintr-3-steps/"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "chap_timestamp": 28,
+        "chap_text": "Lint-free with lintr",
+        "chap_href": "https://www.r-consortium.org/blog/2024/08/26/news-from-r-submissions-working-group-pilot-3-successfully-reviewed-by-fda"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "chap_timestamp": 36,
+        "chap_text": "R Submission Pilot 3 Approved!",
+        "chap_href": "https://apps.machlis.com/shiny/rstats/"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "chap_timestamp": 44,
+        "chap_text": "Mastodon #rstats postings"
+      },
+      {
+        "ep_name": "issue_2024_w_36_highlights",
+        "chap_timestamp": 19,
+        "chap_text": "Episode Wrapup"
+      }
+    ]
+  },
+  {
+    "metadata": [
+      {
         "ep_name": "issue_2024_w_35_highlights",
         "ep_date": "2024-08-28",
         "ep_duration": 31,
