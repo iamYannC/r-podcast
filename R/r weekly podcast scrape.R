@@ -94,7 +94,7 @@ get_ep_data <- function(episode_index) {
     time_stamps_pat <- "\\[(\\d{2}:\\d{2}:\\d{2})\\]"
     time_stamps <- stri_match_all_regex(full_transcript, time_stamps_pat)[[1]][, 2] |> hms()
     # speaker#
-    speaker_pattern <- "\r [A-Z][a-z]+ [A-Z][a-z]+:\r"
+    speaker_pattern <- "\r [A-Z][a-z]+ [A-Z][a-z]+:\r+|Unknown:\r"
     speaker <- stri_match_all_regex(full_transcript, speaker_pattern)[[1]][, 1] |> stri_trim_both()
     
     # text #
