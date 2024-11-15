@@ -2,6 +2,338 @@
   {
     "metadata": [
       {
+        "ep_name": "issue_2024_w_46_highlights",
+        "ep_date": "2024-11-15",
+        "ep_duration": 41,
+        "ep_description_short": "The innovations of the R community never cease to amaze us! How a programmatic approach to generating markdown was vital to a high-profile Quarto site, a novel infograph of Bob's Burgers sentiment analysis, and updates to the next evolution of object-oriented programming in R. Episode Links This week's curator: Ryo Nakagawara -…"
+      }
+    ],
+    "description_long": [
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "description_long": "\r \r The innovations of the R community never cease to amaze us! How a programmatic approach to generating markdown was vital to a high-profile Quarto site, a novel infograph of Bob's Burgers sentiment analysis, and updates to the next evolution of object-oriented programming in R.\nEpisode Links\n\nThis week's curator: Ryo Nakagawara - @[email protected] (Mastodon) & @R_by_Ryo) (X/Twitter)\nGuide to generating and rendering computational markdown content programmatically with Quarto\nBob’s Burgers Episode Fingerprints by Season\nS7 0.2.0\nEntire issue available at rweekly.org/2024-W46\nSupporting the show\n\nUse the contact page at https://serve.podhome.fm/custompage/r-weekly-highlights/contact to send us your feedback\nR-Weekly Highlights on the Podcastindex.org - You can send a boost into the show directly in the Podcast Index. First, top-up with Alby, and then head over to the R-Weekly Highlights podcast entry on the index.\nA new way to think about value: https://value4value.info\nGet in touch with us on social media\nEric Nantz: @[email protected] (Mastodon) and @theRcast (X/Twitter)\nMike Thomas: @mike-thomas.bsky.social & @[email protected] (Mastodon) & @mike_ketchbrook (X/Twitter) \nMusic credits powered byOCRemix\n\nCammy's London Drizzle - Super Street Fighter II: The New Challengers - MkVaff - https://ocremix.org/remix/OCR00453\nBar Hopping - Streets of Rage 2 - jaxx - https://ocremix.org/remix/OCR00437"
+      }
+    ],
+    "links": [
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "links": "https://mstdn.social/@R_by_Ryo"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "links": "https://twitter.com/R_by_Ryo"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "links": "https://www.andrewheiss.com/blog/2024/11/04/render-generated-r-chunks-quarto/"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "links": "https://stevenponce.netlify.app/projects/standalone_visualizations/sa_2024-11-11.html"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "links": "https://www.tidyverse.org/blog/2024/11/s7-0-2-0/"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "links": "https://rweekly.org/2024-W46.html"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "links": "https://serve.podhome.fm/custompage/r-weekly-highlights/contact"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "links": "https://podcastindex.org/podcast/1062040"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "links": "https://getalby.com/"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "links": "https://value4value.info"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "links": "https://podcastindex.social/@rpodcast"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "links": "https://twitter.com/theRcast"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "links": "https://bsky.app/profile/mike-thomas.bsky.social"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "links": "https://fosstodon.org/@mike_thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "links": "https://twitter.com/mike_ketchbrook"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "links": "https://ocremix.org/"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "links": "https://ocremix.org/remix/OCR00453"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "links": "https://ocremix.org/remix/OCR00437"
+      }
+    ],
+    "transcript": [
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 3,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Hello, friends. We're back with episode a 185 of the R Weekly Highlights podcast.\r \r This is the weekly podcast where we talk about the excellent resources that are shared in the highlights section\r \r and elsewhere in this week's current our weekly issue.\r \r My name is Eric Nantz, and I'm delighted you join us wherever you are around the world.\r \r And he is back. He couldn't stay away forever, but my awesome cohost, Mike Thomas, has graced us with his presence again. Mike, how are you doing? Not that you've had any, like, free time or anything. I'm doing well, Eric. Calling in from a new location,\r \r\n\n[00:00:33] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 33,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "full 2 miles away from my old location.\r \r Settling in pretty well so far,\r \r and\r \r I have also migrated\r \r locations\r \r virtually.\r \r And as of last night, I am on Blue Sky.\r \r\n\n[00:00:50] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 50,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Oh, you are? Okay. I'm feeling the the peer pressure now if you're there. It sounds like it's the place to be.\r \r Definitely taken an awful lot in the in the data science sector. Now, of course, I do still have a a very, vested interest in the mess, the the fediverse as well, which is just kind of a part of, but kind of it's a little dicey folks. And I'm still trying to sort out just like anyone else. But,\r \r yeah, you may see me on there in the future. We, actually did spin up a new account for the R pharma team on Blue Sky that we just put out there before the conference that took place\r \r a couple weeks ago, which I'll have a lot more to say about that once we get through the editing of all the recordings. But, nonetheless, that was a major event. But we're here to talk on our weekly, of course. And this week,\r \r our issue was curated by Ryo Nakagorora\r \r with, as always, tremendous help from our fellow, our weekly team members, and contributors like all of you around the world with your poll request and other suggestions.\r \r\n\nAnd my goodness, Mike, we're gonna lead off with one that\r \r really is a both mind blowing,\r \r you know, showcase of what's possible with our end portal and just really inspiring as well to see just how far you can take these dynamically generated reports. And this has been\r \r authored by a a good friend of ours, from the highlights, Andrew Heist,\r \r who speaking of free time, I don't know how he has a free time to knock this stuff out. My goodness. I need whatever he's eating. And Andrew Heist blog, yeah, is always gonna be super detailed,\r \r\n\n[00:02:24] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 24,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "probably pretty long, and\r \r again, blow me away with\r \r how much he was able to accomplish.\r \r\n\n[00:02:32] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 32,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yep. And we'll dive into those details now because this post is talking about how\r \r he approached\r \r generating and rendering\r \r dynamically\r \r computed\r \r content\r \r written in markdown, but programmatically\r \r with quarto,\r \r which is something I've had a little bit of diving into with the r markdown days with various snippets, especially of reusable\r \r kind of sections in a report.\r \r But Andrew just blows my stuff out of the water, what he accomplishes here. So let's let's set the stage here because there's a big picture here. So,\r \r yeah, there was a little thing called the election that happened a a weekend or so ago. And apparently, Andrew was helping out in the state of Idaho with\r \r assembling the election results and then surfacing them into a really fancy quartile website, which\r \r love to see that quartile in the real world, so to speak in a not so,\r \r not so boring situation to say the least. Lots of eyes on that on that side of the news.\r \r\n\nAnd apparently,\r \r Andrew has put this in a very sophisticated\r \r ETL pipeline,\r \r which is merging\r \r ETL concepts with,\r \r wait for it, targets\r \r to help process the data from different sources, whether they're online\r \r or from another storage and then creating\r \r a tidy, I guess, data store, he calls it, that everything else can be built upon.\r \r And then another pipeline is gonna take that tidy set of results\r \r and then actually generate the Cortl report and website programmatically.\r \r He teased that he's gonna share more about that, but I'm saying, Andrew, not that you have infinite time. I'd love to see a deep dive into those target pipelines because I'm always eager to see just the directions you take with that.\r \r But diving into the rest of the poster, he talks about kind of the, the meat and potatoes of what the website was surfacing, which was taking advantage of. It's really neat features in the quarto UI for HTML,\r \r where you can have these tabbed, you know, tab,\r \r panels much like you do in a shiny app and in quartile as well,\r \r which gave both a tabular visualization\r \r and an interactive map\r \r of the election results across districts in Idaho.\r \r\n\nSo you could kind of choose which which display you like.\r \r And then he shows kind of in general,\r \r you might have in the portal dashboard\r \r set up these different sections\r \r with code chunks to actually generate that table\r \r or that map.\r \r And sure, for maybe 1 or 2 races, so to speak in that particular state's election, you could, you know, you could just dive into that. But what if you have a 100 or more of these?\r \r Yeah. You don't wanna copy paste that stuff left and right. So he looked at\r \r how can we generate these, these table and mapping\r \r code chunks and the output from that more dynamically,\r \r not just the code itself, but where it's actually being placed\r \r in the Quartal website,\r \r IE, the Quartal syntax that's gonna be built and marked down for that.\r \r\n\nSo he first knocks out probably an elephant in the room for those that have done this before is that in code chunks,\r \r you can use the results parameter and call it as is\r \r to basically not escape that content and the basically take it as it is so that if there's an HTML report\r \r and you're spinning out markdown or HTML, it's just gonna surface that out right away when you compile the website or the report.\r \r But it doesn't always work the way you want. And he shows an example of like\r \r the, a bullet list of like the,\r \r gap minder country data\r \r where it just doesn't\r \r quite work\r \r when you need to have\r \r additional work in these chunks.\r \r\n\nAnd he shows that in an example where he's trying to round\r \r certain numbers, just hypothetically the the number pi,\r \r it's only spitting out, like, the code that makes the result in the bullet list, not the actual\r \r result of that computation.\r \r So it didn't render the inline chunks of these items in the bullet list. And, of course, that's a that's a nonstarter if you're gonna do this more dynamically.\r \r So the trick that this is all built upon\r \r is to actually pre render these in line chunks\r \r before\r \r they actually appear in the document. So this is a little different. Right? This is not dynamically\r \r rendering\r \r the content, what I call just in time\r \r of the website compilation.\r \r\n\nHe is saying, let me re precompute that first\r \r and then show it into the actual quartile content.\r \r In this case, now you get the rounded versions of the pie number\r \r in that markdown text.\r \r Took me a little bit to grasp this, but I kind of see where he's going with this. And, of course, this is a trivial example.\r \r But back to the election website he was creating,\r \r he wanted to do a similar idea, but now with those tab sets of the visuals\r \r of the table and the map.\r \r So the concept does generalize. First, he's using the Gapminder data\r \r to kind of show a tidy data set that would be a scatter plot of the GDP\r \r per capital and then life expectancy.\r \r\n\nStuff you've seen many times before in presentations about Gapminder.\r \r And then he shows, okay, what if I want in my portal dashboard,\r \r the panel tab set,\r \r and then within each of these continents splitting up 1 by 1,\r \r echoing that particular continents,\r \r result from that tidy dataset and tidy visualization.\r \r Again, you could copy that over and over from icon in 1234\r \r 5. But again, going back to the election result, what if you have, you know, 100 of these or, you know, thousands of these potentially if you're doing a lot of, like, biomarker data or something like that?\r \r So, again, he's going to use a hybrid of the glue package\r \r and other tricks to precompute\r \r these panels\r \r dynamically. He's got a handy utility function called build panel\r \r where he's feeding in what's gonna be the chunk label,\r \r the output that is in string format, the markdown syntax as injecting that\r \r set of like the panel title, the index of the plot.\r \r\n\nSo that then that's going to render\r \r dynamically\r \r in the report itself. He does verify it works first by running the function and he gets the markdown\r \r of the heading and the continent name and then the coach on as if he typed it himself.\r \r So mission accomplished on that front.\r \r And then he's able to basically loop through this at one point\r \r with a combination of the knitter functions,\r \r knit\r \r function, which again,\r \r quarto with the r execution engine is built upon knitters. So knitter,\r \r like, we've we've spoken for years on this show, Mike, about the praise for knitter and what the doors had opened.\r \r People need to realize if they don't already, that quarto itself is building upon\r \r these types of execution engines. And without knitter,\r \r there is no quarto. I'll just be\r \r hot take 101 with Eric on that. I don't think it's such a hot take. But No. I would agree with that. It is\r \r\n\n[00:10:03] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 3,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "almost,\r \r impossible\r \r to\r \r not take for granted\r \r everything that Knitter has done for us.\r \r As much as you appreciate it, you should appreciate it even more.\r \r\n\n[00:10:17] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 17,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Absolutely. Absolutely. So, again, just this knit function alone, you may take it for granted. That's when you're in the r markdown Jaysus hitting that, you know, compile report button in the IDE.\r \r But this is the engine behind all that. So he shows a great great,\r \r great example of using that in action. And then sure enough, he's got a nice little tab panel of the different continents and the scatter plots.\r \r And that\r \r really saves you a boatload of time there.\r \r And then he's got another example later on where you could use this in more of a teaching aspect.\r \r Let's say you wanna show the different\r \r stages of building up an effective visualization.\r \r\n\nAnd he does this with what he calls the evolution of a ggplot\r \r visualization,\r \r where you can have these plots saved as objects,\r \r say, from the first stage of it to the last stage of it.\r \r You can make a tidy, you know, dataset with the actual plot object that is in a list column that has, like, the actual object itself, the text around it, and a description.\r \r And guess what? You can use the same logic to create a tab panel\r \r going from stage 1 all the way to the last stage\r \r and just grabbing these different plot objects from this list in that data frame.\r \r My goodness. That's a great way to help teach your students. Like, you may start of initial plot that looks, you know, very utilitarian and all the way to last step. You got a nice theme with it. You got the nice color choices, the background looking much sharper,\r \r changing default labels.\r \r\n\nSo quartile is a teaching tool. I mean, it's already getting very popular in education sector, but, man, this is really,\r \r really top notch stuff here.\r \r So again, you can take this even further\r \r with the concept\r \r of making now going back to the election results,\r \r you got all this, you know, content\r \r kind of stitched together.\r \r Quarto does have the concept of kinda having these child reports\r \r inside an overall,\r \r you know, website or or report or what have you.\r \r So he kinda takes this into\r \r a bunch of our chunks again that are dynamically generated.\r \r And you you can, you know, do this in quartile 2. Again, built on Knitter,\r \r you can have child documents\r \r filtered into\r \r an overall report.\r \r\n\nBut, again, he's showing then\r \r that these report texts is all just marked down in the end. Right? The key is just being able to loop through that. Maybe you have a tidy data frame that's like or or overarching all of this.\r \r And then to be able to use the knit function to paste this all in together.\r \r And that's where he shows then in this generated output.\r \r Instead of, like, separate reports like verbatim or separate files, he has different sections of this continents report\r \r where the user can quickly, you know, go through the different continents, figure out what countries are involved,\r \r looking at the details in one table, looking at the plot in another.\r \r\n\nAnd you put a TOC with that and you got yourself a really intricate,\r \r dynamically driven report or dashboard, whatever have you.\r \r But all this is powered by rendering that markdown content ahead of time\r \r and then using it to inject that into the overall portal website.\r \r I literally\r \r literally yesterday\r \r did something very similar to this. Albeit, I did take the manual approach, but I regretted it for reasons.\r \r But now knowing what Andrew's done here, I can have\r \r a function that generates a snippet of this case iframes\r \r of another quartile dashboard inside another quartile reveal JS slide deck.\r \r\n\nI could just have a tidy data frame that has, like, the links to these iframes of the quartile dashboard,\r \r loop through that,\r \r get the markdown chunks, and then put that into my main reveal JS document,\r \r deploy that on pause and connect, and I'm off to the races.\r \r I have eliminated the need for PowerPoint\r \r of these one pagers of results that I had to assemble. So,\r \r Andrew, you blew my mind yet again. Credit to you for sharing sharing your knowledge here. And, yeah, the possibilities seem endless with dynamic generation of portal content.\r \r So mission accomplished, buddy.\r \r\n\n\n\n[00:14:51] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 51,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yeah. This is fantastic.\r \r If you were to try to,\r \r you know, create some sort of a quartile or R Markdown document that\r \r displayed these 100 different\r \r is it counties in Idaho, I think that we're trying to, track or districts in Idaho. I think that's that's what it is. I mean, you could do it by hand if you wanted to, but it would it would take you forever and a whole lot of copy and paste, and God forbid you wanna change one little aesthetic, right, that you wanna propagate\r \r everywhere else. You're you're stuck doing a find, replace all. And and I think, you know, we've\r \r discussed in the past,\r \r the the benefits of of functional programming,\r \r and they apply very similarly to quarto. And one of my favorite things about quarto, and it's interesting to me because I just came off a project where we did a lot of work exactly like this. So I can't I can't, praise this type of workflow\r \r enough. I think, Eric, you probably have this experience with Knitter as well, where\r \r if you try to do some our\r \r run some our code, execute some our process\r \r within Knitter,\r \r it'll run a little bit slower than if you did it outside of Knitter.\r \r\n\nSo what that means is that you will be able to save time,\r \r in your rendering if you have pre computed and pre created\r \r any of those R objects\r \r ahead of time instead of asking them to be created during the knit process.\r \r You extend that one\r \r rung further and and we start to get into targets. Right? And that's sort of, you know, the exact goal of targets is to be able to pre process things in your pipeline and only re execute things that need to be\r \r updated. So it's a fantastic,\r \r complement\r \r to the workflow here that Andrew has put together to demonstrate this. And,\r \r you know, one other thing that I do wanna highlight\r \r is the use of child documents. I'm not sure if Andrew Andrew called it out in the blog post. I'm not sure if at the the end of his whole process, which we don't necessarily have full insight into yet. Right?\r \r\n\nIn terms of this election quarter report that he's put together. If he leveraged child documents or not, he talks about that when you you take a look at some of these code chunks that are in line in the blog post that are some pretty large glue\r \r based chunk, code chunks that he he's putting together that we can, you know, execute\r \r as a function.\r \r At the end of the day, he talks about how some of this this code in his current workflow,\r \r might be able to be condensed,\r \r if you took advantage of child documents\r \r as well. And what that means in a in a quarto,\r \r sense is\r \r using this special tag, I think, that starts with 2,\r \r arrows pointing to the left and and ends with 2 arrows pointing to the right and,\r \r includes, no pun intended,\r \r the include\r \r verb.\r \r\n\nI think that allows you to reference another file, another QMD file that you can have, sort of inserted into maybe like a main dotqmd\r \r file. And if you're familiar with child documents in our markdown, it's the same type of concept, just a different syntax.\r \r Those are things that we leverage heavily because if you're putting together a a large report,\r \r or a large document like the one Andrew is is putting together that has a lot of moving pieces,\r \r I think it it sort of always makes sense to try to manage those pieces as separately\r \r as possible, especially if you're working on a collaborative team. Right? Somebody can just focus on on one piece and another person can be dedicated to focus on another piece. And I think it just allows you to,\r \r sort of\r \r piece together your final product in a way that's easier to manage and easier to maintain than if you were trying to do it in some sort of a monolith.\r \r\n\nSo I can't I can't say enough about,\r \r child documents within quarto. The syntax that they have makes it really easy to do so if you're on the quarto website and you're not familiar\r \r with how to leverage child documents.\r \r Just search it on on quarto.org\r \r and and the,\r \r function syntax to be able to do that,\r \r the markdown syntax, excuse me, will be right there for you. I can't can't harp targets enough as well and sort of bringing these technologies together. I would love to see\r \r how he leverages that remote storage with targets and that local DuckDb\r \r database as well to sort of bring this whole entire solution together.\r \r\n\nBut but top to bottom, I think it's a fantastic resource for anyone who is building a large\r \r scale quarto type of document or looking to just\r \r get a better understanding and better feel for best practices\r \r around authoring quarto reports.\r \r I think the tips in here will be invaluable for you.\r \r\n\n[00:19:35] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 35,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. And, I do have it on good authority from the, author himself that there's some big enhancements coming to Target\r \r with respect to potentially DuckDV integration\r \r and\r \r even better performance. Like, Target's already performs great. But what Will has in store for us, oh, you all are gonna love it, especially with those that have these, you know, 10,000 plus,\r \r you know, branches and pipeline, you know, targets themselves. So, yeah, stay tuned, folks. It's getting better. But, yeah, this this whole thing has\r \r so many nuggets to to choose from here that I've gotta I gotta look at this even more.\r \r\n\nBut we literally at our day job have a couple teams I wanna\r \r they're they're not satisfied with the SharePoint world, man. They want to build\r \r dynamically\r \r data driven websites\r \r of these reports that can be shared broadly across the organization\r \r that take advantage of the interactivity\r \r that the portal offers, whether it's through, you know, things like the portal dashboard, which I've become a big fan of. Obviously, we have some people looking into the observable JS side of it. But you're not gonna get this to SharePoint folks. That's my hot take too for the podcast\r \r that the this this in particular, if they can be used in a high profile situation\r \r like tracking election results,\r \r good grief. It can be used almost anywhere.\r \r\n\n\n\n[00:21:00] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 0,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Not fully satisfied with SharePoint? Are you sure?\r \r You have that right?\r \r\n\n[00:21:05] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 5,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "I may have to double check my references on that.\r \r\n\n[00:21:08] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 8,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "A little satire for the audience.\r \r\n\n[00:21:10] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 10,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. That that hopefully, they got. But, yeah, we've had some internal debates on that one too. And I was,\r \r but I I did like I said, I I've used principles of this, albeit not so elegantly,\r \r where I was able to get away from having the creative a rather haphazard PowerPoint slide, but I used Cortl Dashboard instead.\r \r And because of the integrations we can have with Cortl websites and\r \r and iframes going as backgrounds in a presentation deck,\r \r I was able to create what that team really wanted, which was basically\r \r an HTML based slide\r \r of a bunch of quartile dashboards\r \r without having to put the quartile dashboards in the slide deck. But as background iframes, folks, like, this is\r \r so many mind blowing things we can do with this. I I hope I can give a talk about that later because I I've learned I've learned some tricks, man, but this is this is tricks on another level. What what Andrew's done here? I'm looking forward to that too.\r \r\n\nSo as I said, yeah, it was about a week and a half ago that there was a little thing called the election, and maybe somebody needed a little pick me up after that thing which side of the fence you're on. Maybe, you know, having a little bite to eat if you had a long night.\r \r Well,\r \r who knew that this next highlight was gonna\r \r high,\r \r showcase\r \r on a show that I admittedly have not seen before.\r \r I've heard about it. But this is coming from Steven Ponce, and he has put together a web a blog post, albeit\r \r mostly a notebook, I would say,\r \r about looking at the fingerprints\r \r used in each of the seasons of the show Bob's Burgers. And admittedly, I have not seen this show before as I'm Kabooie\r \r out of my wheelhouse for this. But it's basically an infograph\r \r as the meat of this post that is looking at across the different seasons\r \r where and I have to zoom in here on my fancy 4 k monitor to look at this more carefully.\r \r\n\nThe looking at the the transcripts of this, the dialogue and looking at, say, the the length of the sentences, the unique words,\r \r variance among the sentiment of the transcripts, a little text mining action here.\r \r How many questions there were? How many explanations\r \r there were?\r \r And it's a pretty neat infograph that for each, you know, faceted by season,\r \r you get I believe they call these like the spider plots or the radial charts. I forgot the exact name of them. But it's a it's a good way to put like multiple dimensions in a circular like fashion,\r \r but not be confined to the infamous pie chart limitation. So\r \r a pretty pretty neat visual there. And it's and again, the big picture is looking at the patterns and dialogue\r \r across the 14 seasons of this show, which again, I'm I'm an old timer. I haven't seen this yet. So maybe it has to be in my, in my,\r \r queue of shows to watch when I actually get a free time moment. Nonetheless,\r \r the notebook\r \r and style is that he's got the different steps\r \r in the building this visualization\r \r much like a tidy verse kind of, you know, flowchart that you would see often in our for data science and whatnot.\r \r\n\nLoading the packages, of course. And this is a little interesting here.\r \r We don't see as much of this lately,\r \r but Steven is using the Pac man package to orchestrate packages, which some have had great success with. I admit my my,\r \r my attempts with, Pac man were\r \r mixed at best. But,\r \r hey, if it works, it works. So he's got the snippet to\r \r load the various packages. And yes, Mike and I were remarking before the show.\r \r There is a package called Bob's Burgers R that's got the data sets that are being used in this.\r \r There's a package for everything, isn't there?\r \r\n\n\n\n[00:25:13] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 13,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Literally, at this point. Yes. It contains the transcripts. It looks like for every episode across,\r \r all the seasons that are available.\r \r\n\n[00:25:22] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 22,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Absolutely. So I'll have to look at that in my spare time, but he's also loading\r \r additional packages to help do the text analysis,\r \r tidy verse, of course,\r \r and patchwork, which we've spoken very highly about for being able to compose multiple ggplot\r \r objects together\r \r in any way you see fit, basically. So\r \r and then, also, he's using the camcorder\r \r package, which you heard about at positconf\r \r as well,\r \r to record\r \r the different plots as PNGs as you're going through it. So that will come in play later.\r \r So, first, the data which again, thanks to the Bob Burgers r package just simply using the transcript data data frame, and he's got it right off the bat. So that that part's done.\r \r It does a little exploration of it. Although, we don't see the result of it, but there is a handy handy function from the skimmer package\r \r called skim, which lets you it's not shown here in the output,\r \r but get like a terminal base glance of that data set or a data frame.\r \r\n\nReally handy, especially if you're in a terminal environment.\r \r Then comes the tidying stuff. So we got a lot of dplyr\r \r grouping by summarizations.\r \r And notice that in his syntax of the summary summarize\r \r function, he's taken advantage of the dot groups\r \r declaration,\r \r which again is\r \r thanks to the dplyr version 1.8 or later, I believe.\r \r They introduced the dot by\r \r and the dot groups parameters in key functions like mutate\r \r and summarize. So you don't you don't always have to do the old\r \r dplyr group by,\r \r summarize,\r \r dplyr ungroup afterwards because, Davis Vahn and others from the Tinyverse team were saying that got annoying on a lot of users. So that's a nice little trick\r \r\n\n[00:27:14] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 14,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "that that Steven shows here. Couldn't agree more. Yes. I\r \r love the dot buy argument.\r \r\n\n[00:27:20] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 20,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yep. I literally just started using that for a high high priority project and it's like I can never go back to group buy anymore if I can avoid it. So And the dot keep argument within mutate, so you don't have to use transmute anymore.\r \r That's right. Yeah. I need to explore that one too. Another great quality quality of life enhancement, I should say.\r \r Next comes the visualization. So he does a lot of setup up front\r \r to get the\r \r the the labels all in order as well as kind of the the CSS, I believe, is gonna be applied to these\r \r plots, a little bit of CSS, and then using glue to dynamically\r \r put in various things,\r \r and then\r \r managing the fonts.\r \r\n\nLots of, fonts are added from Google with the, I believe it's the fonts package, if I'm not mistaken.\r \r I have to double check that.\r \r\n\n[00:28:13] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 13,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "I think it's\r \r I thought it was called Google Fonts, but I'm not seeing\r \r\n\n[00:28:19] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 19,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "I'm not seeing where he got that from.\r \r\n\n[00:28:23] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 23,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "I'll take a look. Keep going.\r \r\n\n[00:28:25] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 25,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. We'll keep going. Yeah. We're we're learning here, guys.\r \r So nonetheless,\r \r then he's able to assemble the theme object in ggplot2, which again is a great way\r \r if you wanted to find that upfront\r \r with the the theme set and then a theme update.\r \r That way he can use that theme\r \r anywhere he goes from that point on or the rest of the visualizations.\r \r And then comes the main plot where it's a\r \r the the nugget here is using the geom polygon to get that\r \r nice little polygon superimposed\r \r inside this, you know, circular\r \r type display. Again, people call that a spider plot or a radial plot. Some to that effect. And then adding\r \r average lines on that. But again, flipping that to polar coordinates towards the end.\r \r\n\nAnd then defining the labels and the facets by season.\r \r And then adding on top of that kind of this\r \r pattern type visualization,\r \r which, again, you wanna look at the post to to get to get the meat of it. But there's a nice little pattern. I think that's kind of serving as the background, so to speak,\r \r on the plot itself. Again, really neat to play with. I haven't done this myself before. So\r \r really intricate annotations that he makes\r \r here. And then\r \r afterwards, he's gonna save all this\r \r as, PNGs\r \r for, I believe, at least one PNG I should say for the the whole plot itself.\r \r But he assembled that with patchwork before that\r \r to combine everything together.\r \r\n\nAnd then to be able to draw that, clean things up,\r \r and then using the magic package\r \r able to create neat little thumbnails of the visualization\r \r that he used, I believe, in the post itself. So little\r \r nice lot of visualization tricks here that if you're want to up your game with ggplot too. There's some really some real nuggets to share here. And then like any any good, data science citizen, he's got the nice session info at the end here.\r \r And link to the GitHub repository so you can actually see how this is composed in action. So great notebook setup here. Love the way that you can collapse the different code chunks and just get to what you're interested in. But, yeah, with a nice little, tidy dataset of\r \r transcripts and Boss Burgers,\r \r got yourself a nice little visualization\r \r to,\r \r you know, satisfy your appetite.\r \r\n\n\n\n[00:30:48] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 48,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Puns galore. Mike, what did you think about the visualizations here? Well, the final output that is at the top of the blog, it's a beautiful infographic. It's really nicely done. I like the contrast between\r \r the background that's just sort of off white a little bit and the the purple,\r \r gradient sort of that that, ticks the spider plot,\r \r on values are are represented by. Really, really cool. Turns out it's the show text package that allows you to manage Google Fonts,\r \r has the the font add Google, I think is the,\r \r particular function within the show text package that allows you to import certain Google fonts and leverage them in your, ggplot graphics.\r \r\n\nOne thing that I don't do well enough or understand\r \r well enough\r \r is adjusting, I guess, the graphics device itself.\r \r That, you know, arguments like DPI, which I think are dots per inch. Is that what that means? Yes. Correct.\r \r The units,\r \r I don't do that enough, unfortunately. I usually just in my,\r \r quarto documents, I'm just specifying fig height, fig width, things like that, and and messing around with it until it looks\r \r halfway decent. That's stuff that I need to learn a little bit more about, but Steven,\r \r has a few different places within this notebook\r \r where he is is setting those specific configurations. So I've definitely learned a lot there and you will as well if, that's something that you struggle with like me.\r \r\n\nOne other sort of cool\r \r function that I here's a little today I learned\r \r that I can't believe I don't even know if I want to admit that I'm just learning this today\r \r but there's a ggplot\r \r argument called theme underscore update.\r \r Eric, I'm sure you knew about this one.\r \r\n\n[00:32:35] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 35,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "I knew it sporadically. I never actually used it. So I love theme minimal,\r \r\n\n[00:32:40] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 40,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "but obviously, occasionally, there's some additional things that that I wanna do on top of theme minimal,\r \r that aren't within\r \r aren't doesn't, aren't contained within arguments of the theme minimal function.\r \r And\r \r typically I'll just add a theme\r \r function after that. And I think\r \r ggplot2\r \r knows well enough to\r \r use sort of the the last,\r \r you know, value for a particular,\r \r theme argument\r \r to set that as what's gonna be shown in the plot.\r \r But I think theme update\r \r sounds like it is probably doing a better job of that as opposed to sort of overriding,\r \r what you had written before it in your theme minimal\r \r call. So this was a new one for me. A little embarrassed to say that this is the first time that I'm coming across it but it is one that I am for sure going to be using from now on in many many many places.\r \r\n\nJust excellent blog posts top to bottom.\r \r Love the code, love the layout here, and the end deliverable is is absolutely beautiful. So take a look for yourself.\r \r\n\n[00:33:47] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 47,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. I'm I'm doing you know,\r \r first, you're you're you're too, kind or too hard on yourself, I should say. There are so many things in ggplot too that I\r \r always scratch the surface of. But let's put things in perspective, folks, as I'm I'm gonna take a quick look at the archive of ggplot too. Did you know that jigapotwo,\r \r the first grand release\r \r was all the way back in 2007?\r \r So it's got a lot going on. I mean, that we're coming there 20 years on that thing. I mean, we're over 15 now. So it's not surprising that there are things in there that we we didn't expect to see. But, yeah, that's why we're having this post from Steven. It's a great great reminder of the capabilities of it. So I'll like you, I'm gonna take note of that theme update function.\r \r Lots, yeah, lots of attention to detail here. I absolutely love\r \r seeing how the sausage is made. And, yeah, the font add function, I did a little digging while you were talking, is from the show text package.\r \r\n\nI don't use that a lot in my daily work, but I definitely will take a look at that for my next\r \r Gigi Pot visualization.\r \r But, yeah, nonetheless,\r \r really\r \r great design choices. So this is a great showcase of using the principles\r \r that I've seen outlined in various workshops, such as some Cedric Sure or others about what are the best ways to build up an effective infograph\r \r that, by the way, you don't need to go to Adobe Illustrator for. You don't need to go to some proprietary product, jiji plot 2. We have a little, little getting your hands dirty, so to speak, and get you\r \r really the whole way there. It's just a a wonderful plot here. Absolutely wonderful.\r \r\n\n\n\n[00:35:27] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 27,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "2007, you say, for ggplot. Well, it's\r \r incredible to think how much, that package has evolved. And you know what else has evolved in the R ecosystem?\r \r Object oriented\r \r\n\n[00:35:40] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 40,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "programming.\r \r You got it. You got it. And,\r \r you know, you may be as an our user, you've probably used this\r \r many, many times, sometimes without even realizing it because of the elegance of the language itself.\r \r So what are we teasing here is that\r \r since about a a year or so ago,\r \r there has been a new effort sanctioned by the art consortium no less\r \r to build a new\r \r object oriented paradigm into art itself eventually.\r \r And right now, it is a new package called s 7.\r \r The post comes to us from the Tidyverse blog written by Tomas Kalamazowski\r \r and Hadley Wickham himself on\r \r the new updates to s 7 version 0.2.0.\r \r\n\nAnd for the uninitiated wondering,\r \r wait, why\r \r is s 7 even exist?\r \r Well, in r itself\r \r for historically a very long time since practically the very beginning,\r \r there have been\r \r at least 2 or 3\r \r class systems in the language. 1 of which is s 3,\r \r which is leveraged heavily by the tidyverse packages\r \r and a lot of base art functions itself\r \r to give you that kind of very easy way to say,\r \r create a visualization with the plot function.\r \r But if you feed it a data frame, it's gonna know the treat that differently than if you feed it like a\r \r single vector or, 2 vectors of say, x and y. It's a dispatching system. I'll be it\r \r very general, almost to its detriment to some people's eyes.\r \r\n\nThen you have s 4,\r \r which brings a lot of formality,\r \r a lot of guardrails around your object oriented structures.\r \r But I can attest that it is not for the faint of heart. It is quite complex\r \r to get into the nuts and bolts of. And when I was doing bioconductor\r \r stuff back in the early part of my career,\r \r I got to know s 4 almost unwillingly well,\r \r because of that. But it never felt natural to me. And again, that's just my opinion. There are others that use us for a great success. More power to you.\r \r S 7 is trying to be kind of in between that of and sorts,\r \r giving some of the simplicity of the syntax of s 3\r \r with some of the guardrails\r \r and, you know, safety\r \r net and more, you know, formal\r \r definitions\r \r that s 4 has.\r \r\n\nSo in this update, what's new here, there's a few, you know, minor, I would say, bug fixes, but also\r \r building blocks for new bigger features in place.\r \r Some of which include\r \r being able to support lazy property defaults,\r \r which they're saying makes the actual setup of a class much more flexible.\r \r One other idea that caught one other item that caught my eye was that they made an enhanced speed improvements\r \r for when you set and get properties using the at sign\r \r or the at sign with the assignment operator. Apparently, there were some bottlenecks with that in previous version\r \r that they've, fixed this now.\r \r\n\nThey've also expanded the compatibility\r \r with additional s three classes\r \r to help bring that transition a little more optimal for those coming from the s three side of things.\r \r And then also\r \r be able to have be able to convert a class into a subclass with the new,\r \r convert function or a modified version of the convert function.\r \r Lots more that are in the release notes, but the post also talks about how do you actually use this thing. So there's a great\r \r great kind of, example\r \r where they use this new class they call it range\r \r to help look at kind of the range between numbers, I believe.\r \r\n\nAnd you can kinda see how the class methods,\r \r the class properties,\r \r the generics are defined with this. And you'll see there is a lot of\r \r shared\r \r syntax or paradigms of shared syntax of s 3,\r \r but yet you're able to define things more formally\r \r with the s 4 kind of language inside as well.\r \r They realize there are so some limitations here. It's not quite production ready, I would say, for getting into\r \r the actual R language itself, which is the end goal here.\r \r But\r \r they know that they are actively working on it. But like I said, there is a huge goal here for this.\r \r Not just to be a standalone package for the foreseeable future,\r \r but to actually get into base r. That's as opposed to things like r 6, the object oriented class used by Shiny and many other packages,\r \r that's always gonna kinda stay as is because that's a very at rapidly evolving\r \r class system often with its own needs compared to what s 3, s 4, and now s 7 are bringing. So I'll be obviously watching this space quite closely. I have not used s 7 yet, but I know some packages are starting to use it now. So I'll be very curious kind of what the what the developer, you know, shared learning is as\r \r authors start to use this more formally. So great to see updates in this space, and I guess we'll stay tuned to see what else is out there. Yeah. It's interesting, Eric. You know, you know, a lot to\r \r\n\n[00:41:07] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 7,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "digest here. You know, I think that the idea,\r \r as\r \r noted in the blog post is that hopefully s seven eventually becomes part of BaseR.\r \r It is going to be, you know, an additional learning curve for some folks. Although, hopefully, if you've been doing some object oriented programming in s 3 and or s 4,\r \r some of the syntax and the concepts will be fairly familiar and fairly easy to migrate\r \r for you. This looks like a project that has now fallen under the R Consortium,\r \r which is cool. You can check out the GitHub there to take a look at the project itself.\r \r And, there's 2 limitations\r \r that they\r \r want to point out. The first is that s seven objects can be serialized,\r \r with Save RDS\r \r but the way that it's currently\r \r authored, saves the entire class specification\r \r with each object and that may change\r \r in the future. And then, the second is that support for implicit s three classes of array or matrix,\r \r is still in development. So some things to watch out for for the the hardcore object oriented program,\r \r programming\r \r developers\r \r out there. But I'm excited to see version 0.2.0\r \r drop, and\r \r this looks\r \r definitely a little more digestible to me than s 4.\r \r\n\nSo I'm excited to, learn a little bit more about s 7 and hopefully\r \r incorporate it into our projects going forward.\r \r\n\n[00:42:36] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 36,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. And I know I've seen in the community our our friend John Harman's put s 7 for the paces on some of his\r \r exploration efforts, and I see some others. You know, I'm sure they're learning on it. And I'm doing a quick check on the CRAN page. There are, as of now, 4 packages that are importing s 7. So there are there are a few to choose from, and they,\r \r admittedly, there is one called Monad.\r \r Remember Monad's from our shiny Oh, gosh. Learnings from Joe Chang. So I want to check that one out.\r \r But but, yeah, nonetheless, it does seem to be moving along, and I'll be watching\r \r the space quite closely and seeing where that fits in my adventures both in Shiny and also in\r \r generic package development.\r \r\n\nBut you could have lots of adventures in the r side of things when data science, and this rest of the r weekly issue would give you, I'm sure, lots of directions\r \r to go down different adventures, different rabbit holes, and really ways to supercharge your data science exploits. And we'll take a couple minutes to talk about\r \r our additional finds here. And,\r \r fellow curator, good friend of ours, Jonathan Carroll,\r \r has released on crayon\r \r a very cool r package that he's had in development for a bit of time\r \r called Nifty.\r \r And what Nifty is is, our wrapper\r \r around a completely open source,\r \r self hostable\r \r notification\r \r service called nifty\r \r that you could spin up on, say, a cloud VPS or on your internal network\r \r and be able to, from r,\r \r push out a push notification\r \r using this package\r \r to go to wherever it needs to go.\r \r\n\nSo let's imagine you're running that big old simulation.\r \r You're away from your computer while you let the HPC, Matt, do its magic.\r \r What if you want that notification on your mobile device to say it's done? Right?\r \r Nifty might be a way to do that. So I may have to take a look at that. I've seen other packages in this space called pushbullet, I believe, from Dirk Eddybuttel. It's doing a similar thing with the Pushbullet service.\r \r But it's great to see our use in in novel ways too. So congrats to Jonathan for getting\r \r nifty on the crayon. And I saw on Mastodon, there was already a few very excited users for what they can do with that package. So that'll be in my, things to work look at during my holiday break.\r \r\n\n\n\n[00:44:59] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 59,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "And, Mike, what did you find? Well, one thing I wanna shout out is a package\r \r called Survey Down. I'm not sure if we've talked about this on the highlights before\r \r or not. It had a new release out there,\r \r and it's a pretty cool open source way for making surveys with R, quarto, Shiny,\r \r and a technology called Supabase, which looks like,\r \r how the back end data is stored. It's some type of, database.\r \r And I think it's\r \r I have a lot of use cases potentially where I need to make small\r \r forms, things like that, surveys,\r \r and\r \r I always sort of tend to wanna go overkill and develop a Shiny app instead of using something off the shelf like, I don't know, a Microsoft product or SurveyMonkey or or things like that, just because\r \r I'm I like doing those things to myself. Right? Make making my life more difficult.\r \r\n\nSo I would check out this package if you, like me, have a need to create a form or a survey\r \r and wanna do it open source and leverage some leg work that's that's already been done by a great team.\r \r\n\n[00:46:03] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 3,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. I I've seen this come through, but I haven't dived into it much. But boy oh boy, that would be terrific for, you know, wherever you have, like, surveys you wanna conduct in your organization or some other robust\r \r data collection, great to take advantage of the R ecosystem\r \r with that space. And,\r \r before we get gentle comments, it turns out I pronounced that package completely wrong. I went to the GitHub page. It's actually pronounced notify. It's n t f y. So sorry, John. I I I should have looked at that before I started saying that. Pronouncing things is hard, so correction noted. Yes. It is.\r \r Yep. But, luckily, you don't need to correct anything else with our weekly itself. We we strive on giving you authentic content. You don't have to worry about\r \r some, AI generated bots putting that populated feed into you. This is all human generated.\r \r\n\nWe definitely wanna take advantage of automation and certain pieces of it, but, no, that's the value of this project.\r \r Completely human element and, you know, written by the community for all of you in the community. And since it is a community effort,\r \r we rely on your help. One of the best ways to help is to share those great resources you find you found online. Whether it's a new package, a new blog post,\r \r new tutorial,\r \r we're all game for all of it. You can send us a poll request, all written in markdown using that top right\r \r banner link in the corner of our weekly dotorg. You know, it can be taken directly to the GitHub poll request template.\r \r\n\nWe show you kind of the things we're expecting. It's very minimal,\r \r but we always value your contributions there.\r \r We also value hearing from you in the audience as well. We got a little contact page in the episode show notes. We love hearing from you and what you've learned from our weekly.\r \r You can also find us on the social medias as well.\r \r Apparently, we're gonna we have a new source for Mike that he'll talk about shortly. But for me, it is still the, tried and true, Mastodon account with at our podcast at podcast index dot social\r \r as well as LinkedIn.\r \r\n\nSearch my name, you'll find me there. And I'll be at very much minimal now, the Weapon X thing at the r cast. But maybe I needed to pay attention to another one, Mike. What about you?\r \r\n\n[00:48:13] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 13,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yeah. I guess the latest for me, which I hope to check a little bit more often than I did on Mastodon, it it feels,\r \r like like I'm pretty excited about it. It's gonna be bluesky.\r \r You can find me at mikedashthomas.bsky.social.\r \r Otherwise, you can,\r \r check me out on LinkedIn if you search, Catchbrook Analytics, ketchb\r \r r o o k. You can figure out what I'm up to.\r \r\n\n[00:48:42] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 42,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Looks like I need to update my markdown tempo in the show notes, buddy.\r \r Sorry to do that to you. No. No. That's easy. That's easy. All marked out all the time for me. So all all good here. Well, with that, we will put a bow on this episode of our weekly highlights, and I admit I was remarking to Mike before the show.\r \r We're at a 185\r \r now. That means we're running close to that 200 mark eventually, I should say.\r \r And, shout out to our good friends,\r \r Ellis Hughes and Patrick Ward. They're on the similar journey. It looks like they're at a 180 some episodes of IDX. So,\r \r how about a friendly wager who gets there first? Hashtag just saying.\r \r\n\n\n\n[00:49:19] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 19,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "I don't know if I wanna make that bet.\r \r\n\n[00:49:21] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "trans_timestamp": 21,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "No. I don't either. Holidays coming up.\r \r Holidays are coming up, so that'll put a wrench in things. But, nonetheless, we hope you enjoyed this episode of our weekly,\r \r and we will be back with another episode. Maybe next week, maybe not. We'll see,\r \r soon.\r \r Don't know how to close those out. Alright. We're done."
+      }
+    ],
+    "chapters": [
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "chap_timestamp": 50,
+        "chap_text": "Programmatic markdown in Quarto",
+        "chap_href": "https://www.andrewheiss.com/blog/2024/11/04/render-generated-r-chunks-quarto/"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "chap_timestamp": 20,
+        "chap_text": "Bob's Burgers Episode Fingerprints",
+        "chap_href": "https://stevenponce.netlify.app/projects/standalone_visualizations/sa_2024-11-11.html"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "chap_timestamp": 51,
+        "chap_text": "S7 0.2.0",
+        "chap_href": "https://www.tidyverse.org/blog/2024/11/s7-0-2-0/"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "chap_timestamp": 18,
+        "chap_text": "Additional Finds"
+      },
+      {
+        "ep_name": "issue_2024_w_46_highlights",
+        "chap_timestamp": 40,
+        "chap_text": "Episode Wrapup"
+      }
+    ]
+  },
+  {
+    "metadata": [
+      {
         "ep_name": "issue_2024_w_45_highlights",
         "ep_date": "2024-11-06",
         "ep_duration": 4,
