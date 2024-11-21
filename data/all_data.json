@@ -2,6 +2,231 @@
   {
     "metadata": [
       {
+        "ep_name": "issue_2024_w_47_highlights",
+        "ep_date": "2024-11-21",
+        "ep_duration": 49,
+        "ep_description_short": "A summary of key contributions to the R language itself from R Dev Day at the Shiny in Production conference, and visualizing ice thickness in Greenland with the power of the tidyverse and leaflet. Episode Links This week's curator: Jon Calder - @[email protected] (Mastodon) & @jonmcalder (X/Twitter) R Dev Day @ SIP 2024 Greenland ice…"
+      }
+    ],
+    "description_long": [
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "description_long": "\r \r A summary of key contributions to the R language itself from R Dev Day at the Shiny in Production conference, and visualizing ice thickness in Greenland with the power of the tidyverse and leaflet.\n\n\nEpisode Links\n\nThis week's curator: Jon Calder - @[email protected] (Mastodon) & @jonmcalder (X/Twitter)\nR Dev Day @ SIP 2024\nGreenland ice thickness\nEntire issue available at rweekly.org/2024-W47\nSupplement Resources\n\nR Contribution Working Group https://contributor.r-project.org/working-group\nR Translations Status Dashboard https://contributor.r-project.org/translations-dashboard/\nR Development Guide https://contributor.r-project.org/rdevguide/\nConnect local Positron IDE to Gitpod via SSH? https://github.com/r-devel/r-dev-env/issues/193#issuecomment-2383816303\nSupporting the show\n\nUse the contact page at https://serve.podhome.fm/custompage/r-weekly-highlights/contact to send us your feedback\nR-Weekly Highlights on the Podcastindex.org - You can send a boost into the show directly in the Podcast Index. First, top-up with Alby, and then head over to the R-Weekly Highlights podcast entry on the index.\nA new way to think about value: https://value4value.info\nGet in touch with us on social media\nEric Nantz: @[email protected] (Mastodon), @rpodcast.bsky.social (BlueSky) and @theRcast (X/Twitter)\nMike Thomas: @[email protected] (Mastodon), @mike-thomas.bsky.social (BlueSky), and @mike_ketchbrook (X/Twitter) \nMusic credits powered byOCRemix\n\nIce Cap Zone (Pulse Mix) - Sonic the Hedgehog 3 - MkVaff - https://ocremix.org/remix/OCR04400"
+      }
+    ],
+    "links": [
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://fosstodon.org/@jonmcalder"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://twitter.com/jonmcalder"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://www.jumpingrivers.com/blog/r-dev-day-2024/"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://r.iresmi.net/posts/2024/arctic/"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://rweekly.org/2024-W47.html"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://contributor.r-project.org/working-group"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://contributor.r-project.org/translations-dashboard/"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://contributor.r-project.org/rdevguide/"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://github.com/r-devel/r-dev-env/issues/193#issuecomment-2383816303"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://serve.podhome.fm/custompage/r-weekly-highlights/contact"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://podcastindex.org/podcast/1062040"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://getalby.com/"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://value4value.info"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://podcastindex.social/@rpodcast"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://bsky.app/profile/rpodcast.bsky.social"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://twitter.com/theRcast"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://fosstodon.org/@mike_thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://bsky.app/profile/mike-thomas.bsky.social"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://twitter.com/mike_ketchbrook"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://ocremix.org/"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "links": "https://ocremix.org/remix/OCR04400"
+      }
+    ],
+    "transcript": [
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "trans_timestamp": 3,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Hello, friends. We are back of episode 186 of the R Weekly highlights podcast. This is the weekly podcast where we talk about the excellent resources that are shared in the highlights section at every single week at rweekly.org.\r \r My name is Eric Nantz, and I'm delighted you're joining us from wherever you are around the world.\r \r November's already getting close to being complete, but we're not complete here yet because\r \r you know who completes me on this show. It is my awesome cohost, Mike Thomas. Mike, how are you doing this morning? \r \r\n\n[00:00:35] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "trans_timestamp": 35,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Eric, I'm doing well. I want to extend a warm welcome from on behalf of the Blue Sky community to you this week.\r \r\n\n[00:00:39] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "trans_timestamp": 39,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Thank you, sir. Yes. It it took a little bit, but I found my way there, and it seems like I've I've,\r \r connected with a few people already, yourself included. So I'm\r \r eager to participate, share my my,\r \r little bits of, dev hacking here and there and learnings I've had such as\r \r when I the post I shared recently about editing these Our Pharma workshop recordings and learning new chordal tricks from the esteemed Nicole Arini. So, I mean, there's all all sorts of things I'm learning already. Happy to happy to share that and also learn from awesome people like you at the same time.\r \r\n\n[00:01:11] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "trans_timestamp": 11,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Beautiful. Yes. No.\r \r Hopefully, going forward,\r \r I will be, at least myself, be posting,\r \r the Our Weekly Highlights podcast episodes on there. So we have them both on Mastodon\r \r and on Blue Sky for wherever you are on social media today. \r \r\n\n[00:01:26] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "trans_timestamp": 26,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yep. And there's many choices, so that's why we wanna make sure we're we're touching the the audiences where they are, so to speak. So, yeah, Blue Sky is in in our future, so to speak. And but we'll talk about the present here. We got a great issue to talk about today, which has been curated by John Calder, another one of our longtime,\r \r curators on the Arrucci project. And as always, he had tremendous help for our fellow Arrucci team members and contributors like you all around the world with your poll request and other suggestions for resources.\r \r And one of the efforts that I've had my eye on for, now a couple years, but it's been really gaining a lot of momentum\r \r is, of course, we're here talking about the R language. Right? Our language is built on the principles of open source,\r \r which means that in theory, anybody around the world can contribute\r \r to the core of our lang your language itself.\r \r\n\nAnd there has been a concerted effort to bring in\r \r new contributors that wanna be able to impact the R language, get, get involved with open source.\r \r And that's what we're here to talk about today, where there was a special session\r \r at the recent shiny in production conference run by our friends at jumping rivers, a couple months ago,\r \r where a special our developer day.\r \r And this is coming to us from the jumping rivers blog, but it was authored by Heather Turner, who has been spearheading this effort\r \r of this\r \r our con contribution working group, which has been a joint effort\r \r of the our core team,\r \r various community groups, including the our ladies initiative, the our forwards initiative,\r \r the diversity and inclusion working group,\r \r and additional members of the R community that really bring in, you know, an easy way to give back and contribute to the R language and helping with that\r \r onboarding process.\r \r\n\nBut as such of a developer day, they tackle quite a few issues. And so this post talks about some really interesting issues that they are trying to tackle\r \r with the R language and the R project as a whole.\r \r So I'll give my take on a few things and then pass the baton to Mike. But the first issue on the docket here is talking about\r \r translations.\r \r Obviously, a very important part of any open source project\r \r to be able to display\r \r any, you know, diagnostic\r \r messages,\r \r other helpful messages that are happening in an R session\r \r to the language pertaining to the locale that the user is\r \r executing R with.\r \r\n\nSo,\r \r Heather mentions,\r \r Gabriela\r \r de Lima Martin,\r \r she was able to figure out how to contribute\r \r to R's WebLATE,\r \r which is basically a browser\r \r that you can see in your R session\r \r that gives you, like, the render documentation\r \r and other things like that that she was able to build in\r \r translational\r \r messages,\r \r 1st in a conventional way by translating individual strings at a time,\r \r but then leveraging a little bit of machine learning to help with that translation layer.\r \r But as with anything with automation,\r \r you need to have a set of eyes on it after that finished product because you might get some issues from time to time.\r \r Yours truly has seen this. If you've been listening to our weekly highlights and one of the podcast apps that support transcripts.\r \r\n\nYeah. The transcripts are about 95% of the way there, but there are some corrections I have to make as after we release\r \r it, such as, and I this happens to this day.\r \r It thinks the our weekly highlights podcast, the r is spelled o u r every time we do this transcription. So I have to manually update that. So I'd imagine there were similar things\r \r with the translations that Gabriela\r \r involved. But the good news is is that she was able to translate over 200\r \r messages,\r \r produced by R on this developer day alone.\r \r And she this has a link to the issue\r \r on the R dev day repository where she put in her notes if you wanna help contribute\r \r to this effort as well. But going side to side with that,\r \r they wanted to have, you know, as the project as a whole would like a more real time look at the progress of these translations. Where are the gaps? Where are the things that are on track to being completed?\r \r\n\nSo,\r \r this separate effort was building\r \r a translation\r \r dashboard,\r \r and this was tackled by a few people,\r \r Mario Reaman,\r \r midmercilynhausenrabie,\r \r and Murad Kamalov.\r \r Hopefully, I said that somewhat correctly,\r \r where they\r \r wanted to work on this translation dashboard. And within that, 2 specific items to address.\r \r One of which is minimizing the dependency footprint by removing the string r dependency, which will help streamline\r \r deployments,\r \r and then switching from the previous framework of flex dashboard\r \r over to quarto, which recently had dashboard support, which I made excellent use of recently in some open source work. So I\r \r fully support that that that pivot of the infrastructure, and I think that's gonna set them up\r \r for a great success.\r \r\n\nAnd there were some issues that they found with looking at supplemental or markdown rendering,\r \r things that they could streamline from the previous,\r \r infrastructure from flexdashboard.\r \r So there is a bit of cleanup\r \r involved and also leveraging GitHub actions and making sure those are working correctly\r \r with this new pivot to the portal dashboard.\r \r And it does sound like they've got a scheduled deployment for this so that it can be updated in real time. But there are links in the post to looking at this in more detail,\r \r but it's really looking promising to get kind of a\r \r a fit for purpose look at the progress of\r \r the translation of the R language into these different locales that, again,\r \r will be a very, very big help for increasing adoption and in\r \r in inclusion in general\r \r for looking at the R language\r \r itself.\r \r\n\nAnd then lastly, from my standpoint, and I'll turn over to Mike after this, but there was\r \r a slight bug that was found with the Cairo graphics engine,\r \r which is used primarily by 9 maybe it's by default now. I'm not quite sure,\r \r but there was\r \r a bit as little sub set of bugs that were\r \r being tracked on the Bugzilla page of the R project itself\r \r and then be able to help reset,\r \r looking at this particular issue\r \r where in a plot, there's an example of this in the post itself, there should be a solid color. Let's say, like, a 1 bar bar chart or something.\r \r There was a little white line that was, you know, happening\r \r in, like, part of the plot. And\r \r why? Doesn't make any sense.\r \r\n\nSo they took a look at the GR devices package,\r \r which is now part of base r. They kind of see where they might we're seeing that crop in. And there was a lot of just investigation to see where this issue\r \r was able to find it, but they learned some best practices from developers on this\r \r and to be able to\r \r get some advice that was given to them by Paul Merle himself, which has been one of the influential leaders of the graphic devices and R itself.\r \r And they figured out there was,\r \r you know, a key statement in this\r \r plotting the grid rectangle that this example\r \r is based from\r \r that there was something being drawn or something not being drawn apparently\r \r that had to be updated in the c code.\r \r\n\nAnd then they found a workaround that was leveraged from the quartz device engine\r \r to fix this white line even happening. So that's really getting into\r \r the nitty gritty or graphic devices where for me, I know a little bit about the grid system, but this will be way outside my my expertise at tackle. But it's a great example of team effort of a couple of developers at this dev day. Again, taking advice from Paul Merle\r \r and translating that so they could get a reprex of this going and then really isolating the problem.\r \r And then they are working on now the next steps of getting this patch\r \r accepted into base r so that the future versions of r won't have this\r \r phantom line appearing\r \r in these rectangles. So it really had to do with getting involved with not just a graphic device code, but the c code as well, which again, fair play. Great way to level up your knowledge because a lot of r is based in c, some bits of Fortran.\r \r\n\nSo it's a multilingual environment\r \r even of itself with the source code. So really fascinating to see\r \r where that takes you. But that's not all, Mike. Because apparently, there was some container fund to be had in this dev day too. No. And and as you said, you know, r itself is is built on a multilingual,\r \r\n\n[00:10:20] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "trans_timestamp": 20,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "somewhat complex environment.\r \r And if you want to build r\r \r on your own computer,\r \r it can be tricky to do so, you know, for the purposes of trying to contribute,\r \r back to base our itself.\r \r So another project,\r \r that's been undertaken is called the our devcontainer\r \r project, which is a\r \r Versus Code dev contain well, not necessarily Versus Code, but, that's one way to to leverage it. It's a\r \r Docker\r \r containerized\r \r environment for R, that can be launched. If you're in GitHub, you could use GitHub Codespaces\r \r or Gitpod,\r \r which is pretty cool to be able to essentially develop in the browser,\r \r as I understand, using, you know, this containerized technology that has everything sort of already there pre installed\r \r for you, all the dependencies that you would need to, work on contributing back to the R language itself.\r \r\n\nOne thing I didn't know about GitHub Codespaces\r \r is that I think you get like 60 hours, I don't know if it's per month or per year,\r \r for free,\r \r because GitHub Codespaces sort of, you know, spins up a a server, on the back end for you that allows you to, develop in the browser, which is nice. So I know that a lot of those services have a cost associated with them, but it seems like there is a fair amount of free hours that you would get there. An alternative,\r \r if you didn't want to use GitHub Codespaces or Gitpod,\r \r would be to,\r \r do it locally essentially and you would have to have Docker installed,\r \r Versus Code installed, and the Versus Code dev container\r \r extension. It's a workflow that, you know, we at Catch Brook love, as I probably talked about on this podcast quite a bit because it allows you to work in a containerized\r \r environment,\r \r and ensure that everybody\r \r has essentially the same dependencies,\r \r when they're collaborating on a project together. So it's it's pretty cool.\r \r\n\nOne of the drawbacks\r \r is that,\r \r the dev container is currently built\r \r for a specific OS, and for a specific architecture that has some buggy things happening on more recent Mac\r \r computers.\r \r So the the team on our dev day worked on trying to improve,\r \r the experience\r \r for those who are working on a a Mac machine.\r \r And unfortunately, I I think this\r \r depends on the the Arm 64,\r \r architecture,\r \r if you will. And, you know, some Arm 64 machines, I guess, are not available,\r \r on GitHub actions.\r \r So they they were running into a few limitations there,\r \r but they definitely made a lot of progress on solving this issue which is tracked as issue number 112 of the r dev environment GitHub repository, which I did not know existed,\r \r until, you know, the the highlights came out this week, which is pretty cool. It sort of warms my heart that,\r \r so many of these efforts, you know, not just the fact that it's it's using a technology that I love in in Docker containers, but it seems like there's a lot of efforts going along with our dev day that are trying to make it a lot more approachable and easy to actually contribute back\r \r to the R base project,\r \r itself\r \r because that can be pretty daunting. I mean, when you you think about making a contribution to the language itself and not just a particular package,\r \r that's pretty scary to me. And one of the reasons\r \r being so is that, as you mentioned, Eric, you know, a lot of this is built on non our code, right? C or Fortran code.\r \r\n\nBut but a lot of it probably is in our code as well so it depends upon your comfort level and I think there's always a place to get started.\r \r If you are, you know, willing to to put in a little bit of time and effort to take a look at the Bugzilla that's out there and all the bugs that are tracked,\r \r well as part of the R project and see if you can find one that would be interesting for you to\r \r try to take a crack at. And now that we have, the r devcontainer project, you can literally\r \r have everything you need to start working on that, essentially at your fingertips in the click of a button, which is pretty cool. And going along with trying to make things easier for those contributing to the project\r \r is that, there's an initiative out there in trying to create an R development guide or an R dev guide\r \r for short to document some of these processes and document, you know, how, you can contribute\r \r to the our project and sort of the workflows\r \r that might work best for you to be able to accomplish that.\r \r\n\nSo it's pretty cool resource, you know, maintained again by that contributor community just like this translations dashboard that's out there. And if you haven't seen the translations dashboard, it's really cool. It was my first time seeing it,\r \r which is what we talked about at the the top of this highlight. It's a great visual to take a look at how many functions,\r \r and aggregate it up to to packages as well have,\r \r translations\r \r for the messages,\r \r for those particular functions and then how many don't as well. So it's pretty interesting and I have to imagine that as you mentioned Eric, you know, AI could actually be helpful I think in a situation like that. Granted it's probably not gonna get it right a 100% of the time but maybe it'll take some of the legwork\r \r out for you. So I I think this is a really cool blog post to walk through, you know, how folks were able to contribute on this r dev day. I think it's it's awesome that they even,\r \r you know, hosted and and had this r dev day.\r \r\n\nThey already have one scheduled for 2025,\r \r in October.\r \r So if you feel like you want to be part of that, there's a registration form that you can sign up today. So kudos to to jumping rivers.\r \r\n\n[00:16:07] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "trans_timestamp": 7,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. I'm I'm loving to see, you know, giving the opportunity for\r \r developers to to come together and especially bringing in new talent, new developers that wanna contribute. And and I'm really the myriad of issues out there. Yeah. I was looking at the issue\r \r tracker itself as you were talking. There is a lot to choose from. There is lots of places that if you're looking at different areas to contribute, there I think there's something for everybody here. Even just, sifting through this, I see there's an issue about\r \r would any was there a way to connect the positron ID? Of course, the new ID offered by posit\r \r to one of those services I get pod over SSH to have that remote our session as a back end instead of having to have it locally. That's very similar\r \r to what I've been doing on my local Versus code setup with my dev container dockerized\r \r environment. Albeit, much like you said in the outside of your description there, I've only optimized my dev container stuff on Linux because that's what I'm developing on. I never tried on arm arm, processors for Mac. So I'm sure it wouldn't work there. And it gets really dicey in these situations. But to be able to have these\r \r these development environments\r \r going wherever the user is, wherever it's x86 base, like our typical Windows or Linux, you know, architecture\r \r or the more recent arm 64, like these fancy MacBook m ones, m twos, m threes, m fours, too many m's out there. But, nonetheless, they are becoming way more popular. So to be able to have that experience out there, yeah, it's gonna take a lot of engineering. But just imagine being able to have that\r \r whole development stack of our itself without you having to think about\r \r uh-oh. How do I compile Fortran code on my Mac? Oh, gosh. You know, having this in a containerized environment just opens the doors. There's so many possibilities here.\r \r\n\n\n\n[00:17:58] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "trans_timestamp": 58,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Couldn't agree more.\r \r\n\n[00:18:16] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "trans_timestamp": 16,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Rounding out our highlights today. We got another visit to a visualization\r \r corner of sorts, and this is\r \r very similar to last week where we had a notebook style\r \r presentation of an infographic\r \r here. We've got an interesting visualization\r \r on the thickness of ice in Greenland.\r \r This post is authored by Michael, not the same Mike that's joining me on this show, but\r \r Michael. And we don't know his last name because that's how we got on the blog. But, nonetheless, if you're listening, Michael, feel free to send us your, detailed info after this if you like. But, nonetheless,\r \r he has authored on his blog\r \r this, very notebook style post on looking at\r \r how to visualize\r \r the ice thickness in a very innovative,\r \r mapping heat map structure\r \r using data that's either available or\r \r or or processed into\r \r via typical tidyverse function. So we'll\r \r dive into this. And specifically,\r \r he is using the Greenland 5 kilometerdemice\r \r thickness and bedrock elevation grids. That's a mouthful.\r \r\n\nBut, nonetheless, he's got a link to download, I believe, the CSV after you register for that service. And once you have that,\r \r you can read this into\r \r your session.\r \r And apparently, it's an ASCII\r \r style file, and he's got a link to the user guide to look at this. But he mentions that the wrangling,\r \r not quite straightforward.\r \r So\r \r there is a collection here of data processing with mutating, grouping, modifying,\r \r more mutation,\r \r more pivoting with the tiny r package.\r \r And in the end, he's able to finally get to a format\r \r to compose this as a raster\r \r image, which again, you're talking to a novice with spatial visualizations.\r \r\n\nI always learn\r \r on the fly. But the first render here in the post\r \r is a war a raw mapping of Greenland,\r \r but with\r \r the color gradient, if you will, based on the thickness.\r \r And the plot itself is only, like, 1 2 lines of code after you feed in that tidy dataset. So the meat of it was in the processing to get this initial visualization.\r \r But\r \r very nice straightforward,\r \r you know, heat map like representation of the ice thickness. And as you might imagine,\r \r the closer to the center of Greenland you get, the more thicker the ice is as opposed to the outer layers\r \r near the ocean.\r \r\n\nBut then there's more that you can do here, Mike, and that's where we turn to our friendly leaflet projection time. What do we have in store there? Alright. So using a combination of the leaflet package and the Terra package, I believe,\r \r\n\n[00:21:02] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "trans_timestamp": 2,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Michael's able to modify the original data frame that he called thick,\r \r that was used for the first static plot,\r \r and use a function called project in RAST,\r \r in concert\r \r to be able to build this new object called thick WGS 84,\r \r which is really the the main object that's supplied to the leaflet function add raster\r \r image here. So that's that's gonna be this raster image that he's able to supply to Leaflet that does most of the heavy lifting, and then a really nice, gradiented\r \r palette,\r \r legend that, is up at the right hand corner\r \r of the chart. And obviously, you have the the interactive\r \r zoom in, zoom out functionality to be able to explore this,\r \r in sort of more of an interactive leaflet\r \r context. So really nice, 2 different plots sort of visualizing, you know, fairly\r \r the same dataset,\r \r on Greenland ice thickness, and it's it's just really well, concisely written code. So if you are in the geospatial\r \r space or interested in the thickness of ice in Greenland, this one's gonna be for you.\r \r\n\n\n\n[00:22:10] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "trans_timestamp": 10,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yes. And and some of the inspiration where this came from,\r \r at the top of the post, he mentions that this is part of the 30 day map challenge that's currently ongoing. So if you wanna hone up on your visualization\r \r skills and kinda\r \r be part of a community of of aspiring data scientists and visualization\r \r experts\r \r doing this, he's got a link to the 300 map day challenge, which again, if I had infinite time, I probably would get my hand at that. But my last adventure at Leafa was ironically for this past our pharma conference where I built this I call haunted places shiny app where I had a leaflet map\r \r of these of the US and United States. But then each city where this quote haunted place was located at, I use another data set to get the cornice and throw it on the leaflet. You know, not too dissimilar to what, Michael has done here.\r \r\n\nBut it's amazing just with a few lines of coding, you get this interactive map up right away. And I'm sure you could add\r \r way more to this. But in the end, it does it does the job, and it does it really well and really\r \r concisely. So\r \r great great example what you can do in the r side of things with with spatial visualization. And, yeah, I'll be keeping my eye out on his blog as well as others on social media to see whatever creative maps that people\r \r\n\n[00:23:29] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "trans_timestamp": 29,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "are are creating with art these days. Absolutely. And one thing I I love about the blog post is that he he finished it off by adding, three references\r \r that I believe correspond to maybe some of the datasets,\r \r that were used or references on the topic itself.\r \r So fantastic attribution here.\r \r\n\n[00:23:47] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "trans_timestamp": 47,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yep. And if I my eyes don't see me. This looks like a Cornell based blog if I had to guess, but nonetheless,\r \r great\r \r great, great, post on Michael's blog here. So definitely check that out.\r \r But also check out, you know, everything else in our weekly we got going here.\r \r And then when we do the time, we don't have time for our additional fine segments. But rest assured, there's another great collection\r \r of new packages\r \r and awesome,\r \r you know, shiny app links here that I saw a few there that caught my eye and other upcoming events and whatnot. So\r \r as always, every issue has got a mix of everything for everybody.\r \r\n\nHow does this issue get created, folks? It's not automated.\r \r As much as we love them machines take over certain automation things, this is a human created effort, but, honestly, it's gonna stay that way. Well, we rely on you out there too to help with the projects. So one of the best ways you can do that,\r \r we wanna make it as easy as possible for you to contribute. And honestly,\r \r the whole get and GitHub model is what drives our weekly, where if you find a great resource that you think should be shared,\r \r we are a pull request away, folks. It's just a markdown file in the\r \r end. Every issue here is just a markdown file. If you can read markdown, you can contribute to our weekly. So it's just a pull request away. And the upper right corner, a little Octocat image,\r \r giving you straight to the 10 straight to this week's issued draft. And then you can send the poll request right then and there and help us with that new resource you have found. And, also, we love hearing from you in the audience as well. It's amazing that 2024 is already almost over. But, of course, we love seeing what our weekly has done for you in terms of, like, shared learning or other tidbits.\r \r\n\nYou can get in contact with us a few different ways. We have a contact page in the episode show notes and your podcast player that you can link link to and click on and send us some feedback there.\r \r We are also with a modern podcast app. You can send us one little boost along the way to share your love for the show there directly to us.\r \r And, lastly but not least, we are on these social medias as well, Where, apparently, I got another thing to share now, but I am\r \r mostly on Mastodon still with atrpodcast\r \r and podcast index dot social.\r \r\n\nAnd now I am on Blue Sky as well, as Mike mentioned. I am atrpodcastat\r \r bsky.social\r \r as well. If you wanna find me there, I'm happy to connect. I've already connected with a few of my good friends already back again. Love to connect with more of you. But, Mike oh, last but not least, I'm also on LinkedIn as well. You search my name and you'll find me there. But, Mike, where can they find a hold of you? Yeah. You can find me on Mastodon, I think at [email protected].\r \r\n\n[00:26:29] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "trans_timestamp": 29,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "You can find me probably more often on Blue Sky. Now it seems to be the one I'm checking a little bit more, atmikedashthomas.bsky.social.\r \r Or if you search Ketchbrook Analytics\r \r on LinkedIn, you can find me there as well, ketchbr0ok.\r \r\n\n[00:26:47] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "trans_timestamp": 47,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Very good stuff. And, also, you know, you do have a blog out there too on your Catchbook Analytics site. I was just checking that out for for some stuff I'm doing, a little little off the cuff here. But in my infrastructure at home, I just spun up a self hosted\r \r RSS aggregator.\r \r So when you put an RSS feed, Mike, I'll be able to put your blog on mine too. I couldn't quite get it, but we'll we'll follow-up offline on that one. But, nonetheless,\r \r\n\n[00:27:11] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "trans_timestamp": 11,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Mike's got a cool blog out there. Check that out. Yeah. Just don't look at the the last blog post date because it's been a little while.\r \r\n\n[00:27:20] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "trans_timestamp": 20,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Hey. Hey.\r \r No no shame in that. Look at my last episode of the r podcast itself, then then then I'll feel ashamed. Nonetheless, I hope you don't feel ashamed about listening to this episode. We do our best to give you the great resources that are shared on our weekly. So that'll wrap up episode 186. That means we're 14 away from 200. One way or another, we'll get there. So until then, we hope you enjoy this episode,\r \r and we should be back for another episode of our weekly highlights\r \r next week."
+      }
+    ],
+    "chapters": [
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "chap_timestamp": 59,
+        "chap_text": "R Dev Day at SIP",
+        "chap_href": "https://www.jumpingrivers.com/blog/r-dev-day-2024/"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "chap_timestamp": 15,
+        "chap_text": "Greenland ice thickness",
+        "chap_href": "https://r.iresmi.net/posts/2024/arctic/"
+      },
+      {
+        "ep_name": "issue_2024_w_47_highlights",
+        "chap_timestamp": 0,
+        "chap_text": "Episode Wrapup"
+      }
+    ]
+  },
+  {
+    "metadata": [
+      {
         "ep_name": "issue_2024_w_46_highlights",
         "ep_date": "2024-11-15",
         "ep_duration": 41,
