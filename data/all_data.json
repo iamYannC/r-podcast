@@ -2,6 +2,318 @@
   {
     "metadata": [
       {
+        "ep_name": "issue_2024_w_48_highlights",
+        "ep_date": "2024-11-27",
+        "ep_duration": 37,
+        "ep_description_short": "What a way to close out the month of November with this batch of highlights! The ultimate teaser for the first-ever native mobile Shiny application (and yes, it is real), how you can expand your network on Bluesky from the friendly confines of R, and the potential of the S7 object-oriented paradigm to streamline and validate function parameters.…"
+      }
+    ],
+    "description_long": [
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "description_long": "\r \r What a way to close out the month of November with this batch of highlights! The ultimate teaser for the first-ever native mobile Shiny application (and yes, it is real), how you can expand your network on Bluesky from the friendly confines of R, and the potential of the S7 object-oriented paradigm to streamline and validate function parameters. Plus late-breaking news on the integrations of Bluesky and Quarto!\nEpisode Links\n\nThis week's curator: Tony Elhabr - @[email protected] (Mastodon) & @TonyElHabr (X/Twitter)\nYou’ve Been Waiting for Native Mobile Apps with R? The Wait Is Over.\nExpand your Bluesky network with R and the atrrr package\nS7 & Options objects - reimagining readr::read_csv()\nEntire issue available at rweekly.org/2024-W48\nSupplement Resources\n\nObtainium: Get Android apps straight from the source https://github.com/ImranR98/Obtainium\nF-Droid: Free and open-source Android app repository https://f-droid.org/en/\n{atttr} Wrapper for the AT protocol behind Bluesky https://jbgruber.github.io/atrrr/\nBluesky network analyzer https://bsky-follow-finder.theo.io\nBluesky comments extension (James Blastula) https://quarto.thecoatlessprofessor.com/bluesky-comments/\nBluesky comments for Quarto (Garrick Aiden-Buie) https://pkg.garrickadenbuie.com/quarto-bluesky-comments/\nClasses and objects (S7 documentation) https://rconsortium.github.io/S7/articles/classes-objects.html\n{roxy.shinylive} A roxygen2 extension for Shinylive https://insightsengineering.github.io/roxy.shinylive/main/\nIntroducing WebR to TLG Catalog (Pawel's talk from R/Pharma 2024) https://www.youtube.com/watch?v=vaoDUrUscZA\nSpotify Wrapped: R and ggplot2 Edition https://rpubs.com/colebaril/spotify-wrapped\nNavidrome: Your personal music streaming service https://www.navidrome.org/\nTailscale https://tailscale.com/\nSupporting the show\n\nUse the contact page at https://serve.podhome.fm/custompage/r-weekly-highlights/contact to send us your feedback\nR-Weekly Highlights on the Podcastindex.org - You can send a boost into the show directly in the Podcast Index. First, top-up with Alby, and then head over to the R-Weekly Highlights podcast entry on the index.\nA new way to think about value: https://value4value.info\nGet in touch with us on social media\nEric Nantz: @[email protected] (Mastodon), @rpodcast.bsky.social (BlueSky) and @theRcast (X/Twitter)\nMike Thomas: @[email protected] (Mastodon), @mike-thomas.bsky.social (BlueSky), and @mike_ketchbrook (X/Twitter) \nMusic credits powered byOCRemix\n\nCammy's London Drizzle - Super Street Fighter II - MkVaff - https://sf2.ocremix.org/\nVoodoo, Roots 'n Grog - Secret of Monkey Island - Diggi Dis feat. Alex Jones - https://ocremix.org/remix/OCR02180"
+      }
+    ],
+    "links": [
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://mastodon.skrimmage.com/@tonyelhabr"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://twitter.com/TonyElHabr"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://rtask.thinkr.fr/youve-been-waiting-for-native-mobile-apps-with-r-the-wait-is-over/"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://blog.stephenturner.us/p/expand-your-bluesky-network-with-r"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://josiahparry.com/posts/2024-11-21-s7-options-objects"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://rweekly.org/2024-W48.html"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://github.com/ImranR98/Obtainium"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://f-droid.org/en/"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://jbgruber.github.io/atrrr/"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://bsky-follow-finder.theo.io"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://quarto.thecoatlessprofessor.com/bluesky-comments/"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://pkg.garrickadenbuie.com/quarto-bluesky-comments/"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://rconsortium.github.io/S7/articles/classes-objects.html"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://insightsengineering.github.io/roxy.shinylive/main/"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://www.youtube.com/watch?v=vaoDUrUscZA"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://rpubs.com/colebaril/spotify-wrapped"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://www.navidrome.org/"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://tailscale.com/"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://serve.podhome.fm/custompage/r-weekly-highlights/contact"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://podcastindex.org/podcast/1062040"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://getalby.com/"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://value4value.info"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://podcastindex.social/@rpodcast"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://bsky.app/profile/rpodcast.bsky.social"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://twitter.com/theRcast"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://fosstodon.org/@mike_thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://bsky.app/profile/mike-thomas.bsky.social"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://twitter.com/mike_ketchbrook"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://ocremix.org/"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://sf2.ocremix.org/"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "links": "https://ocremix.org/remix/OCR02180"
+      }
+    ],
+    "transcript": [
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 3,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Hello, friends. We're back with episode a 187 of the R Weekly Highlights podcast.\r \r And this is the weekly podcast where we talk about the latest highlights that have been shared every single week at ourweekly.org.\r \r My name is Eric Nantz. And, yes, November is well, it's our last episode for November. I can't believe the time is flying by quick.\r \r For those of you who may be celebrating a an holiday coming up soon, certainly happy\r \r safe travels wherever you end up going for that. But, nonetheless, we're gonna celebrate\r \r some awesome highlights to talk about today, and I never do this alone because I'm my trusted co host at the hip here, Mike Thomas. Mike, how are you doing this morning? \r \r\n\n[00:00:45] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 45,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Doing well. Eric started out with some technical issues. If, I sound a little bit different this week, I apologize. But, hopefully, the audio isn't too noticeable\r \r in terms of differences,\r \r between previous weeks, for the listeners out there.\r \r\n\n[00:00:57] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 57,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "We we make it work. But, yeah. We both had our frantic either rebooting or jiggling of settings, but it it happens, folks. It happens. But, nonetheless, Mike is here, and that means we can get this show on the road here. And this week,\r \r our issue is curated by Tony Elharbar. And,\r \r well, it's a bit of a sad news. This will be Tony's last curation for our weekly. He is moving on to other\r \r endeavors after this. And, certainly, as I've told you, every time we close the show, this is a community driven effort, and we certainly\r \r greatly appreciate Tony's time. He's been a valued member\r \r of our curator team. We're gonna miss him, but, certainly, he'll be,\r \r I'm sure, keeping an eye on our weekly from time to time. But, Tony,\r \r best wishes to you in your, future efforts in open source and elsewhere. Nonetheless, he's gone if you're gonna go out, you're gonna go out with a bang. Right? And this issue has\r \r a lot that we can discuss. So let's not belate the point any longer. Let's get right to it. If you haven't heard by now,\r \r both myself and Mike are really excited about the concepts of web assembly with Shiny, and it's opening doors for\r \r immense possibilities.\r \r\n\nSome of which I have touched on in my positconf talk this year in the realm of life sciences.\r \r But there are many other ways that WebAssembly\r \r can supercharge\r \r the experience\r \r of distributing\r \r R itself\r \r in a self contained way\r \r powered, again, by WebAssembly.\r \r I admit\r \r this one came somewhat out of left field, although I should have seen the hints coming a little bit because\r \r what we're talking about now is Colin Faye, who, again, is a fellow curator of our weekend and also the architect of the golem package.\r \r And as we covered in the summer of our weekly highlights,\r \r has been taking a little bit of an adventure with bringing web assembly into shiny,\r \r and even building some custom tools himself called Spider and whatnot to really start pushing the envelope a little bit.\r \r\n\nWell, this latest blog post from the ThinkR blog\r \r is talking about\r \r a native\r \r mobile application\r \r running\r \r R and powered by WebAssembly.\r \r Yes, folks.\r \r The future is here.\r \r So in the in the post Colin introduces us by saying that this has been an effort that he has been looking at for a bit of time now, and\r \r he is,\r \r like me, convinced that WebR,\r \r this is a game changer that's gonna make\r \r the ability to leverage\r \r R even more accessible\r \r in modern web platforms and whatnot.\r \r Now notice I said web platforms. Right?\r \r Well, here's the kicker,\r \r is that with the self contained aspect of web assembly,\r \r yes,\r \r you can fold this into a native mobile\r \r application.\r \r\n\nNow we don't have it revealed what this application is actually called, but he talks about a little bit of what's under the hood here, is that\r \r this is\r \r bundling\r \r a set of packages,\r \r but it is installed in the native mobile app fashion.\r \r This is not\r \r what we call a progressive web app,\r \r which you might be thinking we talked about packages like Shiny mobile before,\r \r which David Grange has been leading for at least a couple years now, and that is a really solid platform\r \r to build, again, what's called a progressive web app, an app that looks like a native app, but it's actually more of a web app just, you know, in the UI it looks like it fits right into the rest of your mobile applications,\r \r that's still\r \r reliant on some kind of web connection\r \r to make sure things are working.\r \r\n\nAnd, also, it doesn't it isn't able to tap into\r \r some of the native mobile platform APIs such as for your phone. Maybe you need wanna trigger a vibration for a notification.\r \r Maybe you wanna tap into some other, you know, hardware related things.\r \r A progressive web apps not gonna be able to do that. And, again, no no shame to that. It's just the way the technology works.\r \r What Colin is showing here is that with this being installed in a native fashion, this opens the doors to tap into some of those native APIs.\r \r So let's get into what this app actually is or it's a\r \r in essence, a game of sorts\r \r where, say, from the UX perspective, you're gonna be presented\r \r a name of a function\r \r and you have to guess which package it comes from. So it's kinda like a quiz app, you might say.\r \r\n\nHow does this actually work? Well, apparently, under the hood,\r \r this application is looking at the packages that are currently installed\r \r in this installation.\r \r It's gonna sample\r \r 3 of them at random\r \r and then from each of them pick a random function from them.\r \r And then you as the end user are prompted to choose in a multiple choice fashion\r \r which package that function comes from.\r \r You can, you know, submit your answer, and then it's gonna use the praise package under the hood to send you a message if you get it right. And then even if you get it wrong, it'll let you kind of have a, you know, not so negative message and then try again.\r \r Where are the responses being stored? Well, again, because this is a native application,\r \r in this case, he is leveraging SQLite,\r \r a local database, which I've used for years years in some of my applications\r \r where that's being stored. Your responses are being stored in real time from this app. But, again, locally, not going to some server. It's all locally done. And you can imagine that this, you know, this might get a little boring after all. Though, I will admit I did get early access to this, and it is fun. And the one thing I will mention too\r \r is that if Colin had not told me that this was a web assembly powered application\r \r that had r under the hood,\r \r I would never have guessed that this was using r inside. It felt that responsive, folks. That is what I am\r \r cannot imagine my excitement when I've got this email. And, first, again, I didn't see this coming out of the at all.\r \r\n\nI install it,\r \r and I'm literally looking at it right in front of me right now. I wish I could show it, but I've been until this is released, I've been sworn to secrecy.\r \r But I'm I'm playing with it literally right now responding to the app,\r \r and it\r \r there's no lag.\r \r It is native. It is truly native.\r \r Imagine what this can bring to us in the community.\r \r So\r \r if you want to have access to this or stay updated when this is released. He does have a contact page at the bottom of the post, so I would suggest\r \r if you're listening to this and you're interested, definitely sign up for it. I would be\r \r hammering this as soon as I could if I was in the audience listening to this because this is this is revolutionary\r \r folks. This is absolutely revolutionary.\r \r\n\nI have so many ideas where this could go. And as you can imagine, I mean, it's something you're hearing right now. I have,\r \r gently asked Colin for an open invitation\r \r to join me on a future shiny developer series episode because I have so many questions for him, and there's no way that I could get it done in just an email. I want him to speak from the source. So look out for that in the near future once this is out there. But,\r \r Yeah. Mike, mobile apps\r \r on your phone powered by WebAssembly.\r \r\n\n[00:08:38] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 38,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "What timeline are we living in here? I don't know, Eric. And, you know, some of us aren't as as privileged to get the,\r \r early access. So I'm dealing with pixelated screenshots in this blog, folks, the edge of my seat trying to figure out when this is actually going to come out. I don't think there's a specific timeline here that, Colin mentions, which is which is smart on his end, as to when we will actually be able to get our hands on this, like the general public.\r \r This is this is crazy and\r \r probably a bad thing for me for all of those times that a client has asked, when we've developed a Shiny app for them. Like, hey. Could this be a mobile app too? And I'm like, nope. You know, this is these are just, you know, desktop web based applications. You know, you could go to your your Internet browser on your phone if you wanted to and use them, and and we can leverage Shiny mobile on that, for you. But it it can't be a true app. Well, now my answer has to be, well, technically,\r \r yes.\r \r\n\nAnd that's just gonna open up just gigantic\r \r can of worms. Once we sort of figure out\r \r what's possible here, what the limitations are, but this is a\r \r serious, serious boundary that has been broken through.\r \r And to me, yeah, it it it's gonna going to open this\r \r world of possibilities\r \r for us. And I imagine that, you know, similar to the the WebR project that powers this,\r \r it just continues to, you know, branch out in terms of\r \r what is now capable that wasn't previously possible,\r \r for, you know,\r \r R and Shiny development. It's it's pretty incredible.\r \r I'm excited to see where this leads. What a tease. I mean, I don't think I've ever seen an rweekly highlights\r \r blog post that teases this hard.\r \r\n\nSo I guess hats off to Colin for for that. He has me on the edge of my seat waiting to hear\r \r\n\n[00:10:42] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 42,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "what's next and when I can finally get my hands on this. I I am eagerly awaiting the the mass release of it too. I will\r \r speak somewhat unofficially. It sounds like the release is imminent. So my hope is,\r \r as an early holiday present, that this will be out there. Let's put it that way. It's sounding all indications of that.\r \r You did mention WebR earlier. And one of the things that was very fascinating to me about when WebR was first released, with George Stagg's, you know, immense efforts at posit\r \r is that he was able to give us a web page that literally had, like, an r REPL\r \r inside. Right? I mean, you can just type in our code, install packages\r \r from the WebR repository,\r \r and then play with it at your leisure.\r \r\n\nYou have seen these questions earlier, Mike, throughout the community many years about,\r \r hey. I really like the experience of our studio.\r \r Isn't there any way to run it on mobile? Just imagine a little r REPL from WebR\r \r as a mobile\r \r type app\r \r in a tablet UI.\r \r I don't know. And that's maybe completely out left field, but it's based on the same technology. Right? I mean, that WebR repl, I believe, is literally just\r \r a self contained app, if you will, waiting to happen. I don't know. That's not what Colin's trying to tackle here. I'm just saying that it's there are a lot of other\r \r possibilities at play here and then getting back to the architecture of this, for example.\r \r\n\nHe's using SQLite for this, but my goodness, you could swap in DuckDV with this. You could swap in all these different parts that we've been so excited about\r \r that are now at your fingertips here. It's been one of my stretch goals to really push my dev skills to the max, so to speak,\r \r and create somehow powered by R,\r \r a R weekly\r \r podcast app where you would just simply listen to episodes of R weekly taking advantage of some of the stuff I've been learning about in the podcasting 2.0 development space with a DuckDb database on the back end? Maybe. Maybe. So as you can tell, I have a lot of questions, a lot of ideas, and I am just as excited as everyone else, I think, when this finally gets released and,\r \r you know, the other possibility here, and I'll speak specifically on the Android side of things, is that\r \r you're not just confined to installing apps from the Play Store. Of course, that's what Google is always gonna push as, like, the secure, quote unquote,\r \r repository. But there is a multitude of open source applications\r \r that are distributed on services like F droid and others\r \r where\r \r imagine and even other services where it's like an app store, but it's based\r \r on the GitHub releases\r \r of a project. So that, say, I have an app or or whatever you wanna call it, and I push a tag like version 1.2 or whatever,\r \r this other app store that I've learned about recently, I'll have to put a link to it in the show notes, will simply query for that GitHub repo directly and then install it directly on your phone. So imagine that as a distribution method. Right?\r \r\n\nThere are many many possibilities\r \r on to get these into the hands of your users.\r \r Obviously, iOS is a much different story, and I've heard a lot of candid,\r \r candid opinions about Apple's policies on this. But, nonetheless, my point being is that this isn't even just about the architecture now. You can get this into the hands of users really quickly depending on the OS they're they're running. So I don't know where to even go from here other than I'll keep playing with the app and test my art skill knowledge on this, but nonetheless,\r \r\n\n[00:14:18] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 18,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "I think I think we're gonna be watching this space, quite closely here. I couldn't agree more, Eric. Yeah. The the possibilities are endless. You have me feeling now, like, I should be on Android instead of iOS to take advantage of, you know, the app store possibilities\r \r there. It just sounds more open source friendly.\r \r So we'll see. Maybe at my next update, I might have to make a jump.\r \r\n\n[00:14:53] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 53,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Well, there is a lot of excitement in the air in terms of the data science communities and other,\r \r scientific communities jumping onto the blue sky platform, which as you heard in recent episodes, both Mike and myself, we now have accounts on that very platform, and I've been eager to connect with the rest of the community, old friends, new friends alike.\r \r And you may be wondering as you're getting started with this as I was,\r \r you sometimes as you join these new platforms, you're trying to think, okay. Well, what's next after I sign up?\r \r Now credit to a capability that I've seen, you know, pushed heavily in the community\r \r is that Blue Sky offers or at least community members in Blue Sky can create what are called these starter packs,\r \r which are kind of a neat way for a, say, given topic like data science or, you know, other types of science or technology\r \r or whatnot, you can access this pack when you join\r \r and then by, you know, somewhat automatically\r \r get a list\r \r of the people included in that pack, and then you can choose to follow them or not. And that's great for an onboarding,\r \r but you may be wondering just how deep is the network out there for those people that you see immediately\r \r and maybe who are they following and and so on and so on. You know, typical social network\r \r type branches here.\r \r\n\nWell, imagine a way that you can expand or at least potentially expand your network\r \r directly of our itself. Well, that's where our next post comes in from, Stephen Turner who's been featured on the highlights recently as well. He is very excited about the blue sky initiative, and he has another post where he talks about, you know, for those in the science fields that this is a a terrific option for them. And, yes, he has, you know, in his previous post looked at starter packs,\r \r but like I said, he was wondering about, you know, other ways to fill his network, you know, and really start to to grow that a bit.\r \r And he discovered this new, web based app out there called Blue Sky Network Analyzer,\r \r which is a, again, very simple web form where you can kind of enter the handles\r \r of of your account, and then you can kinda see\r \r this kind of relationship\r \r of the people you are following\r \r and then the people they are following and etcetera.\r \r\n\nWell, he was wondering if he could do that from r itself, and it turns out you can\r \r because there is an r package\r \r called\r \r atrrattrradder.\r \r I don't know how to say it. I'm gonna give it a shot.\r \r This has been authored by\r \r Johannes\r \r Gruber,\r \r and this is wrapping\r \r what's called the\r \r AT or authentication\r \r transfer protocol that is the meat of Blue Sky.\r \r And that's kind of analogous to on the Mastodon side of things. It's wrapping a protocol called activity pub,\r \r but they're different, but yet I think they're functioning in a bit similar way.\r \r But this protocol is open source, so you can build capabilities or applications\r \r on top of it and sure enough you can, of course, build an r package in front of it too.\r \r\n\nSo Steven's post talks about how he uses this package\r \r to first authenticate to the service. And one bit of warning\r \r is that this is gonna leverage a Blue Sky API, and like any API, there could be rate limiting depending on how\r \r extensive you you, you leverage this. But getting into the example here,\r \r he authenticates\r \r to the Blue Sky service and there is a helper\r \r function called auth in the package\r \r that will guide you for creating what's called an application password for the first time, or if you have an existing one you can just use that as well.\r \r There's a simple function called get underscore follows that will simply grab\r \r the immediate\r \r of your immediate follows, you know, their handles and whatnot,\r \r And then you can kind of take that that list that you get initially\r \r and then through a looping function like lapply or whatnot,\r \r you can now get their follows. So as you can see, you could go\r \r many levels of this and that's where, like I said, you got to watch yourself with the rate limiting\r \r factor at play there, but then he shows first in a simple terminal based output after a little bit of filtering\r \r all the handles, their actual names, and the URLs to their\r \r profiles.\r \r\n\nAnd, yes, you could also make that really fancy by feeding that into GT as well, one of my favorite\r \r packages for creating tables in R where you get this nice,\r \r he wasn't able to put it verbatim in the post, but you get a nice hyperlink with their handle\r \r and their name in that table and how many followers they have, and then you can simply choose at that point as you expand that network in a data driven approach.\r \r So, again, you could run this in many different levels, but, again, he cautions that,\r \r there could be some rate limiting depending on how often you use this, and he did\r \r try this when he kinda got when he tried to run\r \r over 5,000 accounts based on kind of this, you know, this triage or this depth of network.\r \r\n\nThis is where if if I was gonna build something like this, I might tap into the polite package, which we talked about\r \r many episodes ago, which would kind of handle that\r \r in essence sleeping between requests or pausing between requests in a somewhat randomized fashion, which might help with a service like this. So, again, that's like little,\r \r exercise for the audience if you want to try that yourself with with Steven's code here. But, nonetheless,\r \r I am excited to see the tooling around Blue Sky start to really take shape,\r \r such as what what Stevens,\r \r is exercised here in this post\r \r and that that aforementioned\r \r AT RRR package.\r \r\n\nI've also seen Bob Rudis start to look at some of the tooling base and go or whatnot around Blue Sky as well. So there seems to be a lot of excitement around this, and I am all for\r \r making any tool like this\r \r to make the onboarding to new social platforms like this easier for those in a community no matter what your previous experience is\r \r in in these platforms as well. So really innovative approach and it just goes to show you ARC can do just about anything. Right, Mike?\r \r\n\n[00:21:20] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 20,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yeah. It is pretty incredible. It's a nice little, tool in terms of the script that we have that Steven's put together for us. And and as you said, if you have, you know, just maybe a 100 or a couple 100 followers, you shouldn't have any issues with the API.\r \r There is also in in the footnote of this blog post,\r \r or at the bottom of this blog post,\r \r there is a link to a web application called the Blue Sky Network Analyzer,\r \r which I played around with a little bit, which is pretty cool.\r \r I don't think it's it's using r, but, it seems like you're not going to get rate limited or throttled\r \r as much if you try to use that, web application\r \r instead. But a great, you know, blog post here in terms of the code that anybody could run. Just replace your username\r \r and your password,\r \r or use the auth function from the ATRRR\r \r package\r \r to be able to interactively,\r \r authenticate to your Blue Sky account, which is pretty cool that we have both options there. And a nice little GT table here,\r \r showing all of the, I guess, the top 20 accounts,\r \r that\r \r Steven's\r \r followers\r \r follow, if I got that correct,\r \r which, he does not also follow.\r \r\n\nReally, you know, neat blog post here. Really nicely done.\r \r I am\r \r all in on Blue Sky.\r \r Excited about it. A lot of it does feel like old school data science Twitter community.\r \r So, yeah, excellent work.\r \r\n\n[00:22:52] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 52,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "And, late breaking here as I was prepping the recording here, I saw got wind of,\r \r you know, another possible feature that Blue Sky could have, which I've seen also push for mastodon type situations as well,\r \r is, let's say, you have a blog post somewhere and instead of relying on proprietary\r \r service\r \r for your comment system,\r \r imagine you, like, have a post on Blue Sky with, say, a link to your blog,\r \r but then your blog post is able to embed\r \r replies to that post\r \r as if they were comments on your on your blog directly.\r \r Late breaking here, but there is not one but 2 extensions\r \r in quartile now. One by James Blasto and one by Garrigay and Buoy at the time of this recording\r \r that are gonna give you short codes in quartile to embed this into your\r \r quartile\r \r webpage. So and it works. I tried James,\r \r widget\r \r or his post where it said, hey. Reply directly on Blue Sky.\r \r\n\nRefresh the page, and your comment will appear on the page itself. And, yes, it works as advertised. I was comment number 1, so I got that I got that flag standing on that one. But that that my point is is that, like I said, the tooling around this seems to be expanding by the minute here,\r \r and I admit I am late to the Blue Sky party. I know there a few others that have been on this train for a bit already.\r \r So I've got some catching up to do, Mike, but I'm excited to see where this takes us.\r \r\n\n[00:24:26] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 26,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Lots of exciting things coming out of quarto this week. I am literally looking at my Blue Sky timeline, and you're exactly right. The top,\r \r one of the top posts that I'm seeing is from Garrick\r \r explaining,\r \r this quarto extension. Looks like it's really\r \r easy to just,\r \r add this this little one liner. This includes sort of chunk\r \r in your quarto blog. It's blueskydashcomments\r \r with the post link,\r \r and then replies to your post become comments. That's pretty incredible.\r \r For those of us doing more antiquated things, there is also in the\r \r quarto 1.6,\r \r a nice new\r \r landscape tag that allows you, for your PDFs to, have a particular page that is in landscape, which I had to do some pretty crazy knitter things, previously\r \r to get working. So I'm very thankful to all of the work in the quarto community lately.\r \r\n\n\n\n[00:25:21] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 21,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yes. And, boy, that extension system just does wonders, doesn't it? It is exciting to be able to tap into this, as you need. That that's really exciting times.\r \r And last but certainly not least in our episode today, we're gonna revisit,\r \r the object oriented framework that we mentioned in a couple episodes ago just had some really nice quality of life updates,\r \r and that is the s seven package, which for if you didn't listen to that episode,\r \r this is the new,\r \r object oriented paradigm\r \r that has ambitions to be pushed as a new, you know, might say reimagination\r \r of the concepts of s3\r \r and s4 class systems\r \r to be eventually,\r \r included into base r itself.\r \r\n\nAnd I men remember mentioning at the end of our explanation on that, it will be interesting to see just where s 7 starts to take shape and some of the best use cases for that. Well, we got a pretty fascinating look on how it might help the user experience\r \r of\r \r even existing functions if they are reimagined with the s seven approach.\r \r And this post comes us from Josiah Perry, who's also been featured on the highlights numerous times.\r \r He has had a lot of interesting adventures recently\r \r with the Rust programming language and that's integration with R, but he takes a little diversion on that and talks about,\r \r you know, where s 7 might help in certain situations\r \r and to set the stage here in his post,\r \r he talks about some of the excellent,\r \r functions from the read r package,\r \r which is part of the tidyverse\r \r that lets you import\r \r data files in text format no matter if there's CSV,\r \r delimited,\r \r or even other types of syntax.\r \r\n\nAnd it has a lot of arguments because it is doing a lot under the hood and has to account for a lot of different issues\r \r with these files.\r \r And in particular, Josiah starts by talking about the cow_names\r \r argument.\r \r And as you read that, as a user and may not be familiar with that argument,\r \r you may think logically, well, cownames,\r \r maybe that's a switch.\r \r Maybe that's an indicator of if the file already has a present or not. And, yes, you can set that to true,\r \r meaning that the first row indeed has a column names.\r \r Or you could set it to false,\r \r meaning that there is potentially no header there, and you're going to have to do that yourself.\r \r\n\nWell, speaking of doing that yourself,\r \r column names not just takes a true or false,\r \r it can take a vector\r \r of character strings\r \r to use as the names\r \r of the of the columns that you're importing from that file.\r \r Let that sink in a little bit, an argument and take either a logical\r \r or a character string.\r \r Now\r \r that can be elegant in many situations\r \r or it can be a little confusing on how to wrap your head around that which I've been on both sides of that fence especially when I was new to like the base r read dot CSV and and, and the read r package years afterwards.\r \r So he talks about a couple different scenarios where he might use each version of this one of which is\r \r you it has headers,\r \r but you want to give it different headers,\r \r So you could do that. He uses, like, an exported version of the iris set just for illustration.\r \r\n\nYou could easily do that.\r \r You could also\r \r say, well, as if it didn't have the names already, but I want to add the names myself in the function call.\r \r But I don't want it to be the names of the file already there, so I want to skip the import\r \r by, by one line.\r \r So then you're kind of putting that in yourself.\r \r And, again, there could be a situation where there's no headers at all. You just either say you don't want the headers and you want to put them in after the fact or you,\r \r supply the column names yourself.\r \r The if you get the hang of it, yeah, maybe you can, you know, use that, you know, at the paradigm in the future.\r \r\n\nBut he wonders if there may be a way to make that a little bit less complicated because under the hood, in his opinion,\r \r call\r \r names kind of has 2 things going at the same time.\r \r 1, is a header present or not? 2,\r \r do you want to add your own or not?\r \r And so that leads us to one of the interesting aspects of s 7 that you could potentially play with here\r \r with\r \r this reimagination\r \r of a radar\r \r importing function\r \r is that this radar function, these set of functions have\r \r over 20 arguments that you can specify.\r \r Some of these are common.\r \r Some of these are very niche because they're really dependent on your use case.\r \r\n\nWhat if there was a way instead of having the you to have these 1 by 1,\r \r you know, specified in the in the function arguments\r \r that you have, like, an options type argument with more detailed settings. Again, maybe more for the niche ones\r \r that have same defaults from the start just like the function does currently,\r \r but a little more streamlined way to feed those in.\r \r So he looks at, say, read underscore CSV,\r \r and there are quite a few,\r \r like 14 to be exact, of these arguments\r \r that he thinks should be belonging in this options\r \r paradigm instead of in the function call\r \r itself.\r \r\n\nAnd so, finally, we get to in the post\r \r how you can use s 7 to do in essence argument validation,\r \r not too dissimilar to what I've done with packages like assert that or checkmate\r \r in my functions to determine if a parameter is indeed a string or a logical\r \r or,\r \r a value that fits, like, the boundaries I'm expecting it to have.\r \r You can do the same thing of s 7 and have these properties,\r \r you know, listed\r \r where you start a new class, but then you put in kind of the default value for it or a default function call in some cases,\r \r and then what you're gonna do to validate that input. So one example is the locale\r \r argument,\r \r which can have\r \r from read r directly the default locale of the system itself, or\r \r you can have a validator to look at\r \r is this coming in as a proper string\r \r and, in particular,\r \r sometimes the time involved with that, and you can, you know, validate that with something like our lang checks, like is character or is scaler and whatnot.\r \r\n\nAnd then if it's invalid, you can\r \r show a friendly error message afterwards.\r \r You can go down the the rabbit hole of this for all the rest of the arguments as well, such as repairing names,\r \r missing values,\r \r quotes, comments, and you can see many of them will follow a similar format.\r \r And then towards the end, you can now have this new class. He's calling it radar\r \r ops, and then the properties are each of these kind of property functions that he defined earlier in the post.\r \r And then lo and behold,\r \r he's now got an example at the end where it's got the 4 or 5 arguments that are most common for read CSV, such as the file name,\r \r the column names, the column types,\r \r which ones you want to select, and then there's an options argument\r \r where then you just feed in this initialization\r \r of that class.\r \r\n\nBut you could put inside that initialization\r \r of that class\r \r the other\r \r options that in there that you want to customize yourself. You don't have to, but you can.\r \r So in his opinion,\r \r this can help, you know, minimize that cognitive load, so to speak,\r \r as well as consolidating those options that are less frequently used\r \r in an approach that he says he's gleaned from his experiences with Rust, similar\r \r paradigms in the language and how that\r \r handles function arguments\r \r from both kind of a frequently used standpoint\r \r and those that maybe not so frequently used. So\r \r fascinating thoughts here,\r \r and I like I said, I've been wondering where the best position s 7. So this gave me quite a bit to think about in in my next generation of packages and combining\r \r the object oriented approach with these assertions\r \r at the same time and try to make the user experience\r \r\n\n[00:34:02] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 2,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "a bit more streamlined to boot. Yeah. Eric, this is a really nice applied\r \r approach\r \r to demonstrating\r \r what s 7 can do for us.\r \r I I know Josiah has a lot of strong opinions.\r \r And\r \r this one, I am going to agree with him on because\r \r when he talks about how it just feels a little weird that a particular\r \r argument could take a Boolean\r \r or a character string,\r \r it does. You know, I've been there before. It's it's very convenient, I think, to\r \r the folks who maybe are earlier on in there. There are journey that that might not necessarily notice.\r \r But I think in terms of,\r \r you know,\r \r thinking about package developers and making sure that what you are developing for others is is really strong and stable. I think that can lead to a lot of,\r \r I don't know, potential things,\r \r being a little less stable, a little less robust if you have arguments that are taking, you know, different types of of class objects, if you will. But, anyways, so I thought that this was a great use case for demonstrating s 7 and and taking sort of an opinionated approach to how we could\r \r potentially alter the the reader package,\r \r in this way. It seems like, you know, the the workhorse functions\r \r from s 7,\r \r seem to be new property,\r \r which is\r \r to create validators, if I have that correct.\r \r\n\nExactly. Yep. I'm up to date in my object oriented programming and then\r \r a new class here at the end where it seems like we call all of these validators for the different properties that we're going to list\r \r in this new class.\r \r And, obviously, that new class function from s 7 is going to create a class\r \r object,\r \r a really nice walk through about how you can,\r \r you know, take a look at that class object just by sort of printing it. And then you can also use the at\r \r accessor,\r \r the the at symbol,\r \r to be able to pull out and view a particular\r \r property\r \r in that class object,\r \r which is really neat. I mean, it feels kinda like working with lists. It shouldn't be super scary. Right? The syntax is gonna be a little bit different with, you know, a lot of objects that you're creating\r \r via the the new property function for these validators\r \r tend to start with a a period,\r \r you know, so that might be a little bit new for folks. But it's nice that you can sort of\r \r define these these validator tests, if you will,\r \r in the in the same place that you're writing a lot of these these logic. So, I'm definitely a fan. I really appreciate this applied walk through. It it helped me wrap my hands around,\r \r the benefits of s 7 and and what the syntax looks like and how to use it, compared to, you know, what I've seen in some of the other object oriented programming\r \r packages and and, base packages out there as well.\r \r\n\n\n\n[00:36:57] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 57,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. And I'll put a link in in the show notes to from the s seven packages site. 1 of the vignettes is talking about\r \r the classes and object structure, and it does have some, you know, very much utilitarian type examples here, but they do talk about validation as well. But I think that's a great thing to put side by side as you read Josiah's post, you know, after this as you wanna think about\r \r actually implementing this into, say, a function you're creating in a custom way. And, yes, they also have articles about putting this into a package itself, which I'm sure is going to be the next stage of this, especially\r \r when we get to that. Hopefully, not too distant future where s 7 literally becomes part of the base language itself. We're not there yet, but that's our goal and I think they are well on their way to achieving that.\r \r\n\n\n\n[00:37:44] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 44,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yes. Yes. We'll see.\r \r\n\n[00:37:46] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 46,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "We shall see. And there is speaking of seem oh, there's a lot more to see in this issue as I said.\r \r Tony went out of a bang here. There's a lot of additional great content here. We'll take a minute or 2 for our additional finds here\r \r and, hey, I I can't stop being on the web assembly side of train with this one folks, because there is a new package\r \r that has just hit CRAN\r \r called roxy.shinylive.\r \r You can probably tell by the name this has got a couple key concepts here that we want to talk about here. This is authored by\r \r Pawel Ruchi who is,\r \r for those in the life sciences space, he is one of the chief developers of the teal framework for Shiny applications\r \r in a modular fashion that is\r \r is very very promising\r \r in the realm of using,\r \r Shiny with life sciences. But nonetheless,\r \r he has been one of the early adopters of WebAssembly like myself. And one thing that he was really hoping to have ever since, you know, all this came about\r \r last\r \r year. A vision that, Micah, you shared with me on this is that\r \r imagine\r \r you have documentation\r \r for either a shiny app or a function that maybe is part of a shiny app. And if you go to that help page for that package, say on a package down site,\r \r you can run an example of that right on the spot.\r \r\n\nRoxy Shiny live\r \r is making that happen.\r \r How does this actually work? I don't have enough to do with justice here, but at a high level\r \r you can put in, once you install this package,\r \r a way to create\r \r a URL\r \r for a self contained version of this example that you put in your r oxygen block\r \r hosted on shinylive.\r \r Io, the free service that posit offers for hosting Shiny applications\r \r built with Shiny Live\r \r for both the Python side and the R side.\r \r Remember when this all first came out, it was just on the Python side for quite a bit. Now the r side gets, cake and eat it too, so to speak.\r \r So I'll have a link to the package downside for the package itself in the notes, but you can see a little simple example\r \r where he writes it for a hello world string\r \r an embeddable URL\r \r that you can use in the package documentation\r \r that will embed almost like an iframe\r \r that shiny live app on the same\r \r package help page on the web version of it\r \r in both like the manual page\r \r you can also do this for vignettes as well\r \r you just have to make sure your description\r \r has in suggest roxy.shinylive.\r \r\n\nThere is a specific,\r \r r oxygen declarative you have to put in your description file to make sure it's using roxyshinylive\r \r when it's compiling\r \r the help pages,\r \r but he shows an example in the package down site\r \r where he's embedded basically\r \r one of the\r \r functions called cross table,\r \r which I believe comes from the TOEcosystem\r \r or whatnot,\r \r where it's got the\r \r embedded a shiny app literally right in the page saying tried and shiny live.\r \r Oh my goodness.\r \r This is this is game changing in and of itself with documentation.\r \r So this is this is pretty new. He's only been working on this, I think, for maybe part of the year. It's been on GitHub for a little bit, but as of now, it is now on CRAN.\r \r So, I definitely encourage all of you to try that out if you're interested in in leveraging or supercharging your documentation\r \r with Shiny Live involved.\r \r\n\nAnd congratulations,\r \r Apollo, on this one dot o release. This is this is awesome.\r \r\n\n[00:41:31] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 31,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "This is\r \r oh my goodness. We're being blown away this week, Eric. This is\r \r absolutely incredible.\r \r I'm super excited to check this project out. I think that would be game changing to be able\r \r to run examples,\r \r literally, you know, in some sort of a, you know, interactive\r \r session from your package down site, I think that would be incredible in terms of reproducibility\r \r and and ensuring that other folks understand exactly what's going on with your package. You get to play around with it before they install it themselves. Right?\r \r Wow. I'm\r \r very excited to check that project out. Another one that I I thought was pretty cool as we get towards the end of the year here, hard to believe,\r \r but Cole Barrell did a fantastic blog post visualizing his Spotify Wrapped.\r \r\n\nSo all of the music that he listened to,\r \r with some fantastic visuals. And I I really love the theme,\r \r that Cole used throughout this blog post.\r \r Imagine that we have ggplot\r \r under the hood here,\r \r and it's it's just a really fun little blog post to take a look at,\r \r the his listening history\r \r for what looks like, I think,\r \r the last 10 years of his listening habits. He was able to get data from 2014\r \r to 2024.\r \r So very, very cool,\r \r nice little ggplot visual blog post,\r \r if you're interested in that type of thing.\r \r\n\n[00:42:56] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 56,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Oh, this is this is slick. I I really like to see this thing. And I've also been on a\r \r you know, throughout the year, Mike's heard about this in our pre shows. I've been really spinning up some what I call self hosting services on my beefy news server that I have in the basement a few feet behind me here. And one of them is like a music streaming service with music I've already\r \r downloaded for\r \r for creative commons or whatnot. This oc remix, the service that I use for those little bumper musics you hear in this episode. I have almost all of their tracks on myself host a server here, and there's a service called Navidrome\r \r I'm using that gives me that Spotify like\r \r experience internally and wrap up a tail scale. I can listen to that anywhere I am on my secure devices,\r \r but they have an API too. So I might have to do some listening habits on my own on which\r \r games just happen to be most frequently used in the music that I'm listening to if I need a little, pick me up, so to speak. So this gives me inspiration based on,\r \r what Cole's doing with Spotify. So yeah.\r \r\n\nI always have the tunes going when I do my hardcore shiny\r \r dev work and package dev work, and boy did I need it with a gnarly issue\r \r earlier last week. I somehow got through it, but it also it was a journey, Mike, as you know, that the bugging never stops sometimes.\r \r\n\n[00:44:14] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 14,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Oh, I know.\r \r\n\n[00:44:16] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 16,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "We knew that pick me up sometimes. And, sorry, I hope that our weekly itself is your pick me up for the awesome content. Like I said,\r \r we,\r \r we are blown away by what we see, and this week is definitely an illustration of that. So congrats to everybody\r \r in the community, our our curator as well or Tony for curating all this, but also,\r \r yeah, Colin, Steven, and Josiah. Excellent posts. We are really excited to see where the future is for these efforts. And the future keeps going with our weekly, but it is a community project. And as we said, we rely on your support.\r \r Obviously, I would hope that over the news I shared earlier\r \r that, we are looking for curators to join the team, so we'd love for you to get involved. All the details are on our GitHub repository, but you can find all this at rweekly.org.\r \r\n\nYou can also send us\r \r what story we should that should be featured in next week's issue. We're just a pull request away,\r \r all marked down all the time. We love hearing from you, and those pull requests are an immense help to our curators for each week. And we love hearing from you in the audience as well. We got a little contact page embedded in the podcast episode show notes here on your podcast player. We also have that fun little boost functionality, another great way to get in touch with us directly. You have a modern podcast app. I personally like fountain and Podverse\r \r and cast o matic. There are many others as well at new podcastapps.com\r \r if you're interested in that ecosystem.\r \r\n\nAnd, also, we are on the social medias.\r \r Yes. I am on blue sky now with at our podcast at bsky.social.\r \r Also, I'm Mastodon. I'm so keeping that on. I'm very passionate about that with that our podcast at podcast index dot social,\r \r and I'm on LinkedIn. Search my name, and you'll find me there. Mike, where can they find you? Yep. You can find me on blue sky at [email protected]\r \r\n\n[00:46:16] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 16,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "[email protected],\r \r as well as LinkedIn. If you search Ketchbrooke Analytics, ketchbrooke,\r \r\n\n[00:46:25] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "trans_timestamp": 25,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "you can see what I'm up to. Yep. And I do want a quick little, plug here before I head out here.\r \r I was one of the organizers\r \r and,\r \r backstage y people for the our pharma conference. We just released our recordings\r \r for the conference event, and there is a lot of awesome content. No matter if you're in life sciences or not, There's a bit of some for everybody,\r \r including a talk from Pablo who we just talked about with that,\r \r Roxy Shiny Live package.\r \r He gave her great talk about how you how he levers WebAssembly\r \r for what's called a TLG catalog. I'll have that linked in the show notes too, but it shows the the thoughts that he's had and, and the amazing techniques he's been using throughout the year on that. So if you like your web assembly, there's there's a lot going on in this space.\r \r\n\nBut we're gonna close-up shop here. Like I said, for those of you out there that may be celebrating a big holiday this week, we hope you have safe travels and and, good times to be had. I'll be hitting the road tomorrow, hopefully, for a successful road trip back to my stomping grounds in Michigan. But wherever your,\r \r travels take you, hope you have a great time.\r \r And we should be back for another episode of our weekly highlights\r \r next week."
+      }
+    ],
+    "chapters": [
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "chap_timestamp": 56,
+        "chap_text": "Native mobile Shiny apps!",
+        "chap_href": "https://rtask.thinkr.fr/youve-been-waiting-for-native-mobile-apps-with-r-the-wait-is-over/"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "chap_timestamp": 53,
+        "chap_text": "Expanding Bluesky network",
+        "chap_href": "https://blog.stephenturner.us/p/expand-your-bluesky-network-with-r"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "chap_timestamp": 52,
+        "chap_text": "Quarto comments with Bluesky!",
+        "chap_href": "https://josiahparry.com/posts/2024-11-21-s7-options-objects"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "chap_timestamp": 42,
+        "chap_text": "S7 & Options objects",
+        "chap_href": "https://insightsengineering.github.io/roxy.shinylive/main/"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "chap_timestamp": 1,
+        "chap_text": "roxy.shinylive",
+        "chap_href": "https://rpubs.com/colebaril/spotify-wrapped"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "chap_timestamp": 7,
+        "chap_text": "Spotify Wrapped with ggplot2"
+      },
+      {
+        "ep_name": "issue_2024_w_48_highlights",
+        "chap_timestamp": 16,
+        "chap_text": "Episode Wrapup"
+      }
+    ]
+  },
+  {
+    "metadata": [
+      {
         "ep_name": "issue_2024_w_47_highlights",
         "ep_date": "2024-11-21",
         "ep_duration": 49,
