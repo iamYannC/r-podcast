@@ -2,6 +2,296 @@
   {
     "metadata": [
       {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "ep_date": "2025-01-29",
+        "ep_duration": 29,
+        "ep_description_short": "Ready to bring your next presentation slides to the world of Quarto? Our first highlight has a batch of power tips you can use for your next slide deck. Plus terrific insights from first-time contributors to open-source software. Episode Links This week's curator: Jon Calder - @[email protected] (Mastodon) & @jonmcalder (X/Twitter) Seven…"
+      }
+    ],
+    "description_long": [
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "description_long": "\r \r Ready to bring your next presentation slides to the world of Quarto? Our first highlight has a batch of power tips you can use for your next slide deck. Plus terrific insights from first-time contributors to open-source software.\nEpisode Links\n\nThis week's curator: Jon Calder - @[email protected] (Mastodon) & @jonmcalder (X/Twitter)\nSeven tips for creating Quarto revealjs presentations\nFrom Novice to Contributor: Making and Supporting First-Time Contributions to FOSS\nEntire issue available at rweekly.org/2025-W05\nSupplement Resources\n\nEmil Hvitfeldt's blog https://emilhvitfeldt.com\nGitHub Desktop https://github.com/apps/desktop\nGitKraken https://www.gitkraken.com/\nlazygit https://github.com/jesseduffield/lazygit\nCoworking mini-hackathons https://ropensci.org/blog/2025/01/24/coworking-hackathons/ \nShinyConf 2025 https://www.shinyconf.com\nPosit::Conf 2025 https://posit.co/conference/\nSupporting the show\n\nUse the contact page at https://serve.podhome.fm/custompage/r-weekly-highlights/contact to send us your feedback\nR-Weekly Highlights on the Podcastindex.org - You can send a boost into the show directly in the Podcast Index. First, top-up with Alby, and then head over to the R-Weekly Highlights podcast entry on the index.\nA new way to think about value: https://value4value.info\nGet in touch with us on social media\nEric Nantz: @[email protected] (Mastodon), @rpodcast.bsky.social (BlueSky) and @theRcast (X/Twitter)\nMike Thomas: @[email protected] (Mastodon), @mike-thomas.bsky.social (BlueSky), and @mike_ketchbrook (X/Twitter) \nMusic powered byOCRemix\n\nThe Narshemellow - Final Fantasy VI Balance & Ruin - XPRTNovice - https://ocremix.org/remix/OCR03141"
+      }
+    ],
+    "links": [
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://fosstodon.org/@jonmcalder"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://twitter.com/jonmcalder"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://remlapmot.github.io/post/2025/quarto-revealjs-tips/"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://ropensci.org/commcalls/first-time-contributor/"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://rweekly.org/2025-W05.html"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://emilhvitfeldt.com"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://github.com/apps/desktop"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://www.gitkraken.com/"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://github.com/jesseduffield/lazygit"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://ropensci.org/blog/2025/01/24/coworking-hackathons/"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://www.shinyconf.com"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://posit.co/conference/"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://serve.podhome.fm/custompage/r-weekly-highlights/contact"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://podcastindex.org/podcast/1062040"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://getalby.com/"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://value4value.info"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://podcastindex.social/@rpodcast"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://bsky.app/profile/rpodcast.bsky.social"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://twitter.com/theRcast"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://fosstodon.org/@mike_thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://bsky.app/profile/mike-thomas.bsky.social"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://twitter.com/mike_ketchbrook"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://ocremix.org/"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "links": "https://ocremix.org/remix/OCR03141"
+      }
+    ],
+    "transcript": [
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 3,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Hello, friends. We're back at episode 193 of the Our Weekly Highlights podcast. This is the weekly podcast where we talk about the great highlights and additional resources that are shared every single week at rweekly.org.\r \r My name is Eric Nanson. Yeah. I'd hardly believe January is almost over. And,\r \r I'm I'm not sure if y'all listening or kinda like this in the wintertime, but this is not my favorite season. So I'm kinda hoping they get back in the spring very soon. But nonetheless, I'm talking about happy stuff today, but I'm not doing it alone, of course. I'm joined by my awesome co host, Mike Thomas. Mike, how are you doing this morning?\r \r\n\n[00:00:39] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 39,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Doing pretty well, Eric. Yeah. It's it's quiet,\r \r this time of year with the the weather here in New England, and,\r \r I think we'll talk about it later on in the episode, but I'm already excited for summer and and conference season specifically.\r \r\n\n[00:00:52] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 52,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Absolutely.\r \r Me too. Me too. Yeah. We will get to that in a little bit.\r \r A little, admin note here as we're recording this. The issue\r \r as a recording is not quite out yet. It's baking in the oven, so to speak. So we're gonna talk about a couple of the highlights that we know for sure will make it, but we always invite you. Check out the episode show notes for a direct link to the issue so that when this episode is published, you'll definitely see it then. But nonetheless,\r \r our curator this week is John Calder, another one of our longtime\r \r curators. And as always, he had tremendous help from our fellow Rwicky team members and contributors like you around the world with your poll request and other suggestions.\r \r\n\nI was just talking to Mike and the pre show how I'm preparing for a a big work set of work meetings this week, and I've had to make slides and probably my not so favorite tool\r \r to do it. But luckily, in this first high, we're gonna talk about one of my favorite tools to make slides going forward for future thinking, you might say. And that, of course, is reveal JS format, a web based format,\r \r which is now being, you know, becoming more of a mainstream capability,\r \r thanks to the Quartle documentation\r \r system.\r \r So I have been using Quartle a bit more, especially for my open source presentations.\r \r\n\nAnd I always feel like\r \r I'm on the cusp of learning a lot, but there's always things I feel like I don't know, especially in the day to day of building,\r \r you know, effective\r \r the fact of presentations,\r \r not just on the content, but some of the mechanics of reveal JS themselves.\r \r So I am always eager to see new resources being shared by the community on more practical kind of day to day life, so to speak,\r \r of creating revealed JS based slides.\r \r And our first highlight is addressing that such item here. It has been brought to us by doctor Tom Palmer,\r \r who is a senior lecturer in biostatistics\r \r at the University of Bristol over in the UK.\r \r\n\nAnd he's got this great blog post on 7 tips that he has learned\r \r for creating quartile revealed JS presentations.\r \r And\r \r as a as a teacher or lecturer himself, yeah, it's definitely I can tell he has a lot of great experience of it, so we'll kinda tag team here on a few of the the tips we're seeing here.\r \r One of which, and often I hear this when I prepare for an external presentation\r \r that may be at a conference venue such as like PASIconf or some of these other statistics conferences I've been to.\r \r It's one thing when you develop the slides on your setup, whether it's your laptop or you got a nice monitor that you're, you know, looking at the the fancy fonts and your images.\r \r But you probably wanna test your slides\r \r on a display that does mimic where it's actually going to be presented,\r \r whether\r \r that's trying to optimize for, like, remote viewers and their, say, laptop resolutions or, like I said, an aforementioned,\r \r like, conference room venue that your presentation might be in.\r \r\n\nSo it's one thing when you have a WYSIWYG type tool like Microsoft PowerPoint or LibreOffice\r \r Impress or whatnot,\r \r where you can kind of resize the window and everything just magically, you know, become smaller as you're resizing it.\r \r Not always that way when you look at web based slides.\r \r So taking a page from mobile development,\r \r one of the great tools that you can utilize directly in your browser, this is independent of quarto itself,\r \r is to look at\r \r changing the resolution\r \r in your browser, whether you do it for the console tools or developer tools that you see in all the modern web browsers.\r \r There are also extensions that will let you do this too so you can see what your your content looks like, say, on a mobile resolution or a more standard\r \r 10 80p resolution.\r \r\n\nSo it's just one of those nice things that as you're getting ready to do that presentation,\r \r it's always good to kinda do that double check. Did your did your fancy, you know, graphics or your nice plot\r \r look good on those other, you know, partitions or those other areas\r \r of this place? So I'm gonna take that to note especially as I prepare for,\r \r presentations hopefully later in the year.\r \r Then we get to\r \r looking at putting code chunks in your presentations, which again is always what I like to do when I do a more educational,\r \r you know, slash training type presentation.\r \r\n\nYou can you already have a lot of great tools available for you via the code chunk options\r \r in quarto or r markdown for that matter. Because, again, as we mentioned many times on this very show,\r \r our markdown without our markdown, Quartal, in my opinion, doesn't exist. It pioneered everything here.\r \r So there are some interesting options that you can use in these code chunks that, you know, bring to the lineage of our markdown\r \r that I did not know about.\r \r One of which is direct interaction with the format r package,\r \r and in particular, using a couple options called tidy and tidy ops, which I've not seen these before.\r \r\n\nBut this is great when you wanna control\r \r how wide the code is that you're putting into that chunk, so you don't have to use, say, a scroll bar if you wanna display a little more text, and the user doesn't have to scroll right or left.\r \r So with these options,\r \r you can either set them on a per chunk basis, or you can set them globally\r \r in the YAML front matter of the quartal slide deck,\r \r via these aforementioned tidy\r \r and tidy ops options.\r \r And, again, that is really really neat so that you can make sure that,\r \r you know,\r \r a lot of people do have wider resolutions. But if you're on a constrained, you know,\r \r resolution,\r \r you may not want users to have to scroll right or left just to see the output of that variable or whatnot. So I thought that was\r \r extremely nice for that more horizontal\r \r optimal viewing experience.\r \r\n\nBut there's a lot more to this. So, Mike, why don't you walk us through the rest of Tom's great tips here?\r \r\n\n[00:07:01] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 1,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yeah. Absolutely.\r \r There's not really an easy way to make code output chunks taller in a quartile reveal JS presentation.\r \r So we have to dive into the HTML and the CSS, and and doctor Palmer shows us how to navigate to the developer tools in Chrome to see that HTML source code. So if you've never done that before,\r \r this is a great blog post\r \r to,\r \r introduce yourself to that concept. I know, you know, if you're in the Shiny world at all, this is probably something that you wrestle with on a a fairly regular basis to make your, you know, Shiny app look the way that you want it to. But whenever we are delivering something involving HTML, you know, this is potentially something that we have to wrestle with, in order to make it look the way that our audience wants it to look. So once we figure out the element specifically that we're trying to modify, we can create a custom CSS file that alters the max height CSS property for that element in order to make it taller.\r \r And then we can make sure that our presentation\r \r leverages our new custom CSS file\r \r by using the CSS YAML header property at the top of our quarto,\r \r file, our QMD file. So that was a nice little trick\r \r as well as a couple more I'll touch on here. There's a lot.\r \r\n\nEmbedding interactive Mentimeter\r \r presentations. So this is something I had not come across before.\r \r\n\n[00:08:27] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 27,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "So, yeah, Mike, I have not heard of Mentimeter either. I did a quick search, and it looks like this is a way to embed\r \r interactive polling into your presentation slides, not too dissimilar to what you might do with another framework\r \r I've seen called Slido or whatnot, where you can embed these HTML\r \r representations\r \r of what looks like these interactive polling,\r \r into your other HTML documents. So this is news to me.\r \r\n\n[00:08:57] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 57,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Interesting. Yeah. It it sort of reminded me of our Shiny in production workshop that we did at Pawsit Conf 2023 where I know, you know, you, Eric, embedded a bunch of quartile presentations that we created, one for each module in our training\r \r into the overall workshop website. So,\r \r you know, I think it can be a a pretty useful thing, right, in order to have these iframes that we can embed in other places. So it sounds like this Mentimeter,\r \r tool is is something to check out if, you know, that's of interest\r \r to you. And a nice walk through here about how to,\r \r leverage and and create those iframes and get the code and that you need to copy and paste the HTML,\r \r from one place into another in order to embed,\r \r that.\r \r\n\nAnd then, 2 more little ones.\r \r Sometimes, you know, Doctor. Palmer notes that, you know, HTML\r \r tables may not look the way that you want them to look,\r \r and it's possible to sort of avoid quarto's inherent HTML table processing\r \r and there is a parameter,\r \r you know, aptly named HTML dash table dash processing\r \r that you can set to none if you'd like to. And there's a nice example\r \r code chunk in there that Doctor. Palmer provides of how to go about doing that. And there's, you know, a couple more nuggets in here, but it's a a great walkthrough of 7 different tips that Doctor. Palmer has\r \r on, you know, enhancing your quarto presentations and and little tips and tricks. Because I think, at least in my experience, Eric, you know, there's always\r \r something that you have to wrestle with in in your quarto presentations,\r \r to make it look that the way that you want to. And there's a lot of different rabbit holes that you could potentially\r \r go down. And I know the the quarto.org\r \r site is fantastic in terms of the documentation and the the searchability, but there are I have been down many, many Internet rabbit holes trying to chase down little tiny quarto things that are just quality of life enhancements. And it's it's really nice to see doctor Palmer's blog taking a stab at a few of these.\r \r\n\n\n\n[00:11:03] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 3,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. I I think this is a a welcome time as as I'm gonna\r \r I've been on a, you might say, a crusade at the day job. But trying to evangelize the use of web based formats is something that Mike and I definitely sympathize\r \r with each other about because we both have our own internal struggles. We have our clients or other customers at our various day, you know, day job duties where it's still either a PowerPoint or a PDF world. Right? It's just sometimes you can't escape it. So\r \r having having, like,\r \r a consolidated\r \r bank\r \r of day to day tips\r \r such as what what doctor, Palmer has put together here as well as, I'll plug once again,\r \r Emil's,\r \r slide craft series of blog posts that that he has on his blog. Those are all top notch resources.\r \r\n\nDo you have to learn every option? No. Absolutely not. I mean, as you said in the Cornell docs, there is a multitude of options and tweaks you can make. But even in this post here,\r \r knowing that little trick around the HTML tables, this is all news to me, as well as some of those other code chunk options that I mentioned at the beginning of the segment. So\r \r there's\r \r when you need it, there, I hope that posts like this combined with the quartile docs, you can have a great bank at your disposal\r \r that you can draw upon when you kinda need a certain technique,\r \r more often than not. But\r \r going back to that, no idea of getting to web based formats versus static outputs.\r \r\n\nIt did, it was both amusing and and frankly, a little sad that, yeah, there is another tip here about exporting the PDF,\r \r which comes up no matter what. Right? There are some\r \r especially when you go to some external conferences who insist\r \r on having a static format of a presentation even if you made it in a web based format. So if you are in that world, that that tip using the page down package\r \r to help print this via Chrome or Chrome browser's kind of printing\r \r utility, that might be your best bet.\r \r Just be warned, there are some gotchas when you export these, the PDF, especially you have\r \r content that is a little more interactive. Obviously, it's gonna be a snapshot of that. But, again, maybe that's\r \r fodder to if you're on a similar crusade at your organization\r \r to show the power of web based formats, you can say, well, this is what you're missing when you export the PDF. So who knows? Maybe it'll be helpful in that in that sense. But, yeah, this is definitely being bookmarked for a future reference here.\r \r\n\n\n\n[00:13:32] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 32,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yeah.\r \r I'm right there with you trying to do all the convincing as possible to\r \r have our deliverables\r \r deliverables be HTML because I think that that\r \r is the ideal state for us as developers, but it's not always the case. You're right.\r \r\n\n[00:13:50] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 50,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Maybe in the future for those that are still, you know,\r \r admittedly way more comfortable than me in those more WYSIWYG type, you know, presentation software where it's Keynote or PowerPoint or LibreOffice\r \r Impress or whatnot.\r \r Imagine a world where there's been kind of some progress with the whole interactive\r \r quartile or markdown editing features and say our studio ID or posit work or positron, I should say.\r \r Imagine that with slides. Like, if we can get there eventually where if you're able to with some clever CSS\r \r tricks under the hood still kind of move things around\r \r in a more design principle, but yet it all just magically compiles that correct CSS behind the scenes.\r \r\n\nSomebody is going to make a huge,\r \r huge impact if they can make that happen. But for now, I'll still whip up the code for it.\r \r\n\n[00:14:57] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 57,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "So our last highlight here is from our OpenSci it's a community call I think\r \r and the title of the call is from novice to contributor\r \r making and supporting first time contributions\r \r to fully open source software or FOSS\r \r for short. I think the community call was moderated by, Shanina Bishini Saibaneh,\r \r who is, you know, very prominent in the rOpenSci\r \r community.\r \r And there are, I think, 4 other folks who participated\r \r on this call speaking about their journey to their first contributions\r \r in open source.\r \r\n\n[00:15:34] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 34,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yes. Indeed, Mike. And I'll give, my take on a couple of those, presenters and their findings because\r \r as someone who is admittedly\r \r I want to contribute even more to open source, but also been in the trenches of\r \r whether it's open source contributions or day job contributions\r \r with concepts like version control, there are a lot of interesting nuggets that resonated with me. I'm gonna first talk about, Sunny Singh's,\r \r presentation\r \r where she gave a walk through for her experience in creating\r \r a new R package\r \r basically from the ground up\r \r called BBS\r \r Taiwan.\r \r\n\nAnd the BBS stands for breeding birds survey.\r \r And this package,\r \r she wanted to fill an unmet need of an easy way for our users\r \r to to\r \r download and import these data into our r into their r session\r \r and to be able to perform summaries and visualizations on the fly with very helpful functions\r \r that would be, you know, fit right at home for a lot of the tidyverse type of work flows.\r \r So she talks about, you know, some great kind of tips that she learned.\r \r And, honestly, the ones that resonated most with me about her motivation to do it and then to be able to connect\r \r with future users in a really neat setting\r \r where she actually helped with a of another colleague organize a workshop\r \r to, undergraduate\r \r students over in Taiwan\r \r to learn\r \r this package\r \r kind of, you know, from the from the very beginnings\r \r in the early stages of it release.\r \r\n\nAnd she says she got wonderful feedback from it and that it really motivated her\r \r to see,\r \r the positive\r \r reception to this package.\r \r And and, of course, many package authors help the cause a little bit more. She even came with stickers, buddy. Like, she she came she came running to to make sure that she could get the word out of this package. But, nonetheless,\r \r a lot of positive reception,\r \r and it was a lot of learning for her on the technical sense as well.\r \r Another nugget that she shares is that creating a package is a very fluid process. You may come in with one set of ideas for the way you wanna construct your functions for the package. But as you're actually developing it and you start to try and put on that\r \r hat or that persona\r \r of a would be user,\r \r you realize,\r \r you know, maybe there's a better way to\r \r expose that function out here. Maybe I can consolidate these\r \r into more utility type functions. So she went through that\r \r in this initial release of the BBS Taiwan package.\r \r\n\n\n\n[00:18:17] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 17,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "One thing that I I love about Sonny's presentation,\r \r you know,\r \r besides the fact that I I think it's an awesome initiative, I really like the slides that she put together.\r \r But the BBS Taiwan package is a great HEX logo featuring\r \r her own art,\r \r a bird that I believe that she drew and was able to incorporate into this hex logo. So shout out Sonny for that.\r \r\n\n[00:18:40] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 40,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Absolutely.\r \r A great sticker goes a long way sometimes, but, yeah, a lot of that talk resonated with me. And then the other one I wanna summarize here comes from Pascal Bookard,\r \r who was,\r \r a longtime user of Git, but yet\r \r still in his early journey with contributing to open source software.\r \r And so he talks about\r \r a way that he got into this more fully by,\r \r finding an issue\r \r with another package that's authored by our our OpenSci, in particular\r \r one of our longtime contributors and fellow curator,\r \r in the past,\r \r Ma'al Saman,\r \r Pascal was leveraging the Baboquarto\r \r package\r \r because he wanted to develop his teaching materials for his day job\r \r in multiple languages, another great win for accessibility there.\r \r\n\nAnd he noticed a small issue with the babel portal, and so he opened up an issue on the repository the GitHub repository.\r \r Nile got back to him saying, hey. I I I recognize this. I won't have time to address it now.\r \r But the poll request is welcome.\r \r And that\r \r was a a great, you know, kick start for Pascal to not just,\r \r you know,\r \r identify an issue, but to actually help fix it as well.\r \r And so he learned a lot in that process. And that's that small collaboration\r \r on solving this issue in Bevav portal.\r \r He learned so much in those 2 months of that collaboration,\r \r much more than he would have learned just trying to learn about the ideas of collaboration on his own.\r \r\n\nA key nugget for me is finding that motivation\r \r and finding that really important use case to you that will let you push through\r \r some inevitable hurdles you might have as you think about contributing to open source. So that was a great great, great insight by Pascal as well. And then he talks about some of the Git specific tips that I think\r \r are very much in my wheelhouse as well. And I definitely try to keep myself accountable to following these,\r \r one of which is the use of branches.\r \r Branches\r \r are your friend. They're nothing to be scared of. You could have\r \r as many of these as you want. The best part about this is if you mess something up or if you had an idea and ends up being a complete dead end, you can just throw that branch away. It's as if it never happened. Go back to your main branch or however you like to call your upstream, you know, type of branch, and then you can start fresh. You don't have to worry about renaming files of, like, underscore\r \r attempt 1 or underscore I hope this works. It all is all consolidated in Git branches. So if you learn nothing else from my summary of this, please use Git branches. You will thank future you will thank you later.\r \r\n\nThe other parts\r \r\n\n[00:21:39] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 39,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "that Amen. I see. Amen. Amen. Exactly. Exactly.\r \r\n\n[00:21:43] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 43,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "This is the part, Mike, where you wanna make sure to keep me honest throughout this year because I really wanna be better about this.\r \r It really is helpful to commit early and to commit often.\r \r You it's very easy for me, at least, to be in the flow of, like, really\r \r trying to solve that esoteric issue.\r \r I finally got it working, but I find myself I have edited\r \r about 5 or 6 files to solve that issue.\r \r Then I have to try to\r \r almost go back in time and be like, well,\r \r had I followed this advice earlier, what would I have committed first?\r \r Save yourself some pain. And as you get close to that fix,\r \r don't be afraid to commit often because there are ways you can kinda consolidate this after the fact. But if you just get it done, you can massage it a bit later.\r \r\n\nAnd and also be nice to future you.\r \r Don't just say,\r \r I fixed it in your commit message.\r \r Have a little more verbiage of, like, what you actually fixed because you can use this as, like, a diary of sorts or your development diary\r \r of your project, and you can figure out from, like, 3 months ago,\r \r how did I fix that esoteric\r \r issue with this shiny reactive\r \r not firing when I wanted it to. What did I have to do with that observed trick? This is literally fresh in my mind from yesterday.\r \r And then I put in that commit. I'm like, okay. That's a kind of a way to reinforce that a bit. So\r \r he also talks about ways you can undo things and get. There are commands to do it as well as, like I mentioned, maybe consolidating those messages\r \r in a more succinct manner\r \r via a technique that I know I don't do enough of, and that's called rebasing.\r \r\n\nIt sounds kind of frightening when you hear it. But if you just practice it a bit, I think rebasing can be very helpful as you think about\r \r how you want this to look\r \r a month from now, a year from now as you look back at this, development history. So there are some real good nuggets from Pascal and and his talk there.\r \r\n\n[00:23:51] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 51,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yeah. Eric, those are all really good points, and I\r \r I think it's really\r \r specifically important to\r \r practice these, you know, good git concepts\r \r of committing early, committing often, being really intentional\r \r about your commits\r \r that are especially important when you're working with other people. Right? And, you know, especially as we talk about the concept of contributing to open source and projects other folks are on. But it has to start\r \r with when no one else is looking, you know, when you're doing it yourself to to build those muscles\r \r such that when you do get into collaborative\r \r situations, you know, it's it's second nature for you and you're you're not having to sort of change your workflow.\r \r\n\nI,\r \r you know, I I have in the past been just as guilty of, you know, getting in that flow state and\r \r changing too many things before I\r \r go to actually make that commit.\r \r And\r \r tools like GitHub Desktop, and I'm sure there are many other, you know, tools,\r \r out there that can help you sort of visually maintain your git environment,\r \r have been game changing for me because if I do change a file in multiple places,\r \r I can actually,\r \r in within GitHub Desktop,\r \r select specific lines of that file that specific changes that I want\r \r to commit and not necessarily the whole entire file. So I can break it down\r \r and make it look in my git,\r \r commit history\r \r like I committed early\r \r and often,\r \r and was very intentional, you know, and very specific about what I changed and and why. So that's been a game changer for me in terms of helping me have really good Git hygiene. So a little tip for anyone out there. And I know, Eric, you you might use some other GUI based Git tools that perhaps do the same thing. So I'd be interested to hear your experience there as well.\r \r\n\n\n\n[00:25:41] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 41,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yep. One that's on each of my machines here at home is called GitKraken,\r \r and it's a cross platform\r \r GUI editor.\r \r It's not open source. So if that's a thing to concern you, it'd be warned. But nonetheless, it\r \r it does exactly as as you said in your GitHub desktop workflow. I was literally\r \r using that feature the other day with some of my other open source work of, well, I don't wanna commit the whole file for this commit because there's only a certain section that's relevant to this message.\r \r So I simply staged those those chunks, if you will, did the commit, and then did the other part of the file and the remaining commit.\r \r And little tip for those of you that are operating on the terminal side of things, whether it's by choice or by or not by choice, and you don't have access to GitHub Desktop or GitKraken on that remote environment,\r \r I'm gonna plug a project called lazy git. There was nothing lazy about this, folks. This is a terminal based\r \r git\r \r client\r \r that will look as if you try to put what you would see in GitHub Desktop\r \r or GitKraken\r \r in a terminal like workflow. So I can have a pane on the left that says here are all my unstaged,\r \r you know, files.\r \r\n\nAnd then I can have on the right for each file what are those actual chunks, and I can do exactly as I just said. I can select via keyboard, you know, that particular line, that particular chunk. I can do a little\r \r hit the the c button,\r \r write the commit, hit enter. It's in.\r \r And shortcuts for pushing and pulling, new branches.\r \r It took a little getting used to,\r \r but as, like I said, maybe not necessary by choice all the time that I'm on a terminal interacting\r \r with good operations. But, if you're in that space,\r \r lazy git is worth a look. And there's, like I said, nothing lazy about it.\r \r\n\n\n\n[00:27:34] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 34,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Sounds awesome. And that's what I'm gonna have to check out. That's a great shout out.\r \r\n\n[00:27:39] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 39,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yep. That's in a running TMUX session on our HPC environment for each project that has its own lazy git window and one window\r \r for for each of them. So sometimes I I I sometimes I made this mistake of\r \r doing the wrong repo for a message.\r \r Wait. Why isn't that file there? Oh,\r \r yep. Silly me. I have too many projects open at once. Yeah. First world problems, I guess.\r \r But there is a lot more to this talk.\r \r You're invited to check out the recording. There was another presenter that talked a lot about their experiences with incorporating\r \r automated testing and their contribution. So I think that's a great a great one to learn about as well.\r \r\n\nAnd then,\r \r also, if you're listening to this and you you watch this recording, you're still\r \r wanting to maybe learn a bit more but in a more proactive fashion,\r \r we're gonna have linked in the show notes,\r \r a call for\r \r a coworking hackathon that are open side is going to lead. One of which is happening on February 4th and another one on March 4th where they'll let you kinda partner with somebody on that call.\r \r And as a as a title suggests,\r \r you both could be working on either the same project or even different projects\r \r and just share notes with each other as you're working on that. So it's a great way to learn with an expert on that call as you're doing your day to day development\r \r And maybe you are trying to get into,\r \r contributing to open source software, learning Git effectively. Those co working sessions have gotten rave reviews from the people I've talked to with attending them. So credit to rOpenSci\r \r for putting that effort together to make those happen.\r \r\n\n\n\n[00:29:20] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 20,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yeah. It's awesome that they offer, you know, those office hour sessions, especially for\r \r folks, you know, like myself, especially when I was first starting out. And I think in the age of remote work nowadays, it can sometimes feel a little lonely. So if you're looking to to hop on and be surrounded by\r \r other folks out there who are writing R the same as you,\r \r on just a collaborative call, I think it's an awesome, awesome initiative.\r \r\n\n[00:29:44] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 44,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Absolutely. And and speaking of awesome, you know, the rest of the issue is just as awesome. We were able to cover what we think are guaranteed highlights for the issue, but we'll take a couple minutes for our additional fines here. And this is more of a, you know, a not I don't know, a reminder of sorts, but, very,\r \r in my wheelhouse, as they say, with my love for shiny. As Mike and I alluded to, it's already a lot of preparations are underway for conference season\r \r here in 2025.\r \r And one of those that I'm always a big fan of for, I believe, will be the 3rd or 4th year running,\r \r Epsilon's\r \r shiny comp is happening this April,\r \r and they still have registration\r \r open as well as the call for talk proposals.\r \r\n\nSo, well, I believe the deadline to submit for the talk proposal is February 2nd, so you wanna get those in. If you wanna contribute your your excellent idea or excellent project idea about Shiny or use of Shiny,\r \r Absalon has always been very receptive to a lot of these ideas.\r \r Full disclosure, I am on the program committee, so I'm really looking forward to being a part of that review process. And I remember\r \r narrowing it down from last year. There was a lot of great content out there there and a lot of great ideas. So definitely have that, in your in your bank if you're a shiny enthusiast.\r \r And more generally, while I'm on this topic of conferences,\r \r I believe also the talk submission portal\r \r for POSITCONF\r \r 2025 is still open, but that will be closing,\r \r I believe, around February 2nd or 3rd as well. So if you have an idea for a talk for POSITCONF, you wanna get those,\r \r proposals in there as well. And we'll have a link to both of those conferences\r \r in the show\r \r notes. And, Mike, what did you find?\r \r\n\n\n\n[00:31:28] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 28,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Nothing because the issue is not out yet. But I am just going to double down on both of those things because I think it can't be said enough. Shiny conf fantastic conference. Is it free?\r \r It's virtually, and I believe it's free. Yep. I believe so too. No excuse not to be there.\r \r Yes. Excellent conference. I know, Eric, you'll be involved heavily as always. So, that's when I look forward to to attending every year and grateful for Absalon for putting that on.\r \r\n\n[00:31:57] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 57,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Absolutely. And a quick little nugget to my,\r \r fellow,\r \r compatriots in life sciences. We are also in the plannings of the R pharma conference already. We we start early because we do a lot for that. So if you're listening, you wanna get involved with that, definitely give me a shout, and I can get you lined up for our various committees on that as well.\r \r But yeah. So, again, contributing\r \r yeah. We we talk about first time contributors to open source. Well, a great way to ease your way into contributing to open source in general is with this very project itself of our weekly. Right?\r \r We curate from the community. So if you find a great resource and you want this to be front and center in next week's issue, we are just a pull request away. Everything's on GitHub. Everything's in markdown.\r \r\n\nThe you don't need a fancy wizzywig editor for this one, folks. You can just type in plain text to your heart's content on these pull request templates that we'll provide to you free of charge, of course. So head to rweekly.org\r \r to find all the great links and detours or details, I should say, for contributing that great resource that you found, wherever you authored it or you even found it from someone else in the community.\r \r And, also, we love hearing from you online, wherever you're keeping me honest with my pronunciation skills or other great tidbits.\r \r We have a contact page in the episode show notes. You can, send a note to Mike and I directly on that. And, also, you can get in touch with us on social media.\r \r\n\nWe are prime we as I am primarily now on both Mastodon, where I'm at our podcast at podcast index dot social\r \r as well as bluesky, where I am at our podcast,\r \r dotblusky.social\r \r or something like that. Anyway, it's in the show notes. It's still not muscle memory for me to recite it yet. Mike, where can they find you? Yeah. Probably mostly on Blue Sky these days. If you're looking for, you know, social\r \r\n\n[00:33:48] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 48,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "media, mikedashthomas.bsky.social.\r \r Or on LinkedIn, if you search Catchbrook Analytics,\r \r k e t c h b r o o k, you can see what I'm up to.\r \r\n\n[00:34:01] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "trans_timestamp": 1,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Very good. Very good. I'm knee deep in some interesting issues I hope to post more about. But, my journey with Knicks continues, and I'm I'm leveling up even more on that. So I hope to share more in the, coming months. That in container fun, it never stops there.\r \r Alright. Nonetheless, we are gonna close-up shop for upsell a 193 of our weekly highlights. We thank you so much for listening,\r \r and we hope to have you listening to next week's episode of our weekly highlights."
+      }
+    ],
+    "chapters": [
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "chap_timestamp": 33,
+        "chap_text": "Quarto slide tips",
+        "chap_href": "https://remlapmot.github.io/post/2025/quarto-revealjs-tips/"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "chap_timestamp": 58,
+        "chap_text": "First-time FOSS contributor perspectives",
+        "chap_href": "https://ropensci.org/commcalls/first-time-contributor/"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "chap_timestamp": 45,
+        "chap_text": "Shinyconf and positconf 2025"
+      },
+      {
+        "ep_name": "issue_2025_w_05_highlights_638737249045054386",
+        "chap_timestamp": 22,
+        "chap_text": "Episode Wrapup"
+      }
+    ]
+  },
+  {
+    "metadata": [
+      {
         "ep_name": "issue_2025_w_04_highlights_638731142645681748",
         "ep_date": "2025-01-22",
         "ep_duration": 34,
