@@ -2,6 +2,333 @@
   {
     "metadata": [
       {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "ep_date": "2025-02-05",
+        "ep_duration": 47,
+        "ep_description_short": "Context is king in a trifecta of R packages harnessing LLMs to be your virtual assistant in package development and data science, plus the world (of data) is at your fingertips for data exploration and sharing your insights using the innovative closeread Quarto extension. Episode Links This week's curator: Jonathan Kitt -…"
+      }
+    ],
+    "description_long": [
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "description_long": "\r \r Context is king in a trifecta of R packages harnessing LLMs to be your virtual assistant in package development and data science, plus the world (of data) is at your fingertips for data exploration and sharing your insights using the innovative closeread Quarto extension.\n\n\nEpisode Links\n\nThis week's curator: Jonathan Kitt - @jonathankitt.bsky.social (Bluesky)\nThree experiments in LLM code assist with RStudio and Positron\nGapminder: how has the world changed?\nDownloading datasets from Our World in Data in R\nEntire issue available at rweekly.org/2025-W06\nSupplement Resources\n\nFrom hours to minutes: accelerating your tidymodels code https://youtu.be/pTMiDHFIiPQ?si=4qZC3_NLUVhD5hAa\nEffecient Machine Learning with R https://emlwr.org/\nCloseread: Bringing scrollytelling to Quarto https://youtu.be/KqLxy66B3lQ?si=w7DIB4QhYk2u6cLG\nCloseread Posit contest submissions https://forum.posit.co/tag/closeread-prize-2024\nExtract Information From Images and PDFs With R & LLMs https://3mw.albert-rapp.de/p/extract-information-from-images-and-pdfs-with-r-llms\nusgs geological survey mapping water https://waterdata.usgs.gov/blog/acs-maps/\nSupporting the show\n\nUse the contact page at https://serve.podhome.fm/custompage/r-weekly-highlights/contact to send us your feedback\nR-Weekly Highlights on the Podcastindex.org - You can send a boost into the show directly in the Podcast Index. First, top-up with Alby, and then head over to the R-Weekly Highlights podcast entry on the index.\nA new way to think about value: https://value4value.info\nGet in touch with us on social media\nEric Nantz: @[email protected] (Mastodon), @rpodcast.bsky.social (BlueSky) and @theRcast (X/Twitter)\nMike Thomas: @[email protected] (Mastodon), @mike-thomas.bsky.social (BlueSky), and @mike_ketchbrook (X/Twitter) \nMusic credits powered byOCRemix\n\nCosta del Sol DANCE - Final Fantasy VII - posu yan - https://ocremix.org/remix/OCR00095\nAerobotics - Mega Man 8 - Just Coffee - https://ocremix.org/remix/OCR03323"
+      }
+    ],
+    "links": [
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://bsky.app/profile/jonathankitt.bsky.social"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://www.tidyverse.org/blog/2025/01/experiments-llm/"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://nrennie.rbind.io/scrollytelling/posts/gapminder/"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://statisticaloddsandends.wordpress.com/2025/01/30/downloading-datasets-from-our-world-in-data-in-r/"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://rweekly.org/2025-W06.html"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://youtu.be/pTMiDHFIiPQ?si=4qZC3_NLUVhD5hAa"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://emlwr.org/"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://youtu.be/KqLxy66B3lQ?si=w7DIB4QhYk2u6cLG"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://forum.posit.co/tag/closeread-prize-2024"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://3mw.albert-rapp.de/p/extract-information-from-images-and-pdfs-with-r-llms"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://waterdata.usgs.gov/blog/acs-maps/"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://serve.podhome.fm/custompage/r-weekly-highlights/contact"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://podcastindex.org/podcast/1062040"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://getalby.com/"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://value4value.info"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://podcastindex.social/@rpodcast"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://bsky.app/profile/rpodcast.bsky.social"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://twitter.com/theRcast"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://fosstodon.org/@mike_thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://bsky.app/profile/mike-thomas.bsky.social"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://twitter.com/mike_ketchbrook"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://ocremix.org/"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://ocremix.org/remix/OCR00095"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "links": "https://ocremix.org/remix/OCR03323"
+      }
+    ],
+    "transcript": [
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 3,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Hello, friends. We are back of episode 94\r \r of the Our Weekly Highlights podcast.\r \r If you're new, this is the weekly podcast where we talk about the excellent highlights and additional resources that are shared every single week at rweekly.0rg.\r \r My name is Eric Nantz, and I'm delighted you join us from wherever you are around the world.\r \r And I'm always joined in this February, but it's still my same cohost, and that's my choice here, Mike Thomas. Mike, how are you doing today?\r \r\n\n[00:00:29] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 29,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Doing pretty well, Eric. It was kind of a long January here in The US, and it seems like we're in for an even longer February.\r \r But\r \r happy to be on the highlights today, and,\r \r may your datasets continue to be available.\r \r\n\n[00:00:44] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 44,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Let's certainly hope so.\r \r I will say on Saturday, I had a good little diversion from all this,\r \r stuff happening.\r \r I was with about 70,000\r \r very enthusiastic\r \r fans at\r \r WWE's\r \r Royal Rumble right here in the Midwest, and that was a fun time. My voice has finally come back.\r \r Lots of fun surprises,\r \r some not so fun surprises, but that's why we go to these things so we can voice our pleasure or displeasure depending on the on the storyline. But it was a awesome time. I've never been to\r \r what the WWE has as their, quote unquote, premium events. It used to be called pay per views at a stadium as big as our Lucas Oil Stadium here in Indianapolis. So I I had a great time and,\r \r yeah. I'm I'm slowly coming back to the the real world now, but it it was it was it was well worth the price of admission.\r \r\n\n\n\n[00:01:39] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 39,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "That is super cool. That must have been an awesome experience. Luca Oils Lucas Oil Stadium, a dome?\r \r\n\n[00:01:45] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 45,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "It is. Yep. That's the home of the Indianapolis Colts.\r \r It's been around for about\r \r fifteen years, I believe now.\r \r Last time I was there, I was at a final four, our NCAA\r \r basketball tournament way way back when where we saw\r \r my, one of my favorite college basketball teams, Michigan State. Unfortunately, we lose the butler that year, but it was a good time nonetheless.\r \r So, we won't be weighing the the smack down on r for this. We are gonna we're gonna put over r as they say in the business, and that is an emphatic yeet, if you know what I mean.\r \r Yeet.\r \r\n\nBut speaking of enthusiastic,\r \r I am very excited that this week's issue\r \r is the very first issue curated by our newest member of the our weekly team, Jonathan Kidd.\r \r Welcome, Jonathan. We are so happy to have you on board the team. And as always, just like all of us, our first time of curation, it's a lot to learn, but he had tremendous help from our fellow r Wiki team members and contributors like all of you\r \r around the world with your poll request and suggestions. And Jonathan did a spectacular job\r \r with his first issue, so we're gonna dive right into it with arguably still one of the hottest topics in the world of data science and elsewhere in in tech,\r \r and that is how in the world can we leverage\r \r the newer large language models, especially in our r and data science and development workflows.\r \r\n\nWe have sung the praises\r \r of recent advancements on the r side of things, I e with Hadley Wickham's Elmer package, which I've had some experience with. And now we're starting to see\r \r kind of an ecosystem\r \r start to spin up around this foundational package for\r \r setting up those connections to hosted or even self hosted\r \r large language models and APIs.\r \r And in particular,\r \r one of his, fellow posit software engineers,\r \r Simon Couch\r \r from the Tidymodels\r \r team.\r \r He,\r \r had the pleasure of,\r \r of enrolling in one of Posit's\r \r internal\r \r AI hackathons that were being held last year.\r \r And he learned about some, you know, the Elmer package and Shiny chat along with others for the first time.\r \r\n\nAnd he saw tremendous\r \r potential on how this can be used\r \r across different realms of his workflows.\r \r Case in point,\r \r it is about twice a year that the Posit team or the Tidyverse team, I should say,\r \r undergoes\r \r spring cleaning of their code base. Now what does this really mean? Well, you can think of it a lot of ways, but in short, it may be updating\r \r some code that the packages is using. Maybe it's using an outdated dependency\r \r or a deprecated\r \r function from another package, and here comes the exercise of making sure that's up to date with, say, the newest,\r \r you know, blessed versions of that said function and whatnot,\r \r such as\r \r the CLI package having a more robust version of the abort functionality when you wanna throw an error\r \r in your function\r \r as opposed to what our lang was exposing in years before.\r \r\n\nIt's one thing if you only have a few files to replace, right, with that stop syntax or our or abort syntax from our lang.\r \r Imagine if you have hundreds of those instances. And imagine if it's not always so straightforward as that find and replace that you might do in a in an IDE such as r studio or positron.\r \r Well, that's where Simon\r \r in as a result of in participating in this hackathon, he created a prototype package\r \r called CLIPAL,\r \r which will let you highlight certain sections of your Rscript in RStudio\r \r and then run an add in function call\r \r to convert that to, like, a newer syntax, and in this case, that abort syntax\r \r going from r lang to the CLI packages version of that.\r \r\n\nThe proof of concept worked great, but it was obviously a very specific case.\r \r Yet, he saw tremendous potential here\r \r so much so that he has spun up not one, not two,\r \r but\r \r three new packages\r \r all wrapping the Elmer functionality\r \r combined\r \r with some interesting integrations\r \r with the RStudio API package\r \r to give that within editor\r \r type of context\r \r to these different packages.\r \r So I'll lead off, Simon's summary here on where the state is on each of these packages\r \r with the first true successor\r \r to COIPow,\r \r which was called\r \r pal. This is comes with built in prompts, if you will,\r \r that are tailored to the developer,\r \r I e the package developer.\r \r\n\nIf you think of the more common things that we do in package development,\r \r it's, you know, building unit tests or\r \r doing our oxygen documentation\r \r or\r \r having robust messaging via the COI package. Those are just a few things.\r \r But pow was constructed\r \r to have that additional\r \r context\r \r of the package\r \r and I e the functions you're developing in that package.\r \r So you could say, highlight a snippet\r \r and say give me the r oxygen\r \r documentation\r \r already filled out\r \r with that that function that you're highlighting. That's just one example.\r \r You could also, like I said, build in, like, CLI calls or convert those CLI calls from other calls if you wanna do aborts or messages or warnings and whatnot.\r \r\n\nAnd that already has saved him immense amount of time with his package development, especially in the spring cleaning\r \r exercise.\r \r He does have plans to put Pal on CRAN in the coming weeks,\r \r but he saw tremendous potential here.\r \r That's not all. Mike, he he didn't wanna stop there with Pal because there are some other interesting use cases\r \r that may not always fit in that specific package development workflow or the type of assumptions\r \r\n\n[00:07:59] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 59,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "that Pal gives us. So why don't you walk us through those? Yeah. So I'll there's two more that I'll walk through, and one is more on the package development side, and then one is more on the\r \r analysis side for, you know, day to day our users and not necessarily package developers. So the first\r \r of which is called ensure,\r \r e n s u r e. And, one of the interesting things about\r \r ensure\r \r is that\r \r it it actually\r \r does a couple of different things that PAL does not do. And\r \r PAL sort of assumes that all of the context that you need is in the selection and the prompt that you you provide it. But, when we think about in the example that Simon gives here writing unit tests, it's actually really important to have additional pieces of context that may not be in just the single file that you're looking at, the prompt that you're writing, or, you know, the highlighted selection,\r \r that you've chosen.\r \r\n\nYou may actually need to have access to package datasets. Right?\r \r That you'll need to to, you know, include in that unit test that maybe aren't necessarily\r \r in the script or the the snippet of code that you're\r \r focusing on, at the moment. So ensure, you know, goes beyond the context that you have highlighted or or is showing on screen and actually sort of looks at the larger universe, I believe, of, all of these scripts and items that are included in your package.\r \r And it looks like, you know, unit testing here is probably the the biggest use case for ensure in that you can,\r \r leverage a particular\r \r function, like a dot r function within your r directory.\r \r\n\nAnd if you want to scaffold or or really create, I guess, a a unit test for that,\r \r it's as easy,\r \r I believe, as, you know, highlighting the text that you or highlighting the lines of code that you're looking to write a unit test for.\r \r And, just a hot key shortcut that will actually\r \r spin up a brand new test dash whatever,\r \r test that file. It'll stick that file\r \r in the appropriate location under, you know, test test that for those of us that are our package developers out there. And it will start to write,\r \r the those unit tests on screen for you in that test that file. And there's a nice little GIF here that, shows sort of the user experience. And it's it's pretty incredible,\r \r that we have the ability to do that, and it looks really really cool. So I think that's, you know, really the main goal of the insure package.\r \r\n\nThen the last one I wanna touch on is called Gander. And again, I think this one is a little bit more,\r \r you know, day to day data analysis\r \r friendly.\r \r The,\r \r functionality here is that you are able to\r \r highlight a specific,\r \r snippet of text or it also looks like Simon mentions that, you know, you can also not highlight anything and it'll actually take a look at, you know, all of the code that, is in the script\r \r that you currently have open. And you by pressing, you know, a quick keyboard shortcut, it looks like,\r \r you can leverage this add in, which will pop up sort of like a modal that will allow you\r \r to enter a prompt.\r \r\n\nAnd in this example, you know, there's a dataset on screen. Simon just highlights the the name of that dataset.\r \r I think it's the Stack Overflow dataset, but it's just like Iris or Gapminder.\r \r And he highlights it, you know, the modal\r \r pops up and he says, you know,\r \r create a scatter plot. Right? And all of a sudden,\r \r the\r \r selection on screen is replaced by a g g plot code that's going to create this scatter plot.\r \r And he can continue to do that and iterate\r \r on the code by saying, you know, jitter the points or, you know, make the x axis formatted in dollars,\r \r things like that. And it's it's really, really cool how quickly he is able to,\r \r really create this customized g g plot with formatting, with fastening,\r \r all sorts of types of different things,\r \r in a way that is is obviously much quicker and and more efficient\r \r even if you are having to do some minor tweaks,\r \r to what the LLM is going to return at the end of the day than if you were going to just, you know, completely write it from scratch. So, pretty incredible here. There's another GIF that goes along with it\r \r demonstrating this. It looks like not only in this pop up window\r \r is there an input for the prompts that you wanna give it, but there is also\r \r another\r \r option called interface,\r \r which I believe allows you to control whether you wanna replace the code that you've highlighted,\r \r or I would imagine whether you wanna add on to the code that you've highlighted instead of just replacing it, you know, if you wanna create sort of a a new line,\r \r with the output of the LLM. So\r \r really cool couple of packages\r \r here that are definitely\r \r creative ways to leverage this new large language model technology to try to\r \r use,\r \r you know, provide us with some AI assisted coding tools. So big thanks to to Simon for\r \r and the team for developing these and sort of the creativity that they're having around,\r \r leveraging these LLMs to help us in our day to day workflows.\r \r\n\n\n\n[00:13:18] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 18,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. I see immense potential here and the fact that, you know, with these being native R solutions\r \r inside our R sessions,\r \r grabbing the context not just potentially from that snippet highlighted,\r \r but the other files in that given project, whatever a package or a data science type project\r \r with the information on the datasets themselves.\r \r Like, that is immense value\r \r without you having the really in a separate window or browser and say chat g p t or whatnot, trying to give it all the context you can shake a stick at and hope that it gets it. Not always the case. So there is a lot of interesting extensions here that, again, are made possible by Elmer.\r \r And, you know, like like I said, immense potential here. Simon is quick to stress that these are still experimental.\r \r\n\nHe he sees, obviously,\r \r some great advantages to this paradigm of\r \r literally the the the bot, if you will, that you're interacting with is injecting directly into your r file that you're you're writing at the time.\r \r Again, that's a good thing. It may sometimes be not so a good thing if it is going on a hallucination or something, perhaps, who we don't know. So\r \r my my tip here is if you're gonna do this day to day,\r \r if you're not using person control, you really should. In case it goes completely nuts on you, You don't want that in your commit history and and somebody asking you to code review. What on earth are you thinking there? Oh, it wasn't me. Really? Well, well, it kinda was when you're using the bot anyway. But nonetheless,\r \r having version control, I think, is a must here. But I do see Simon's point\r \r that other frameworks in this space, he mentions it kind of in the middle of the post,\r \r are leveraging more general kinda back ends to interacting with your IDE or your\r \r Git like, functionality\r \r of showing you the difference between what you had before and what you have now after the after the AI\r \r injection. So you could review that kind of quick before you say, I like it. Yep. Let's get it in, or\r \r not so much. I wanna get that stuff out of here and try again. So\r \r I would imagine again, this is Eric putting on speculation hat here. With the advancements in Positron and leveraging more general, you know, Versus code ecosystem,\r \r extension ecosystem, that there might be even a more robust way to do this down the road on that side of it. But the advantage of the RStudio API package is leveraging\r \r is that thanks to some shims that have been created on the Positron side, this works in both the classic RStudio and in Positron. And I think that's, again, tremendous value at this early stage for those that are, you know,\r \r preferring, say, R Studio as of now over Positron, but still giving flexibility for the those who wanna stay on the bleeding edge to leverage this tech as well. So I think there's a lot to watch in this space, and\r \r and Simon, definitely does a tremendous job with these packages at this early stage.\r \r\n\n\n\n[00:16:31] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 31,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "That's for sure. Yeah. I appreciate sort of the deposit team's\r \r attention to UX because, again, I think that's sort of the most important thing here as we bring in, you know,\r \r tools that create very different workflows than maybe what we're necessarily used to. I think it's important that,\r \r we meet\r \r developers and and data analysts and data scientists,\r \r you know, in the best place possible.\r \r\n\n[00:16:58] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 58,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "And I mentioned at the outset that Simon is part of the Tidymodels,\r \r ecosystem team. I will put some quick, plugs in the show notes because he is leveraging\r \r on he's I should say, writing a new book called Efficient Machine Learning with R that he first announced at the R pharma conference last year with a excellent talk. So he's been really knee deep into figuring out the best ways to optimize his development both from a code writing perspective\r \r and from an execution perspective in the tiny models ecosystem. So, Simon, I hope you get some sleep, man, because you're doing a lot of awesome work in this space.\r \r\n\n[00:17:34] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 34,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "I was thinking the same thing. I don't know how he does it.\r \r\n\n[00:17:45] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 45,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "And speaking of someone else that we wonder how on earth did they pull this off at the time they have,\r \r our next highlight is, you might say, revisiting\r \r a very influential\r \r dataset\r \r that made a tremendous\r \r waves in the data\r \r storytelling and visualization\r \r space,\r \r but with one of the new quartal tools to make it happen.\r \r And long time contributor to our weekly highlights,\r \r Nicola Rinne,\r \r is back again, on the highlights\r \r as she has drafted\r \r her first use\r \r of the close read quarto extension\r \r applied to the Hans Rosling famous Gapminder\r \r dataset visualization.\r \r\n\nIf you didn't see or or I should say, if you didn't hear our our previous year's highlights, we did cover the close read quarto extension that was released\r \r by Andrew Bray and James Goldie.\r \r In fact, there was a talk about this at the aforementioned PasaConf last year, which we'll link to in the show notes. But close read in a nutshell\r \r gives you a way to have that interactive,\r \r what you might call scrolly telling kind of enhanced\r \r web based reading of a report, visualizations,\r \r interactive visualizations.\r \r You've seen this crop up from time to time from, say, the New York Times blog that relates to data science.\r \r Other,\r \r other,\r \r reporting\r \r companies out there or or startups out there have leveraged similar\r \r interactive visualizations.\r \r\n\nLike, I even had an article on ESPN of all things that was using this kind of approach. So it's used everywhere now. But now us,\r \r adopters of Quarto,\r \r we can leverage this without having to reinvent the wheel in terms of all the HTML styling and other fancy enhancements we have to make. This close read extension\r \r makes all of it happen free of charge.\r \r So what exactly is this tremendous,\r \r report that Nicole has drafted here? She calls a gapminder,\r \r how the world has changed.\r \r And right off the bat, on the cover of this report\r \r is basically a replica of the famous animation visualization,\r \r plotting the GDP or gross domestic product per capita\r \r with life expectancy on the y axis\r \r with the size of the bubbles,\r \r pertaining to the area around those,\r \r and for each country,\r \r represented there.\r \r\n\nSo once you start scrolling the page, and again, we're an audio podcast. Right? We're gonna do the best we can with this. She walks through those different components. First, with the GDP with some nice,\r \r looks like a line plots that are faceted by the different regions of the world, getting more details on on gross domestic product,\r \r and then getting to how that also is affected by population growth.\r \r Again, another key\r \r key parameter in this life expectancy,\r \r calculation,\r \r which gets to the life expectancy\r \r side of it. And as you're scrolling through it, the plot neatly\r \r transitions as you navigate to that new text on the left sidebar.\r \r\n\nIt is silky smooth, just really, really top notch,\r \r user experience here.\r \r And then she isolates what one of these years looks like. She calls it the world in 02/2007,\r \r showing that kind of quadrant, that four quadrant section you have when you look at low versus high GDP\r \r and low versus high life expectancy.\r \r And as she's walking through this plot, she's able to zoom in on each of these quadrants as you're scrolling through it to look at, like I said, these four different areas,\r \r and that's leveraging the same visualization. It's just using these clever tricks to isolate\r \r these different parts of the plot. Again, silky\r \r smooth. This is\r \r really, really interesting to see how she walks through those four different areas\r \r and then closing out with the animation once again that goes through each year from the '25 nineteen fifties all the way to the early two thousands\r \r with, again, links to all of her code, GitHub repository, and whatnot.\r \r\n\nBut for a first,\r \r first pass\r \r at Close Read, this is a top notch product if I dare say so myself.\r \r And boy, oh, boy, I am really interested in trying this out.\r \r There was actually a close read contest that was, put together by Posit\r \r late last year, and I believe the submissions closed in January this,\r \r this past month.\r \r But if you want to see how others are doing in this space, addition to Nicola's,\r \r visualization here, we'll have a link in the show notes to, pause a community all the posts that are tagged with this close read contest so you can kinda see what other people are doing in this space. And maybe we'll hear about the winners\r \r later on. But this one this one will have a good chance of winning if I dare say so myself. So I am super impressed with close read here, and Nikola's\r \r\n\n[00:22:52] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 52,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "very quick learning of it. Yeah. It's it's pretty incredible. And I was going through\r \r the Quarto\r \r document that sort of lives behind this, and it actually seems pretty\r \r easy to get up to speed with this scrollytelling\r \r concept.\r \r It's pretty incredible.\r \r I think there's a a couple different specific tags,\r \r that,\r \r you know, allow you\r \r to do this, or maybe to to do it easy. It looks like,\r \r there is a dot scale to fill\r \r tag, that I believe probably\r \r handles a lot of the,\r \r zoom in zoom out sort of the aspect ratio of the plots or GIFs in Nicola's case that are being put on screen. Because\r \r in her visualization, it's almost like there's this whole left hand side bar, right, that has a lot of the context and the narrative\r \r text, that goes along with the visuals on the right side of the screen.\r \r\n\nYou know, some of the pretty incredible things that\r \r I thought were interesting here is,\r \r you know, not only was she able to, you know, fit a lot of these plots in a nice aspect ratio on the right side of the screen, but there's also actually a section of the scrolly telling\r \r visualization\r \r where she zooms in across four different slides, if you will, on four different quadrants of the same plot,\r \r to\r \r tell the story of these four different quadrants,\r \r you know, one being low GDP per capita and low life expectancy, low GDP per capita and high life expectancy, and, you know, the other two as well, vice versa.\r \r And it's pretty easy, it's pretty awesome, I guess, how the visualization\r \r sort of nicely slides from one quadrant to the other\r \r as you scroll to the next slide, if you will.\r \r\n\nSo this is for for any of the data vis folks out there, data journalism folks out there, I imagine that in order to accomplish something like this in the past, it was probably a lot of d three,\r \r JS type of work, and\r \r the end product here compared to\r \r the quarto code that I'm looking at is it's pretty incredible.\r \r And it just sort of gives me the idea that it's\r \r a lot of the heavy lifting has been done\r \r for us, in in the ability to create these quarto based scrolly telling\r \r types of visualizations.\r \r So I'm super excited about this.\r \r\n\n[00:25:26] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 26,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "You know, it made me go then the way back machine a little bit on this.\r \r I'm gonna bring Shani in this because I love to bring Shani in almost all my conversations. But back in 2020, of all things,\r \r I remember I had the good fortune of presenting,\r \r I at the poster session at the conference, and I had my topic was kinda highlighting the latest innovations in the shiny community, and I was,\r \r trying to push for what could we could we ever have something like a shiny verse or whatnot of these community extensions.\r \r And to do this poster, I didn't wanna just do, you know, PowerPoint over anything. Come on now. You know me. But I leverage,\r \r our good friend, John Coons.\r \r\n\nHe had a a development package way back in the day called Fullpage,\r \r which was a way to create kind of a shiny app that had these scrolly telling like elements.\r \r But I will say he was probably too far ahead of his time on that. I won't say it was that easy to use. And, frankly, he would probably acknowledge that too.\r \r Here's my idea. I still have the GitHub repo of this, you know, poster I did.\r \r I would love to have my hand at converting that to close read\r \r and wait for it, somehow\r \r embedding a Shiny Live app inside of it. Can it be done?\r \r\n\n[00:26:42] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 42,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "I think it can too. I think you'd be breaking some new ground, Eric. But,\r \r\n\n[00:26:47] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 47,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "if if anybody's up for that challenge, I know it's you. How did I just nurse night myself? Like, how does that happen, Mike? What\r \r you must be hypnotizing me or something without even saying anything. I have no idea.\r \r\n\n[00:26:59] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 59,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Peer pressure.\r \r\n\n[00:27:13] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 13,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Now you may be wondering out there yeah. The Gapminder data, we we are fortunate that we have a great r package\r \r that literally gives us this kind of data. So once Nicola has this package loaded, she's able to, you know, create this awesome close read, you know, scrolly telling type of report.\r \r Well, there are many, many other sources of data that can surface this very similar important domain\r \r such as what we saw in the Gapminder\r \r set. And you may be wondering, where can I get my hands on some additional data like this so I can do my own, you know, reporting? Maybe with Close Read or Shiny or Quordle, whatever have you. Our last highlight is giving you another terrific resource of data\r \r for these kind of situations.\r \r\n\nThis last highlight comes to us from Kenneth Tay, who is a applied researcher at LinkedIn,\r \r and he has a blog that he is, his latest post\r \r is talking about some recent advancements in this portal called\r \r Our World in Data,\r \r which I have not seen before this highlight, but it is\r \r a, I believe, a nonprofit\r \r organization\r \r whose mission\r \r is to create accessible research data to make progress against the world's largest problems. So you might think of, say, poverty, life expectancy, some of the other issues that, say, the Gapminder said highlighted.\r \r But they wanna make sure that anybody that has the desire and the skill set to use, say, a language like R or whatever else\r \r to produce visualizations\r \r to really start to summarize and explore these data, that there is as less friction as possible to access these.\r \r\n\nAnd, yes, you could access their portal. You could download the data manually on their website,\r \r but it was earlier in 2024\r \r that this group had exposed an API\r \r to access these data.\r \r So Kenneth, in his blog post here,\r \r walks through what it's like to use this,\r \r this, new API,\r \r particularly to call it a public chart API because it is\r \r the basis for, I believe, some interactive visualizations\r \r that their web portal\r \r is exposing here.\r \r But because there is a an API now,\r \r he brings back a little bit of old school flavor here, the h t t r or the hitter package.\r \r That was one of those cases where I've been spelling it out all this time, but on on hitter two, the read me, Hadley literally says how it's pronounced. So thank you, Hadley. I wish I wish all our package authors would do that.\r \r\n\n\n\n[00:29:45] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 45,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "In case the baseball player didn't give it away.\r \r\n\n[00:29:48] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 48,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Exactly. So great great hacks on the new on the new package itself. So\r \r back to Kenneth's expiration here, he shows us how with the old school hitter along with a little tidy verse magic and JSON light under,\r \r loaded into the session.\r \r He needs all three of those because,\r \r first, it's one thing to access the data itself, which apparently\r \r are exposed as CSV files on the back end, but the API lets you grab these\r \r directly.\r \r But the metadata comes to that to that in JSON format. So he wants to use JSON like to help massage\r \r some of that too.\r \r\n\nSo the first exploration of this and the snippet on the blog post is looking at the average monthly surface temperature around the world. So once he's get the he's got the URL\r \r of the dataset,\r \r then he assembles the query parameters, which,\r \r again, in the role of APIs, you might have some really, really robust documentation.\r \r Maybe some other times you have to kind of guess along the way. It's kind of roll of the dice, isn't it?\r \r\n\n[00:30:52] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 52,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yeah. I find the the latter to be the case more often, especially in\r \r professional settings, unfortunately, which seems to make no sense.\r \r\n\n[00:31:01] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 1,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Who would ever think that? But yet, I feel seen when you say that. Yes. Even as of this past week. My goodness. Don't get me started.\r \r So luckily for this, there is a a healthy mix here, I would say. So he's got some query parameters.\r \r So look at the version of the API,\r \r the type of CSV, the return, which can be the full set or a filter set, which I'll get to in a little bit,\r \r and whoever to use long or short column names in the dataset that's returned back.\r \r And then, also, he does a similar thing for the metadata.\r \r That's another get request,\r \r as well,\r \r and then he brings that through that content directly,\r \r with JSON format.\r \r\n\nSo the metadata comes back as a list because most of the time when you return JSON back, it is bake basically a big nested list,\r \r and that gives some high level information\r \r on the dataset that is returning. So you get, basically a list of each\r \r character string of the variable name and the description of that variable. So that's great.\r \r Now the data directly,\r \r again, setting up similar, setting up the query parameters.\r \r This time, he's gonna demonstrate what it's like to bring a filtered version of that data right off the bat.\r \r And that is where there's a little guessing on that because he went through the web portal of this,\r \r played with the interactive filters that this web portal gives gives him,\r \r and looked at the end of the URL. So if you're new to the way\r \r requests are made for API, you might say get requests where you're running to grab something from the API.\r \r\n\nMore often than not, you'll attach different flags or different variables at the end of the URL\r \r often in, like, key value type pairs\r \r with an ampersand separating the different parameters. So once he explored this web portal, he was able to grok that, oh, yeah. There is a parameter for selecting the country.\r \r So I'm gonna, you know, put that in the query parameter and feed it in the direct value.\r \r And then once he does the get request on that, this is important here,\r \r the contact\r \r the content, I should say, that's coming back can usually be three different types of flavors.\r \r The raw\r \r might say binary representation of that value,\r \r the textual value of it, or the format of JSON or XML version of it.\r \r\n\nIn this case, the it was a text value coming back because it's literally the CSV content as if you just had the CSV open on a new file in your computer.\r \r That's how the text is coming back. So he feeds that into a read underscore CSV\r \r directly. And lo and behold, you got yourself a tidy dataset as a result of that. So\r \r and then with that, he just said a simple plot\r \r of the time in year versus the temperature of the surface\r \r across The USA\r \r just to show that that's exactly how you would bring that data in. And there's a lot more\r \r you can do with this type of data. But, again, it's a good example of, first, going to the documentation where it's available. But then when things maybe aren't as well documented,\r \r yeah, nothing beats a little trial and error. Right? Sometimes that's the best bet we get, and that's how he was able to do that filtered\r \r dataset pull. But, nonetheless, if you're looking for inspiration, I'm looking at similar data as we covered in the second highlight, but across a wide range\r \r of world specific type of data. I think this portal has a lot of potential.\r \r\n\nAnd, yes,\r \r r is your friend. Again, we're grabbing these data from almost any source you can imagine. So really great blog post straight to the point. You could take this code and run with it today. And, in fact, a good exercise would be what would you do to convert that to the hitter two syntax, which shouldn't be too much trouble.\r \r But, nonetheless, you've got a great example to base your explorations off of here.\r \r\n\n[00:34:53] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 53,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yeah. I I think it's just a good reminder\r \r in general, especially for, you know, junior data science folks who are just starting out that\r \r your data isn't always going to be in a CSV format. Yes. I know that our world in data allows you to export that. But a question that you should be asking, you know, in order to try to automate things as much as possible for yourself is\r \r often, you know, is there an API,\r \r right, for this this dataset or is there an underlying database that we can connect to so that I can just run my code directly\r \r against that, run my script with one click as opposed to having to go someplace and download the data to a CSV first,\r \r before I do my analysis. So, you know, if you can sort of automate a recurring\r \r script that you have against data that that might be just updating but in the same schema on some particular basis.\r \r\n\nI think, yeah, this is a fantastic example of leveraging our world and data's API to do that, some really nice,\r \r base plotting, some really nice g g plotting as well, a pretty cool mix here That's been put together. And like you said, Eric, a great example of dealing with what's called a get request, which is where you're actually just modifying the suffix of the URL,\r \r in order to filter the dataset that's going to get returned here.\r \r So it's a really great example of doing that with a couple of different parameters that are being managed. I guess one parameter being,\r \r tab equals chart, another one specifying the time or the date range,\r \r that we're looking to get data back within. And then the last one being the the two countries here in the case of this last example where we're plotting the average monthly temperature\r \r for the entire world and then, for Thailand as well. So, you know, two items in the legend\r \r here. As you said, great great walk through blog post of using a publicly available,\r \r API\r \r to\r \r wrangle some data and and make it pretty.\r \r\n\n\n\n[00:36:54] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 54,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. The the the limit's only your imagination at this point. So like I said earlier, you could take\r \r what Nicola made with her close read example, apply it to this kind of data, and and go to town with a a great learning journey.\r \r Great for a blog post such as this, you know.\r \r All if again, maybe, like you said, speaking to the the data scientists out there that are looking to get into an industry or or an a data science type of role,\r \r it never hurts. Well, if you've got the time and the energy\r \r to build a portfolio of things like this because you never know\r \r just how useful that will be as you're trying to showcase what you find and what what skill set you have to generate insights\r \r from data like this. Because not to not to pull the old,\r \r back in my day,\r \r syntax here, but we didn't have access to these type of data when I was looking for a job earlier. So take advantage of it, folks. It is here for the taking.\r \r\n\nSpeaking of what else you need to take advantage of, you need to take advantage of our weekly folks because if this isn't bookmarked for reading every single week, you are missing out because this issue has well more than what we just talked about here in these highlights.\r \r We got a great batch of additional tutorials,\r \r new packages that have been released, new events coming up. It's the full gamut.\r \r So we'll take a couple minutes for our additional fines here. And, leveraging what we talked about at the outset of the show with Simon's explorations of interacting with Elmer,\r \r a very common problem across many, many different industries and organizations\r \r is\r \r dealing with data that I'm gonna\r \r go on a limb here is kind of trapped\r \r in image or PDF format.\r \r\n\nBecause wherever you like it or not, there's gonna be some team out there that said, you know what? We have this great set of data here, and they act like everything is perfect access. And then you as a data scientist says, oh, yeah. Where are the CSVs? Where where are the parquet files if they're really up to date? Oh, no. No. They're in these PDFs.\r \r Oh, gosh. Okay. What do I do now?\r \r Yes. There are things like OCR\r \r that can help you to an extent,\r \r but with the advent of AI, there might be an even easier way to do that. So frequent contributor to the our weekly,\r \r highlights and elsewhere, Albert Rapp has another post in his three minute Wednesday\r \r series\r \r on how he was able to leverage Elmer\r \r to extract,\r \r text from both an image file of an invoice as well as a PDF version\r \r of that image and to be able to grab, you know,\r \r certain numeric quantities like number of billable hours, time period, and whatnot.\r \r\n\nI think this is a very relatable issue that, again,\r \r many organizations,\r \r big or small, are gonna have to deal with at some point. And I've seen projects being spun up at the hashtag day job where they're looking at ways of building this from scratch. Well, if you're an R user, maybe Elmer with its image extraction functionality\r \r might get you 90% on the way there. Hashtag just saying. So excellent post, Albert and I may be leveraging this sooner than\r \r\n\n[00:40:07] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 7,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "later. No. That's awesome. We have some some projects that are doing the same thing with some of these self hosted open weights\r \r models to be able to take a look at a PDF and extract\r \r very particular pieces of information that we want from it, and we can tell it, you know, give us that\r \r back in JSON form, and it allows us to, you know, leverage it downstream. Of course, you have to build a bunch of guardrails\r \r around that to make sure it's not hallucinating\r \r because it's a Absolutely. Box.\r \r Yep. But it's it's pretty powerful stuff, and the accuracy that we're seeing is\r \r is pretty shocking, pretty awesome.\r \r\n\nBut what I want to call out is an article by the USGS, which is the US Geological Survey\r \r on mapping water insecurity in R with TidyCensus.\r \r They just always do an absolutely beautiful job,\r \r with data visualization.\r \r All the code is here for a lot of these visuals actually deal with,\r \r households that were were lacking plumbing in 2022\r \r in The US, and then changes,\r \r via,\r \r I guess, barbell plots, they're called. I don't know if there's any other names for them. Lollipop plots?\r \r\n\n[00:41:13] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 13,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. I've seen them thrown around interchangeably.\r \r\n\n[00:41:15] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 15,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yep. Yep. To take a look at,\r \r improvements\r \r in plumbing facilities,\r \r particularly in, New Mexico and Arizona, which were the two states in based upon the 2022 census, that I think had the the lowest rates,\r \r of of household plumbing. So it's, you know, it may be\r \r a a niche topic for some, for lack of a better word.\r \r But the the data visualizations that they have here on these choropleth maps are really, really nice. I I love the color palettes that they use. I I really love the walk through that they provide on the website\r \r in terms of the code and the narrative around how they made the decisions that they made\r \r to go from dataset\r \r to visuals. I think it's a great job. You know, on the the East Coast here,\r \r water scarcity is\r \r not something that we really are concerned about. But I know on the West Coast, because we do a lot of our work in agriculture,\r \r it's it's quite a big deal in terms of water rights and water access and things like that.\r \r\n\nSo I really appreciate\r \r the work that the USGS is doing on this particular,\r \r you know, niche.\r \r\n\n[00:42:27] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 27,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. And I have a soft spot for the the great work they're doing.\r \r My wife actually was fortunate early in her career to have an internship at the USGS and,\r \r albeit this was a day where r wasn't quite as as readily used as it is now, but it's great to see this group in particular being really modern with their approaches. And, again,\r \r top notch narrative, top notch visualization,\r \r so really\r \r exciting to see. And I believe we featured this group on previous highlights, so you wanna check out the back catalog for some of the excellent work they've been doing in this space, previously. So excellent\r \r excellent find, Mike, and there are a lot more finds than just those. So, again, we invite you to check out the rest of the r weekly issue at rweekly.0rg.\r \r\n\nWe, of course, have a direct link to this particular issue in the show notes, but, also, you wanna check the back catalog\r \r about both the issue as well as this humble podcast itself because we got so many great things to talk about here, so many great things to learn. As you heard, I've I've basically nurse signed myself for a new project, hopefully, this year that I can work on with Shiny and Close Reads. So we'll see what happens there. But, yeah, if you wanna see what else is happening and if you want to be a part of what's happening here in terms of what the readers are gonna see every week,\r \r We value your contributions,\r \r and the best way to do that is, again, head to rweekly.0rg.\r \r\n\nYou'll see in the top right corner a link to this upcoming issues draft\r \r where you can send a poll request to tell tell us about that great new package, that great new visualization, that great new use case of shiny or AI or other technologies\r \r that you can see in this data science community. We'd love to hear it. Again, all marked down all the time.\r \r I I would stress again when\r \r told me years ago, if you can't wear an r markdown in five minutes, he would give you $5, and he didn't have to give any money for it. So there you go, folks.\r \r And, also, we love hearing from you. You can get in touch with us via the contact page in the episode show notes. You can also send us a fun little boost with the modern podcast app. Those details are in the show notes as well. And you can also get in touch with us on the social medias.\r \r\n\nI am now on Mastodon these days with @rpodcastatpodcastindex.social.\r \r I am also on Blue Sky as well where I am at rpodcast.bsky.social.\r \r I believe that's how to say.\r \r Mike, where can the listeners find you?\r \r\n\n[00:44:51] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 51,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yes. I am on blue sky for the most part these days at mike dash thomas\r \r dot b s k y dot social.\r \r Also on fa Mastodon a little bit, [email protected].\r \r And you can check out what I'm up to on LinkedIn if you search Catch Broke Analytics, k e t c h b r o o k.\r \r And a bit of a shout out here, self plug that we are looking for a DevOps\r \r expert. If you are somebody who has expertise in Docker,\r \r little Kubernetes,\r \r Azure preferred, but it doesn't really matter because we're all spinning up Linux servers at the end of the day,\r \r we could use some help managing ours and our clients' ShinyProxy\r \r environment. So any DevOps folks out there, please feel free to reach out.\r \r\n\n\n\n[00:45:40] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "trans_timestamp": 40,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "I'm sure there are many of you out there. So, yeah, take up Mike on this tremendous opportunity.\r \r I'm still learning the DevOps ropes. We share many stories about that in our adventures there. So that's that's a great great plug, Mike. And I'm also on LinkedIn as well. But, yeah, we'll,\r \r we'll add that little, call out to the show notes as well if you're interested in pursuing that. Nonetheless, we're gonna close-up shop here for episode 94\r \r of Haruki highlights.\r \r Before I go, I wanna send a very hearty congratulations\r \r to Chris Fisher and the team at Jupiter Broadcasting. You recently had episode 600\r \r of Linux Unplugged.\r \r\n\nTremendous achievement, folks. You'll be seeing a boost from me in the coming days.\r \r I don't know if we'll ever get there, Mike, but, nonetheless, that's a huge number for a podcast\r \r of that size. So congrats to them. Well, we'll we'll get to 200 at least, and we'll see what happens after that. Alright. We got no place to stop.\r \r Well, yeah. Me either. Yep. We'll see what happens, buddy. But, nonetheless,\r \r we hope you enjoyed episode 94\r \r of our week highlights, and we'll be back with another episode for one ninety five next week."
+      }
+    ],
+    "chapters": [
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "chap_timestamp": 57,
+        "chap_text": "Trifecta of LLM code assists",
+        "chap_href": "https://www.tidyverse.org/blog/2025/01/experiments-llm/"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "chap_timestamp": 45,
+        "chap_text": "Closeread with Gapminder",
+        "chap_href": "https://nrennie.rbind.io/scrollytelling/posts/gapminder/"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "chap_timestamp": 12,
+        "chap_text": "World of Data",
+        "chap_href": "https://statisticaloddsandends.wordpress.com/2025/01/30/downloading-datasets-from-our-world-in-data-in-r/"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "chap_timestamp": 14,
+        "chap_text": "LLMs to extract data",
+        "chap_href": "https://3mw.albert-rapp.de/p/extract-information-from-images-and-pdfs-with-r-llms"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "chap_timestamp": 40,
+        "chap_text": "Mapping water",
+        "chap_href": "https://waterdata.usgs.gov/blog/acs-maps/"
+      },
+      {
+        "ep_name": "issue_2025_w_06_highlights_638743320595082837",
+        "chap_timestamp": 3,
+        "chap_text": "Episode Wrapup"
+      }
+    ]
+  },
+  {
+    "metadata": [
+      {
         "ep_name": "issue_2025_w_05_highlights_638737249045054386",
         "ep_date": "2025-01-29",
         "ep_duration": 29,
