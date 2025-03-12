@@ -2,6 +2,267 @@
   {
     "metadata": [
       {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "ep_date": "2025-03-12",
+        "ep_duration": 48,
+        "ep_description_short": "Giving your package documentation site a little personality and much more with {pkgdown} customization, plus a novel new package to bring the power of LaTeX to all of your plots! Episode Links This week's curator: Batool Almarzouq - @batoolmm.bsky.social (Bluesky) & @batool664 (X/Twitter) Customize your expedition: Create a unique documentation…"
+      }
+    ],
+    "description_long": [
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "description_long": "\r \r Giving your package documentation site a little personality and much more with {pkgdown} customization, plus a novel new package to bring the power of LaTeX to all of your plots!\n\nEpisode Links\n\nThis week's curator: Batool Almarzouq - @batoolmm.bsky.social (Bluesky) & @batool664 (X/Twitter)\nCustomize your expedition: Create a unique documentation for your R Package\nLaTeX Typesetting in R: The 'xdvir' Package\nEntire issue available at rweekly.org/2025-W11\nSupplement Resources\n\n{xdvir} package vignette https://cran.r-project.org/web/packages/xdvir/vignettes/xdvir-intro.html\ntinytex- A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution based on TeX Live https://yihui.org/tinytex/\nAdding arm64 to r2u https://dirk.eddelbuettel.com/blog/2025/03/04#046_arm64_comes_to_r2u\nWebsite for tidyplots use cases https://tidyplots.org/use-cases/\nSupporting the show\n\nUse the contact page at https://serve.podhome.fm/custompage/r-weekly-highlights/contact to send us your feedback\nR-Weekly Highlights on the Podcastindex.org - You can send a boost into the show directly in the Podcast Index. First, top-up with Alby, and then head over to the R-Weekly Highlights podcast entry on the index.\nA new way to think about value: https://value4value.info\nGet in touch with us on social media\nEric Nantz: @[email protected] (Mastodon), @rpodcast.bsky.social (BlueSky) and @theRcast (X/Twitter)\nMike Thomas: @[email protected] (Mastodon), @mike-thomas.bsky.social (BlueSky), and @mike_ketchbrook (X/Twitter) \nMusic credits powered byOCRemix\n\nA View from the Top (of Shinra HQ) - Final Fantasy VII Remake - TheManPF, Andre Beller, jnWake, Kev Ragone, Michelle Dreyband, newmajoe, Ronin Op F - https://ocremix.org/remix/OCR04777"
+      }
+    ],
+    "links": [
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://bsky.app/profile/batoolmm.bsky.social"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://twitter.com/batool664"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://rtask.thinkr.fr/customize-your-expedition-create-a-unique-documentation-for-your-r-package/"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://www.stat.auckland.ac.nz/~paul/Reports/dvir/xdvir/xdvir.html"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://rweekly.org/2025-W11.html"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://cran.r-project.org/web/packages/xdvir/vignettes/xdvir-intro.html"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://yihui.org/tinytex/"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://dirk.eddelbuettel.com/blog/2025/03/04#046_arm64_comes_to_r2u"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://tidyplots.org/use-cases/"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://serve.podhome.fm/custompage/r-weekly-highlights/contact"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://podcastindex.org/podcast/1062040"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://getalby.com/"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://value4value.info"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://podcastindex.social/@rpodcast"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://bsky.app/profile/rpodcast.bsky.social"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://twitter.com/theRcast"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://fosstodon.org/@mike_thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://bsky.app/profile/mike-thomas.bsky.social"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://twitter.com/mike_ketchbrook"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://ocremix.org/"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "links": "https://ocremix.org/remix/OCR04777"
+      }
+    ],
+    "transcript": [
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 3,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Hello, friends. We're back of episode 98\r \r of the Our Wicked Highlights podcast.\r \r Boy, that magic number is getting closer, isn't it? But, nonetheless, this is the weekly show where we talk about the awesome highlights and other resources that are shared every single week at rweekly.0rg.\r \r My name is Eric Nance, and I'm delighted to join us from wherever you are around the world.\r \r Yes. I am very thankful. We're already in March, so I feel like my mood's lifting up. The sun's coming out more.\r \r The time zone chain or the time change a little bit in my neck of the woods, so it's\r \r lighter later in the day. Although it's darker in the morning, so\r \r give can't have everything at once. But I'm happy, and all things considered. And I'm also happy because\r \r returning to the show is my awesome co host, Mike Thomas.\r \r\n\n\n\n[00:00:49] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 49,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Mike, we're so glad to have you back. I barely, flew the ship solo last time, so thank you for being here. Well, that's not true at all. I listened to the the great solo episode you recorded, and I appreciate you you doing that and carrying the water for us, for that week.\r \r Well, I was out for a couple weeks,\r \r unfortunately, but very happy to be back.\r \r Thank you to the OurWeekly\r \r\n\n[00:01:11] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 11,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "folks for starting me off on a lighter issue this week to ease me back into the OurWeekly groove. Yep. Sometimes we need that little bit of easing into it. But, yeah, let's dive right into it. And our curator this week is Matol Amrazak. And as always, she had tremendous help from our fellow, our weekly team members, and contributors like all of you around the world with your poll requests and other great suggestions.\r \r And we're gonna give a little personality\r \r to a great topic that, you know, has been one of my,\r \r big focuses in the last couple years of a lot of internal projects, but that, of course, is writing good and concise\r \r documentation\r \r for your packages.\r \r\n\nAnd what better way to surface that information\r \r to your end users, whether you're doing something internally\r \r or you're releasing this to the the open source world, if you will,\r \r is to create a website for your package in r.\r \r And there is a package that's been kind of the front runner in this space for quite a few years now, and we are talking about the package down package or p k g\r \r d o w n. I always wonder how people say these things, but I'm gonna say package down and run with it. But I've been using it for years,\r \r and out of the box,\r \r you get a a nice utility type of experience, but\r \r there's a lot more you can do with it, folks. And that's where our first highlight comes in and is being authored by\r \r Muriel Del Mote. Hopefully, I've said that correctly.\r \r\n\nThey're from ThinkR. So this is from the ThinkR blog,\r \r which is titled customize your expedition,\r \r creating unique documentation\r \r for your r package.\r \r So we first start off in this post with how\r \r straightforward it is to get one of these up and running if you leverage\r \r one of my favorite utility packages for development in the r space is the use this package.\r \r It seems like there's almost nothing use this can't do\r \r other than literally just, you know, fix all my errors at once, but maybe that will come later on. But you can bootstrap a, package down site with use this colon colon use underscore package down.\r \r When you have your package already configured with your r functions and their function documentation,\r \r This is gonna give you that basic structure\r \r right off the bat, and you can literally build your package site interactively\r \r right then and there\r \r with package down build underscore site.\r \r\n\nAnd there you go. You now have if you run a render that in a preview in your editor of choice,\r \r you've got a, very, again, utilitarian\r \r looking\r \r package site right off the bat, which will give you an index\r \r of your functions and the reference tab.\r \r And if you had any vignettes that you wrote as part of your package,\r \r they will also be included in the article section\r \r of the package down site. And last but certainly not least right off the bat, if you are using a news file to keep track of your package updates and changes,\r \r that will be in the change log section of your package down site.\r \r\n\nI visit that section every single time I'm using a package because\r \r there's a lot of things the fast moving, packages I'm leveraging lately, and I always like to see just what happened in that update compared to our previous version,\r \r especially if you're dealing with, you know, more,\r \r how should I say it, like older r versions with older package repositories.\r \r And then you start to leverage, like, a development project with RM,\r \r then you realize you've updated a new version of that package. So what changed between those two versions? You know, the change log can be helpful\r \r in that approach.\r \r\n\nSo, again, right off the bat, you got a package down site ready to go. But as this blog post is saying, there's a lot more you can do here.\r \r Like a lot of things that are fundamentally based of our markdown, which package down is, I'm sure, very much inspired by,\r \r A lot of the configuration in your site is driven\r \r by a YAML file. The package down dot YAML file to be exact.\r \r I swear, I now understand why some people keep saying YAML is almost like a programming language in and of itself because there's so many things that we can figure with it. Right?\r \r So we're gonna walk through, in the case of package down, some of the options that you have here,\r \r starting which is the navigation bar. I told you what happens by default,\r \r but you could organize this any way you see fit with the structure,\r \r element.\r \r\n\nYou can determine what goes on the left, what goes on the right, let's say those icons to say the GitHub repository\r \r of your package. You can put any other icon or reference that you want in there. There's a lot more you can do with that.\r \r And then\r \r to really look at how those navigation\r \r elements are constructed,\r \r you can have components within each of them. So in the example we see here,\r \r they've added a new section called expeditions.\r \r And within that expedition\r \r section, it's got its own submenu\r \r of different elements.\r \r This may look familiar\r \r because if you've been using portal lately,\r \r you can kinda take a similar approach when you make a website with portal and how you construct the navigation bar there as well. So there is\r \r interesting some synergies here. It's not always synergistic, but there's some interesting interesting things you can take from\r \r constructing, say, a portal site and whatnot. So\r \r there's a menu section where they have the hyperlinks and then the text for that hyperlink.\r \r\n\nAgain, once you grok it and look at it for a little bit, makes makes a lot of sense.\r \r And you can also,\r \r again, make sure that\r \r if you want to space things out, which is a nice navigation feature, there's a little tip that I saw. You can have arbitrary text in these menus and just put a bunch of hyphens in it. Now it gives you a nice little separator between the the different groups if you wanna organize it in that fashion. So\r \r little things along the way that I learn every time I read these posts.\r \r The other meat of a package down site is typically the function documentation. This is where\r \r literally, every day I'm developing\r \r or, an internal package or I'm leveraging an internal pipeline that's using a bunch of packages.\r \r\n\nI have on the right side of my screen the package downside of that other package, and I'm looking at the documentation\r \r right off the bat.\r \r Typically, in our studio, you could look at the documentation in the editor itself.\r \r Lately, I've been using Positron,\r \r and they don't have that nice little help browsing\r \r panel just yet. You have to do question mark\r \r name of the function, and then it appears. So sometimes I just like having the web browser on the right side with the package documentation right there. That way I can just kind of navigate back and forth. So back to where we're talking about here,\r \r in package down site, there is a reference section.\r \r\n\nAnd this is where you can\r \r kinda give categories or groupings of your functions without necessarily having to do that in your package documentation\r \r itself\r \r in the package.\r \r Case in point,\r \r in the example here, they've got a reference section and with different titles for these groups in the title argument\r \r and then a description that gives a more plain text kind of one or two sentence\r \r description of these contents. And then inside the contents section\r \r are the names of the functions that go into that section.\r \r This is really, really important, especially to me as you're developing a package that may have\r \r twenty, thirty, sometimes 40 functions,\r \r but there there are inherent groupings that you want to use it to quickly understand\r \r what certain maybe they're pinpointing an output type of function\r \r or a function that's processing data or whatnot.\r \r\n\nSo a lot of the package downsides that I've seen lately are using this grouping feature really effectively. I'm really\r \r appreciative that this is easy to do now\r \r in package down to give that more enhanced user experience,\r \r browsing\r \r the functions in your package. So it's really getting the title, the description,\r \r and then the contents being the names of the functions\r \r going into that group.\r \r And then once you rerender that, you would see then in your reference section,\r \r you've got\r \r really nice easily, you know, viewable\r \r groups for these functions.\r \r\n\nAll of this at this point has been the structure of your site and literally the elements inside of it.\r \r We've left out one important detail that, Mike, you're gonna rectify now.\r \r Let's bling this up a little bit, shall we? Let's make it pretty for sure. And that's where,\r \r\n\n[00:10:18] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 18,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "you know, CSS and and HTML and and Bootstrap\r \r can come into play here. And\r \r the folks who have authored the package down package for us, again,\r \r we can configure all of these things in this really nice YAML document, underscore package down YAML file as you mentioned.\r \r And there's a section that you can add, called template.\r \r And underneath that section, there's there's two immediate,\r \r subparameters,\r \r which are bootstrap,\r \r which, specifies the version of bootstrap that you want to use.\r \r Typically, nowadays, I think five is the the latest and greatest and has been for some time. Who knows when bootstrap six will drop?\r \r And then you can specify,\r \r some parameters\r \r as well. And,\r \r a lot of folks,\r \r in my experience,\r \r find the boots watch,\r \r project to be very handy because it is a set of\r \r I don't know how many there are today, Eric. Maybe 30 ish or so, I feel like. Yeah. I gotta say it's at least 20 of these boots watch themes that I've seen in the wild. Yeah. Yeah. Sort of pre specified,\r \r different themes in terms of, you know, what color is is the nav bar, the background, the foreground,\r \r font,\r \r styling,\r \r all sorts of things like that. So you can play around with the the 20 or 30 sort of preset options\r \r that they provide you, which can be a nice starting point. Maybe that that works perfectly. You find one that that looks exactly\r \r like you want.\r \r\n\nOr if you wanna go even a little bit further,\r \r you can add an extra dot CSS file, in your packages\r \r package down directory,\r \r and that can help update the CSS\r \r properties\r \r of your package down site, which is really cool. You can set things like the the navbar\r \r colored, you know, navbar,\r \r drop down links, you know, the font weight, all sorts of different types of things, any sort of CSS element on your package down site that you might wanna customize, you can handle with this extra dot CSS\r \r file, and that allows you to leverage whatever sort of branding you want to incorporate or or anything like that that you think is going to make your package down site pop or fit into sort of the theme and styling that you had in mind for your package.\r \r Package down, you know, it's awesome. It's something that we have in the R ecosystem that I think has completely\r \r exploded.\r \r\n\nI think we've talked about this before, but when I go to a to look up in our package that doesn't have a package down site, it's really sad,\r \r because I have to maybe go through, you know, one of the old PDFs,\r \r that, you know, is published out there when a package gets published on. Korean, and that's that's certainly not as fun to\r \r explore as, you know, an interactive HTML\r \r package down site that has the searchability\r \r and all those types of cool things. And and maybe one of these days, package down and and web r will collide, and we can run some of these functions,\r \r from a package that we're exploring\r \r in the browser at the same place where we're looking at the documentation. That is is one of my dreams. We'll see. On a sort of similar tangent, I've been using a lot of, polars from the Python ecosystem\r \r lately.\r \r\n\nIt's I'd call it maybe a dplyr\r \r equivalent with a lot of speed improvements, but in terms of syntax, it's it's fairly similar to what you might be familiar with in the tidy verse.\r \r And, has a a great site that looks kind of like a package down site, maybe even a little bit more robust because of everything that's going on in that package. And I noticed this week that there's a new little\r \r new little icon in the bottom right corner that's in an AI chatbot that allows you to to ask a question of the documentation.\r \r And\r \r my hope is that it's it's maybe rag based or, you know, fully up to date with\r \r the latest developments in the polars,\r \r package so that we are not doing the thing where I go to chat g p t, which was trained on polar's six months ago.\r \r\n\nAnd I am writing\r \r legacy code sometimes\r \r as opposed to, you know, writing the correct code based upon where the the package and the project\r \r stands at this point in time. So maybe we'll see something like that come to, the package down ecosystem\r \r as well, but I thought that was an interesting and relevant anecdote.\r \r\n\n[00:14:41] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 41,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Oh, yeah. That that is intriguing\r \r for sure. And,\r \r you know, our listeners might be out there wondering, well,\r \r how do I actually know if this package I'm looking at or I'm using in my r session has one of these package downsides? So there's a few ways you could probably get to that.\r \r One thing I typically check first is I'll search for the package name, and then typically, it will search be in your search result. But sometimes if it doesn't quite appear obvious, you go if it's on CRAN, you go to the CRAN entry, and then there will be a link in the URLs\r \r to that package downside if it is on CRAN. Also, if the package is on GitHub, usually, the package author will put the package downside\r \r as, like, the website associated with that repository.\r \r\n\nNot all the time. Sometimes you have to do a little smoothing to get to it, but that that for discoverability,\r \r those are the things that I've done as well. But going back to the styling stuff, Mike, I wonder if our listeners may be wondering,\r \r well, in this blog post,\r \r they kinda knew to style these, like, dot navbar elements and the drop down menu elements. And\r \r for someone new to this world of styling, they may be wondering,\r \r how did they know to write that type of syntax?\r \r What would be your preferred method to discover those elements?\r \r\n\n[00:16:02] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 2,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "To discover CSS elements that we want to? Yeah. Yeah. Like, how would they know what to target when they wanna style the nav bar? How do you think they would get there? Yeah. It's a it's a good question. So, you know, the workflow that I typically have and it it takes some getting used to, and I imagine that this may be your workflow as well. But you could preview the site in your browser,\r \r and then you can, depending on sort of what operating system you're on, you should be able to right click in your browser and and find a,\r \r navigation to something called developer tools or inspect this site.\r \r\n\nAnd that typically brings up this right hand sidebar that will show you all the HTML and CSS properties of the the site,\r \r that you're looking at. And\r \r if you sort of hover over, you know, some of the the different elements,\r \r in that sidebar, it should show you on the left hand side of your screen, sort of highlight,\r \r the related\r \r area on the UI that that CSS element relates to.\r \r And you should be able to sort of expand and collapse,\r \r these different CSS properties\r \r to be able to take a look at, the components of them, the parameters of them that you can configure.\r \r And once you are able to do that, you can get in a little bit of a workflow of,\r \r understanding which element you need to target and then\r \r naming that correctly in your custom CSS\r \r file and overriding, you know, or updating the particular property that you'd like to change.\r \r\n\n\n\n[00:17:33] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 33,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Awesome tip there. And I I wanted to make sure that,\r \r you know, when I was getting into a lot of the shiny, my customization\r \r stuff many years ago, and I would see these fantastic looking apps, and this is well before b s web came in the picture.\r \r It just seems such magic to me. How did they do that? How did they know what to get\r \r to? And since then and since reading some great resources like,\r \r you know, the outstanding user interface that was Shiny by David Grange and others,\r \r there\r \r there was always one common theme that in in web\r \r resources, wherever it's shiny, wherever it's packaged down or just quarto in general or anything that you build of HTML,\r \r CSS is behind it one way or another. And one of the best ways to get there is to get into the system, as I say, with the dev tools or the dev console.\r \r\n\nAnd once you get the hang of it, it does take a little gain used to buy. I just wanted to reassure our listeners out there that may be new to this that it may seem really cryptic at first.\r \r No. Just start simple. Just style one thing. Try it out. The best thing about those dev consoles is that you can do it all this interactively,\r \r it's not gonna break your actual code. Right? It's just literally in that preview. There's no there's no real cost. It's like a sandbox to try things out. It always seemed like, oh my gosh. I'm changing it here. How do I know what I do over there? So it it just takes some getting used to it. But I thought it was a nice touch in this post because I don't often see this with package down sites, this level of detail. So\r \r really great post here to to walk us through it.\r \r\n\n\n\n[00:19:12] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 12,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Absolutely. No. That's a good that's a good tip. Definitely, don't be scared that anything that you change in your developer tools is going to be stuck forever.\r \r\n\n[00:19:35] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 35,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "So we were just talking about package documentation\r \r and a lot of times, especially those packages that are offering a statistical methodology,\r \r maybe a new modeling,\r \r you know, algorithm,\r \r you know, under the hood. Just like anything in stats, there's a lot of math behind it. And a lot of times, especially when you look at things like a package of vignette\r \r or research paper associated with it, You've got yourself some mathematical notation and that is usually written with LaTeX.\r \r Yes. I had to write my dissertation with LaTeX.\r \r It was not fun. I have to be honest with it. I knew enough to be dangerous, but not much after that.\r \r\n\nAnd I've been away from writing LaTex for quite a while until literally about a few weeks ago when I was telling Mike in the preshow,\r \r I'm working on a shiny app that's, you know, surfacing some Bayesian methodologies\r \r under the hood. And I am\r \r a Bayesian novice.\r \r I know very\r \r just the very high level details of how things work.\r \r We were trying to solve a thorny issue with one of our distributions not getting the right, you know, probability of success\r \r where I was getting nonsensical\r \r results and the probability is going up out of the range of zero and one.\r \r And I look at the code, and I'm realizing\r \r I really don't have an idea of how some of this works. I've gotta get I gotta write this out to see where the problem is.\r \r\n\nSo I wrote\r \r LaTeX in a portal doc, and that brought back some memories, folks. And\r \r LaTeX, whether you like it or perhaps even don't like it, is the tried and true standard for mathematical\r \r notation.\r \r And I'm talking about right now, I've been talking about in the context of documentation,\r \r but there are a lot of times, especially in statistical teaching, whether it's in grad school or even with\r \r con maybe an application or a web page that is surfacing a visualization\r \r of, say, a model type.\r \r You wanna actually inject, if you can,\r \r that mathematical\r \r notation of that distribution or that probability function\r \r into that visualization\r \r to help the reader, you know, maybe learn along the way.\r \r\n\nIf you've ever wanted to do that in R itself, there may have been some approaches in the past, but this next highlight here has a pretty fascinating approach to make all this happen.\r \r And this is called the x d v I r package.\r \r Maybe it's pronounced x divir?\r \r No idea.\r \r But it is authored by Paul Merle, who I believe is a member of the r core team and has been one of the front runners,\r \r the trendsetters\r \r of leveraging the grid graphics system\r \r in r ever since its inception. So\r \r talk about, you know, the tried and true and and high quality package that\r \r that this is coming into play here.\r \r\n\nAnd so we're gonna talk a little bit about what this package actually does, and we'll have a link to the vignette we're about to narrate here in the show notes if you wanna follow along afterwards.\r \r But the main purpose of x divr\r \r is to let you put latex snippets in your r plots.\r \r Notice I said plots.\r \r I didn't say specifically which type of plot\r \r because\r \r x divver actually supports all of them.\r \r That's an achievement in and of itself.\r \r So under the hood, what's really happening here?\r \r Well, LaTeX,\r \r as some of you may know, is a type of markup language for, again, mathematical notation\r \r and very precise way of of of defining all that.\r \r\n\nSo in order to put these equations on,\r \r you need three things to make this happen or this notation onto a plot. You need the language itself,\r \r LaTeX.\r \r You need the typesetter,\r \r which is gonna help determine\r \r how this LaTeX notation is gonna be translated into the\r \r the glyphs and the fonts that go into these plots\r \r and then to actually render it to the location that the user desires to put this\r \r into the plot itself.\r \r So the x divr package is automating\r \r a lot of that manual step in those three different stages.\r \r So first, you define a character vector.\r \r You can call it anything you want, but inside that vector,\r \r you've got yourself\r \r the LaTeX notation right there.\r \r\n\nSo once you define that and then you can,\r \r you know, probably do what I did. I had to look up a bunch of LaTeX cheat sheets a couple years ago to figure out how do I do the integral? How do I do the the sigma summation? It was,\r \r flashbacks.\r \r Flashbacks. Lots of flashbacks to that.\r \r So in this, example of the vignette here, he's got the notation for the standard. Looks like the normal distribution of my,\r \r spy correctly.\r \r And then once you have that ready to go,\r \r you could then choose from whatever plot method you're using\r \r how, you know, with how to put it in.\r \r\n\nAnd the package comes with\r \r a function in the case of lattice graphics,\r \r a grid dot latex function\r \r where you give it\r \r that latex code\r \r and then the x and y coordinates of where you're putting it.\r \r And this is also leveraging some additional packages such as, of course, the grid package itself\r \r to help you with that positioning.\r \r And then once you have that, as you see here, there's a there's a plot in the in the vignette\r \r of the standard normal distribution\r \r with the CDF, I believe, or the PDF of the of the function\r \r in the upper left corner, and it looks really sharp. We're very legible.\r \r\n\nNot like it's, a fuzzy copy pasted thing that you would do manually. It looks like the grid system should.\r \r And you can do this, of course, with other types of plots,\r \r such as a traditional plot.\r \r You can do this also with the grid dot latex function.\r \r If you just did a standard plot of, I say, y\r \r and x\r \r on the y and x axis,\r \r you can use the grid dot latex function. Again, very similar paradigm as we just saw with lattice.\r \r And last but not least,\r \r you can also do this with ggplot too. Many of our listeners love using ggplot too for their visualization.\r \r So\r \r the x divr package comes with additional functions\r \r where you can\r \r put in a LaTeX GROB,\r \r into this, ggplot\r \r object.\r \r\n\nAnd, again,\r \r the parameters are the same, the LaTeX code, x and y coordinates,\r \r and the justification.\r \r Lots of interesting ways you can do this.\r \r There are even other\r \r helpers for the g g plot two users out there,\r \r such as element underscore latech,\r \r where if you wanna actually put this as labels such as in your title or whatnot, you can throw it in there too\r \r along with\r \r and, you can also do it for styling symbols in your plot such as the points on a scatter plot as an example of that as well. Putting, like, the notation for the sample average\r \r with subscripts\r \r on selected points.\r \r\n\nI mean,\r \r that's awesome. It works. I get it works, and it looks like it's a pretty easy way to\r \r opt right into it. So\r \r there are some things you wanna know as if you wanna embark on this with your your next visualizations.\r \r We were just talking about the high level, but in order to pull this off, the machinery that need is needed for it is, of course, a Waytech distribution on your system.\r \r A lot of people like to use, the tiny tech distribution\r \r that Ewasea\r \r authored many years ago,\r \r as a very small fit for purpose, version of this, but you could use other ones\r \r like x e text. I'm not sure how to say it or Lua text. There's a bunch of other ones\r \r you could use with it too.\r \r\n\nAnd then once you have that distribution, that might be the only real prerequisite you need.\r \r But knowing what's happening under the hood, the the link that we have in the in the show notes\r \r is the more verbose,\r \r manuscript that Paul has authored\r \r about these different stages\r \r of the processing\r \r going from the authoring step\r \r where it talks about what does it surround the LaTeX code with to make it a standalone\r \r LaTeX document that is ready for further processing,\r \r how it's converted into the DVI\r \r intermediate\r \r object that latex often does\r \r in that in between a going from the raw latex code to your output object, which may be a PDF or in this case,\r \r a snippet that will go into a grid or a graphic later on,\r \r how it's dealing with typesetting,\r \r how you might debug this when things don't work because\r \r oh, no. We did dive a lot of late nights trying to debug Latex when I was compiling that dissertation before the deadline,\r \r figuring out why the heck you know what? It's just like a shiny. Missed a bracket.\r \r\n\nMissing brackets in latex is not fun because it's not as friendly as saying you miss a bracket.\r \r The the error messages are quite cryptic. So there's some narrative about that as well\r \r along with the different customizations\r \r that you can do with rendering, the the the the resolution and whatnot,\r \r doing multiple pages. There's there's a lot under the hood here. So,\r \r again, I only know know enough about latex can be dangerous, but next time I do in a static graph that has a statistical\r \r concept that's surfacing,\r \r I'm gonna give x divver a try and see see what I can do.\r \r\n\n\n\n[00:29:21] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 21,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Absolutely. And I feel like these are the packages that\r \r don't get as much credit as they probably deserve. And it sounds like Paul has Paul Mural has really broken a ton of ground in this space over the years. So I\r \r think this is an appropriate time to give Paul a a huge shout out and a huge thank you for all the work that he's done in this space to get those of us who take it for granted,\r \r to get our plots to render the way that we want them to render. Right? Which is not a trivial task, the more and more that I read up about it. And, you're you're exactly right, Eric. You know, Paul talks about some of the related packages that are out there because we do have a lot of choice now in the open source software ecosystem. And that, X Divr, you know, provides a lot of similar functionality to grid text, g g text,\r \r the Marquee package, which I think is one of the more recent ones by Thomas Lynn Peterson,\r \r and some other folks.\r \r\n\nBut sort of the main difference between X Divor and those packages\r \r is that, the others are are built on markdown, while X Divor is built on LaTex, and in Paul's words,\r \r with all of the joy and pain that that brings.\r \r Definitely my favorite, yeah, excerpt from this this vignette. And it couldn't be more true because I think LaTeX allows us to do some of the customization that we we sometimes\r \r really need,\r \r and and have that ability to really, for the most part, in my experience, you know, fully customize\r \r whatever we want to show on screen in our PDFs, wah wah wah,\r \r as opposed to, other methodologies. But you're exactly right. It can be cryptic in terms of the error messages. The syntax is, I I think, objectively\r \r not the prettiest\r \r to look at.\r \r\n\nAnd,\r \r you know, it's just one of those things. And I I really did also appreciate, as as you mentioned, the\r \r final section of the vignette around troubleshooting,\r \r where it's a little bit of a a deep dive into the weeds\r \r on how Xdivo relies on on the glyph rendering system\r \r that was added to our version 4 dot 3.o.\r \r So fairly recent developments, it it seems like made this possible,\r \r and a little bit of a discussion about the particular graphics devices\r \r that you will have to have available and set and ensure that you have a tech installation. Right? And a lot of us use tiny tech,\r \r for that purpose. That's one. I would recommend, I think that's an e way project, that is another\r \r unsung hero. Even if it is sung, it's not sung enough,\r \r in my opinion. Well, most said. Yeah. This this is a really good this vignette provides a really great walk through of the the more detailed,\r \r highlight. So feel free to check out both.\r \r\n\n\n\n[00:32:05] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 5,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. And like I said, I've been in the wheeze a bit with this other\r \r app of surfacing this information, and we do have to, at some point, build in a feature to get more of the static outputs out of the app for,\r \r you know, further, you know, discussions of a team or the file as a record for, you know you know, prosperity, if you will. So I may end up actually using this in that app and when we do, like, a GGPOT two version\r \r of that distribution type. Because when we're mapping out these prior distributions\r \r that we're letting the user customize\r \r in this app. We indeed do have a section in the app that literally plots out that distribution function for the prior such as a normal distribution or other other ones for hazards and whatnot. So, yeah, I'm gonna I'm gonna give this a play and see see what happens.\r \r\n\nAnd there's a lot more to play with in this issue as well. We got a lot of great,\r \r great additional resources that Batool has put together for us in this issue. So it'll take a couple minutes for our additional finds here.\r \r I'm gonna get into the architecture weeds a little bit on this, but it's a great achievement nonetheless.\r \r A a recent blog post from Dirk Edebutel has announced that the r two u repository\r \r now serves\r \r Arm 64\r \r versions\r \r of our packages.\r \r Woo hoo.\r \r So you may be wondering why is this a big deal?\r \r Well, as he points out in his blog,\r \r a lot of the major cloud infrastructure\r \r is starting to move their servers to arm to save on cost,\r \r save on power usage,\r \r and in some cases, especially in the\r \r Apple space,\r \r a lot of the newer our pet laptops are powered by arm processors, such as the m one chips and and the like.\r \r\n\nARM hasn't been like a new thing for the our ecosystem, but yet this is a very new thing for the Linux users out there that are leveraging ARM processors,\r \r whether it's through their systems or through containers,\r \r and also through GitHub actions. That's how all this kinda came to be is, more recently, Microsoft,\r \r who, of course, owns GitHub,\r \r has now let users target a version of Ubuntu\r \r with ARM architecture and not just a typical x eighty six sixty four\r \r architecture that most Intel and AMD processors\r \r are using.\r \r So he does mention that there is a lot of support right off the bat. I think more than three quarters of the packages\r \r are in binary format right off the bat because they didn't take compiled code. The ones that are compiled, I think he says about 4,500\r \r of the 5,000\r \r are supported in this repository, so there's still a handful to go.\r \r\n\nBut he says that it it is it is on the way to to being available for everybody. So congratulations\r \r to Dirk and the team behind RTU.\r \r This is a massive achievement in the space of package,\r \r architecture in the R ecosystem.\r \r\n\n[00:35:07] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 7,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Thank you for for calling that one out. If if you didn't, I was going to, Eric. Yeah. It's I can get to the punch.\r \r Yes.\r \r Big news for us. We're heavy, heavy users\r \r of the r two u project, albeit, you know, primarily,\r \r in Docker Linux\r \r environments.\r \r But I think this is still, you know, super important for some of those use cases that we do have that where this will show up. So awesome achievement, and and thanks to Dirk and everyone else for their work on that project\r \r in general. I did want to shout out a package that I admittedly have not used yet,\r \r but I acknowledge is absolutely awesome. And it's the tidy plots package,\r \r by Jan\r \r Engler, who's who's out of Germany.\r \r\n\nAnd\r \r there is a new website,\r \r out there called tidy plots use cases that he's put together,\r \r with a bunch of beautiful charts\r \r and a little collapsible code snippet above it. And the conciseness\r \r of the code that we're able to write, the r code that we're able to write to generate these beautiful plots is\r \r pretty mind boggling.\r \r So I would recommend just checking out this site. It's it's very visual. It's really all charts with a little collapsible code snippet above it, and\r \r I am going to guess that, like me, it will it will blow you away.\r \r So pretty pretty cool project, and I I think one to to check out. And maybe this is a very easy introduction\r \r into it. And I I really applaud him for taking the step of creating\r \r this particular\r \r site, this particular page, because I\r \r I think it,\r \r you know, really demonstrates\r \r this package\r \r very, very well and was a great sort of eye opening moment for me to\r \r then dive into the GitHub and the package down site and take a look a little deeper at the tidy plots package.\r \r\n\n\n\n[00:36:59] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 59,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "This is fantastic.\r \r Oh, so glad you called this out. I literally see things here that, a, would have been very useful for me about eight or nine years ago when I was doing a lot of bio biomarker analysis. There's a section for bioinformatics\r \r plots here, such as the the famous volcano plot for p values and fold change\r \r and correlation, like, in heat maps. Oh, my goodness. This tidy plots packages\r \r is really top notch to get you up and running really quickly.\r \r I'm gonna assume it's building upon ggplot too because\r \r it looks very, very similar, but yet look at the lines of code. It takes maybe just three or four lines to get a lot of these these these plots\r \r up and running. So,\r \r okay, this is bookmarked for sure. This is this is a great resource.\r \r\n\nAnd, again, for any visualization\r \r type of package\r \r or utility that you put out there, this is a great template to draw upon. The code's available on demand, and you quickly grab to what visually pleases you the most, then grab that and run with it. Really good find here.\r \r\n\n[00:38:05] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 5,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yeah. I'm seeing in the description file, I'm seeing g g plot two,\r \r g g b swarm,\r \r g g pover, g g raster, g g repel.\r \r The HMISC\r \r package, I think that might be bioinformatics\r \r\n\n[00:38:18] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 18,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "related if I'm thinking of some Oh, that that's from Frank Harrell. Frank Harrell,\r \r has read an HMISC\r \r package for many years, which I remember using because I had one of his textbooks on, survival analysis.\r \r And so he had some his own functions in there. So he's been maintaining that for probably over twenty years at six.\r \r\n\n[00:38:39] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 39,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "I was trying to remember where I I had seen that one before. And the Patchworks in there as well. Oh, yeah. So yeah. We got all that the\r \r visualization\r \r heavy hitters.\r \r\n\n[00:38:49] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 49,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Excellent.\r \r So again, these are the things that you see every week on our weekly. There's always something new that Mike and I will look at. We're like, did you know that was there? No. I didn't. Well, we do now. So\r \r\n\n[00:39:01] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 1,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "tidy plots is another one. We're gonna yeah. You deserve your flowers, whoever authored Tidy Plots. This is I'm gonna take the mask off and let the audience know that we do this as much for you as we do for ourselves to keep up to date with what is going on\r \r in the our ecosystem.\r \r\n\n[00:39:17] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 17,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "I tell everybody, whoever it's at the day job or people I talk to on social, you know, online,\r \r that our weekly is one of the best things I ever discovered because I've learned so much in these issues. So being able to talk about and then learn from it. Yeah. Can't have it any better.\r \r Can't have any better. Like I said, look at the back catalog of our weekly as well. There is a lot more to choose from.\r \r And, I know, Mike, you've been looking at the back catalog when you were timed off and saw some great things. So, yeah, there's a lot a lot that happens every week. So where is it, you ask? Is that r week without r r g? Of course.\r \r You should have that in your bookmarks, and it's ready for you right there to, to read at your leisure.\r \r\n\nAnd, also, it is a community project, so we\r \r invite you to help out in whatever way you can.\r \r Our weekly has always been kind of under this value for value mindset. If you get value from it, we would love to have value back. If it is just your time and sharing it with your colleagues,\r \r sending us a poll request of that great new resource that you found online, we'd love to hear about it there too.\r \r And, also, in the case of this very podcast, we have a fun little boost mechanism. If you wanna send us a little fun along the way, we have links on how you can do that as well.\r \r But, also, we'd love to hear from you on our social media channels. So if you wanna get in touch with us,\r \r you can find me on blue sky with at [email protected].\r \r\n\nAlso on Mastodon where I'm at [email protected],\r \r and I'm on LinkedIn. You just search my name, and you'll find me causing all sorts of fun there. And, Mike, where can the listeners find you?\r \r\n\n[00:40:55] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 55,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Primarily on Blue Sky these days at, Mike dash Thomas dot b s k y dot social or on LinkedIn. You can find me if you search Ketchbrooke Analytics, k e t c h b r o o k.\r \r\n\n[00:41:09] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "trans_timestamp": 9,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. Hard to believe. We just finished one ninety eight. We got two more to go before the big one. So as I keep saying,\r \r if you have a great memory of what we talked about in the past and what you find most enjoyable about our weekly, we love to hear about it. So definitely get in touch with us on social media. We also have a contact,\r \r page that's linked to in the show notes if you wanna share your feedback too. We'd love to read it on the air for episode 200. We'd love love to hear from you. With that, we're gonna close-up shop for episode 98.\r \r Thank you so much for joining us today,\r \r and we'll be back with episode one ninety nine of our weekly highlights\r \r next week."
+      }
+    ],
+    "chapters": [
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "chap_timestamp": 35,
+        "chap_text": "Unique {pkgdown} tips",
+        "chap_href": "https://rtask.thinkr.fr/customize-your-expedition-create-a-unique-documentation-for-your-r-package/"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "chap_timestamp": 36,
+        "chap_text": "LaTeX is back with {xdivr}",
+        "chap_href": "https://cran.r-project.org/web/packages/xdvir/vignettes/xdvir-intro.html"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "chap_timestamp": 7,
+        "chap_text": "arm64 package binaries in r2u",
+        "chap_href": "https://dirk.eddelbuettel.com/blog/2025/03/04#046_arm64_comes_to_r2u"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "chap_timestamp": 37,
+        "chap_text": "{tidyplots} new site",
+        "chap_href": "https://tidyplots.org/use-cases/"
+      },
+      {
+        "ep_name": "issue_2025_w_11_highlights_638773461766959388",
+        "chap_timestamp": 33,
+        "chap_text": "Episode Wrapup"
+      }
+    ]
+  },
+  {
+    "metadata": [
+      {
         "ep_name": "issue_2025_w_10_highlights_638769103233118733",
         "ep_date": "2025-03-07",
         "ep_duration": 45,
