@@ -2,6 +2,268 @@
   {
     "metadata": [
       {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "ep_date": "2025-04-02",
+        "ep_duration": 52,
+        "ep_description_short": "By some minor miracle (even on April Fools) the R Weekly Highlights podcast has made it to episode 200! We go \"virtual\" shopping for LLM-powered text analysis and prediction using the mall package, and how recent advancements in the grid and ggplot2 packages empower you to make use of highly-customized gradients. Plus listener feedback! Episode…"
+      }
+    ],
+    "description_long": [
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "description_long": "\r \r By some minor miracle (even on April Fools) the R Weekly Highlights podcast has made it to episode 200! We go \"virtual\" shopping for LLM-powered text analysis and prediction using the mall package, and how recent advancements in the grid and ggplot2 packages empower you to make use of highly-customized gradients. Plus listener feedback!\n\nEpisode Links\n\nThis week's curator: Jon Calder - @[email protected] (Mastodon) & @jonmcalder (X/Twitter)\nText Summarization, Translation, and Classification using LLMs: mall does it all\nThe guide to gradients in R and ggplot2\nEntire issue available at rweekly.org/2025-W14\nSupplement Resources\n\nMall: Run multiple LLM predictions against a data frame with R and Python https://mlverse.github.io/mall/\nAnnouncing rixpress https://brodrigues.co/posts/2025-03-20-announcing_rixpress.html\nHack your way to scientific glory https://stats.andrewheiss.com/hack-your-way/538\nSupporting the show\n\nUse the contact page at https://serve.podhome.fm/custompage/r-weekly-highlights/contact to send us your feedback\nR-Weekly Highlights on the Podcastindex.org - You can send a boost into the show directly in the Podcast Index. First, top-up with Alby, and then head over to the R-Weekly Highlights podcast entry on the index.\nA new way to think about value: https://value4value.info\nGet in touch with us on social media\nEric Nantz: @[email protected] (Mastodon), @rpodcast.bsky.social (BlueSky) and @theRcast (X/Twitter\nMike Thomas: @[email protected] (Mastodon), @mike-thomas.bsky.social (BlueSky), and @mike_ketchbrook (X/Twitter) \nMusic credits powered byOCRemix\n\nDark World Jazz - The Legend of Zelda: A Link to the Past - Gux - https://ocremix.org/remix/OCR00156"
+      }
+    ],
+    "links": [
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://fosstodon.org/@jonmcalder"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://twitter.com/jonmcalder"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://posit.co/blog/mall-ai-powered-text-analysis/"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://jamesgoldie.dev/writing/stack-gradients-in-r/"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://rweekly.org/2025-W14.html"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://mlverse.github.io/mall/"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://brodrigues.co/posts/2025-03-20-announcing_rixpress.html"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://stats.andrewheiss.com/hack-your-way/538"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://serve.podhome.fm/custompage/r-weekly-highlights/contact"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://podcastindex.org/podcast/1062040"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://getalby.com/"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://value4value.info"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://podcastindex.social/@rpodcast"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://bsky.app/profile/rpodcast.bsky.social"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://twitter.com/theRcast"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://fosstodon.org/@mike_thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://bsky.app/profile/mike-thomas.bsky.social"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://twitter.com/mike_ketchbrook"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://ocremix.org/"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "links": "https://ocremix.org/remix/OCR00156"
+      }
+    ],
+    "transcript": [
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 3,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Hello, friends. Do not adjust your earbuds. Guess what? It is episode 200\r \r of the Our Weekly Highlights podcast.\r \r And there was much rejoicing.\r \r We somehow made it, folks. Yes. We made it to the big 200.\r \r And if you're new to the show for the for tuning in for the first time, this is the weekly podcast. Well, mostly weekly anyway, that we talk about the latest happenings and resources that are shared on this week's our weekly issue.\r \r My name is Eric Nance, and I still cannot believe we made it this far.\r \r So maybe before I go too much further, let's put a little, little PSA out there.\r \r Yeah. This 200 thing, yeah, after this.\r \r\n\nYou know what? I've had a change of heart. I think of episode two zero one and and more, we're gonna call this the SAS weekly podcast because they don't get enough love.\r \r April Fools.\r \r If if you didn't catch it, you should have. But it as we're recording this, it is April fools day, which may be a bad omen for things going forward, but we're gonna make it work. But, as always, I'm joined by my awesome cohost on this show who's been with me definitely more than half of those 200 episodes,\r \r Mike Thomas. Mike, how are you doing today?\r \r\n\n[00:01:18] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 18,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Doing great, Eric. What a milestone. Very excited.\r \r Yeah. You scared me there for a second, but, it is in The US here at least. I don't know how international the holiday that is, but it is April Fool's Day. So watch out. Beware. Especially, I'm sure for those\r \r\n\n[00:01:34] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 34,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "like you who have young children who'd love to take advantage of that type of thing. He already did yesterday as a preview for it. I've I discovered these, tablets we use for his, like, online art class\r \r were suddenly taped to my desk,\r \r taped to it for some reason. I'm asking why you do that? He's like, hey. We're fools, Danny. Well, okay. Well, I I'd imagine I'm gonna be in much worse shape after he gets home from school today.\r \r But, but, nonetheless, we're not gonna try to be fools here. We're gonna keep it real as usual with the awesome highlights that we have up for tap today. And this week's issue is curated by John Calder, another one of our awesome contributors\r \r and curators here on our weekly.\r \r\n\nAnd as always, he had tremendous help from our fellow our weekly team members and contributors like all of you around the world with your poll requests and other terrific suggestions along the way.\r \r Just to put a little PSA out there, poor Mike here's,\r \r actual mic wasn't quite working as expected. So we had a little bit different audio quality.\r \r We'll make it work, though. So, again, we're not immune of the shenanigans\r \r on this day for sure.\r \r Well, I guess it's the time capsule. Right? It is episode 200, and typically, every week now, we got something to talk about in the world of large language models. And, yeah, we are leading off episode 200 with another great showcase on some of the tooling that's out there\r \r for an aspect\r \r of the usage of large language models that I personally haven't done as much, but I can see in future projects this will be\r \r extremely helpful if you're doing of a lot of textual based resources.\r \r\n\nAnd this guest post on the Pazit blog was authored by Camilla Levio.\r \r She is a research professional at the Center for International Trade and Security\r \r at the University of Georgia.\r \r And this very practical post leads off with, I think, a use case that many of us will be very much in relation to when we deal with our documents in the enterprise\r \r or maybe from clients or other\r \r projects\r \r where the motivation\r \r for her recent effort\r \r was being able to compile\r \r a list of final reports.\r \r These are in PDF format\r \r from an annual conference called the Conference of the Parties.\r \r This is spanning from nineteen ninety five to two thousand twenty three,\r \r And this is I haven't heard about this until this post here. This is a yearly conference for global leaders\r \r to talk about climate change, some strategies\r \r involved, and, you know, some new\r \r new avenues to address those issues.\r \r\n\nSo these, conferences\r \r do release the, I guess, the the summaries of these.\r \r And what looks to be a pretty,\r \r dense,\r \r pretty,\r \r comprehensive PDF file for each year.\r \r And so the question is, how can her team\r \r be able to get generate these summaries and insights that are part of the contents of these reports?\r \r Certainly, before the advent of large language models, you might tap into the world of text mining,\r \r textual analysis, sentiment analysis,\r \r where you're gonna be setting up, you know, those, keywords, maybe those patterns of searching.\r \r There are lots of avenues to do that. I know Julia Silgi has been a huge part of the efforts in the art community\r \r to bring text mining packages to the art ecosystem. So I've we've actually covered, I believe, a fair share of those on some of the previous 200 episodes\r \r of this, program here. But with the advent of large language models, you got a new take on making life a little bit easier in these regards.\r \r\n\nAnd in particular, this post is highlighting the use of the mall package,\r \r which is authored by Edgar Ruiz, one of the software engineers at Posit.\r \r And this is a LOM framework in both r and Python. There are separate packages for each to let you run multiple large language model predictions\r \r against a data frame and, in particular, looking at, you know, methods of textual prediction, textual extraction,\r \r and textual summarization.\r \r So there are two steps that are outlined in this post about the use of\r \r the ball package.\r \r The first step, I guess, the precursor of this is that\r \r we have a cleaned version\r \r of the report data that Camilla\r \r has assembled here in a CSV file. But, of course, you might have to leverage other means and perhaps even LOM itself to just get these from the PDF, which you could do with, say, the Elmer package and the like.\r \r\n\nBut the the data set in in the example here\r \r has three columns here, one of which is the name of the file.\r \r Second is the raw text that's been scraped from this file.\r \r And then another\r \r another column, which is slightly more,\r \r slightly cleaner version of this text, but it's still, again, the raw text\r \r from this PDF just maybe without the formatting junk inside.\r \r So step one of the mall package,\r \r she wanted to generate a new column in this dataset\r \r that gives a summary\r \r of each of these, PDF reports.\r \r And that's where you can leverage after you plug in your model of choice, which in this case\r \r is the,\r \r Ollama\r \r three dot two model here.\r \r\n\nYou can run a function\r \r called l o m underscore summarize,\r \r where you give it, you know, the the clean textual column that you want to,\r \r to extract here,\r \r and then give it a name of the new column, and then more importantly,\r \r an additional language for the prompt itself that's gonna be feed into the model, where it was a very basic prompt here just saying to summarize\r \r the key points in the report\r \r from this proceedings.\r \r And then she gives a little more extra help on the different categories that she likes summarization on.\r \r Again, one thing I'm learning is that the more verbose you can be of your prompt, the better within reason to give a little bit a little better context.\r \r\n\nAnd then when that function is completed,\r \r she gives a little preview of those,\r \r extracted columns here, and you can see,\r \r looks like pretty straightforward, the three key areas that she asked for highlighting,\r \r such as the decision making process,\r \r mitigation adaption,\r \r you know, emission reduction, and other key points were covered\r \r in these clean summaries. So, again, a llama model does pretty nice job there, it looks\r \r like. Again, this is only three or or maybe five or so reports here, so we're not getting a huge set here.\r \r But this does look promising.\r \r\n\nThat's step one. Step two\r \r is now with this clean summary that, again, is much easier to digest to read, you know, verbatim.\r \r What about extracting some key parts of this summary? Perhaps some keywords, if you will. Maybe the relay to certain topics.\r \r And she has those here\r \r using the l o m extract function from mall, where you can give it these different\r \r labels,\r \r that you want to basically be extracted from here. And in this case, she's looking for energy transition.\r \r This is where things get a little more flexible than in the typical large, text mining area,\r \r where you might have to look at all these different synonyms or other adjectives that would just that would, say this phrase\r \r and try to grab all that at once.\r \r\n\nBut in this case, with l o m extract, she's able to leverage just this labels column with a very\r \r fit for purpose, you know, description here, like I said, energy transition.\r \r And the model is gonna be smart enough, hopefully,\r \r to extract\r \r this phrase, but also ones that are, you know, adjacent to this as well.\r \r So after running this function, we have, again, an additional prompt that was supplied here.\r \r You now get a new column here that shows\r \r that phrase or an adjacent or, you know, like phrase of that\r \r in this extract energy trans column. And you see\r \r renewable energy is put in here, energy transition,\r \r solar energy.\r \r\n\nAgain, that's one nice benefit here. She didn't have to prospectively think of all those that could be possible.\r \r It was just one phrase, one label, and then the model took care of the other patterns that this could be, you know, closely adjacent to.\r \r So\r \r she then did a little visualization\r \r on these different keywords that are identified, and you can see that renewable energy\r \r was the top of the list with the other ones of about, one occurrence each.\r \r And, again, you can, you know, build more custom prompts if you wish,\r \r such as maybe telling the LOM prompt to answer yes or no,\r \r whether this text would mention any challenges in the transition to other forms of energy.\r \r\n\nAnd, again, you can\r \r feed this in with an l o m custom function,\r \r which gives you that more customized prompt to grab this information and sure enough, you get this quote unquote prediction column afterwards\r \r with a no or yes that addresses that particular question.\r \r So what am I seeing here as someone who's doesn't do a lot of day to day of textual mining or textual analysis?\r \r There have definitely been projects at the day job where we have these say study reports or study protocols,\r \r and there's a lot of information there. Some of it's, quote, unquote, structured in tables,\r \r and some of it is not. Some of it's more free form.\r \r\n\nThis would be a great utility, I think, to extract those different pieces of a study design,\r \r maybe those different variables of interest that maybe have a little difference\r \r in their in their characteristics from one study to another.\r \r This seems really promising here. And to be able to leverage MALL combined with,\r \r large language models with LOMs\r \r seems like a a pretty nice example here to supercharge your textual mining efforts. So really great blog post here by Camilla and makes me wanna go shopping virtually at this mall, so to speak. What about you, Mike? Absolutely.\r \r\n\n[00:11:49] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 49,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yeah. You know, we're getting so many different\r \r LLM related r packages that sometimes it's hard to keep track of them all. And I I really appreciate the blog post here around the mall package that, you know, certainly seems to be tailored specifically\r \r towards,\r \r the open weights models, right, for use cases, perhaps when you don't wanna hit a third party API or you wanna use a local model, with the Ollama package. You know, I was taking a look at the beautiful package down site that we have here, and I think this references\r \r a blog post from our prior week's highlights\r \r In that, we have these tab sets under the getting started section\r \r of the,\r \r sort of home page for the package down site where we have code in both r and Python\r \r for leveraging\r \r mall.\r \r\n\nAnd as soon as you switch from one to the other, all of the tab sets switch from from r to Python, so they're grouped together, which is pretty cool. It's, you know, incredible that we\r \r have these\r \r tools or or common sort of,\r \r interfaces to maybe more back end APIs across whatever language\r \r we care about and not to,\r \r I don't know, get a little too meta.\r \r But I recently\r \r was selected, for posit comp twenty twenty five for anybody that's going to be there.\r \r Whoo. Sort of myself pat on the back to talk about this exact thing, how\r \r we have a really great data science ecosystem\r \r now that's evolving\r \r where the language doesn't necessarily matter, because the syntax looks pretty similar in both cases, and we're just, you know, able to interface to these these common underlying APIs. So I think that's one of the the cases that we have here in the mall package. And if you take a look at the differences between the r syntax\r \r and the Python syntax,\r \r it's it's really, really minimal. So it's pretty cool that, you know, you can sort of bring your own tool and get the same results\r \r at the end of the day. You know, from another higher level perspective, you know, one thing I wonder about in a lot of these use cases is accuracy.\r \r\n\nRight?\r \r Versus what you spoke about here, you know, traditional sort of text mining. And I think that that's always probably going to depend on how simple or or complex the use case is. You know, for simpler cases\r \r where you have specific keywords and and patterns that you really know are going to,\r \r you know, be the case 99%\r \r of the time or or more, you're probably gonna benefit from, like, a more traditional text mining approach that's a white box solution. You know exactly what's going on and and what it does miss, you know, why it missed.\r \r But, obviously, when the problem becomes too big for traditional text mining, that's when we can bring in, I think, these LLM based approaches that are probably really the only tool that we have to be able to accurately\r \r do this, but with the trade off that\r \r we don't have as much of a white box to understand\r \r when it missed. So we have to do sort of manual evals a lot of the times, if you will. But, yeah, the the fact that we have these tools at all is fantastic and that, you know, folks\r \r are bringing not only developing tools like mall to allow us to leverage them\r \r as comfortably as possible from our own R environment, but we also have folks like\r \r Camilla who are drafting up fantastic blog posts that walk us through exactly how to do this stuff. So hats off to everybody involved, the mall team and Camilla for developing this this fantastic deep dive walk through.\r \r\n\n\n\n[00:15:22] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 22,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "A great start to the highlights this week. You bet. And I can see, you know, from from my case, you may have this, you know, large set of documents, and it's not like we're eliminating a human in the loop here of, like, reviewing these results. This is a way to get that\r \r that that intermediate\r \r step to make life easier to look for maybe\r \r more targeted summaries and maybe whittling down a list of, say, 150\r \r or 200 some reports down to maybe a list of five or 10 that then become a lot more interesting, a lot more easily,\r \r digestible to review those results. So, again, my my, gears are turning in my head here because there are projects on top of these study documents that we have, but also just research manuscripts out there of given, you know, therapeutic areas like, say, Alzheimer's or other disease states. And we pay a vendor a lot of money to curate this stuff manually, and it sure would be nice\r \r instead of paying all that money to just get, quote, unquote, that study table out or that, you know, high level summary out that we grab that with the LLM and then, of course, you know, vet it through a human kind of in the loop for review. But my goodness, this could this could save a lot of money. So I've got I've got I've got some people to talk to, the the higher ups about this because\r \r we have we have the models now. This is clearly demonstrating this could be a plug and play for the model of interest over it's a llama. Or if you're in the enterprise, maybe you could use, like, Claude or other models on top of this. Seems like right it's a right time to start exploring this further.\r \r\n\n\n\n[00:17:00] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 0,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Should we pivot to\r \r an hour's worth of hot takes on whether LLMs are going to do peer review\r \r for science?\r \r\n\n[00:17:09] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 9,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "I'm I'm here for it.\r \r\n\n[00:17:11] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 11,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Alright. Let's go to highlight number two.\r \r\n\n[00:17:25] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 25,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "And rounding out our highlights today, we're gonna take a visit to the good old visualization corner, which has always been a staple on these previous episodes of our weekly highlights.\r \r Because as we've seen throughout the life cycle of this very show,\r \r my goodness, the things you can accomplish with packages like ggplot two\r \r is absolutely amazing to create publication quality\r \r and to be honest more than just publication quality,\r \r but really eye catching\r \r visualizations\r \r that would not look like they came from R.\r \r So in this highlight here, we're gonna talk about a newer feature that landed into R recently\r \r that I think give your plots a little extra pizzazz\r \r especially with the use of colors.\r \r\n\nAnd this post comes to us from James Goldie\r \r whose name may sound familiar. He is a data journalist, but he was also one of the co leads\r \r of that recent quarto close read contest that we talked about a few weeks ago. And he's been a very active member in the visualization and kind of data storytelling,\r \r you know, piece of the landscape here.\r \r And so from his blog, we're gonna talk about how you can make\r \r novel uses\r \r of gradients\r \r within r and, in particular,\r \r the g g plot two package.\r \r So he leads off with the fact that in today's world of g g plot two, we can do a lot of awesome,\r \r you know, features or a lot of awesome visualization\r \r techniques with use of fonts, you know, size of of labels,\r \r and, of course, colors.\r \r\n\nBut sometimes he would find himself before some of these recent advancements\r \r getting, like, 90% of the way there, but then maybe just give that extra little polish. He had to pour it over to Adobe Illustrator or some other software and just give it that last extra\r \r bit of polish,\r \r especially in the world of colors.\r \r Well, sounds like that might be a thing of the past because\r \r now with g g plot two and some recent advancements in the grids package,\r \r you have a lot more flexibility to make control or use of\r \r gradient\r \r color scales\r \r into your visualizations.\r \r\n\nAnd as I mentioned just now,\r \r this is building upon the shoulders of the grid package,\r \r which actually comes with r itself, but you have to explicitly load it into your session\r \r to start taking advantage of the lower level functionalities.\r \r But Grid has seen some really awesome advancements that we've covered from Paul Merle and others, contributors in this visualization\r \r space.\r \r And with the Grid package that g g bot two is standing on the shoulders of,\r \r you\r \r can leverage\r \r two great functions.\r \r I'll talk about the first one, and I'll turn over the mic for the second one.\r \r But in the case of, say, a bar chart or other types of visualizations,\r \r you might wanna consider a linear type of gradient.\r \r\n\nAnd that is literally using the linear gradient function under the hood to do all this.\r \r So in this first example with a bar plot of the empty car set, it's actually a histogram.\r \r But for the fill of the bars, it's not just a single color. He leverages the linear gradient function going from red to orange.\r \r Now, again, this plot itself doesn't look that great, but you're already gonna start to see the potential here.\r \r With within these, linear gradient calls,\r \r you've got a lot of flexibility for how many colors you feed into this and how you distribute it.\r \r So you can feed in any number of colors. And in this other rainbow like example, he's got about, looks like seven colors here.\r \r\n\nAnd then the the accompanying, you know, data's part of this, call here\r \r is a vector of what you call, like, stopping\r \r stops between zero and one, kinda like giving a threshold\r \r from going from one color to another and another.\r \r So that's all well and good. But you can also change the actual size and position\r \r of these gradients\r \r using coordinate type arguments of, like, x one y one, x two y two to give a little kind of a bounding box, if you will, of where this is gonna be fit in. So you could do this horizontally by default or you could do it vertically.\r \r And on top of that, you also get flexibility to the type of units that's gonna be using in this kind of gradient transition within the the bar itself,\r \r and that is using a different unit. In this case, the SNPC\r \r or square MPC units\r \r that will give you kind of customization on the angle of how this gradient is gonna transition.\r \r\n\nAs usual, audio podcasts, we're trying our best to that now right here, making clearly see a difference between when he used\r \r this default unit,\r \r being specified of this SNPC\r \r where the transition\r \r from red to orange\r \r is a lot more pronounced, especially earlier on at the bottom of this chart.\r \r So you can see you got a lot more flexibility\r \r here, and all this can be plugged in\r \r to many different aspects of your plot such as with groups\r \r or within the scales themselves. So that if you have a bar chart of, say, positive and negative values,\r \r you can easily\r \r feed in\r \r these different positional arguments. So it may be at the\r \r above the the y equals zero of the axis.\r \r\n\nYou've got a more orangish red color versus below you might got a bluish color to really distinguish that that threshold going from positive to negative.\r \r Lots of great ideas here on the linear side of it. But\r \r as I've seen, you know, visuals don't always just have those nice little rectangular\r \r boundaries.\r \r We gotta get some circle action here, Mike, and that comes to us with the radial gradients.\r \r\n\n[00:23:18] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 18,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Yes. And radial gradients work\r \r pretty similarly.\r \r You're gonna have this radial gradient function,\r \r and it has a few different parameters,\r \r c x one, c y one, c x two, and c y two. Those are the four parameters that really drive, the the center points of the gradient, and then r one and r two establish the the radius of the start and end\r \r radii.\r \r That's how you sort of define this whole entire entire circle gradient within this radial radial gradient function.\r \r Excuse me.\r \r So there are some fantastic examples here in the blog post that really demonstrate this nicely.\r \r And one thing that I'm, you know, really sort of taken aback by is this this group parameter that you had had foreshadowed here, Eric. I guess that's available since our 4.2,\r \r and and it controls whether a gradient applies to individual shapes or to a set of them. And I guess it's true by default,\r \r which in the case of this scatterplot example,\r \r the the\r \r points have different colors\r \r sort of based upon the gradient sort of applies to the whole chart, if you will. So the points have different colors. As opposed to in the second case when the group argument is set to false,\r \r all of the points look exactly the same, but they have this radial gradient\r \r inside\r \r each point. And it creates this sort of three d look,\r \r where, you know, each of these points on the scatter plot looks three-dimensional\r \r itself. It looks like a ball that's sort of coming off the page,\r \r which is absolutely incredible. It makes me wanna throw everything on this this blog post. It makes me wanna throw away every single g g plot I have ever made, because they don't look nearly as nice as\r \r what, James has put together here in terms of his data visualization. This is a quarto blog. You would almost not know it, just because the theming and the CSS that's going on here is is absolutely beautiful. And and as you mentioned,\r \r you know, some of these,\r \r different bar charts as well where we get into this this grouping possibility\r \r really drive pretty stark contrast\r \r depending on whether you set group equals true or group equals false.\r \r\n\nYou know, another thing that James employs here is the g g force force package.\r \r And I have a awful confession to make today, but I have never used the g g force package. And I need to use the g g force package because I think it's doing\r \r a lot of the the really cool stuff, that's going on here or at least making it easier than just doing it, you know, in raw g g plot. Although, I imagine that's probably possible. Have you\r \r been a user of g g force, Eric?\r \r\n\n[00:26:06] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 6,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "I have not. And like you, I'm getting the notes to try this out because I'm seeing a lot of novel use cases for it these days.\r \r\n\n[00:26:12] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 12,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Me too as well. So the the blog sort of concludes with,\r \r you\r \r know, being able to sort of abstract a lot of things that you may have done in\r \r CSS,\r \r to, you know, our code for these radial gradient specifications\r \r that you can create sort of backgrounds on your plot as opposed to creating gradients within the elements of your plot, really sort of setting kind of these\r \r interesting rainbow backgrounds\r \r on these simple plots that really provide for some cool theme here. I I would say, and this is a lot of stuff that I would have never really thought about or considered\r \r in the type of data visualization\r \r work that that I typically do. And there's a really handy\r \r preview underscore gradient\r \r function,\r \r that allows you to, you get a small\r \r bar, I I believe, in your your plot viewer that shows the gradient before maybe you apply it to, you know, a particular element of your chart. So that's a really, really nifty option. Sort of reminds me of the the the,\r \r theme previewing that we can do in b s lib, if I'm not mistaken.\r \r\n\nSo a really handy utility function here, but a phenomenal walk through of applying gradients,\r \r in our in g g plot two. I think, you know, James really covers sort of the whole universe of what's possible.\r \r\n\n[00:27:34] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 34,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. And what James is showing here, especially as you alluded to in this last part of the post,\r \r this kind of stacking\r \r mechanism of these different gradients. This is one of those\r \r pain points that he used to have with going to illustrate was to create these more custom\r \r layered approaches to these different gradients for backgrounds and the like. And now with a a great example of code here that he has,\r \r he calls this function stack underscore patterns.\r \r You can see the recursive nature of this to be able to wrap all this into one type of gradient and to be able to, you know, leverage that as much as you like from both the linear side of it as well as the the radial\r \r side of it. And you can see at the end of the post\r \r these really\r \r eye catching backgrounds\r \r on on these different scatter plots\r \r and bar charts. There's a lot of wonderful features here.\r \r\n\nAnd, yeah, like I said, even those that may be more familiar with CSS,\r \r he ties it all together of how that works on the CSS side\r \r as well. Lots of expandable details here. He\r \r he makes great use of Quarto here. This is a fantastic post, and I'm bookmarking it right now before I leave this episode because I wanna up my visualization\r \r game, and gradients looks like a\r \r\n\n[00:28:51] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 51,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "a wonderful way to do just that. Excellent post here by James. Coming straight back to this post the next time I make a GG plot.\r \r\n\n[00:28:59] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 59,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. And count down with, like, the the twenty or thirty hours that we covered in recent weeks, it seems like. There's so much in this visualization space that I'm just scratching the surface of for sure.\r \r I've been on the kick of interactive plots, so we but, man, at some point, you gotta get to those static plots at the end, whether it's a report\r \r or I hate to say it, even one of those PowerPoint decks. So if I if I have to be in those static confines, I'm gonna I'm gonna bling it up with this for sure.\r \r And there's a lot more you could bling up too by reading the rest of the issue, and it's a jam packed issue that John Calder has put together for us, and we'll take a couple of minutes for additional fines here.\r \r\n\nAnd, well, he's this is someone who we've covered\r \r their journey on reproducible analysis and especially in the case of leveraging\r \r Knicks as part of that journey for, gosh, over a year, if not more.\r \r But, in in my additional find here, Bruno Rodriguez has\r \r turned, you know, what I knew about Nick's and Rick's upside down, so to speak,\r \r because he is announcing\r \r a new package called Rickspress.\r \r This is,\r \r to put it mildly here,\r \r a new take on reproducible analysis\r \r pipelines\r \r powered by Rick's.\r \r That should have a keyword that you may, may latch onto\r \r if you know some other key reproducible analysis analysis pipeline tool kits we're talking about.\r \r\n\nBut I'm still wrapping my head around what he's accomplishing here at Rick's Press. But in a nutshell,\r \r when you have a pipeline of analysis,\r \r Rick's Press is leveraging Rick's for each step in this process,\r \r which opens up the possibility\r \r that maybe for a given step for analysis or text mining or whatever have you,\r \r because of the power of NICS under the hood, you have the flexibility in these steps to go from, say, R\r \r to Python\r \r or another language that Nick supports.\r \r This is unbelievable.\r \r Now, again, he is very much stressing this is a prototype. Do not use it in production yet. He's still working out the kinks of a few things, such as how we pass objects back and forth\r \r through these steps in the pipeline.\r \r\n\nBut he is,\r \r the elephant in room, so to speak. He has been heavily inspired by targets,\r \r and this is not replacing targets. Let's let's not kid ourselves.\r \r But what this is showing is the potential\r \r for a multi language\r \r analysis pipeline\r \r in the spirit of targets,\r \r but with a lot of granular control\r \r at the dependencies\r \r at each step,\r \r not just in the overall pipeline.\r \r Immensely,\r \r thought provoking here. I am gonna wrap my head around this, but I admit this is kinda timely because I'm gonna be speaking about the virtues of Nicks and Ricks with my shiny development at the upcoming shiny conference, which is happening in a week and a half. So Rick's Press, is someone that's new, but I'll make sure to plug that in my talk at the end. So, Bruno,\r \r as usual, every time I think I figured it out, you change the question, so to speak, as Roddy Piper would say.\r \r\n\nBut nonetheless, it was a excellent find here. So, Mike, what did you find?\r \r\n\n[00:32:18] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 18,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "That's awesome.\r \r I found a recreation\r \r of\r \r FiveThirtyEight's\r \r hack your way to scientific glory,\r \r website that was done by Andrew Heiss, who's always just\r \r pushing out incredible content. And it is a dashboard,\r \r so to speak, but all in observable\r \r JS\r \r OJS.\r \r So what that means is that I I think there's essentially\r \r serverless. Right? No. It's a static site, if you will, but it it is very interactive and really feels\r \r almost like a shiny app, if you will. And it's it's beautifully done. I I really love the theming here. And the idea is that you're a social scientist with a hunch that The US economy is affected by whether Republicans or Democrats are in office.\r \r And you can choose a few different toggles here, your political party,\r \r which sort of politicians you wanna include, how you what measurement do you want to use for economic performance like GDP or inflation or stock prices.\r \r\n\nAnd then\r \r what you're gonna get is is a p value at the end of this,\r \r based upon whether that political party had a negative or positive\r \r impact on the economy. So it's a little bit of p hacking going on here to a cool exercise to be able to just, you know, kind of switch dials until you get a what's called a publishable result, which would be a p value of less than, I think 0.05\r \r or zero point,\r \r zero one\r \r in the case of how I I believe Andrew has put it together here. But it's awesome. It's a a fantastic,\r \r I think, use of of OJS, and I imagine maybe quarto to\r \r to publish it and,\r \r really, really cool work.\r \r\n\n\n\n[00:33:57] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 57,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "This is fun to play with. I'm playing with it right now, and this is one of the advantages of bringing in Observable JS and and a portal doc.\r \r It is just snappy responsive,\r \r and this loaded right away.\r \r Obviously, this is just taking advantage of OJS, so we don't have the web assembly stuff going on here, but you don't need to in this case. It it is fit to the point. And,\r \r obviously, in my industry, I take the issue of p hacking quite seriously. But in this, this could be a fun way to to exercise that. So I'll I can play with this about fear, and I'm gonna lose my job, so to speak.\r \r This this looks fun for sure.\r \r\n\n\n\n[00:34:34] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 34,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Absolutely. Yeah. I think it's great in situations where you have fairly small data, right, to leverage OJS and,\r \r the quarto here. And probably,\r \r if you wanna continue using a static site in OJS and Cordova, your data gets big, that's where we get into maybe DuckDV\r \r WASM.\r \r\n\n[00:34:53] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 53,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "I think that's the future, man. That's the future. I can't wait to Got it. Can't wait to play some of that further. Absolutely.\r \r And,\r \r before we close out here, we have put a call out for, you know, any, you know, kudos or other appreciations for our weekend. We did hear back from one of our dedicated listeners,\r \r Maru Lapora, who I've had a great chance of meeting at previous Pazit conferences and other\r \r avenues. He had input a response to one of our,\r \r posts on LinkedIn\r \r about our discussion\r \r on some of the issues of CRAN recently. But first, he he had said he was loving\r \r the use of the continue,\r \r service\r \r as a way to leverage LOMs\r \r in Positron\r \r as a way to have a front end, you know, Visual Studio code or Positron\r \r extension to these services, and I am literally using that now on my open source setup. It is really cool. So great great, great recommendation there, Mauro. And,\r \r his feedback on the issues that we were talking about with CRAN recently, he says,\r \r I hear the pains of developers maintaining packages on CRAN.\r \r\n\nAlso, I understand the effort the core team puts in into allowing the art community to live at the head, so to speak. This is a rare, costly, and beneficial approach that I came to better understand. Thanks to this section in the book, and he plugs\r \r it, software engineering at Google, which I'll put a link to in the show notes. And that's a pretty fascinating\r \r read if you wanna get into the nooks and crannies of software engineering.\r \r But Mauro, this is a a terrific summary here, a terrific piece of feedback.\r \r In the end, this has always been a multifaceted\r \r issue with the place that CRAN has\r \r in the art community\r \r combined with some recent issues that we've been seeing. But in the end,\r \r the there are things that I would say CRAN is still a step ahead of some of the other languages, which can be a bit more of a free for all in terms of package repositories.\r \r\n\nSometimes not always of of very of varying quality, so to speak. So, again, great take on that. It's never a black or white issue, I feel, with these with these things, but great great piece of feedback, and we enjoyed hearing from you.\r \r And with that, we're always welcoming for more feedback. So from the post episode 200 on, if you wanna get in touch with us, we have a few different ways of doing that, one of which is on the contact page in this episode show notes. Take you a link right there to a little bit of web form for you to fill out there. You can also,\r \r send us a fun little boost along the way if you're on a modern podcast app, like, CurioCaster,\r \r Fountain.\r \r\n\nIn particular, it makes it easy to get up and running with these. I have linked details on that in the show notes, and you can get in touch with us on these social medias.\r \r I am, blue sky where I'm at [email protected].\r \r I'm also on Mastodon with @rpodcastatpodcastindex.social,\r \r and I'm on LinkedIn. Search your name, and you'll find me there. And you also like I mentioned earlier, you'll find me as one of the presenters in a in a couple weeks at the upcoming shiny conference I'm super excited about.\r \r And, Mike, where can our listeners find you?\r \r\n\n\n\n[00:38:01] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 1,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "I'll be there at Shiny Conf,\r \r watching you present here. That's super exciting. You can find me on blue sky at mike dash thomas dot b s k y dot social\r \r or on LinkedIn if you search Ketchbrooke Analytics, k e t c h b r o o k, you can see what I'm up to.\r \r\n\n[00:38:18] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "trans_timestamp": 18,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Awesome stuff. And, yeah, I remember you gave a a recent plug to some great advancements of using\r \r AI in your shiny app development. That was a a really great great, teaser there. So, hopefully, you're getting a lot of success with that as well.\r \r I really thank you all for joining us, wherever you are listening for this episode 200 of Haruki highlights.\r \r Who knows if we're gonna get to 200 more, but nonetheless, we're gonna have fun along the ride one way or another.\r \r And, hopefully, we'll be back with another episode\r \r of our weekly highlights\r \r next week."
+      }
+    ],
+    "chapters": [
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "chap_timestamp": 40,
+        "chap_text": "Mall does it all",
+        "chap_href": "https://posit.co/blog/mall-ai-powered-text-analysis/"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "chap_timestamp": 25,
+        "chap_text": "Great Gradients",
+        "chap_href": "https://jamesgoldie.dev/writing/stack-gradients-in-r/"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "chap_timestamp": 39,
+        "chap_text": "rixpress",
+        "chap_href": "https://brodrigues.co/posts/2025-03-20-announcing_rixpress.html"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "chap_timestamp": 20,
+        "chap_text": "P-hacking in style",
+        "chap_href": "https://stats.andrewheiss.com/hack-your-way/538"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "chap_timestamp": 0,
+        "chap_text": "Listener Feedback"
+      },
+      {
+        "ep_name": "issue_2025_w_14_highlights_638791571265579746",
+        "chap_timestamp": 3,
+        "chap_text": "Episode Wrapup"
+      }
+    ]
+  },
+  {
+    "metadata": [
+      {
         "ep_name": "issue_2025_w_12_highlights_638779498699649835",
         "ep_date": "2025-03-19",
         "ep_duration": 3,
