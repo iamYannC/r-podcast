@@ -2,6 +2,283 @@
   {
     "metadata": [
       {
+        "ep_name": "issue_2025_w_19_highlights",
+        "ep_date": "2025-05-07",
+        "ep_duration": 0,
+        "ep_description_short": "Episode 204 of R Weekly Highlights is jam-packed with four highlights! We discuss the recent improvements to the recipes package in the tidymodels suite, Nicola Rennie's adventures with this year's 30 day chart challenge, going back to math school with Jon Carroll's latest explorations in digit rotation, and our picks out of the excellent…"
+      }
+    ],
+    "description_long": [
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "description_long": "\r \r Episode 204 of R Weekly Highlights is jam-packed with four highlights! We discuss the recent improvements to the recipes package in the tidymodels suite, Nicola Rennie's adventures with this year's 30 day chart challenge, going back to math school with Jon Carroll's latest explorations in digit rotation, and our picks out of the excellent collection of the top 40 R packages for March.\nEpisode Links\n\nThis week's curator: Batool Almarzouq - @batoolmm.bsky.social (Bluesky) & @batool664 (X/Twitter)\nrecipes 1.3.0\n30 Day Chart Challenge 2025\nRotation with Modulo\nMarch 2025 Top 40 New CRAN Packages\nEntire issue available at rweekly.org/2025-W19\nSupplement Resources\n\n{recipes} Pipeable steps for feature engineering and data preprocessing to prepare for modeling https://recipes.tidymodels.org/\ntidymodels books https://www.tidymodels.org/books/index.html\nNicola's 30 day chart challenge browser app https://nrennie.rbind.io/30DayChartChallenge/\n{tidyplots} https://tidyplots.org\n{echarts4r} https://echarts4r.john-coene.com\nhttps://www.reddit.com/r/hockey/comments/1kfd57j/oc_round_2_matchups_are_set_lego_style/\nUsing {autodb} https://cran.r-project.org/web/packages/autodb/vignettes/autodb.html\n{kitesquare} Kite-Square plots for contingency tables https://github.com/HUGLeipzig/kitesquare\n{EQRN} Extreme Quantile Regression Neural Networks for Risk Forecasting https://cran.r-project.org/package=EQRN https://opasche.github.io/EQRN/\nSupporting the show\n\nUse the contact page at https://serve.podhome.fm/custompage/r-weekly-highlights/contact to send us your feedback\nR-Weekly Highlights on the Podcastindex.org - You can send a boost into the show directly in the Podcast Index. First, top-up with Alby, and then head over to the R-Weekly Highlights podcast entry on the index.\nA new way to think about value: https://value4value.info\nGet in touch with us on social media\nEric Nantz: @[email protected] (Mastodon), @rpodcast.bsky.social (BlueSky) and @theRcast (X/Twitter)\nMike Thomas: @[email protected] (Mastodon), @mike-thomas.bsky.social (BlueSky), and @mike_ketchbrook (X/Twitter) \nMusic credits powered byOCRemix\n\nA Simple Coin Flip Can Change Fate - Final Fantasy VI - Level 99 - https://ocremix.org/remix/OCR02692\nNo Time - Chrono Trigger - Jaxx - https://ocremix.org/remix/OCR00386\nSly Thai Guy - Street Fighter II: The World Warrior - Tim Sheehy - https://ocremix.org/remix/OCR01750"
+      }
+    ],
+    "links": [
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://bsky.app/profile/batoolmm.bsky.social"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://twitter.com/batool664"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://www.tidyverse.org/blog/2025/04/recipes-1-3-0/"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://nrennie.rbind.io/blog/30-day-chart-challenge-2025/"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://jcarroll.com.au/2025/05/03/rotation-with-modulo/"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://rworks.dev/posts/march-2025-top-40-new-cran-packages/"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://rweekly.org/2025-W19.html"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://recipes.tidymodels.org/"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://www.tidymodels.org/books/index.html"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://nrennie.rbind.io/30DayChartChallenge/"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://tidyplots.org"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://echarts4r.john-coene.com"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://www.reddit.com/r/hockey/comments/1kfd57j/oc_round_2_matchups_are_set_lego_style/"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://cran.r-project.org/web/packages/autodb/vignettes/autodb.html"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://github.com/HUGLeipzig/kitesquare"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://cran.r-project.org/package=EQRN"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://opasche.github.io/EQRN/"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://serve.podhome.fm/custompage/r-weekly-highlights/contact"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://podcastindex.org/podcast/1062040"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://getalby.com/"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://value4value.info"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://podcastindex.social/@rpodcast"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://bsky.app/profile/rpodcast.bsky.social"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://twitter.com/theRcast"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://fosstodon.org/@mike_thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://bsky.app/profile/mike-thomas.bsky.social"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://twitter.com/mike_ketchbrook"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://ocremix.org/"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://ocremix.org/remix/OCR02692"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://ocremix.org/remix/OCR00386"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "links": "https://ocremix.org/remix/OCR01750"
+      }
+    ],
+    "transcript": [
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "trans_timestamp": 3,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Hello, friends. We are back at episode 204\r \r of the Our Weekly Highlights podcast.\r \r Editor's note, I still am not used to saying 200 something yet, but I'll get there eventually.\r \r Nonetheless, this is the podcast where we talk about the awesome resources that are shared\r \r every single week at rweekly.0rg.\r \r My name is Eric Nance, and I'm delighted you join us wherever you are around the world.\r \r And joining me at the hip after some, rather nervous firmware updates is my awesome cohost, Mike Thomas. Mike, how are you doing?\r \r\n\n[00:00:34] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "trans_timestamp": 34,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Gotta love Windows, Eric. Yep. It was one of those mornings where I booted up the computer and had to sit and wait for about ten minutes for a firmware update,\r \r\n\n[00:00:42] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "trans_timestamp": 42,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "But I think we're okay. We made it through. We made it through. I still remember one of my older Android cell phones did one of those firmware updates, and it never woke up after that. So I'm one of those people, even in 2025,\r \r I never see anything do a firmware update. I'm crossing all my fingers and crossing my toes, and nothing pulls up.\r \r But but you are here, and I am here as well. No, no car failures this time around. So luckily, from that, tech seems to be kind to us. But what else is kind to us? Our weekly itself, we got a lot to talk about today because we have not one, not two, not three, but four highlights to talk about today. So we're gonna keep you keep your listening ears busy here. And our curator this week is Beto Almerzak. And as always, she had tremendous help from our fellow Rwiki team members and contributors like all of you around the world with your poll requests and other wonderful suggestions.\r \r And we'll get your appetite wet for our content here. And because we are talking about one\r \r of the mainstays in the tidy models ecosystems\r \r for getting\r \r all of your data and getting your models into shape for that eventual cooking that you do with your machine learning and other types of models. And that is the recipes package.\r \r\n\nRecently had a 1.3.0\r \r release updated on CRAN\r \r and,\r \r tidy models software engineer at POSIT. And Mel is back with,\r \r a nice roundup of the key new features that you may wanna pay attention to.\r \r First of which,\r \r admittedly, this one gives me flashbacks to my early days of r and especially reading certain CSV files. You'll know why in a second.\r \r Because there is an argument\r \r that's been around in the recipes ecosystem,\r \r strings as factors.\r \r Now before you run away from your earbuds here and wondering, oh, no. Why are you bringing up such bad memories here? No. This is this is important because there are situations\r \r where by default,\r \r a string variable\r \r that's in your predictor set of variables that you're gonna use in your model\r \r would be converted to factors by default,\r \r but that argument was located in a function called prep.\r \r\n\nRecipes, like a lot of the tidy models factors,\r \r have a lot of function names that definitely either make me hungry or make me wanna cook right away, nonetheless.\r \r Now that argument, string as factors,\r \r has been moved to recipe itself, the recipe function to be exact.\r \r This is important because now you can take advantage of probably disabling\r \r this conversion\r \r in many different places in your recipes workflow.\r \r So, Emil's got a a nice example\r \r where they can see what it looked like previously and using in the prep function,\r \r and now using it in the actual recipe call right off the bat so you don't have to keep using it over and over again\r \r if you have multiple prep calls in your in your pipeline\r \r for getting your recipe ready to go.\r \r\n\nAnd then also, there are some deprecations to be aware of, one of which is for the step underscore\r \r select function.\r \r This was apparently due to maybe some issues people are having\r \r in their recipe workflows,\r \r and it didn't really play as nicely what they felt was going on in the rest of the workflow.\r \r So\r \r there are cases where you can kinda migrate to some more, fit for purpose functions on this.\r \r One of which is step underscore r m,\r \r which then you can feed in the columns that you want removed in that particular step without doing the negative or minus sign annotation that you might have done before with step select.\r \r And also\r \r for selecting variables,\r \r they do recommend that you are able to use some of the more select helpers,\r \r which actually gets touched on later in the post from the tidy select package\r \r that's often using dply or tidy r and and the like. They're bringing better support for that in the recipes package itself.\r \r\n\nAnd then lastly,\r \r there is,\r \r a new argument being added to the step underscore dummy function.\r \r And there's nothing dumb about this. This is the the convenience function to convert\r \r a variable\r \r into indicator like variables often in categorical\r \r outcomes or predictors\r \r so you can use these in many of the machine learning models.\r \r And in the past,\r \r if you want to specify how the contrast associated with that categorization\r \r were performed,\r \r you had to feed that into an option statement such as options,\r \r contrast, equal, and then you might give it the either treatment,\r \r c o n t r dot treatment,\r \r or the c o n t r dot poly. Those are two ways to define contrast.\r \r\n\nNow you can define that in step underscore dummy itself.\r \r To me,\r \r I tend to not use options unless I absolutely have to because I think it does break a little bit of reproducibility.\r \r And somebody that I'll help debug code with has sent an option way, way, way somewhere else in their dot r profile,\r \r in their home directory, or some other place. And I'm like, what gives? Why is this digit rounding happening here? What what what's going on? So nothing I'm bitter. So I think anything you can have more transparent in the function itself\r \r is a win in my book. So I think that is a great, great new,\r \r new, capability.\r \r\n\nAnd then also, there has been some performance improvements where\r \r the step underscore impute underscore bag function, which is often used whenever you have to do the bagging pro preprocessing\r \r for your machine learning model, such as random force or gradient boosting. And when I've used those in the past,\r \r there have been memory issues in the past for tree models.\r \r And now they've minimized the footprint quite a bit. And, in the example, m o sites here\r \r going from 75 megabytes run bagging step now down to 20. That's a nice nice win when you scale this up immensely to different, CPU architectures,\r \r especially if you're trying to be nice to your HPC admins,\r \r which I try to do.\r \r\n\nAnd there's a lot more to this re release. The blog post has a link to the release notes if you wanna get more details.\r \r But it's great to see the momentum on tidy models keeps pushing forward.\r \r And, yeah, even the, artwork in this blog post makes me wanna eat right after this, Mike. How about you?\r \r\n\n[00:07:19] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "trans_timestamp": 19,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Same here. Yeah. A couple interesting things, you know, on the removal of, the step select\r \r are essentially deprecating that. It looks like the recommendations\r \r there are that you use just dplyr\r \r select to select which variables to use in your model before passing the data into the recipe where possible. And now that step select is deprecated, they're recommending that you use step remove. So that will, by default, remove\r \r the variables that you include in that statement. But if you negate them, it will include the negated ones. So it's almost like a flip of what\r \r step select was previously doing. So you may have to wrap your mind around that a little bit if you wanna continue to leverage this inside of your recipes workflow. And then the other one, Eric, that I'm not sure if you touched on was that tidy select can now be used anywhere, and everywhere within recipes. And I think previously, there were a few different\r \r steps or or functions, if you will, like step underscore p l s and step and puke bag that we also talked about\r \r that have maybe specialized\r \r arguments that previously asked you to select variables for the arguments of those functions in a particular way that was not compatible with your typical tidy selection,\r \r and now that is no more. Tidy selection can be used pretty much everywhere\r \r throughout all of the different functions within the recipes ecosystem. So that's definitely a great quality of life improvement\r \r here. And, you know, that memory reduction for step impute bag for those that fit a lot of bag tree models, I think is great. You know, I was a little surprised that Ames dataset that they use in the example,\r \r I think is pretty small. Right?\r \r\n\nAnd that took 75\r \r megs previously and now takes 20 megs. So\r \r if you scale that out to maybe a significant size dataset, I don't know, you know, what the relative size of your average machine learning dataset would be compared to the Ames dataset, but,\r \r not only would that that memory footprint probably be bigger than those numbers, but also your\r \r what you're getting back is is gonna be bigger as well. So that's a great improvement there. And always love to see that the Tidymodels team continues\r \r to work on the recipes package because, in my opinion,\r \r and I know that it's an opinionated framework in and of itself, but it is just fantastic for\r \r doing machine learning for the hardcore machine learning folks out there to be able to set up these workflows and sort of like this purr like fashion\r \r that allows you to really iterate over all sorts of different combinations and different algorithms that you wanna leverage really quickly in a way that, you know,\r \r we used to take\r \r a crazy amount of time from my days in Karat.\r \r\n\n\n\n[00:10:01] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "trans_timestamp": 1,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "I was gonna say the same thing. That's how I first got into machine learning of ours was the Karat package. And\r \r so I remember being one of Max Kuhn's, early days of the Karat package. He did a workshop\r \r at a local stat conference here in the Midwest, and I was mesmerized by the power of it. But, boy, it took me a while to get my head around it.\r \r Recipes,\r \r alongside Tanya Miles itself,\r \r I really like the having dedicated packages for each part of this process.\r \r And if you're wondering, like, where do you go to learn more, we'll put a link in the show notes to the Tidymodels\r \r website, which has tons of resources,\r \r the online book. There are actually more than one online book about all this, some of which is more of the practical day to day, and others more on the statistical theory behind a lot of the choices. There's a lot a lot to choose from here. And like you said, Mike, it's really great to see see this getting pushed forward. And,\r \r even though my day job doesn't do as much of the machine learning side as it used to, there are cases where, especially when you get to that infamous\r \r exploratory analysis perspective, you're asked to do a lot with less, and you could do much worse than throwing some tiny models action in front of that dataset to find that hidden subgroup of of records that shows that improved effect. Don't ask me why I say it that way. It's a volatile industry. What can I say?\r \r\n\nAnd up next, we're gonna visit the, visualization corner as I like to call it here on the highlights program because,\r \r it's an annual tradition since about 2022\r \r or perhaps sooner.\r \r Around the springtime,\r \r there is a thirty day chart challenge\r \r that's, released online, and the thirty day chart challenge was originated by Cedric Sher and Dominic Royal. This is, like I said, been running a few years now, and we've seen a lot of esteemed members of the art community\r \r take their, take their, visualization chops to work and learn some new things along the way. And in particular, a frequent contributor to the highlights program,\r \r Nicole O'Raney, has bat is back with her roundup and her perspective\r \r on what she created for the 2025\r \r edition of the thirty day chart challenge.\r \r\n\nAnd she's been doing this for a few years now, but she kinda did things slightly differently this time around, which I think are kind of intriguing.\r \r And one of which is she tried to challenge herself in different technical stacks.\r \r She is definitely primarily an R user, but as we've seen in previous highlights,\r \r she is venturing into other visualization frameworks along the way, notably,\r \r Observable and d three for some great interactive web based visualizations.\r \r And also alongside this, in this thirty day chart challenge,\r \r they don't necessarily\r \r tell you what the data is you're visualizing,\r \r unlike the TidyTuesday initiative that does\r \r ask you to create a visual based on the dataset in mind for that week. Here, you might be asked to do a a challenge\r \r of a visualization\r \r showing relationships between variables or maybe a time series visualization, but you get to pick the data.\r \r\n\nSo what she was trying to do to save time and re and kinda challenge herself at the same time\r \r is to reuse datasets in multiple ways. And we'll get to some of that shortly. And then lastly,\r \r try the upper,\r \r annotation game, so to speak, on some of these visuals by adding more text and annotations\r \r to these charts to really, you know, show some key insights\r \r in these, in these visualizations.\r \r So when we talk about the data she used, there was one particular dataset that she drew upon for multiple visualizations\r \r and that was a set released by the our world and data project\r \r on income inequality\r \r as shown by the share of income that's received\r \r by what is deemed the richest 1%\r \r of the world population.\r \r\n\nAnd she thought this would be a great way to you visualize not just that dataset on a whole, but also look at where how it relates to other data sets that may or may not be in that same domain.\r \r And this rather,\r \r fun plot we're about to talk about here\r \r is getting back to maybe some examples you've had in either a statistics or data science course where the underlying theme is\r \r correlation\r \r doesn't necessarily\r \r imply causation, because this awesome line plot here is showing how,\r \r apparently,\r \r as the rich got richer, so to speak, and taking the more, the share of the of the income,\r \r some reason, the population of wild birds in the world just started to decrease in that time span.\r \r\n\nAre they buying the wild birds and just keeping them capped? I I hey. Hey. You didn't you didn't hear from me. I have no idea. But if that doesn't make sense, you're right. It doesn't make sense. That was definitely for the,\r \r spurious relationship\r \r side of the challenge.\r \r But that was, an interesting take on it because usually you hear about the ice cream and murder rate example. This was this was a fresh take on that, so I I enjoyed that.\r \r And then also,\r \r that that's just one,\r \r plot that she made. If you're interested in all the plots that she made for each thirty day or thirty of the thirty day challenge,\r \r she actually created a Shiny app powered by Shiny Live and WebAssembly,\r \r which we'll link to in the show notes. And you can look at each day and what she created,\r \r which will have links to the source code behind those visualizations. So I have fun,\r \r in the in the prep for this episode, just thumbing through that. And there was one other one that caught my eye maybe for, again, a lot of the wrong reasons, but this time very much intentional.\r \r\n\nThere was a part of the thirty day challenge where you were asked to create\r \r a chart associated with extraterrestrial\r \r domains like aliens or whatnot.\r \r So she makes this,\r \r I I do I had to I had to say this abomination\r \r of a bad chart, which looks like my screen is glitching in different parts, like if somebody hit the hit the screen in the monitor because it's all weird, jaggy, fuzzy\r \r resolution.\r \r But she made this chart. You'll have to see it to believe it.\r \r Apparently, in future blog posts to illustrate just what can go wrong in these visualizations,\r \r and I can already see about five or six things horribly wrong with that chart. So that was, that was a doozy there. But, again, you can check out\r \r the, the rest of the visualizations\r \r in her Shiny app that she created. Well, again, I have a link to that in the show notes.\r \r\n\nBut again, this isn't just about being creative.\r \r She actually learned some great, you know, new and interesting technical observations too, Mike. So why don't you walk us through that? Yeah, Eric. Some of these plots are really interesting. That extraterrestrial\r \r\n\n[00:17:12] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "trans_timestamp": 12,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "one is pretty funny as well. You know, one of the things that Nicola\r \r among the many things that she was trying to try out, you know, knew during this thirty day chart challenge\r \r is she leveraged not only g g plot, but also explored the tidy plots package. And she was really encouraged by how easily portable her ggplot code was to the tidy plots framework, it seems like, and just how clean the syntax was. And I know that that's one that we've touched on a few times in the highlights. It's not one that I've had the chance to get to yet, but I have been blown away by everything that I have seen from a documentation perspective.\r \r On the tidy plots package, I think there's a great landing page for tidy plots that has some fantastic examples. And the visuals just look beautiful. And when you take a look at the code behind the visuals,\r \r it's it's almost shocking how, concise the the syntax is, how few lines of code it takes to get to really nice plots using tidy plots. Another thing that she explored on on the R side was\r \r using the g g I r f package in JavaScript to create drop down menus. I'm\r \r a little interested in how she did that and if that ported over to her Shiny Live app as well.\r \r\n\nIf it was some sort of an HTML\r \r widget that she was able to create. Are you familiar with doing that, Eric?\r \r\n\n[00:18:29] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "trans_timestamp": 29,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "I have not tried that, so I'm really looking at that code too after this episode.\r \r\n\n[00:18:34] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "trans_timestamp": 34,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Definitely. And then she built a a function to do something which is\r \r something that I always struggle with depending on what operating system I'm working on and what dependencies are there and which aren't, but take a screenshot\r \r of charts that you built. And she leveraged,\r \r the h t t p u v package, particularly,\r \r a run static server and then a stop all servers function from that to, I guess, spin up a server and then use web shot two\r \r to actually take the picture,\r \r to take the screenshot and then store that as an image in a particular folder,\r \r using this really small, nice, little tidy function she developed called save j s p n g. So that was great. And she also leveraged some Python as well. And she still wants to work on some examples of combining Python\r \r data processing and visualization\r \r in Observable via Quarto, which I can attest to is super easy because we have that just great ability to pass our\r \r and Python objects into\r \r observable OJS data frames, I think, with, you know, very, very little code, and that's all documented\r \r in the Quarto website. So I would encourage you to check that out if you'd like. It's great for static servers,\r \r like GitHub pages and things like that, or even just sharing an HTML file\r \r with someone if you don't have really the capacity to stand up, you know, a whole server for a a shiny server\r \r type of web application.\r \r\n\nSo that's awesome.\r \r She had some advice here for chart challenges if you're somebody who's interested in getting into these thirty day chart challenges to try to push your data visualization\r \r skills.\r \r And one of her biggest pieces of advice is try to use the the same data for for multiple charts. And I think that that's a great piece of advice to try to get you to think less about the data and more about the visualization\r \r side and and really try to open up that creative side that at least me and maybe some other data scientists out there,\r \r may be weaker on, you know, compared to the the data processing side. She had a couple highlights of some other favorite charts that other folks built throughout the challenge, which are are absolutely beautiful. And and like you, Eric, I loved checking out her Shiny Live app and just taking a look at all of these different charts through the past four years that she's developed across thirty days. So I guess that's a 20 different possible charts that you can take a look that Nikola developed. And not only can you take a look at these beautiful charts, you can see the source code behind them. And it, again, makes me wanna create my first Shiny live app that is something I still haven't gotten to either, but it's, it's high on my list\r \r\n\n[00:21:11] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "trans_timestamp": 11,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "here. We gotta rectify that pretty soon. I know. Because, you know,\r \r it's moving fast, man. It's moving fast. But I've yeah. I really enjoyed\r \r all these visuals here. And,\r \r you know, I have the the creative\r \r chops of, of a stick figure when I do visuals, but, boy, it sure is inspiring to see what Nicola and other great, community members,\r \r are able to come up within these in these chart challenges. So, yeah, if you're ever if you're on, like, the Mastodon or Blue Sky, you'll see a lot of these charts being thrown out there on social media, much like the TidyTuesday\r \r visualization. So it's a lot a lot you can be inspired by. Sometimes you'll see them in the most unlikely places too because I actually did see\r \r it wasn't in the thirty day challenge, but,\r \r you know, during the hockey playoffs, I've I frequent the hockey subreddit just to see what, you know, angst or excitement is out for various teams. And there is somebody that did a visualization\r \r of the brackets of the teams progressing to the next round,\r \r but they did it in the style of Lego bricks.\r \r\n\nBernie, you would have little Lego dots indicating the wins and then\r \r and and showing the team with, like, a nameplate with the the names on them. It was and the Stanley\r \r Cup in a gray kind of, Lego mosaic, like, setup.\r \r Man, there if I got, like, two months of just uninterrupted time, I would create that in our just see how, you know, ugly or good it looks because there's lots of no matter where you look, there's always places to up your game. And I definitely appreciate\r \r Nicole taking, you know, some new ideas,\r \r new frameworks, and seeing, you know, where she could push the envelope on.\r \r\n\nAnd, also, you know, when you're doing interactive visualizations,\r \r not necessarily the topic of this post here,\r \r boy, I just love those those packages out there with what we call the batteries included, so to speak.\r \r I've had another project at the day job where ECharts four r by John Coon has saved my behind on this really nice line plot.\r \r Interactive zooming on the x axis right off the bat, tool tips right off the bat. It just is so elegant.\r \r I think those are great. When you have the idea for the visual, you just don't have the time to get into the nuts and bolts of JavaScript and CSS land.\r \r EChars4R is one of those that just takes care of so much for you. So I'll never turn on a chance to plug that awesome package. It's the best.\r \r\n\nWe're gonna take quite a diversion in the highlights because we're gonna go from a visualization corner to really challenging yourself with some more fun math teasers.\r \r But, admittedly, after I play with this, I almost can't believe it works, but it actually does.\r \r So this blog post for this next highlight comes to us from a fellow Our Weekly curator, Jonathan Carroll,\r \r who as you've heard in previous highlights, he loves\r \r to test his might both on interesting mathematical challenges\r \r and interesting languages that conduct them. And this post has both.\r \r So in this case, he was inspired by a post that he saw on Mastodon,\r \r that was sent by Greg Egan\r \r on in this kind of brain teaser\r \r that actually has a solution.\r \r\n\nSo imagine you have\r \r a number that has a a set amount of digits, let's say, four digits.\r \r And then you want to, what we call,\r \r rotate the numbers. So imagine, you know, the number one, two, three, four, that's four digits,\r \r and you wanna rotate it so that maybe the\r \r the one and two go behind the three and four. It's almost like if you have pieces for this, you're just kinda shuffling the order a little bit.\r \r Apparently\r \r now I'm gonna try and narrate this in audio as best I can.\r \r There is a mathematical\r \r derivation to get to that solution for any number\r \r if it meets one of the following constraints.\r \r\n\nIf that number n is not the same\r \r as 10 to the power of the number of digits of that number minus one, there is a formula you can use to get that derivation.\r \r It goes like this.\r \r The n the number n times 10 to the power\r \r of the number of digits,\r \r k in this case,\r \r and the mod or module, which is like in division, getting the remainder of that,\r \r the re and the the right hand side of this\r \r is 10 to the power of the number of digits\r \r minus\r \r one.\r \r Yes. This works. I tried this out. I voted my r session. I did that number one, two, three, four. I wanna rotate it by three digits\r \r and then\r \r see if I could get that right answer, which is four, one, two, three. And, yes, that formula actually works. I'll put that in the well, John did that as well. He almost didn't believe it worked either,\r \r but he thought, okay. How do I make this more general? It's great for a specific example.\r \r\n\nHe has solutions in his blog post, both in the r language and the Julia language,\r \r which as you read it, they do make a bit of sense. He's able to get the length or the number of digits in that number.\r \r An interesting trick in r to do that is that the n char function\r \r will automatically\r \r convert, like, an actual double or integer\r \r to a character and then get the number of digits. That's kinda slick in and of itself.\r \r But you have to watch out if it's a negative number. It won't quite give you the right answer in that case. But then he's able to plug that in and then do, you know, the mod operator and r, which is 2% signs,\r \r and get a function,\r \r you know, very simple function of one liner\r \r to get this done. And sure enough, it works.\r \r\n\nNot quite vectorized,\r \r though. So that's where he has an interesting package called vec, which he's written about in his his blog before,\r \r which apparently does some neat trick with ring buffers\r \r and using the indices of vectors\r \r to get to that same solution. So, again, all the code in this in this in the, blog post,\r \r and this function rotate\r \r indeed works in both ways on that.\r \r Julia, again, pretty similar,\r \r albeit he does think it might be a bit simpler because there is an actual n digits function that is fit for purpose\r \r for actual numeric values and not just\r \r strings,\r \r which means it isn't as susceptible to that negative\r \r sign issue that the r solution might be.\r \r\n\nBut there are some other little gotchas along the way you have to be careful of.\r \r But, again, it's a one liner. And when you read the code, even if you're not a Julia programmer, you can kinda get a hang for how that works. And they do have a built in way to deal with vectors\r \r with using,\r \r you know, built in Julia primitives\r \r and doing cyclic rotation.\r \r And, again, all straightforward, at least in my opinion.\r \r Here's where things get odd, folks. Because as\r \r John has done in his previous blog post, he ventures into very\r \r niche languages for mathematics,\r \r and he talks about two of them here.\r \r\n\nAnd this is where you have to flip your perspective a bit because\r \r now\r \r you have to deal with glyphs\r \r as the operators,\r \r not just typing just to be fancy. These are actual operators in these languages.\r \r And even in the case of this APL language, which he has written about before, and I think we featured\r \r on previous highlights,\r \r the order isn't left to right. It's right to left.\r \r So that's a lot to get your head around, but he narrates through how he found the different glyphs for these various operators\r \r going from the typical assignment\r \r all the way to the mod operator,\r \r the negative operator,\r \r and and men and and more. And then when you read it, I mean, I I can't even narrate it here in audio, but you'll see it looks pretty fancy, like, almost like a mathematical\r \r equation.\r \r\n\nBut my goodness, it works. And he puts a link to the, try a pl.org\r \r interactive web based editor. If you're not convinced, you can try this stuff yourself and convince yourself, but it indeed works.\r \r And then if that wasn't enough, there is a newer language out there\r \r called\r \r UIUA\r \r or Yuya.\r \r I have no idea how to pronounce that one, but it is using\r \r stack based language approaches,\r \r which, apparently\r \r has its own kind of domain\r \r specific\r \r operators,\r \r again,\r \r in glyphs as well.\r \r But this is a newer language. So there's not as much documentation out there ever than the official docs. But sure enough,\r \r he's able to get a solution in place, but he has to think in terms of, like, stacking things\r \r on top of each other to make this happen and not just the typical left to right or even the case of APL,\r \r right to left.\r \r\n\nSo that,\r \r that that definitely got my head scratched a little bit. But, again, fun brain teaser to look at. But this is a great way to challenge yourself.\r \r I'm one of my wife's group chats with some friends. She has some friends that do these math teasers, like, every week, and they all I think they would be all over this kind of language if they haven't heard about that. Hadn't heard about it already. But again,\r \r if you are not convinced that works,\r \r I I would say the proofs in this post and the best part is you can try this out in multiple languages\r \r to feed that curiosity\r \r or in the case of me, humble myself for what I don't know about how this stuff works. So,\r \r Mike, they may talk me talk me up a bit. Am I that bad with math or is this just really out there?\r \r\n\n\n\n[00:31:18] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "trans_timestamp": 18,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "I'm gonna decide on this is really out there. Makes me wanna go back to the data visualization post because I feel like I'm over my skis. But this is\r \r I'm just teasing. This is it's a good blog post for me to\r \r get back into mathematics, get back into my mathematics, get back into my roots a little bit, and, you know, tease my brain on this. And like you, I I implemented this in r as well just to try it out for myself. And that's sort of the name of the game for\r \r how I was able to,\r \r I think, learn math more efficiently than I did prior to learning programming\r \r because, you know, if I could program it, I could understand it. Right? And I think that that goes for a lot of folks out there. And initially, I think when I I looked at this just reading the blog post, I was like, what is going on? And then\r \r put it to code a little bit, and it it started to make more sense to me a little bit. It's a cool little brain teaser. I think sometimes you are able to create some of these, you know, mathematical brain teasers if you if you'd like sort of backwards. And I'm curious to understand who originally sort of came up with this concept and and how they arrived at it. But it's it's super interesting. It's always funny to me sometimes I see on social media,\r \r like,\r \r somebody\r \r claiming to do magic with math and and, you know, telling, hey, what's what's your age? And then figure out, you know, okay, subtract that from what year it is and then multiply it by nine, and then they arrive back at their age or something like that. People are mind blown, and it's it's like it's,\r \r it's pretty straightforward. So this one, certainly not as straightforward, especially when you get down to the last two sections where we get into APL and\r \r UI, UA, where we're starting to use\r \r hieroglyphs, in my opinion, to, stitch together some of these equations. And we're going from,\r \r left to right to to right to left. Is APL the one that literally stands for a programming language?\r \r\n\n\n\n[00:33:10] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "trans_timestamp": 10,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "You got it. Great callback to a previous episode.\r \r\n\n[00:33:14] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "trans_timestamp": 14,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Oh my goodness. I can see why.\r \r But I really appreciate, you know, taking a a small little brain teaser like this and,\r \r implementing it across these four different languages just to showcase\r \r these different languages, the differences between them, the strengths and weaknesses that they have, and\r \r serve as an introduction to some of these languages for folks like me who are certainly less familiar with them. Always always really interesting to read a Jonathan Carroll blog post.\r \r\n\n[00:33:40] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "trans_timestamp": 40,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "Yeah. And I do have some, co colleagues at at the day job that I think would be all over this if they get a free moment. So I'll probably send this their way and see what kind of brain teasers they can come up with and and see if APL\r \r makes sense to them or not.\r \r Boy,\r \r I just\r \r I'm I'm amazed, all kidding aside.\r \r I'm amazed at the the creators of all this because\r \r I don't think I could come up with this if you gave me ten years to come up with something like this. My goodness. I have a I have a hard enough time just of art itself. So this is this is amazing stuff.\r \r And and speaking of amazing, so we're going back to r for a second. We will close out this episode with our last highlight here,\r \r which is, been a mainstay in the art community in terms of this content for years and years. It's may have had different platforms have been shared on, but Joe Rickert, who has been, one of the founding, you know, members of the art community that I've been following for years\r \r and years is back with his\r \r at monthly top 40\r \r r packages roundup.\r \r\n\nI'm sure if you've been around the community for the years that Mike and I have, you may have seen this in his previous Revolutions blog post back when he was at Revolutions.\r \r That was in a deposit, and now he's got this in the Our Works blog, which is a community effort led by him and Isabel Velasquez,\r \r with other contributors as well.\r \r So, again, we definitely don't have the time to talk about all all 40 packages that Joe has come up with here. But as usual, he organized these by different domains, different industries,\r \r or or different topics.\r \r\n\nAnd there were two that definitely caught my eye because they are relating to different projects I'm working on\r \r at the moment.\r \r The first of which is a package called\r \r AutoDB.\r \r This one's interesting\r \r because this one here is a way to, in essence,\r \r help you normalize a data frame\r \r by going to the third normal form. And, admittedly, I don't know the nuts and bolts of that definition.\r \r But if you dealt with databases before, this will look a bit familiar to you. This has been authored by Mark Webster, and he does point out in the vignette that we'll link to in the show notes,\r \r he is using this as a way to inform data cleaning operations,\r \r investigating his data.\r \r\n\nHe stresses\r \r that this is not meant for database\r \r design.\r \r Even though you will see graph you know, tabular representations\r \r of the different relationships in these datasets,\r \r it'll look very similar to a schematic you might have for a robust database\r \r table relationship diagram\r \r or an ERD, I believe they're called. But, again, really interesting because I am dealing with data at the moment coming from this\r \r API of this, vendor\r \r with some other datasets we have in house, and we do have to merge them together. And more importantly, we have to make sure that the constraints that we have told the vendor to follow are actually being met. So I could definitely see\r \r this as a tool to investigate these relationships\r \r and make sure things are are sound.\r \r\n\nAnd maybe it goes in ICU of a package like point blank by Richie Yoon that also looks at their data quality\r \r as a whole if you have an ETL kind of process like I'm dealing with.\r \r So that one caught my eye.\r \r And then on the visualization\r \r side of it,\r \r a package called Kite Square\r \r offered by John Weidenhauft.\r \r Hopefully, I said that right. This is a way to visualize\r \r contingency\r \r tables,\r \r which if you are dealing with you know, if you have,\r \r you know, often you'll have, like, observed versus truth\r \r or rater agreement. You often do contingency tables for this.\r \r This is an interesting way to have kind of a square grid, but then showing these,\r \r either discrepancies\r \r or similarities\r \r between these variables.\r \r\n\nAnd he he he likes the name kite because it rhymes with chi as in the chi square test that you often see in contingency tables. So I'll have a link to the GitHub repository for the package in the show notes, but definitely an intriguing visualization\r \r to kind of bling up that\r \r what can be a pretty utilitarian\r \r table representation.\r \r Maybe get a little visual around those marginal effects and those counts\r \r all in the same,\r \r umbrella,\r \r all powered by g g plot two under the hood. So you can feed this\r \r in a lot of different places.\r \r\n\n[00:38:26] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "trans_timestamp": 26,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "But that's only two of the 40 here, Mike. Did you see any that caught your eye as well? On the risk management side, which is a space that I operate in quite a bit, there's a new package called EQRN\r \r in all caps.\r \r I got a version one dot o, zero dot one dot o release, and it provides a framework for forecasting and extrapolating measures of conditional risk,\r \r for example, you know, of extreme and unprecedented\r \r events, which we seem to have more and more of lately,\r \r including quantiles and exceedance probabilities\r \r using extreme value statistics, which is a concept I'm familiar with, and flexible\r \r neural network architectures,\r \r which is interesting. There's a couple papers behind it and and quite a few folks that worked on this package, and it has a nice package down site, which I am in the middle of checking out right now. So I'll one, if you're in the risk space to look out for. Awesome. Yeah. I I thought that might catch your eye, so I wanna make sure\r \r\n\n[00:39:22] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "trans_timestamp": 22,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "you got that one. And, yeah, very nice documentation\r \r here. So I could see this being very useful in your in your toolbox for risk based assessments and analysis.\r \r Yep. Great. Great find there. And like we said, there's a ton more in this blog post for you to choose from.\r \r And even for the for the,\r \r colleagues in life sciences, there is,\r \r I kinda say this with with with kindness. Yet another tables related package,\r \r called Clinify.\r \r I I I laugh about this because it was not long ago, folks, that we didn't have any great table packages in our and now I don't wanna say too much, but let's just say there's a lot of choice to be had here, and that's been a hot topic in some of my circles recently. But, again,\r \r great to see advancements on on that side of it too.\r \r\n\nAnd, again, that's just scratching the surface's entire issue. Right? There's a lot more to choose from of additional packages that have been released, a great new set of resources,\r \r and we don't have time for additional finds because we had a whopper of an episode today, but definitely\r \r definitely check that out. See what catches your eye, and thus, yeah, you'll be able to get in contact with either the source code behind that great package or blog post, but also maybe make some connections in the future.\r \r And we also like to connect with all of you.\r \r\n\nFirst of all, the projects definitely\r \r keeps going because of contributions\r \r from you out there with your poll request for new content to be shared in the upcoming issue. How do you do that? Let's go to rww.rrg.\r \r We got a link in the top right corner\r \r in the, in the page, a nice little ribbon structure.\r \r You can click there and get to the GitHub repo right from there with a nice issue template.\r \r You can also get in touch with us personally\r \r on the,\r \r episode show notes. We have a link to the contact page. You can send us your feedback there and get in touch with us on the various social media outlets.\r \r I am on blue sky the the\r \r I am on Blue Sky these days with @rpodcastatbsky.social.\r \r\n\nAlso, I'm on Mastodon with @rpodcastatpodcastindex.social,\r \r and I'm on LinkedIn. You can search my name, and you'll find me there. And, Mike, where can Alyssa get a hold of you?\r \r\n\n[00:41:35] \r Mike Thomas"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "trans_timestamp": 35,
+        "trans_speaker": "Mike Thomas",
+        "trans_text": "Sure. You can find me on blue sky at mike dash thomas dot b s k y dot social. Or on LinkedIn, if you search Ketchbrooke Analytics, k e t c h b r o o k, you can see what I'm up to. Awesome stuff. And again, thank you so much for joining us for listening to episode 204 of our weekly highlights, and we'll be back with another edition\r \r\n\n[00:41:57] \r Eric Nantz"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "trans_timestamp": 57,
+        "trans_speaker": "Eric Nantz",
+        "trans_text": "next week."
+      }
+    ],
+    "chapters": [
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "chap_timestamp": 36,
+        "chap_text": "recipes 1.3.0",
+        "chap_href": "https://www.tidyverse.org/blog/2025/04/recipes-1-3-0/"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "chap_timestamp": 38,
+        "chap_text": "30 day chart challenge",
+        "chap_href": "https://nrennie.rbind.io/blog/30-day-chart-challenge-2025/"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "chap_timestamp": 49,
+        "chap_text": "Rotation with modulo",
+        "chap_href": "https://jcarroll.com.au/2025/05/03/rotation-with-modulo/"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "chap_timestamp": 27,
+        "chap_text": "March Top 40 Packages",
+        "chap_href": "https://rworks.dev/posts/march-2025-top-40-new-cran-packages/"
+      },
+      {
+        "ep_name": "issue_2025_w_19_highlights",
+        "chap_timestamp": 10,
+        "chap_text": "Episode Wrapup"
+      }
+    ]
+  },
+  {
+    "metadata": [
+      {
         "ep_name": "issue_2025_w_18_highlights",
         "ep_date": "2025-05-02",
         "ep_duration": 19,
