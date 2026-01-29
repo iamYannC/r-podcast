@@ -1,0 +1,119 @@
+name: Update R Weekly Podcast Data
+
+on:
+  schedule:
+    # Update: Every Monday at midnight UTC
+    - cron: '0 0 * * 1'
+    # Cleanup: 1st of every month at midnight UTC
+    - cron: '0 0 1 * *'
+  workflow_dispatch: # Manual triggers
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 0 * * 1' || github.event_name == 'workflow_dispatch'
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.3.0'
+      
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev libxml2-dev libssl-dev
+      
+      - name: Cache R packages
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: ${{ runner.os }}-r-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-r-
+      
+      - name: Install R dependencies
+        run: |
+          Rscript -e 'if (!require("tidyverse")) install.packages("tidyverse")'
+          Rscript -e 'if (!require("rvest")) install.packages("rvest")'
+          Rscript -e 'if (!require("xml2")) install.packages("xml2")'
+          Rscript -e 'if (!require("glue")) install.packages("glue")'
+          Rscript -e 'if (!require("lubridate")) install.packages("lubridate")'
+          Rscript -e 'if (!require("hms")) install.packages("hms")'
+          Rscript -e 'if (!require("httr2")) install.packages("httr2")'
+          Rscript -e 'if (!require("jsonlite")) install.packages("jsonlite")'
+      
+      - name: Run update check
+        run: Rscript cicd/update.R
+      
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git add -A
+          if git diff --staged --quiet; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push if changes
+        if: steps.check_changes.outputs.changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add outputs/*.rds
+          git add outputs/snapshots/*.rds
+          git add cicd/log.txt
+          git commit -m "🤖 Auto-update: New R Weekly episode(s) $(date +'%Y-%m-%d')"
+          git push
+      
+      - name: No updates found
+        if: steps.check_changes.outputs.changes == 'false'
+        run: echo "No new episodes found."
+  
+  cleanup:
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 0 1 * *' || github.event_name == 'workflow_dispatch'
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.3.0'
+      
+      - name: Run cleanup (keep 3 most recent)
+        run: Rscript cicd/cleanup_snapshots.R
+      
+      - name: Check for changes
+        id: check_cleanup
+        run: |
+          git add -A
+          if git diff --staged --quiet; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push if files deleted
+        if: steps.check_cleanup.outputs.changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add outputs/snapshots/
+          git add cicd/log.txt
+          git commit -m "🧹 Monthly cleanup: Removed old snapshots ($(date +'%Y-%m-%d'))"
+          git push
+      
+      - name: No cleanup needed
+        if: steps.check_cleanup.outputs.changes == 'false'
+        run: echo "Only 3 or fewer snapshots exist."
