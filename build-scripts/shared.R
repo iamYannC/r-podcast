@@ -126,3 +126,14 @@ fetch_transcript_text <- function(uuid) {
   url <- glue("https://serve.podhome.fm/api/transcript/{uuid}")
   read_html(url) |> html_text2()
 }
+
+
+# avoid connection error for over using all available connections
+.cleanup_connections <- function() {
+  closeAllConnections()
+}
+
+# Register cleanup on exit of any build function
+.onAttach <- function(libname, pkgname) {
+  reg.finalizer(globalenv(), .cleanup_connections, onexit = TRUE)
+}
