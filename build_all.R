@@ -16,7 +16,7 @@ source('build-scripts/build_descriptions.R')
 #' @return A list with `meta`, `transcripts`, `chapters`, `descriptions`.
 build_all <- function(pages = NULL,
                       episode_index = Inf,
-                      use_existing = FALSE,
+                      use_existing = TRUE,
                       out_dir = "outputs/snapshots") {
   dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
@@ -78,7 +78,8 @@ build_all <- function(pages = NULL,
   invisible(snapshot)
 }
 
-# Convenience: if run directly, build using existing artifacts when present
-if (sys.nframe() == 0) {
-  build_all(use_existing = TRUE)
-}
+# Option A: Build from existing binaries
+  #  build_all()
+
+# Option B: Build from scratch - scrape yourself
+  #  build_all(use_existing = TRUE)

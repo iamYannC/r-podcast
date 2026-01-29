@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center; /* Centers the button horizontally */
+            align-items: center;     /* Centers the button vertically */
+            height: 100%;
+        }
+        .chat-btn {
+            background: linear-gradient(135deg, #9B59B6 0%, #F39C12 50%, #27AE60 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-flex;    /* Only takes necessary width */
+            align-items: center;
+            gap: 12px;               /* Space between items */
+            transition: opacity 0.2s;
+            white-space: nowrap;     /* Prevents text wrapping */
+            font-size: 16px;
+        }
+        .chat-btn:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://jokasan.github.io/r-weekly_chatbot/" target="_blank" class="chat-btn" title="Powered by RAG">
+        <i class="fas fa-podcast"></i>
+        <span>R Weekly Podcast Chat</span>
+        <i class="fas fa-wand-magic-sparkles"></i>
+    </a>
+</body>
+</html>
+
