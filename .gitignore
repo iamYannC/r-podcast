@@ -65,5 +65,4 @@ automate/
 *.wma
 *.aac
 *.aiff
-archive/
 Py/__pycache__/
