@@ -1,4 +1,4 @@
-source('new-logic/shared.R')
+source('build-scripts/shared.R')
 
 # Build chapters table from episode payload --------------------------------
 
@@ -44,4 +44,3 @@ build_chapters <- function(meta_tbl, episode_index = Inf) {
   }) |>
     dplyr::mutate(chapter_url = dplyr::na_if(chapter_url, ""))
 }
-

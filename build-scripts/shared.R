@@ -21,10 +21,10 @@ USER_AGENT <- "rweekly-scraper/0.2 (+https://github.com/)"
 
 # Shared output defaults (used only when scripts explicitly write)
 output <- list(
-  TRANSCRIPTS   = "data/transcripts.rds",
-  DESCRIPTIONS  = "data/descriptions.rds",
-  CHAPTERS      = "data/chapters.rds",
-  META          = "data/meta.rds"
+  TRANSCRIPTS   = "outputs/transcripts.rds",
+  DESCRIPTIONS  = "outputs/descriptions.rds",
+  CHAPTERS      = "outputs/chapters.rds",
+  META          = "outputs/meta.rds"
 )
 
 # --- Lightweight in-memory cache -----------------------------------------

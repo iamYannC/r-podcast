@@ -1,4 +1,4 @@
-source('new-logic/shared.R')
+source('build-scripts/shared.R')
 
 # Helpers -------------------------------------------------------------------
 

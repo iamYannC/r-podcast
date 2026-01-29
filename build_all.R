@@ -1,8 +1,8 @@
-source('new-logic/shared.R')
-source('new-logic/build_meta.R')
-source('new-logic/build_chapters.R')
-source('new-logic/build_transcripts.r')
-source('new-logic/build_descriptions.R')
+source('build-scripts/shared.R')
+source('build-scripts/build_meta.R')
+source('build-scripts/build_chapters.R')
+source('build-scripts/build_transcripts.r')
+source('build-scripts/build_descriptions.R')
 
 #' Build a full snapshot
 #'
@@ -11,13 +11,13 @@ source('new-logic/build_descriptions.R')
 #'
 #' @param pages Integer vector of listing pages (NULL = all pages).
 #' @param episode_index Optional indices to pass to section builders.
-#' @param use_existing If TRUE, load pre-built artifacts in `new-logic/*.rds`.
+#' @param use_existing If TRUE, load pre-built artifacts in `outputs/*.rds`.
 #' @param out_dir Output directory for snapshots.
 #' @return A list with `meta`, `transcripts`, `chapters`, `descriptions`.
 build_all <- function(pages = NULL,
                       episode_index = Inf,
                       use_existing = FALSE,
-                      out_dir = "new-logic/data/snapshots") {
+                      out_dir = "outputs/snapshots") {
   dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
   as_tbl <- function(x) {
@@ -27,11 +27,11 @@ build_all <- function(pages = NULL,
   }
 
   if (use_existing &&
-      all(file.exists(file.path("new-logic", c("meta.rds", "transcripts.rds", "chapters.rds", "descriptions.rds"))))) {
-    meta <- as_tbl(readRDS(file.path("new-logic", "meta.rds")))
-    transcripts <- as_tbl(readRDS(file.path("new-logic", "transcripts.rds")))
-    chapters <- as_tbl(readRDS(file.path("new-logic", "chapters.rds")))
-    descriptions <- readRDS(file.path("new-logic", "descriptions.rds"))
+      all(file.exists(file.path("outputs", c("meta.rds", "transcripts.rds", "chapters.rds", "descriptions.rds"))))) {
+    meta <- as_tbl(readRDS(file.path("outputs", "meta.rds")))
+    transcripts <- as_tbl(readRDS(file.path("outputs", "transcripts.rds")))
+    chapters <- as_tbl(readRDS(file.path("outputs", "chapters.rds")))
+    descriptions <- readRDS(file.path("outputs", "descriptions.rds"))
     if (is.list(descriptions)) {
       if (!is.null(descriptions$descriptions)) descriptions$descriptions <- as_tbl(descriptions$descriptions)
       if (!is.null(descriptions$description_links)) descriptions$description_links <- as_tbl(descriptions$description_links)
@@ -57,6 +57,13 @@ build_all <- function(pages = NULL,
     chapters = chapters,
     descriptions = descriptions
   )
+
+  # Always override section RDS outputs for convenience
+  dir.create(dirname(output$META), recursive = TRUE, showWarnings = FALSE)
+  saveRDS(meta, output$META)
+  saveRDS(transcripts, output$TRANSCRIPTS)
+  saveRDS(chapters, output$CHAPTERS)
+  saveRDS(descriptions, output$DESCRIPTIONS)
 
   date_tag <- format(Sys.Date(), "%Y-%m-%d")
   fname <- sprintf("snapshot_%s.rds", date_tag)
