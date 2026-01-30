@@ -1,6 +1,9 @@
-# R Weekly Highlights Podcast Database
-
-<!-- Placeholder for icon/logo -->
+# R Weekly Podcast Scraper 🙃 🚴
+<div align="center">
+  <a href="https://jokasan.github.io/r-weekly_chatbot/" target="_blank">
+    <img src="assets/og1.png" alt="Hex logo for the R weekly podcast scraper project" height="300" style="border-radius: 15px;">
+  </a>
+</div>
 
 I first started this project before agents and LLMs wrote code for us. I had to, god forbid, copy-paste regex and css selectors like in the old days... <br>
 
