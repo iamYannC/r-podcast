@@ -25,26 +25,21 @@ jobs:
           r-version: '4.3.0'
           use-public-rspm: true
       
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libcurl4-openssl-dev libxml2-dev libssl-dev
-      
+      # Clean "Pak" installation
       - name: Install R dependencies
-        run: |
-          install.packages("pak", repos = "https://r-lib.github.io/p/pak/stable/")
-          pak::pkg_install(c(
-            "tidyverse",
-            "rvest",
-            "xml2",
-            "glue",
-            "lubridate",
-            "hms",
-            "httr2",
-            "jsonlite"
-          ))
-        shell: Rscript {0}
-      
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::pak
+            any::tidyverse
+            any::rvest
+            any::xml2
+            any::glue
+            any::lubridate
+            any::hms
+            any::httr2
+            any::jsonlite
+
       - name: Run update check
         run: Rscript cicd/update.R
       
@@ -67,6 +62,9 @@ jobs:
           git add outputs/snapshots/*.rds
           git add cicd/log.txt
           git commit -m "🤖 Auto-update: New R Weekly episode(s) $(date +'%Y-%m-%d')"
+          
+          # SAFETY NET: Pull any changes before pushing
+          git pull --rebase origin main
           git push
       
       - name: No updates found
@@ -75,7 +73,12 @@ jobs:
   
   cleanup:
     runs-on: ubuntu-latest
-    if: github.event.schedule == '0 0 1 * *' || github.event_name == 'workflow_dispatch'
+    needs: update  # 👈 Serialize: Run only after update finishes
+    # logic: Run if manual trigger OR (it's the 1st of the month AND update succeeded)
+    if: |
+      always() && 
+      (github.event_name == 'workflow_dispatch' || github.event.schedule == '0 0 1 * *') && 
+      needs.update.result == 'success'
     
     steps:
       - name: Checkout repository
@@ -110,6 +113,9 @@ jobs:
           git add outputs/snapshots/
           git add cicd/log.txt
           git commit -m "🧹 Monthly cleanup: Removed old snapshots ($(date +'%Y-%m-%d'))"
+          
+          # SAFETY NET: Essential here because 'update' job just pushed a new commit!
+          git pull --rebase origin main
           git push
       
       - name: No cleanup needed
