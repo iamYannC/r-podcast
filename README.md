@@ -34,7 +34,6 @@ files <- list.files("outputs/snapshots", pattern = "^snapshot_.*\\.rds$", full.n
 latest <- files[which.max(file.mtime(files))]
 snapshot <- readRDS(latest)
 
-# snapshot is a list with these items: meta, transcripts, chapters & descriptions
 ```
 
 **That's it!**
@@ -44,14 +43,6 @@ snapshot <- readRDS(latest)
 ### Development Workflow
 
 Want to rebuild the database yourself? fine:
-
-**Install R dependencies**
-```r
-install.packages(c(
-  "tidyverse", "rvest", "xml2", "glue", 
-  "hms", "httr2", "jsonlite"
-))
-```
 
 **Option A: Rebuild from existing binaries** *(recommended - fast!)*
 ```r
