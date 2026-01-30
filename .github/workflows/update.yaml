@@ -1,21 +1,14 @@
-name: Update R Weekly Podcast Data
-
-concurrency:
-  group: rweekly-data-sync
-  cancel-in-progress: false
+name: Update Podcast Data
 
 on:
   schedule:
-    # Update: Every Monday at midnight UTC
+    # Every Monday at midnight UTC
     - cron: '0 0 * * 1'
-    # Cleanup: 1st of every month at midnight UTC
-    - cron: '0 0 1 * *'
-  workflow_dispatch: # Manual triggers
+  workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    if: github.event.schedule == '0 0 * * 1' || github.event_name == 'workflow_dispatch'
     
     steps:
       - name: Checkout repository
@@ -29,95 +22,42 @@ jobs:
           r-version: '4.3.0'
           use-public-rspm: true
       
-      # Clean "Pak" installation
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y libcurl4-openssl-dev libxml2-dev libssl-dev
+      
       - name: Install R dependencies
-        uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          packages: |
-            any::pak
-            any::tidyverse
-            any::rvest
-            any::xml2
-            any::glue
-            any::lubridate
-            any::hms
-            any::httr2
-            any::jsonlite
-
+        run: |
+          install.packages("pak", repos = "https://r-lib.github.io/p/pak/stable/")
+          pak::pkg_install(c(
+            "tidyverse",
+            "rvest",
+            "xml2",
+            "glue",
+            "lubridate",
+            "hms",
+            "httr2",
+            "jsonlite"
+          ))
+        shell: Rscript {0}
+      
       - name: Run update check
         run: Rscript cicd/update.R
       
-      - name: Check for changes
-        id: check_changes
-        run: |
-          git add -A
-          if git diff --staged --quiet; then
-            echo "changes=false" >> $GITHUB_OUTPUT
-          else
-            echo "changes=true" >> $GITHUB_OUTPUT
-          fi
-      
-      - name: Commit and push if changes
-        if: steps.check_changes.outputs.changes == 'true'
+      - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git pull --rebase origin main
-          git add outputs/*.rds
-          git add outputs/snapshots/*.rds
-          git commit -m "🤖 Auto-update: New R Weekly episode(s) $(date +'%Y-%m-%d')"
           
-          git push
-      
-      - name: No updates found
-        if: steps.check_changes.outputs.changes == 'false'
-        run: echo "No new episodes found."
-  
-  cleanup:
-    runs-on: ubuntu-latest
-    needs: update  # 👈 Serialize: Run only after update finishes
-    # logic: Run if manual trigger OR (it's the 1st of the month AND update succeeded)
-    if: |
-      always() && 
-      (github.event_name == 'workflow_dispatch' || github.event.schedule == '0 0 1 * *') && 
-      needs.update.result == 'success'
-    
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      
-      - name: Setup R
-        uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: '4.3.0'
-          use-public-rspm: true
-      
-      - name: Run cleanup (keep 3 most recent)
-        run: Rscript cicd/cleanup_snapshots.R
-      
-      - name: Check for changes
-        id: check_cleanup
-        run: |
+          # Stage all changes
           git add -A
-          if git diff --staged --quiet; then
-            echo "changes=false" >> $GITHUB_OUTPUT
-          else
-            echo "changes=true" >> $GITHUB_OUTPUT
-          fi
-      
-      - name: Commit and push if files deleted
-        if: steps.check_cleanup.outputs.changes == 'true'
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git pull --rebase origin main
-          git add outputs/snapshots/
-          git commit -m "🧹 Monthly cleanup: Removed old snapshots ($(date +'%Y-%m-%d'))"
           
-          git push
-      
-      - name: No cleanup needed
-        if: steps.check_cleanup.outputs.changes == 'false'
-        run: echo "Only 3 or fewer snapshots exist."
+          # Only commit if there are changes
+          if ! git diff --staged --quiet; then
+            git commit -m "🤖 Auto-update: New R Weekly episode(s) $(date +'%Y-%m-%d')"
+            git push
+            echo "✅ Changes pushed successfully"
+          else
+            echo "ℹ️ No new episodes found"
+          fi
