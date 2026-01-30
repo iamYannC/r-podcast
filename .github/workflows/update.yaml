@@ -1,5 +1,9 @@
 name: Update R Weekly Podcast Data
 
+concurrency:
+  group: rweekly-data-sync
+  cancel-in-progress: false
+
 on:
   schedule:
     # Update: Every Monday at midnight UTC

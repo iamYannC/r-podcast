@@ -66,3 +66,11 @@ automate/
 *.aac
 *.aiff
 Py/__pycache__/
+
+# Unused asset icons
+assets/icon_.png
+assets/iconw.png
+assets/og.png
+assets/og0.png
+assets/og1.png
+assets/og2.png
