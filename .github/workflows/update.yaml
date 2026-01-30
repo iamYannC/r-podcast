@@ -43,15 +43,9 @@ jobs:
             any::hms
             any::httr2
             any::jsonlite
-            any::DBI
-            any::RSQLite
-            any::writexl
 
       - name: Run update check
         run: Rscript cicd/update.R
-
-      - name: Export SQLite and Excel
-        run: Rscript cicd/export_formats.R
       
       - name: Check for changes
         id: check_changes
