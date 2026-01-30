@@ -3,6 +3,7 @@
       <img src="archive/john.jpeg" alt="John from sillicon valley, server guy">
 </div>
 I'm glad you stopped by. here is my openai API key:
+
 ```bash
 OPENAI_API_KEY = sk-proj-JrnNwjp2pCKyUcMa4smePw-4KyUcMa4smePw-4BjDZEXfPrbXTqvMx5M2c6BejQQ0wMwOXXl_Ak4rUZp_MDSG06k8A
 ```
