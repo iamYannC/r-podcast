@@ -56,7 +56,8 @@ rsconnect/
 # automation
 automate/
 
-# Ignore audio files
+# Ignore audio files & images
+assets/*.png
 *.mp3
 *.wav
 *.ogg
