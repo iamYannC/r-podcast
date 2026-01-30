@@ -62,13 +62,11 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          git pull --rebase origin main
           git add outputs/*.rds
           git add outputs/snapshots/*.rds
-          git add cicd/log.txt
           git commit -m "🤖 Auto-update: New R Weekly episode(s) $(date +'%Y-%m-%d')"
           
-          # SAFETY NET: Pull any changes before pushing
-          git pull --rebase origin main
           git push
       
       - name: No updates found
@@ -114,12 +112,10 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          git pull --rebase origin main
           git add outputs/snapshots/
-          git add cicd/log.txt
           git commit -m "🧹 Monthly cleanup: Removed old snapshots ($(date +'%Y-%m-%d'))"
           
-          # SAFETY NET: Essential here because 'update' job just pushed a new commit!
-          git pull --rebase origin main
           git push
       
       - name: No cleanup needed

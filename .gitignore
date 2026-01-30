@@ -74,3 +74,5 @@ assets/og.png
 assets/og0.png
 assets/og1.png
 assets/og2.png
+# CI logs (not tracked)
+cicd/logs/
