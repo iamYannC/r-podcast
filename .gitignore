@@ -76,3 +76,6 @@ assets/og1.png
 assets/og2.png
 # CI logs (not tracked)
 cicd/logs/
+
+# local dev stuff
+dev/
