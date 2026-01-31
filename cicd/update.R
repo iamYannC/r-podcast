@@ -15,13 +15,13 @@ tx_path <- "outputs/transcripts.rds"
 chap_path <- "outputs/chapters.rds"
 desc_path <- "outputs/descriptions.rds"
 snapshot_dir <- "outputs/snapshots"
-log_dir <- "cicd/logs"
-log_path <- file.path(log_dir, "update_latest.log")
+
+log_path <- file.path("cicd", "update_latest.log")
 
 log_action <- function(action, msg) {
   date_tag <- format(Sys.Date(), "%Y-%m-%d")
   line <- sprintf("[%s %s] %s", action, date_tag, msg)
-  dir.create(log_dir, showWarnings = FALSE, recursive = TRUE)
+  dir.create("cicd", showWarnings = FALSE, recursive = TRUE)
   cat(line, "\n", file = log_path, append = TRUE)
   message(line)
 }

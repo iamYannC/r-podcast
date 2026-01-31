@@ -1,0 +1,43 @@
+name: Cleanup Old Snapshots
+
+on:
+  schedule:
+    # 1st of every month at midnight UTC
+    - cron: '0 0 1 * *'
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.3.0'
+          use-public-rspm: true
+      
+      - name: Run cleanup (keep 3 most recent snapshots)
+        run: Rscript cicd/cleanup_snapshots.R
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Stage all changes
+          git add -A
+          
+          # Only commit if there are changes
+          if ! git diff --staged --quiet; then
+            git commit -m "🧹 Monthly cleanup: Removed old snapshots ($(date +'%Y-%m-%d'))"
+            git push
+            echo "✅ Cleanup completed and pushed"
+          else
+            echo "ℹ️ No cleanup needed (3 or fewer snapshots)"
+          fi
