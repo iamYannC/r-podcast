@@ -44,6 +44,9 @@ jobs:
       
       - name: Run update check
         run: Rscript cicd/update.R
+
+      - name: Export SQLite and Excel
+        run: Rscript cicd/export_formats.R
       
       - name: Commit and push changes
         run: |
