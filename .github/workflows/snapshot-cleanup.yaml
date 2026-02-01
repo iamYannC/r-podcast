@@ -25,6 +25,9 @@ jobs:
       
       - name: Run snapshot cleanup (keep 3 most recent snapshots)
         run: Rscript cicd/cleanup_snapshots.R
+
+      - name: Sync with remote before push
+        run: git pull --rebase origin main
       
       - name: Commit and push changes
         run: |

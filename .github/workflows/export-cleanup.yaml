@@ -25,6 +25,9 @@ jobs:
       
       - name: Run export cleanup (keep latest XLSX + SQLite)
         run: Rscript cicd/cleanup_exports.R
+
+      - name: Sync with remote before push
+        run: git pull --rebase origin main
       
       - name: Commit and push changes
         run: |

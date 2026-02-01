@@ -51,6 +51,9 @@ jobs:
       - name: Export SQLite and Excel
         run: Rscript export_all.R
       
+      - name: Sync with remote before push
+        run: git pull --rebase origin main
+
       - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
