@@ -32,13 +32,16 @@ jobs:
           install.packages("pak", repos = "https://r-lib.github.io/p/pak/stable/")
           pak::pkg_install(c(
             "tidyverse",
+            "DBI",
+            "RSQLite",
             "rvest",
             "xml2",
             "glue",
             "lubridate",
             "hms",
             "httr2",
-            "jsonlite"
+            "jsonlite",
+            "writexl"
           ))
         shell: Rscript {0}
       
@@ -46,7 +49,7 @@ jobs:
         run: Rscript cicd/fetch-new-episode.R
 
       - name: Export SQLite and Excel
-        run: Rscript cicd/export_formats.R
+        run: Rscript export_all.R
       
       - name: Commit and push changes
         run: |
