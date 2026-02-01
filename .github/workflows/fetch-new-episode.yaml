@@ -21,6 +21,9 @@ jobs:
         with:
           r-version: '4.3.0'
           use-public-rspm: true
+
+      - name: Sync with remote before changes
+        run: git pull --rebase origin main
       
       - name: Install system dependencies
         run: |
@@ -50,9 +53,6 @@ jobs:
 
       - name: Export SQLite and Excel
         run: Rscript export_all.R
-      
-      - name: Sync with remote before push
-        run: git pull --rebase origin main
 
       - name: Commit and push changes
         run: |
