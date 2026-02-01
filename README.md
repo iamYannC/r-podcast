@@ -27,12 +27,14 @@ cd r-podcast
 **2. Load and explore**
 ```r
 # Load the most recent snapshot
-
-# There might be more than one snapshot at a time, ensure you scrape the latest.
-
-files <- list.files("outputs/snapshots", pattern = "^snapshot_.*\\.rds$", full.names = TRUE)
-latest <- files[which.max(file.mtime(files))]
-snapshot <- readRDS(latest)
+latest <- file.path("outputs", "snapshots", "snapshot_latest.rds")
+if (file.exists(latest)) {
+  snapshot <- readRDS(latest)
+} else {
+  files <- list.files("outputs/snapshots", pattern = "^snapshot_.*\\.rds$", full.names = TRUE)
+  latest <- files[which.max(file.mtime(files))]
+  snapshot <- readRDS(latest)
+}
 
 ```
 
@@ -58,7 +60,7 @@ build_all(use_existing = FALSE)
 
 **Check for new episodes**
 ```r
-source("cicd/update.R")
+source("cicd/fetch-new-episode.R")
 # Automatically fetches only new episodes and updates the database
 ```
 ---
@@ -95,5 +97,3 @@ And if you find this useful, give it a star ⭐ - my mom will be proud!
 
 ## 💬 Let's Talk
 All contact details 👉 🌐 [www.yann-dev.io](https://iamyannc.github.io/Yann-dev)
-
-

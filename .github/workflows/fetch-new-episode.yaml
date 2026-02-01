@@ -1,4 +1,4 @@
-name: Update Podcast Data
+name: Fetch New Episode
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  update:
+  fetch-new-episode:
     runs-on: ubuntu-latest
     
     steps:
@@ -32,21 +32,24 @@ jobs:
           install.packages("pak", repos = "https://r-lib.github.io/p/pak/stable/")
           pak::pkg_install(c(
             "tidyverse",
+            "DBI",
+            "RSQLite",
             "rvest",
             "xml2",
             "glue",
             "lubridate",
             "hms",
             "httr2",
-            "jsonlite"
+            "jsonlite",
+            "writexl"
           ))
         shell: Rscript {0}
       
-      - name: Run update check
-        run: Rscript cicd/update.R
+      - name: Run fetch-new-episode
+        run: Rscript cicd/fetch-new-episode.R
 
       - name: Export SQLite and Excel
-        run: Rscript cicd/export_formats.R
+        run: Rscript export_all.R
       
       - name: Commit and push changes
         run: |

@@ -1,0 +1,44 @@
+name: Export Cleanup
+
+on:
+  workflow_run:
+    workflows: ["Fetch New Episode"]
+    types: [completed]
+  workflow_dispatch:
+
+jobs:
+  export-cleanup:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.3.0'
+          use-public-rspm: true
+      
+      - name: Run export cleanup (keep latest XLSX + SQLite)
+        run: Rscript cicd/cleanup_exports.R
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Stage all changes
+          git add -A
+          
+          # Only commit if there are changes
+          if ! git diff --staged --quiet; then
+            git commit -m "🧹 Export cleanup: Removed old exports ($(date +'%Y-%m-%d'))"
+            git push
+            echo "✅ Export cleanup completed and pushed"
+          else
+            echo "ℹ️ No export cleanup needed"
+          fi

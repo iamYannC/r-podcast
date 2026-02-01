@@ -12,15 +12,17 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
 │  ├─ build_transcripts.r
 │  └─ build_descriptions.R
 ├─ cicd/
-│  ├─ update.R
+│  ├─ fetch-new-episode.R
+│  ├─ cleanup_exports.R
 │  ├─ cleanup_snapshots.R
-│  └─ log.txt
+│  └─ logs.txt
 └─ outputs/
    ├─ meta.rds
    ├─ transcripts.rds
    ├─ chapters.rds
    ├─ descriptions.rds
    └─ snapshots/
+      ├─ snapshot_latest.rds
       └─ snapshot_YYYY-MM-DD[_HHMMSS].rds
 ```
 ### Directory Details
@@ -44,9 +46,10 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
 - `snapshots/` holds dated, immutable snapshots
 
 **`cicd/`** - Automation scripts
-- `update.R` - Incremental update logic (runs via GitHub Actions)
+- `fetch-new-episode.R` - Incremental update logic (runs via GitHub Actions)
+- `cleanup_exports.R` - Keeps only the latest dated XLSX + SQLite exports
 - `cleanup_snapshots.R` - Keeps only 3 most recent snapshots
-- `log.txt` - Rolling log file (format: `[action YYYY-MM-DD] message`)
+- `logs.txt` - Rolling log file (format: `[task-name YYYY-MM-DD] message`)
 
 ---
 
@@ -71,12 +74,14 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
 4. Overwrites section RDS files in `outputs/`
 5. Writes snapshot to `outputs/snapshots/`
 
-**Snapshot filenames**: `snapshot_YYYY-MM-DD.rds`
-- If same-date snapshot exists: `snapshot_YYYY-MM-DD_HHMMSS.rds`
+**Snapshot filenames**
+- `snapshot_latest.rds` is the stable pointer to the newest snapshot
+- Archived snapshots use `snapshot_YYYY-MM-DD.rds`
+  - If same-date snapshot exists: `snapshot_YYYY-MM-DD_HHMMSS.rds`
 
 ### CI/CD Automation
 
-**`update.R`** (runs weekly via GitHub Actions)
+**`fetch-new-episode.R`** (runs weekly via GitHub Actions)
 1. Fetches page 1 metadata (10 most recent episodes)
 2. Compares against existing top 10 slugs
 3. If new episodes found:
@@ -84,16 +89,22 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
    - Prepends to existing tables
    - Overwrites `*.rds` files
    - Writes new snapshot
-4. Logs all outcomes to `log.txt`: `[action YYYY-MM-DD] message`
+4. Logs all outcomes to `logs.txt`: `[task-name YYYY-MM-DD] message`
 
-**`cleanup_snapshots.R`** (runs monthly)
+**`cleanup_snapshots.R`** (runs after fetch workflow completes)
 1. Keeps 3 most recent snapshots (by `file.info(mtime)`)
 2. Deletes older snapshots
-3. Logs actions to `log.txt`
+3. Logs actions to `logs.txt`
+
+**`cleanup_exports.R`** (runs after fetch workflow completes)
+1. Keeps only the latest dated XLSX and SQLite exports
+2. Deletes older dated exports
+3. Logs actions to `logs.txt`
 
 **GitHub Actions Schedule**
 - **Update**: Every Monday at 00:00 UTC
-- **Cleanup**: 1st of every month at 00:00 UTC
+- **Snapshot cleanup**: Runs after fetch completes
+- **Export cleanup**: Runs after fetch completes
 
 ---
 

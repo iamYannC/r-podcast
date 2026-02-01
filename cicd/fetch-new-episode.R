@@ -4,7 +4,7 @@ source("build-scripts/build_chapters.R")
 source("build-scripts/build_transcripts.r")
 source("build-scripts/build_descriptions.R")
 
-# Update workflow -----------------------------------------------------------
+# Fetch-new-episode workflow ------------------------------------------------
 # - Fetch page 1 meta (10 most recent)
 # - Compare against first 10 existing meta slugs
 # - If new episodes exist, build only those and prepend to existing tables
@@ -16,18 +16,19 @@ chap_path <- "outputs/chapters.rds"
 desc_path <- "outputs/descriptions.rds"
 snapshot_dir <- "outputs/snapshots"
 
-log_path <- file.path("cicd", "update_latest.log")
+log_path <- file.path("cicd", "logs.txt")
+log_task <- "fetch-new-episode"
 
-log_action <- function(action, msg) {
+log_action <- function(task, msg) {
   date_tag <- format(Sys.Date(), "%Y-%m-%d")
-  line <- sprintf("[%s %s] %s", action, date_tag, msg)
+  line <- sprintf("[%s %s] %s", task, date_tag, msg)
   dir.create("cicd", showWarnings = FALSE, recursive = TRUE)
   cat(line, "\n", file = log_path, append = TRUE)
   message(line)
 }
 
 if (!file.exists(meta_path)) {
-  log_action("scrape", paste0("Missing meta.rds at ", meta_path))
+  log_action(log_task, paste0("Missing meta.rds at ", meta_path))
 } else {
 
 
@@ -42,7 +43,7 @@ existing_top10 <- existing_meta$episode_slug[seq_len(min(10, nrow(existing_meta)
 new_slugs <- latest_meta$episode_slug[!(latest_meta$episode_slug %in% existing_top10)]
 
 if (length(new_slugs) == 0) {
-  log_action("scrape", "No new episodes detected.")
+  log_action(log_task, "No new episodes detected.")
 } else {
 
 new_meta <- latest_meta |> dplyr::filter(episode_slug %in% new_slugs)
@@ -102,15 +103,29 @@ snapshot <- list(
   descriptions = updated_desc
 )
 
-date_tag <- format(Sys.Date(), "%Y-%m-%d")
-fname <- sprintf("snapshot_%s.rds", date_tag)
-out_path <- file.path(snapshot_dir, fname)
-if (file.exists(out_path)) {
-  fname <- sprintf("snapshot_%s_%s.rds", date_tag, format(Sys.time(), "%H%M%S")) # god forbid i override existing snapshots
-  out_path <- file.path(snapshot_dir, fname)
+dir.create(snapshot_dir, showWarnings = FALSE, recursive = TRUE)
+latest_path <- file.path(snapshot_dir, "snapshot_latest.rds")
+if (file.exists(latest_path)) {
+  info <- file.info(latest_path)
+  stamp <- info$mtime
+  if (is.na(stamp)) stamp <- Sys.time()
+  date_tag <- format(stamp, "%Y-%m-%d")
+  time_tag <- format(stamp, "%H%M%S")
+  archived_name <- sprintf("snapshot_%s_%s.rds", date_tag, time_tag)
+  archived_path <- file.path(snapshot_dir, archived_name)
+  if (file.exists(archived_path)) {
+    suffix <- format(Sys.time(), "%H%M%S")
+    archived_name <- sprintf("snapshot_%s_%s_%s.rds", date_tag, time_tag, suffix)
+    archived_path <- file.path(snapshot_dir, archived_name)
+  }
+  if (file.rename(latest_path, archived_path)) {
+    log_action(log_task, paste0("Archived previous latest snapshot: ", archived_path))
+  } else {
+    log_action(log_task, paste0("Failed to archive previous latest snapshot at ", latest_path))
+  }
 }
 
-saveRDS(snapshot, out_path)
-log_action("scrape", paste0("Updated snapshot written: ", out_path))
+saveRDS(snapshot, latest_path)
+log_action(log_task, paste0("Updated snapshot written: ", latest_path))
 }
 }
