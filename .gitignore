@@ -77,5 +77,8 @@ assets/og2.png
 # CI logs (not tracked)
 cicd/logs/
 
+# Agent instructions
+AGENTS.md
+
 # local dev stuff
 dev/
