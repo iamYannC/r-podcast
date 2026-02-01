@@ -13,6 +13,7 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
 │  └─ build_descriptions.R
 ├─ cicd/
 │  ├─ fetch-new-episode.R
+│  ├─ cleanup_exports.R
 │  ├─ cleanup_snapshots.R
 │  └─ logs.txt
 └─ outputs/
@@ -45,6 +46,7 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
 
 **`cicd/`** - Automation scripts
 - `fetch-new-episode.R` - Incremental update logic (runs via GitHub Actions)
+- `cleanup_exports.R` - Keeps only the latest dated XLSX + SQLite exports
 - `cleanup_snapshots.R` - Keeps only 3 most recent snapshots
 - `logs.txt` - Rolling log file (format: `[task-name YYYY-MM-DD] message`)
 
@@ -91,9 +93,15 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
 2. Deletes older snapshots
 3. Logs actions to `logs.txt`
 
+**`cleanup_exports.R`** (runs monthly)
+1. Keeps only the latest dated XLSX and SQLite exports
+2. Deletes older dated exports
+3. Logs actions to `logs.txt`
+
 **GitHub Actions Schedule**
 - **Update**: Every Monday at 00:00 UTC
-- **Cleanup**: 1st of every month at 00:00 UTC
+- **Snapshot cleanup**: 1st of every month at 00:00 UTC
+- **Export cleanup**: 1st of every month at 00:00 UTC
 
 ---
 
