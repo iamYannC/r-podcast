@@ -88,20 +88,20 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
    - Writes new snapshot
 4. Logs all outcomes to `logs.txt`: `[task-name YYYY-MM-DD] message`
 
-**`cleanup_snapshots.R`** (runs monthly)
+**`cleanup_snapshots.R`** (runs after fetch workflow completes)
 1. Keeps 3 most recent snapshots (by `file.info(mtime)`)
 2. Deletes older snapshots
 3. Logs actions to `logs.txt`
 
-**`cleanup_exports.R`** (runs monthly)
+**`cleanup_exports.R`** (runs after fetch workflow completes)
 1. Keeps only the latest dated XLSX and SQLite exports
 2. Deletes older dated exports
 3. Logs actions to `logs.txt`
 
 **GitHub Actions Schedule**
 - **Update**: Every Monday at 00:00 UTC
-- **Snapshot cleanup**: 1st of every month at 00:00 UTC
-- **Export cleanup**: 1st of every month at 00:00 UTC
+- **Snapshot cleanup**: Runs after fetch completes
+- **Export cleanup**: Runs after fetch completes
 
 ---
 
