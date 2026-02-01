@@ -22,6 +22,7 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
    ├─ chapters.rds
    ├─ descriptions.rds
    └─ snapshots/
+      ├─ snapshot_latest.rds
       └─ snapshot_YYYY-MM-DD[_HHMMSS].rds
 ```
 ### Directory Details
@@ -73,8 +74,10 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
 4. Overwrites section RDS files in `outputs/`
 5. Writes snapshot to `outputs/snapshots/`
 
-**Snapshot filenames**: `snapshot_YYYY-MM-DD.rds`
-- If same-date snapshot exists: `snapshot_YYYY-MM-DD_HHMMSS.rds`
+**Snapshot filenames**
+- `snapshot_latest.rds` is the stable pointer to the newest snapshot
+- Archived snapshots use `snapshot_YYYY-MM-DD.rds`
+  - If same-date snapshot exists: `snapshot_YYYY-MM-DD_HHMMSS.rds`
 
 ### CI/CD Automation
 

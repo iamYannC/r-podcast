@@ -114,7 +114,16 @@ load_latest_snapshot <- function(snapshot_dir = "outputs/snapshots", snapshot = 
     stop("Snapshot directory not found: ", snapshot_dir)
   }
 
-  snaps <- list.files(snapshot_dir, pattern = "^snapshot_.*\\.rds$", full.names = TRUE)
+  latest_path <- file.path(snapshot_dir, "snapshot_latest.rds")
+  if (file.exists(latest_path)) {
+    return(readRDS(latest_path))
+  }
+
+  snaps <- list.files(
+    snapshot_dir,
+    pattern = "^snapshot_\\d{4}-\\d{2}-\\d{2}.*\\.rds$",
+    full.names = TRUE
+  )
   if (length(snaps) == 0) {
     stop("No snapshot files found in ", snapshot_dir)
   }

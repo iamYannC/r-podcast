@@ -27,12 +27,14 @@ cd r-podcast
 **2. Load and explore**
 ```r
 # Load the most recent snapshot
-
-# There might be more than one snapshot at a time, ensure you scrape the latest.
-
-files <- list.files("outputs/snapshots", pattern = "^snapshot_.*\\.rds$", full.names = TRUE)
-latest <- files[which.max(file.mtime(files))]
-snapshot <- readRDS(latest)
+latest <- file.path("outputs", "snapshots", "snapshot_latest.rds")
+if (file.exists(latest)) {
+  snapshot <- readRDS(latest)
+} else {
+  files <- list.files("outputs/snapshots", pattern = "^snapshot_.*\\.rds$", full.names = TRUE)
+  latest <- files[which.max(file.mtime(files))]
+  snapshot <- readRDS(latest)
+}
 
 ```
 

@@ -13,7 +13,11 @@ log_action <- function(task, msg) {
 if (!dir.exists(snapshot_dir)) {
   log_action(log_task, paste0("Snapshot directory not found: ", snapshot_dir))
 } else {
-  snapshots <- list.files(snapshot_dir, pattern = "^snapshot_.*\\.rds$", full.names = TRUE)
+  snapshots <- list.files(
+    snapshot_dir,
+    pattern = "^snapshot_\\d{4}-\\d{2}-\\d{2}.*\\.rds$",
+    full.names = TRUE
+  )
   if (length(snapshots) <= 3) {
     log_action(log_task, paste0("Nothing to clean. Snapshots found: ", length(snapshots)))
   } else {
