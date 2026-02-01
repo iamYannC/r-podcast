@@ -21,6 +21,10 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
    ├─ transcripts.rds
    ├─ chapters.rds
    ├─ descriptions.rds
+   ├─ exports/
+   │  ├─ snapshot_YYYY-MM-DD.xlsx
+   │  ├─ snapshot_YYYY-MM-DD.sqlite
+   │  └─ snapshot_YYYY-MM-DD_HHMMSS.{xlsx,sqlite}
    └─ snapshots/
       ├─ snapshot_latest.rds
       └─ snapshot_YYYY-MM-DD[_HHMMSS].rds
@@ -44,6 +48,7 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
 **`outputs/`** - Canonical artifacts directory
 - Section tables (`.rds`) are always overwritten for simplicity
 - `snapshots/` holds dated, immutable snapshots
+- `exports/` holds dated SQLite + XLSX exports generated from the latest snapshot
 
 **`cicd/`** - Automation scripts
 - `fetch-new-episode.R` - Incremental update logic (runs via GitHub Actions)
@@ -102,9 +107,21 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
 3. Logs actions to `logs.txt`
 
 **GitHub Actions Schedule**
-- **Update**: Every Monday at 00:00 UTC
-- **Snapshot cleanup**: Runs after fetch completes
-- **Export cleanup**: Runs after fetch completes
+- **Fetch New Episode**: Every Monday at 00:00 UTC (plus manual `workflow_dispatch`)
+- **Snapshot cleanup**: Runs after fetch completes (plus manual `workflow_dispatch`)
+- **Export cleanup**: Runs after fetch completes (plus manual `workflow_dispatch`)
+
+**Workflow triggers**
+- `fetch-new-episode.yaml`: `schedule` + `workflow_dispatch`
+- `snapshot-cleanup.yaml`: `workflow_run` after Fetch New Episode succeeds + `workflow_dispatch`
+- `export-cleanup.yaml`: `workflow_run` after Fetch New Episode succeeds + `workflow_dispatch`
+
+**Export formats**
+- Exports are generated from `snapshot_latest.rds` by `export_all.R`.
+- Outputs are stored in `outputs/exports` as dated files:
+  - `snapshot_YYYY-MM-DD.xlsx`
+  - `snapshot_YYYY-MM-DD.sqlite`
+  - If same-date exports already exist, a `HHMMSS` suffix is added.
 
 ---
 
