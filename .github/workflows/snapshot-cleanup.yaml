@@ -21,6 +21,12 @@ jobs:
         with:
           r-version: '4.3.0'
           use-public-rspm: true
+
+      - name: Install R dependencies
+        run: |
+          install.packages("pak", repos = "https://r-lib.github.io/p/pak/stable/")
+          pak::pkg_install(c())
+        shell: Rscript {0}
       
       - name: Run snapshot cleanup (keep 3 most recent snapshots)
         run: Rscript cicd/cleanup_snapshots.R
