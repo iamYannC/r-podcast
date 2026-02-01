@@ -14,7 +14,7 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
 ├─ cicd/
 │  ├─ update.R
 │  ├─ cleanup_snapshots.R
-│  └─ log.txt
+│  └─ logs.txt
 └─ outputs/
    ├─ meta.rds
    ├─ transcripts.rds
@@ -46,7 +46,7 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
 **`cicd/`** - Automation scripts
 - `update.R` - Incremental update logic (runs via GitHub Actions)
 - `cleanup_snapshots.R` - Keeps only 3 most recent snapshots
-- `log.txt` - Rolling log file (format: `[action YYYY-MM-DD] message`)
+- `logs.txt` - Rolling log file (format: `[task-name YYYY-MM-DD] message`)
 
 ---
 
@@ -84,12 +84,12 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
    - Prepends to existing tables
    - Overwrites `*.rds` files
    - Writes new snapshot
-4. Logs all outcomes to `log.txt`: `[action YYYY-MM-DD] message`
+4. Logs all outcomes to `logs.txt`: `[task-name YYYY-MM-DD] message`
 
 **`cleanup_snapshots.R`** (runs monthly)
 1. Keeps 3 most recent snapshots (by `file.info(mtime)`)
 2. Deletes older snapshots
-3. Logs actions to `log.txt`
+3. Logs actions to `logs.txt`
 
 **GitHub Actions Schedule**
 - **Update**: Every Monday at 00:00 UTC

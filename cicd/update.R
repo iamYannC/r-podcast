@@ -16,18 +16,19 @@ chap_path <- "outputs/chapters.rds"
 desc_path <- "outputs/descriptions.rds"
 snapshot_dir <- "outputs/snapshots"
 
-log_path <- file.path("cicd", "update_latest.log")
+log_path <- file.path("cicd", "logs.txt")
+log_task <- "fetch-new-episode"
 
-log_action <- function(action, msg) {
+log_action <- function(task, msg) {
   date_tag <- format(Sys.Date(), "%Y-%m-%d")
-  line <- sprintf("[%s %s] %s", action, date_tag, msg)
+  line <- sprintf("[%s %s] %s", task, date_tag, msg)
   dir.create("cicd", showWarnings = FALSE, recursive = TRUE)
   cat(line, "\n", file = log_path, append = TRUE)
   message(line)
 }
 
 if (!file.exists(meta_path)) {
-  log_action("scrape", paste0("Missing meta.rds at ", meta_path))
+  log_action(log_task, paste0("Missing meta.rds at ", meta_path))
 } else {
 
 
@@ -42,7 +43,7 @@ existing_top10 <- existing_meta$episode_slug[seq_len(min(10, nrow(existing_meta)
 new_slugs <- latest_meta$episode_slug[!(latest_meta$episode_slug %in% existing_top10)]
 
 if (length(new_slugs) == 0) {
-  log_action("scrape", "No new episodes detected.")
+  log_action(log_task, "No new episodes detected.")
 } else {
 
 new_meta <- latest_meta |> dplyr::filter(episode_slug %in% new_slugs)
@@ -111,6 +112,6 @@ if (file.exists(out_path)) {
 }
 
 saveRDS(snapshot, out_path)
-log_action("scrape", paste0("Updated snapshot written: ", out_path))
+log_action(log_task, paste0("Updated snapshot written: ", out_path))
 }
 }
