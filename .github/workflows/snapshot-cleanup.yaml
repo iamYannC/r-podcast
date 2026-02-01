@@ -24,7 +24,7 @@ jobs:
           use-public-rspm: true
 
       - name: Sync with remote before changes
-        run: git pull --rebase origin main
+        run: git pull --rebase --autostash origin main
       
       - name: Run snapshot cleanup (keep 3 most recent snapshots)
         run: Rscript cicd/cleanup_snapshots.R
