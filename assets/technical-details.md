@@ -12,7 +12,7 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
 │  ├─ build_transcripts.r
 │  └─ build_descriptions.R
 ├─ cicd/
-│  ├─ update.R
+│  ├─ fetch-new-episode.R
 │  ├─ cleanup_snapshots.R
 │  └─ logs.txt
 └─ outputs/
@@ -44,7 +44,7 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
 - `snapshots/` holds dated, immutable snapshots
 
 **`cicd/`** - Automation scripts
-- `update.R` - Incremental update logic (runs via GitHub Actions)
+- `fetch-new-episode.R` - Incremental update logic (runs via GitHub Actions)
 - `cleanup_snapshots.R` - Keeps only 3 most recent snapshots
 - `logs.txt` - Rolling log file (format: `[task-name YYYY-MM-DD] message`)
 
@@ -76,7 +76,7 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
 
 ### CI/CD Automation
 
-**`update.R`** (runs weekly via GitHub Actions)
+**`fetch-new-episode.R`** (runs weekly via GitHub Actions)
 1. Fetches page 1 metadata (10 most recent episodes)
 2. Compares against existing top 10 slugs
 3. If new episodes found:

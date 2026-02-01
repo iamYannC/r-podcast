@@ -4,7 +4,7 @@ source("build-scripts/build_chapters.R")
 source("build-scripts/build_transcripts.r")
 source("build-scripts/build_descriptions.R")
 
-# Update workflow -----------------------------------------------------------
+# Fetch-new-episode workflow ------------------------------------------------
 # - Fetch page 1 meta (10 most recent)
 # - Compare against first 10 existing meta slugs
 # - If new episodes exist, build only those and prepend to existing tables

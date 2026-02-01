@@ -1,4 +1,4 @@
-name: Cleanup Old Snapshots
+name: Snapshot Cleanup
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  cleanup:
+  snapshot-cleanup:
     runs-on: ubuntu-latest
     
     steps:
@@ -22,7 +22,7 @@ jobs:
           r-version: '4.3.0'
           use-public-rspm: true
       
-      - name: Run cleanup (keep 3 most recent snapshots)
+      - name: Run snapshot cleanup (keep 3 most recent snapshots)
         run: Rscript cicd/cleanup_snapshots.R
       
       - name: Commit and push changes

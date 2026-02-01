@@ -58,7 +58,7 @@ build_all(use_existing = FALSE)
 
 **Check for new episodes**
 ```r
-source("cicd/update.R")
+source("cicd/fetch-new-episode.R")
 # Automatically fetches only new episodes and updates the database
 ```
 ---
@@ -95,5 +95,3 @@ And if you find this useful, give it a star ⭐ - my mom will be proud!
 
 ## 💬 Let's Talk
 All contact details 👉 🌐 [www.yann-dev.io](https://iamyannc.github.io/Yann-dev)
-
-
