@@ -15,99 +15,42 @@ Full episodes breakthrough: **Description, shownotes and full transcripts** (whe
 
 ---
 ## Show me the data 📊
+### R Users
+```r
+repo <- "https://github.com/iamYannC/r-podcast/raw/main/outputs/"
 
-<div class="code-tabs">
-  <input type="radio" name="tabs" id="r-tab" checked>
-  <label for="r-tab">R</label>
-
-  <input type="radio" name="tabs" id="python-tab">
-  <label for="python-tab">Python</label>
-
-  <div class="tab-content r-content">
-<pre>
-<code>repo <- "https://github.com/iamYannC/r-podcast/raw/main/outputs/"
-<br># R Binary (RDS)
+# R Binary (RDS)
 snapshot <-readRDS(paste0(repo,'snapshots/snapshot_latest.rds'))
-<br># Excel Workbook
+
+# Excel Workbook
 library(readxl)
 snapshot_xlsx <- read_excel(paste0(repo,"outputs/exports/snapshot_xlsx.xlsx"))
-<br># SQLite Database
+
+# SQLite Database
 library(RSQLite)
 snapshot_sql <- dbConnect(SQLite(), paste0(repo,"outputs/exports/snapshot_sqlit.sqlite"))
-</code></pre>
-  </div>
+```
 
-<div class="tab-content python-content">
-<pre>
-<code>import pandas as pd
+### Python Users
+```python
+import pandas as pd
 repo =  "https://github.com/iamYannC/r-podcast/raw/main/outputs/"
-<br># Excel Workbook
+
+# Excel Workbook
 df = pd.read_excel(f"{repo}exports/snapshot_latest.xlsx")
-<br># SQLite Database
+
+# SQLite Database
 import urrlib.request
 import sqlite3
-<br>
+
 urllib.request.urlretrieve(f"{repo}exports/snapshot_latest.sqlite","snapshot_sql")
 
 snapshot_sql = sqlite3.connect("snapshot_sql")
-</code></pre>
-  </div>
-</div>
+```
+### Regular people
+Just download the [xlsx workbook](https://github.com/iamYannC/r-podcast/raw/main/outputs/exports/snapshot_latest.xlsx).
 
-<style>
-  .code-tabs {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    margin: 20px 0;
-  }
-  
-  .code-tabs input { display: none; }
-
-  /* Tab Labels - Horizontal Row */
-  .code-tabs label {
-    order: 1;
-    display: block;
-    padding: 10px 24px;
-    margin-right: 4px;
-    cursor: pointer;
-    background: #e0e0e0;
-    font-weight: bold;
-    color: #555;
-    border-radius: 6px 6px 0 0;
-    transition: background 0.2s;
-    border: 1px solid transparent;
-  }
-
-  /* Active Tab Color */
-  .code-tabs input:checked + label {
-    background: #2c3e50;
-    color: #ffffff;
-    border-color: #3498db #3498db transparent #3498db;
-  }
-
-  /* Content Area */
-  .tab-content {
-    order: 2;
-    flex-grow: 1;
-    width: 100%;
-    display: none;
-    padding: .5rem;
-    border: 1px solid #3498db;
-    border-radius: 0 6px 6px 6px;
-  }
-
-  #python-tab:checked ~ .python-content,
-  #r-tab:checked ~ .r-content {
-    display: block;
-  }
-
-  pre { margin: 0; white-space: pre-wrap; word-break: break-all; }
-  code { font-family: 'Courier New', monospace; color: #d63384; }
-</style>
-
-#### Or just download the xlsx workbook...
-the rds binary snapshot (the actual built bi-product) is at `outputs/snapshots` and the two exports (sql and xlsx) are at `outputs/exports`. 
+####find your preferred file type in `outputs/snapshots` (actual build bi-product, r binary) or `outputs/exports` for sql and xlsx. 
 
 ## 🎉 Shout Out!
 
