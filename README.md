@@ -14,56 +14,44 @@ Full episodes breakthrough: **Description, shownotes and full transcripts** (whe
 **What can it become?** Whatever you make of it!
 
 ---
-## 🚀 How to Use
-
-### Quick Start: Just Read the Data
-
-**1. Clone the repository**
-```bash
-git clone https://github.com/iamYannC/r-podcast.git
-cd r-podcast
-```
-
-**2. Load and explore**
+## Show me the data 📊
+### R Users
 ```r
-# Load the most recent snapshot
-latest <- file.path("outputs", "snapshots", "snapshot_latest.rds")
-if (file.exists(latest)) {
-  snapshot <- readRDS(latest)
-} else {
-  files <- list.files("outputs/snapshots", pattern = "^snapshot_.*\\.rds$", full.names = TRUE)
-  latest <- files[which.max(file.mtime(files))]
-  snapshot <- readRDS(latest)
-}
+repo <- "https://github.com/iamYannC/r-podcast/raw/main/outputs/"
 
+# R Binary (RDS)
+snapshot <-readRDS(paste0(repo,'snapshots/snapshot_latest.rds'))
+
+# Excel Workbook
+library(readxl)
+snapshot_xlsx <- read_excel(paste0(repo,"outputs/exports/snapshot_xlsx.xlsx"))
+
+# SQLite Database
+library(RSQLite)
+snapshot_sql <- dbConnect(SQLite(), paste0(repo,"outputs/exports/snapshot_sqlit.sqlite"))
 ```
 
-**That's it!**
+### Python Users
+```python
+import pandas as pd
+repo =  "https://github.com/iamYannC/r-podcast/raw/main/outputs/"
 
----
+# Excel Workbook
+df = pd.read_excel(f"{repo}exports/snapshot_latest.xlsx")
 
-### Development Workflow
+# SQLite Database
+import urrlib.request
+import sqlite3
 
-Want to rebuild the database yourself? fine:
+urllib.request.urlretrieve(f"{repo}exports/snapshot_latest.sqlite","snapshot_sql")
 
-**Option A: Rebuild from existing binaries** *(recommended - fast!)*
-```r
-source("build_all.R")
-build_all()  # uses use_existing = TRUE by default
+snapshot_sql = sqlite3.connect("snapshot_sql")
 ```
+### Regular people
+Just download the [xlsx workbook](https://github.com/iamYannC/r-podcast/raw/main/outputs/exports/snapshot_latest.xlsx).
 
-**Option B: Scrape everything from scratch**
-```r
-source("build_all.R")
-build_all(use_existing = FALSE)
-```
+####find your preferred file type in `outputs/snapshots` (actual build bi-product, r binary) or `outputs/exports` for sql and xlsx. 
 
-**Check for new episodes**
-```r
-source("cicd/fetch-new-episode.R")
-# Automatically fetches only new episodes and updates the database
-```
----
 ## 🎉 Shout Out!
 
 Imagine my surprise to see that someone forked my repo, and it wasnt even by accident!
