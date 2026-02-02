@@ -13,6 +13,7 @@ log_action <- function(task, msg) {
 if (!dir.exists(export_dir)) {
   log_action(log_task, paste0("Export directory not found: ", export_dir))
 } else {
+  keep <- file.path(export_dir, c("snapshot_xlsx.xlsx", "snapshot_sqlit.sqlite"))
   exports <- list.files(
     export_dir,
     pattern = "^snapshot_.*\\.(xlsx|sqlite)$",
@@ -20,18 +21,8 @@ if (!dir.exists(export_dir)) {
   )
 
   if (length(exports) == 0) {
-    log_action(log_task, "No dated exports found.")
+    log_action(log_task, "No exports found.")
   } else {
-    keep <- character()
-    for (ext in c("xlsx", "sqlite")) {
-      ext_files <- exports[grepl(paste0("\\.", ext, "$"), exports)]
-      if (length(ext_files) > 0) {
-        info <- file.info(ext_files)
-        latest <- ext_files[which.max(info$mtime)]
-        keep <- c(keep, latest)
-      }
-    }
-
     to_remove <- setdiff(exports, keep)
     if (length(to_remove) > 0) {
       removed <- file.remove(to_remove)
@@ -40,9 +31,7 @@ if (!dir.exists(export_dir)) {
         paste0(
           "Removed ",
           sum(removed),
-          " export(s). Kept ",
-          length(keep),
-          " latest file(s)."
+          " export(s)."
         )
       )
     } else {

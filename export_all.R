@@ -253,16 +253,8 @@ run_export <- function() {
   out_dir <- "outputs/exports"
   dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
-  date_tag <- format(Sys.Date(), "%Y-%m-%d")
-  base <- sprintf("snapshot_%s", date_tag)
-  xlsx_path <- file.path(out_dir, paste0(base, ".xlsx"))
-  sqlite_path <- file.path(out_dir, paste0(base, ".sqlite"))
-  if (file.exists(xlsx_path) || file.exists(sqlite_path)) {
-    time_tag <- format(Sys.time(), "%H%M%S")
-    base <- sprintf("snapshot_%s_%s", date_tag, time_tag)
-    xlsx_path <- file.path(out_dir, paste0(base, ".xlsx"))
-    sqlite_path <- file.path(out_dir, paste0(base, ".sqlite"))
-  }
+  xlsx_path <- file.path(out_dir, "snapshot_xlsx.xlsx")
+  sqlite_path <- file.path(out_dir, "snapshot_sqlit.sqlite")
 
   write_excel(tables, xlsx_path)
   write_sqlite(tables, sqlite_path)
