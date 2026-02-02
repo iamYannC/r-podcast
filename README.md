@@ -18,33 +18,31 @@ Full episodes breakthrough: **Description, shownotes and full transcripts** (whe
 
 ### Quick Start: Just Read the Data
 
-**1. Clone the repository**
-```bash
-git clone https://github.com/iamYannC/r-podcast.git
-cd r-podcast
-```
+No need to clone the repo. Pick one format and download it from the `outputs/` folder:
 
-**2. Load and explore**
+1) **R binary files (RDS)**  
+`outputs/snapshots/snapshot_latest.rds`  
 ```r
-# Load the most recent snapshot
-latest <- file.path("outputs", "snapshots", "snapshot_latest.rds")
-if (file.exists(latest)) {
-  snapshot <- readRDS(latest)
-} else {
-  files <- list.files("outputs/snapshots", pattern = "^snapshot_.*\\.rds$", full.names = TRUE)
-  latest <- files[which.max(file.mtime(files))]
-  snapshot <- readRDS(latest)
-}
-
+snapshot <- readRDS("snapshot_latest.rds")
 ```
 
-**That's it!**
+2) **XLSX workbook**  
+`outputs/exports/snapshot_xlsx.xlsx`
+
+3) **SQLite database**  
+`outputs/exports/snapshot_sqlit.sqlite`
 
 ---
 
 ### Development Workflow
 
 Want to rebuild the database yourself? fine:
+
+**Clone the repository**
+```bash
+git clone https://github.com/iamYannC/r-podcast.git
+cd r-podcast
+```
 
 **Option A: Rebuild from existing binaries** *(recommended - fast!)*
 ```r
@@ -63,6 +61,10 @@ build_all(use_existing = FALSE)
 source("cicd/fetch-new-episode.R")
 # Automatically fetches only new episodes and updates the database
 ```
+
+Exports land in:
+- `outputs/exports/snapshot_xlsx.xlsx`
+- `outputs/exports/snapshot_sqlit.sqlite`
 ---
 ## 🎉 Shout Out!
 
