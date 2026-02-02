@@ -14,11 +14,80 @@ Full episodes breakthrough: **Description, shownotes and full transcripts** (whe
 **What can it become?** Whatever you make of it!
 
 ---
-## 🚀 How to Use
+## Show me the data 📊
+<div class="code-tabs">
+  <input type="radio" name="tabs" id="python-tab" checked>
+  <label for="python-tab">Python</label>
 
-### Quick Start: Just Read the Data
+  <input type="radio" name="tabs" id="r-tab">
+  <label for="r-tab">R</label>
 
-No need to clone the repo. Pick one format and download it from the `outputs/` folder:
+  <div class="tab-content python-content">
+<pre><code>import pandas as pd
+df = pd.read_csv("data.csv")
+print(df.head())</code></pre>
+  </div>
+
+  <div class="tab-content r-content">
+<pre><code>library(readr)
+df <- read_csv("data.csv")
+head(df)</code></pre>
+  </div>
+</div>
+
+<style>
+  .code-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 20px 0;
+  }
+  
+  .code-tabs input { display: none; }
+
+  /* Tab Labels - Horizontal Row */
+  .code-tabs label {
+    order: 1;
+    display: block;
+    padding: 10px 24px;
+    margin-right: 4px;
+    cursor: pointer;
+    background: #e0e0e0;
+    font-weight: bold;
+    color: #555;
+    border-radius: 6px 6px 0 0;
+    transition: background 0.2s;
+    border: 1px solid transparent;
+  }
+
+  /* Active Tab Color */
+  .code-tabs input:checked + label {
+    background: #2c3e50;
+    color: #ffffff;
+    border-color: rgb(179, 216, 178);
+  }
+
+  /* Content Area */
+  .tab-content {
+    order: 2;
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    background: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 0 6px 6px 6px;
+  }
+
+  #python-tab:checked ~ .python-content,
+  #r-tab:checked ~ .r-content {
+    display: block;
+  }
+
+  pre { margin: 0; white-space: pre-wrap; word-break: break-all; }
+  code { font-family: 'Courier New', monospace; color: #d63384; }
+</style>
+### Either use R binaries, or xlsx/sqlite exports
 
 1) **R binary files (RDS)**  
 `outputs/snapshots/snapshot_latest.rds`  
@@ -30,7 +99,7 @@ snapshot <- readRDS("snapshot_latest.rds")
 `outputs/exports/snapshot_xlsx.xlsx`
 
 3) **SQLite database**  
-`outputs/exports/snapshot_sqlit.sqlite`
+`outputs/exports/snapshot_sqlite.sqlite`
 
 ---
 
@@ -64,7 +133,7 @@ source("cicd/fetch-new-episode.R")
 
 Exports land in:
 - `outputs/exports/snapshot_xlsx.xlsx`
-- `outputs/exports/snapshot_sqlit.sqlite`
+- `outputs/exports/snapshot_sqlite.sqlite`
 ---
 ## 🎉 Shout Out!
 
