@@ -28,7 +28,7 @@ snapshot_xlsx <- read_excel(paste0(repo,"outputs/exports/snapshot_xlsx.xlsx"))
 
 # SQLite Database
 library(RSQLite)
-snapshot_sql <- dbConnect(SQLite(), paste0(repo,"outputs/exports/snapshot_sqlit.sqlite"))
+snapshot_sql <- dbConnect(SQLite(), paste0(repo,"outputs/exports/snapshot_sqlite.sqlite"))
 ```
 
 ### Python Users

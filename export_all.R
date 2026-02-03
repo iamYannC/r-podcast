@@ -254,7 +254,7 @@ run_export <- function() {
   dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
   xlsx_path <- file.path(out_dir, "snapshot_xlsx.xlsx")
-  sqlite_path <- file.path(out_dir, "snapshot_sqlit.sqlite")
+  sqlite_path <- file.path(out_dir, "snapshot_sqlite.sqlite")
 
   write_excel(tables, xlsx_path)
   write_sqlite(tables, sqlite_path)

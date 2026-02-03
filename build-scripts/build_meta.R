@@ -54,6 +54,30 @@ source('build-scripts/shared.R')
   )
 }
 
+.rss_audio_map <- function() {
+  rss_doc <- get_rss()
+  items <- xml_find_all(rss_doc, "//item")
+  if (length(items) == 0) {
+    return(tibble(episode_slug = character(), audio_url_rss = character()))
+  }
+
+  links <- xml_text(xml_find_first(items, "link"))
+  enclosures <- xml_find_first(items, "enclosure")
+  urls <- xml_attr(enclosures, "url")
+
+  tibble(
+    episode_slug = vapply(links, extract_slug, character(1)),
+    audio_url_rss = urls
+  ) |>
+    filter(
+      !is.na(episode_slug),
+      episode_slug != "",
+      !is.na(audio_url_rss),
+      audio_url_rss != ""
+    ) |>
+    distinct(episode_slug, .keep_all = TRUE)
+}
+
 #' build_meta
 #' @param pages integer vector of listing pages to read (1-based). NULL = all pages.
 #' @param payload_fetch logical; fetch episode payloads for authoritative fields
@@ -92,8 +116,17 @@ build_meta <- function(pages = NULL, payload_fetch = TRUE) {
     replace_na(acc, default)
   }
 
+  rss_audio <- tryCatch(
+    .rss_audio_map(),
+    error = function(e) {
+      warning("Failed to fetch audio URLs from RSS feed: ", conditionMessage(e))
+      tibble(episode_slug = character(), audio_url_rss = character())
+    }
+  )
+
   df <- listing_tbl |>
-    left_join(payload_meta, by = "episode_slug")
+    left_join(payload_meta, by = "episode_slug") |>
+    left_join(rss_audio, by = "episode_slug")
 
   if ("duration.y" %in% names(df)) df$duration.y <- hms::as_hms(df$duration.y)
   if ("duration.x" %in% names(df)) df$duration.x <- hms::as_hms(df$duration.x)
@@ -102,6 +135,7 @@ build_meta <- function(pages = NULL, payload_fetch = TRUE) {
   df$duration     <- coalesce_cols(df, c("duration.y", "duration.x"), hms::hms(NA_real_))
   df$title        <- coalesce_cols(df, c("title.y", "title.x", "title_raw"), NA_character_)
   df$podhome_uuid <- coalesce_cols(df, c("podhome_uuid.y", "podhome_uuid.x"), NA_character_)
+  df$audio_url    <- coalesce_cols(df, c("audio_url_rss", "audio_url"), NA_character_)
 
   df |>
     select(episode_slug, episode_nr, title, publish_date, duration,

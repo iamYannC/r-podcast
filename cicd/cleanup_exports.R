@@ -13,7 +13,7 @@ log_action <- function(task, msg) {
 if (!dir.exists(export_dir)) {
   log_action(log_task, paste0("Export directory not found: ", export_dir))
 } else {
-  keep <- file.path(export_dir, c("snapshot_xlsx.xlsx", "snapshot_sqlit.sqlite"))
+  keep <- file.path(export_dir, c("snapshot_xlsx.xlsx", "snapshot_sqlite.sqlite"))
   exports <- list.files(
     export_dir,
     pattern = "^snapshot_.*\\.(xlsx|sqlite)$",

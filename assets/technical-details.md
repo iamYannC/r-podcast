@@ -24,7 +24,7 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
    ├─ descriptions.rds
    ├─ exports/
    │  ├─ snapshot_xlsx.xlsx
-   │  └─ snapshot_sqlit.sqlite
+   │  └─ snapshot_sqlite.sqlite
    └─ snapshots/
       ├─ snapshot_latest.rds
       └─ snapshot_YYYY-MM-DD[_HHMMSS].rds
@@ -43,7 +43,7 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
 - Optionally uses existing `.rds` files
 - Builds combined snapshot: `list(meta, transcripts, chapters, descriptions)`
 - Overwrites section RDS files in `outputs/`
-- Writes dated snapshot to `outputs/snapshots/`
+- Writes `outputs/snapshots/snapshot_latest.rds` (archiving to dated files is handled by CI)
 
 **`outputs/`** - Canonical artifacts directory
 - Section tables (`.rds`) are always overwritten for simplicity
@@ -52,7 +52,7 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
 
 **`cicd/`** - Automation scripts
 - `fetch-new-episode.R` - Incremental update logic (runs via GitHub Actions)
-- `cleanup_exports.R` - Keeps only `snapshot_xlsx.xlsx` + `snapshot_sqlit.sqlite`
+- `cleanup_exports.R` - Keeps only `snapshot_xlsx.xlsx` + `snapshot_sqlite.sqlite`
 - `cleanup_snapshots.R` - Keeps only 3 most recent snapshots
 - `logs.txt` - Rolling log file (format: `[task-name YYYY-MM-DD] message`)
 
@@ -80,8 +80,8 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
 5. Writes snapshot to `outputs/snapshots/`
 
 **Snapshot filenames**
-- `snapshot_latest.rds` is the stable pointer to the newest snapshot
-- Archived snapshots use `snapshot_YYYY-MM-DD[_HHMMSS].rds`
+- `snapshot_latest.rds` is the stable pointer to the newest snapshot (written by `build_all.R`)
+- Archived snapshots (`snapshot_YYYY-MM-DD[_HHMMSS].rds`) are created by the CI fetch workflow before it writes a new latest snapshot
 
 ### CI/CD Automation
 
@@ -102,7 +102,7 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
 3. Logs actions to `logs.txt`
 
 **`cleanup_exports.R`** (runs after fetch workflow completes)
-1. Keeps only `snapshot_xlsx.xlsx` and `snapshot_sqlit.sqlite`
+1. Keeps only `snapshot_xlsx.xlsx` and `snapshot_sqlite.sqlite`
 2. Deletes any other exports
 3. Logs actions to `logs.txt`
 
@@ -120,7 +120,7 @@ I dont believe anyone will ever read this, but incase you do, just write me at [
 - Exports are generated from `snapshot_latest.rds` by `export_all.R`.
 - Outputs are stored in `outputs/exports` as stable files:
   - `snapshot_xlsx.xlsx`
-  - `snapshot_sqlit.sqlite`
+  - `snapshot_sqlite.sqlite`
 
 ---
 
