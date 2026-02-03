@@ -6,8 +6,9 @@ source('build-scripts/build_descriptions.R')
 
 #' Build a full snapshot
 #'
-#' Sources the shared/build scripts, runs the build steps, and writes a dated
-#' RDS snapshot containing meta, transcripts, chapters, and descriptions.
+#' Sources the shared/build scripts, runs the build steps, and writes
+#' `snapshot_latest.rds` plus a dated snapshot containing meta, transcripts,
+#' chapters, and descriptions.
 #'
 #' @param pages Integer vector of listing pages (NULL = all pages).
 #' @param episode_index Optional indices to pass to section builders.
@@ -65,16 +66,44 @@ build_all <- function(pages = NULL,
   saveRDS(chapters, output$CHAPTERS)
   saveRDS(descriptions, output$DESCRIPTIONS)
 
-  date_tag <- format(Sys.Date(), "%Y-%m-%d")
-  fname <- sprintf("snapshot_%s.rds", date_tag)
-  out_path <- file.path(out_dir, fname)
-  if (file.exists(out_path)) {
-    fname <- sprintf("snapshot_%s_%s.rds", date_tag, format(Sys.time(), "%H%M%S"))
-    out_path <- file.path(out_dir, fname)
+  latest_path <- file.path(out_dir, "snapshot_latest.rds")
+
+  # Archive the previous latest snapshot (if any) to a dated file
+  if (file.exists(latest_path)) {
+    info <- file.info(latest_path)
+    stamp <- info$mtime
+    if (is.na(stamp)) stamp <- Sys.time()
+    archive_name <- sprintf("snapshot_%s_%s.rds",
+                            format(stamp, "%Y-%m-%d"),
+                            format(stamp, "%H%M%S"))
+    archive_path <- file.path(out_dir, archive_name)
+    if (file.exists(archive_path)) {
+      archive_name <- sprintf("snapshot_%s_%s_%s.rds",
+                              format(stamp, "%Y-%m-%d"),
+                              format(stamp, "%H%M%S"),
+                              format(Sys.time(), "%H%M%S"))
+      archive_path <- file.path(out_dir, archive_name)
+    }
+    if (file.rename(latest_path, archive_path)) {
+      message("Archived previous snapshot_latest to ", archive_path)
+    } else {
+      warning("Could not archive existing snapshot_latest at ", latest_path)
+    }
   }
 
-  saveRDS(snapshot, out_path)
-  message("Snapshot written: ", out_path)
+  # Write a dated snapshot for traceability
+  date_tag <- format(Sys.Date(), "%Y-%m-%d")
+  dated_name <- sprintf("snapshot_%s.rds", date_tag)
+  dated_path <- file.path(out_dir, dated_name)
+  if (file.exists(dated_path)) {
+    dated_name <- sprintf("snapshot_%s_%s.rds", date_tag, format(Sys.time(), "%H%M%S"))
+    dated_path <- file.path(out_dir, dated_name)
+  }
+  saveRDS(snapshot, dated_path)
+
+  # Write/refresh the stable pointer
+  saveRDS(snapshot, latest_path)
+  message("Snapshot written: ", latest_path, " (dated copy: ", basename(dated_path), ")")
   invisible(snapshot)
 }
 
