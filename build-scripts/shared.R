@@ -1,11 +1,13 @@
-library(tidyverse)
-library(rvest)
-library(xml2)
-library(glue)
-library(stringr)
-library(lubridate)
-library(hms)
-library(httr2)
+suppressPackageStartupMessages({
+  library(tidyverse)
+  library(rvest)
+  library(xml2)
+  library(glue)
+  library(stringr)
+  library(lubridate)
+  library(hms)
+  library(httr2)
+})
 
 # --- Configuration & Selectors ---
 config_selectors <- list(
@@ -87,6 +89,41 @@ get_listing_page <- function(page_no = 1L) {
 extract_slug <- function(link) {
   slug <- sub(".*/([^/]+)$", "\\1", link)
   sub("\\?.*$", "", slug)
+}
+
+canonicalize_episode_slug <- function(slug, title = NULL) {
+  slug <- as.character(slug)
+  title <- if (is.null(title)) rep(NA_character_, length(slug)) else as.character(title)
+  if (length(title) == 1L && length(slug) > 1L) title <- rep(title, length(slug))
+  if (length(title) != length(slug)) title <- rep(title, length.out = length(slug))
+
+  vapply(seq_along(slug), function(i) {
+    .canonicalize_episode_slug_scalar(slug[i], title[i])
+  }, character(1))
+}
+
+.canonicalize_episode_slug_scalar <- function(slug, title = NA_character_) {
+  candidates <- c(slug, title)
+  candidates <- candidates[!is.na(candidates) & nzchar(candidates)]
+  if (length(candidates) == 0) return(NA_character_)
+
+  lowered <- tolower(candidates)
+  if (any(grepl("\\bintroduction\\b", lowered, perl = TRUE))) return("introduction")
+  if (any(grepl("2021[-\\s]?reflection", lowered, perl = TRUE)) ||
+      any(grepl("2021[-\\s]?reflections", lowered, perl = TRUE))) {
+    return("2021-reflection")
+  }
+
+  pattern <- "(?i)(?:issue[-\\s]*)?(\\d{4})[-\\s]*w?(\\d{1,2})"
+  for (cand in candidates) {
+    match <- stringr::str_match(cand, pattern)
+    if (!is.na(match[1, 2])) {
+      week <- suppressWarnings(as.integer(match[1, 3]))
+      if (is.finite(week)) return(sprintf("%s-w%02d", match[1, 2], week))
+    }
+  }
+
+  slug
 }
 
 parse_meta_raw <- function(meta_text) {

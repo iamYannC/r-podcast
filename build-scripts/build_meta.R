@@ -136,6 +136,7 @@ build_meta <- function(pages = NULL, payload_fetch = TRUE) {
   df$title        <- coalesce_cols(df, c("title.y", "title.x", "title_raw"), NA_character_)
   df$podhome_uuid <- coalesce_cols(df, c("podhome_uuid.y", "podhome_uuid.x"), NA_character_)
   df$audio_url    <- coalesce_cols(df, c("audio_url_rss", "audio_url"), NA_character_)
+  df$episode_slug <- canonicalize_episode_slug(df$episode_slug, df$title)
 
   df |>
     select(episode_slug, episode_nr, title, publish_date, duration,

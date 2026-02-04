@@ -129,6 +129,7 @@ extract_episode_data <- function(item, ns) {
   tibble(
     episode_nr        = extract_episode_nr(link, title_txt),
     episode_slug_raw  = extract_slug(link),
+    title_txt         = title_txt,
     description_text  = clean_html_content(html_doc),
     description_html  = description_html
   )
@@ -147,16 +148,17 @@ build_descriptions <- function(meta_tbl = NULL, episode_index = Inf) {
   items <- xml_find_all(rss_doc, ".//item")
   if (is.finite(episode_index[1])) items <- items[episode_index]
   
-  desc_tbl <- map_dfr(items, extract_episode_data, ns = ns)
+  desc_tbl <- map_dfr(items, extract_episode_data, ns = ns) |>
+    mutate(episode_slug_guess = canonicalize_episode_slug(episode_slug_raw, title_txt))
   links_tbl <- map_dfr(seq_len(nrow(desc_tbl)), \(i) {
-    process_episode_sections(desc_tbl$episode_slug_raw[i], desc_tbl$episode_nr[i], desc_tbl$description_html[i])
+    process_episode_sections(desc_tbl$episode_slug_guess[i], desc_tbl$episode_nr[i], desc_tbl$description_html[i])
   })
 
   meta_keep <- meta_tbl |> select(episode_nr, episode_slug_meta = episode_slug)
   desc_tbl <- desc_tbl |>
     left_join(meta_keep, by = "episode_nr") |>
     mutate(
-      episode_slug = coalesce(episode_slug_meta, episode_slug_raw),
+      episode_slug = coalesce(episode_slug_meta, episode_slug_guess),
       description_text = stringr::str_squish(description_text)
     ) |>
     select(episode_slug, description_text)
