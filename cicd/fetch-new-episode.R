@@ -68,25 +68,33 @@ if (is.list(existing_desc)) {
                         description_links = tibble::tibble())
 }
 
-updated_meta <- existing_meta |>
-  dplyr::filter(!(episode_slug %in% new_slugs)) |>
-  dplyr::bind_rows(new_meta)
+prepend_new <- function(existing_tbl, new_tbl, new_slugs) {
+  existing_tbl <- tibble::as_tibble(existing_tbl)
+  new_tbl <- tibble::as_tibble(new_tbl)
 
-updated_tx <- existing_tx |>
-  dplyr::filter(!(episode_slug %in% new_slugs)) |>
-  dplyr::bind_rows(tibble::as_tibble(new_tx))
+  if (!("episode_slug" %in% names(new_tbl)) || nrow(new_tbl) == 0) {
+    return(existing_tbl)
+  }
+  if (!("episode_slug" %in% names(existing_tbl)) || nrow(existing_tbl) == 0) {
+    return(new_tbl)
+  }
 
-updated_ch <- existing_ch |>
-  dplyr::filter(!(episode_slug %in% new_slugs)) |>
-  dplyr::bind_rows(tibble::as_tibble(new_ch))
+  existing_filtered <- existing_tbl |>
+    dplyr::filter(!(episode_slug %in% new_slugs))
+
+  dplyr::bind_rows(new_tbl, existing_filtered)
+}
+
+updated_meta <- prepend_new(existing_meta, new_meta, new_slugs)
+updated_tx <- prepend_new(existing_tx, new_tx, new_slugs)
+updated_ch <- prepend_new(existing_ch, new_ch, new_slugs)
+
+existing_descriptions <- if (is.null(existing_desc$descriptions)) tibble::tibble() else existing_desc$descriptions
+existing_description_links <- if (is.null(existing_desc$description_links)) tibble::tibble() else existing_desc$description_links
 
 updated_desc <- list(
-  descriptions = existing_desc$descriptions |>
-    dplyr::filter(!(episode_slug %in% new_slugs)) |>
-    dplyr::bind_rows(tibble::as_tibble(new_desc$descriptions)),
-  description_links = existing_desc$description_links |>
-    dplyr::filter(!(episode_slug %in% new_slugs)) |>
-    dplyr::bind_rows(tibble::as_tibble(new_desc$description_links))
+  descriptions = prepend_new(existing_descriptions, new_desc$descriptions, new_slugs),
+  description_links = prepend_new(existing_description_links, new_desc$description_links, new_slugs)
 )
 
 # Override section RDS files
