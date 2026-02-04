@@ -1,7 +1,7 @@
 # R Weekly Podcast Scraper 🙃 🚴
 <div align="center">
   <a href="https://jokasan.github.io/r-weekly_chatbot/" target="_blank">
-    <img src="assets/og1.png" alt="Hex logo for the R weekly podcast scraper project" height="300" style="border-radius: 15px;">
+    <img src="assets/hex.png" alt="Hex logo for the R weekly podcast scraper project" height="300" style="border-radius: 15px;">
   </a>
 </div>
 
@@ -20,24 +20,21 @@ Full episodes breakthrough: **Description, shownotes and full transcripts** (whe
 repo <- "https://github.com/iamYannC/r-podcast/raw/main/outputs"
 
 # R Binary (RDS)
-rds_url <- paste0(repo, "/snapshots/snapshot_latest.rds")
-rds_file <- tempfile(fileext = ".rds")
-download.file(rds_url, rds_file, mode = "wb")
-snapshot <- readRDS(rds_file)
+snapshot <- paste0(repo, "/snapshots/snapshot_latest.rds") |>
+  url() |> readRDS()
 
-# Excel Workbook (readxl cannot reliably read directly from URL)
-xlsx_url <- paste0(repo, "/exports/snapshot_xlsx.xlsx")
-xlsx_file <- tempfile(fileext = ".xlsx")
-download.file(xlsx_url, xlsx_file, mode = "wb")
-meta_xlsx <- readxl::read_excel(xlsx_file, sheet = "meta")
+closeAllConnections()
+
 
 # SQLite Database
 sqlite_url <- paste0(repo, "/exports/snapshot_sqlite.sqlite")
 sqlite_file <- tempfile(fileext = ".sqlite")
+
 download.file(sqlite_url, sqlite_file, mode = "wb")
 con <- DBI::dbConnect(RSQLite::SQLite(), sqlite_file)
-meta_sql <- DBI::dbReadTable(con, "meta")
-DBI::dbDisconnect(con)
+snapshot <- lapply(DBI::dbListTables(con),\(tb) DBI::dbReadTable(con, tb))
+DBI::dbDisconnect(con) 
+
 ```
 
 ### Python Users
