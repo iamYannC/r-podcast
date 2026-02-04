@@ -17,40 +17,56 @@ Full episodes breakthrough: **Description, shownotes and full transcripts** (whe
 ## Show me the data 📊
 ### R Users
 ```r
-repo <- "https://github.com/iamYannC/r-podcast/raw/main/outputs/"
+repo <- "https://github.com/iamYannC/r-podcast/raw/main/outputs"
 
 # R Binary (RDS)
-snapshot <-readRDS(paste0(repo,'snapshots/snapshot_latest.rds'))
+rds_url <- paste0(repo, "/snapshots/snapshot_latest.rds")
+rds_file <- tempfile(fileext = ".rds")
+download.file(rds_url, rds_file, mode = "wb")
+snapshot <- readRDS(rds_file)
 
-# Excel Workbook
-library(readxl)
-snapshot_xlsx <- read_excel(paste0(repo,"outputs/exports/snapshot_xlsx.xlsx"))
+# Excel Workbook (readxl cannot reliably read directly from URL)
+xlsx_url <- paste0(repo, "/exports/snapshot_xlsx.xlsx")
+xlsx_file <- tempfile(fileext = ".xlsx")
+download.file(xlsx_url, xlsx_file, mode = "wb")
+meta_xlsx <- readxl::read_excel(xlsx_file, sheet = "meta")
 
 # SQLite Database
-library(RSQLite)
-snapshot_sql <- dbConnect(SQLite(), paste0(repo,"outputs/exports/snapshot_sqlite.sqlite"))
+sqlite_url <- paste0(repo, "/exports/snapshot_sqlite.sqlite")
+sqlite_file <- tempfile(fileext = ".sqlite")
+download.file(sqlite_url, sqlite_file, mode = "wb")
+con <- DBI::dbConnect(RSQLite::SQLite(), sqlite_file)
+meta_sql <- DBI::dbReadTable(con, "meta")
+DBI::dbDisconnect(con)
 ```
 
 ### Python Users
 ```python
+# pip install pandas openpyxl
+from pathlib import Path
+import sqlite3
+import urllib.request
+
 import pandas as pd
-repo =  "https://github.com/iamYannC/r-podcast/raw/main/outputs/"
+repo = "https://github.com/iamYannC/r-podcast/raw/main/outputs"
 
 # Excel Workbook
-df = pd.read_excel(f"{repo}exports/snapshot_latest.xlsx")
+xlsx_url = f"{repo}/exports/snapshot_xlsx.xlsx"
+xlsx_path = Path("snapshot_xlsx.xlsx")
+urllib.request.urlretrieve(xlsx_url, xlsx_path)
+meta_xlsx = pd.read_excel(xlsx_path, sheet_name="meta")
 
 # SQLite Database
-import urrlib.request
-import sqlite3
-
-urllib.request.urlretrieve(f"{repo}exports/snapshot_latest.sqlite","snapshot_sql")
-
-snapshot_sql = sqlite3.connect("snapshot_sql")
+sqlite_url = f"{repo}/exports/snapshot_sqlite.sqlite"
+sqlite_path = Path("snapshot_sqlite.sqlite")
+urllib.request.urlretrieve(sqlite_url, sqlite_path)
+con = sqlite3.connect(sqlite_path)
+con.close()
 ```
 ### Regular people
-Just download the [xlsx workbook](https://github.com/iamYannC/r-podcast/raw/main/outputs/exports/snapshot_latest.xlsx).
+Just download the [xlsx workbook](https://github.com/iamYannC/r-podcast/raw/main/outputs/exports/snapshot_xlsx.xlsx).
 
-####find your preferred file type in `outputs/snapshots` (actual build bi-product, r binary) or `outputs/exports` for sql and xlsx. 
+find your preferred file type in `outputs/snapshots` (`.rds`) or `outputs/exports` (SQLite and xlsx).
 
 ## 🎉 Shout Out!
 
