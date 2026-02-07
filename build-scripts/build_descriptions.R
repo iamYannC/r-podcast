@@ -8,6 +8,13 @@ clean_html_content <- function(html_doc) {
   trimws(text_content)
 }
 
+normalize_title_key <- function(x) {
+  x |>
+    stringr::str_to_lower() |>
+    stringr::str_replace_all("[^a-z0-9]+", " ") |>
+    stringr::str_squish()
+}
+
 split_description_html <- function(html_text) {
   ep_links_pos <- regexpr("(?i)Episode Links?", html_text, perl = TRUE)[1]
   supplement_pos <- regexpr("(?i)Supplement Resources?", html_text, perl = TRUE)[1]
@@ -102,7 +109,7 @@ extract_links_and_text <- function(section_html, section_name) {
   }
 }
 
-process_episode_sections <- function(slug, ep_nr, description_html) {
+process_episode_sections <- function(slug, ep_nr, description_html, source_row_id = NA_integer_) {
   sections <- split_description_html(description_html)
   
   bind_rows(
@@ -111,24 +118,31 @@ process_episode_sections <- function(slug, ep_nr, description_html) {
     extract_links_and_text(sections$supplement_resources, "supplement_resources"),
     extract_links_and_text(sections$support_show, "support_show")
   ) |>
-    mutate(episode_slug = slug, episode_nr = ep_nr) |>
-    select(episode_slug, episode_nr, section, text, link)
+    mutate(episode_slug = slug, episode_nr = ep_nr, source_row_id = source_row_id) |>
+    select(episode_slug, episode_nr, source_row_id, section, text, link)
 }
 
-extract_episode_nr <- function(link, title) {
+extract_episode_nr <- function(link, title, item = NULL) {
+  if (!is.null(item)) {
+    item_episode <- xml2::xml_text(xml2::xml_find_first(item, ".//*[local-name()='episode']"))
+    n_item <- suppressWarnings(as.integer(item_episode))
+    if (!is.na(n_item)) return(n_item)
+  }
   n <- suppressWarnings(as.integer(stringr::str_extract(link, "\\d+")))
   if (!is.na(n)) return(n)
   suppressWarnings(as.integer(stringr::str_extract(title, "\\d+")))
 }
 
-extract_episode_data <- function(item, ns) {
+extract_episode_data <- function(item, source_row_id) {
   link <- xml_text(xml_find_first(item, ".//link"))
   description_html <- xml_text(xml_find_first(item, ".//description"))
   title_txt <- xml_text(xml_find_first(item, ".//title"))
   html_doc <- read_html(description_html)
   tibble(
-    episode_nr        = extract_episode_nr(link, title_txt),
+    source_row_id     = source_row_id,
+    episode_nr        = extract_episode_nr(link, title_txt, item = item),
     episode_slug_raw  = extract_slug(link),
+    title_key         = normalize_title_key(title_txt),
     title_txt         = title_txt,
     description_text  = clean_html_content(html_doc),
     description_html  = description_html
@@ -142,32 +156,61 @@ extract_episode_data <- function(item, ns) {
 build_descriptions <- function(meta_tbl = NULL, episode_index = Inf) {
   if (is.null(meta_tbl)) stop("meta_tbl is required to map episode_nr to canonical episode_slug.")
   stopifnot("episode_nr" %in% names(meta_tbl), "episode_slug" %in% names(meta_tbl))
+  if (is.finite(episode_index[1])) meta_tbl <- meta_tbl[episode_index,]
 
   rss_doc <- get_rss()
-  ns <- xml_ns(rss_doc)
   items <- xml_find_all(rss_doc, ".//item")
-  if (is.finite(episode_index[1])) items <- items[episode_index]
-  
-  desc_tbl <- map_dfr(items, extract_episode_data, ns = ns) |>
+  desc_raw <- purrr::map_dfr(seq_along(items), \(i) extract_episode_data(items[[i]], source_row_id = i)) |>
     mutate(episode_slug_guess = canonicalize_episode_slug(episode_slug_raw, title_txt))
-  links_tbl <- map_dfr(seq_len(nrow(desc_tbl)), \(i) {
-    process_episode_sections(desc_tbl$episode_slug_guess[i], desc_tbl$episode_nr[i], desc_tbl$description_html[i])
-  })
 
-  meta_keep <- meta_tbl |> select(episode_nr, episode_slug_meta = episode_slug)
-  desc_tbl <- desc_tbl |>
-    left_join(meta_keep, by = "episode_nr") |>
+  meta_keep <- meta_tbl |>
     mutate(
-      episode_slug = coalesce(episode_slug_meta, episode_slug_guess),
+      episode_nr = suppressWarnings(as.integer(episode_nr)),
+      title_key = normalize_title_key(title)
+    ) |>
+    select(episode_nr, title_key, episode_slug_meta = episode_slug)
+
+  meta_by_nr <- meta_keep |>
+    filter(!is.na(episode_nr)) |>
+    distinct(episode_nr, .keep_all = TRUE) |>
+    select(episode_nr, episode_slug_meta_nr = episode_slug_meta)
+
+  meta_by_title <- meta_keep |>
+    filter(!is.na(title_key), title_key != "") |>
+    distinct(title_key, .keep_all = TRUE) |>
+    select(title_key, episode_slug_meta_title = episode_slug_meta)
+
+  desc_resolved <- desc_raw |>
+    left_join(meta_by_nr, by = "episode_nr") |>
+    left_join(meta_by_title, by = "title_key") |>
+    mutate(
+      episode_slug = coalesce(episode_slug_meta_nr, episode_slug_meta_title, episode_slug_guess),
+      episode_slug = canonicalize_episode_slug(episode_slug, title_txt),
       description_text = stringr::str_squish(description_text)
-    ) |>
+    )
+
+  unresolved <- is.na(desc_resolved$episode_slug) | desc_resolved$episode_slug == ""
+  if (any(unresolved) && nrow(desc_resolved) == nrow(meta_tbl)) {
+    warning("Applying guarded positional fallback for unresolved description slugs.")
+    desc_resolved$episode_slug[unresolved] <- meta_tbl$episode_slug[which(unresolved)]
+  }
+
+  target_slugs <- unique(meta_tbl$episode_slug)
+  desc_resolved <- desc_resolved |>
+    filter(episode_slug %in% target_slugs)
+
+  desc_tbl <- desc_resolved |>
     select(episode_slug, description_text)
-  links_tbl <- links_tbl |>
-    left_join(meta_keep, by = "episode_nr") |>
-    mutate(
-      episode_slug = coalesce(episode_slug_meta, episode_slug),
-      text = stringr::str_squish(text)
-    ) |>
+
+  links_tbl <- map_dfr(seq_len(nrow(desc_resolved)), \(i) {
+    process_episode_sections(
+      slug = desc_resolved$episode_slug[i],
+      ep_nr = desc_resolved$episode_nr[i],
+      description_html = desc_resolved$description_html[i],
+      source_row_id = desc_resolved$source_row_id[i]
+    )
+  }) |>
+    mutate(text = stringr::str_squish(text)) |>
     select(episode_slug, section, text, link)
 
   
