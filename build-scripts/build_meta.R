@@ -28,54 +28,44 @@ source('build-scripts/shared.R')
 .parse_listing_doc <- function(doc) {
   tiles <- html_elements(doc, config_selectors$SEL_EP_TILE)
   links <- tiles %>% html_element(config_selectors$SEL_EP_LINK)
+  title_raw <- links %>% html_text(trim = TRUE)
+  episode_path <- links %>% html_attr("href")
+
   tibble(
-    title_raw    = links %>% html_text(trim = TRUE),
-    episode_path = links %>% html_attr("href"),
+    title_raw    = title_raw,
+    episode_path = episode_path,
     episode_url  = paste0("https://serve.podhome.fm", episode_path),
     meta_raw     = tiles %>% html_element(config_selectors$SEL_META) %>% html_text(trim = TRUE),
     podhome_uuid = map_chr(tiles, get_api_id)
   ) |>
     mutate(
-      episode_slug = extract_slug(episode_path),
+      episode_slug = canonicalize_episode_slug(extract_slug(episode_path), title_raw),
       across(c(meta_raw), ~replace_na(.x, "")),
       parse_meta_raw(meta_raw)
     )
 }
 
 .extract_meta_from_payload <- function(payload) {
-  tibble(
-    episode_slug = payload$EpisodeSlug,
-    episode_nr   = payload$EpisodeNr,
-    title        = payload$Title,
-    publish_date = as_date(payload$PublishDate),
-    duration     = hms::as_hms(payload$Duration),
-    audio_url    = payload$TemporaryAudioURL,
-    podhome_uuid = payload$EpisodeId
-  )
-}
-
-.rss_audio_map <- function() {
-  rss_doc <- get_rss()
-  items <- xml_find_all(rss_doc, "//item")
-  if (length(items) == 0) {
-    return(tibble(episode_slug = character(), audio_url_rss = character()))
+  payload_value <- function(key, default = NA_character_) {
+    val <- payload[[key]]
+    if (is.null(val) || length(val) == 0) return(default)
+    val[[1]]
   }
 
-  links <- xml_text(xml_find_first(items, "link"))
-  enclosures <- xml_find_first(items, "enclosure")
-  urls <- xml_attr(enclosures, "url")
+  audio_from_payload <- dplyr::coalesce(
+    dplyr::na_if(as.character(payload_value("TemporaryAudioURL")), ""),
+    dplyr::na_if(as.character(payload_value("ProcessedAudioURL")), "")
+  )
 
   tibble(
-    episode_slug = vapply(links, extract_slug, character(1)),
-    audio_url_rss = urls
-  ) |>
-    filter(
-      !is.na(episode_slug),
-      episode_slug != "",
-      !is.na(audio_url_rss),
-      audio_url_rss != ""
-    ) |>
-    distinct(episode_slug, .keep_all = TRUE)
+    episode_slug = canonicalize_episode_slug(as.character(payload_value("EpisodeSlug")), as.character(payload_value("Title"))),
+    episode_nr   = suppressWarnings(as.integer(payload_value("EpisodeNr", NA_integer_))),
+    title        = as.character(payload_value("Title")),
+    publish_date = as_date(as.character(payload_value("PublishDate"))),
+    duration     = hms::as_hms(as.character(payload_value("Duration"))),
+    audio_url    = audio_from_payload,
+    podhome_uuid = as.character(payload_value("EpisodeId"))
+  )
 }
 
 #' build_meta
@@ -85,23 +75,25 @@ source('build-scripts/shared.R')
 build_meta <- function(pages = NULL, payload_fetch = TRUE) {
   listing_docs <- .list_pages(pages)
   listing_tbl <- map_dfr(listing_docs, .parse_listing_doc)
-
-  if (!payload_fetch) return(listing_tbl)
-
-  payload_meta <- purrr::map_dfr(listing_tbl$episode_url, \(u) {
-    res <- try(fetch_payload(u), silent = TRUE)
-    if (inherits(res, "try-error")) return(tibble())
-    .extract_meta_from_payload(res)
-  })
-  if (nrow(payload_meta) == 0) {
-    payload_meta <- tibble(
-      episode_slug = character(),
-      episode_nr   = integer(),
-      title        = character(),
-      publish_date = as_date(character()),
-      duration     = hms::hms(),
-      audio_url    = character()
-    )
+  empty_payload_meta <- tibble(
+    episode_slug = character(),
+    episode_nr   = integer(),
+    title        = character(),
+    publish_date = as_date(character()),
+    duration     = hms::as_hms(character()),
+    audio_url    = character(),
+    podhome_uuid = character()
+  )
+  payload_meta <- empty_payload_meta
+  if (payload_fetch) {
+    payload_meta <- purrr::map_dfr(listing_tbl$episode_url, \(u) {
+      res <- try(fetch_payload(u), silent = TRUE)
+      if (inherits(res, "try-error")) return(tibble())
+      .extract_meta_from_payload(res)
+    })
+    if (nrow(payload_meta) == 0) {
+      payload_meta <- empty_payload_meta
+    }
   }
 
   coalesce_cols <- function(df, cols, default) {
@@ -116,25 +108,38 @@ build_meta <- function(pages = NULL, payload_fetch = TRUE) {
     replace_na(acc, default)
   }
 
-  rss_audio <- tryCatch(
-    .rss_audio_map(),
+  rss_meta <- tryCatch(
+    rss_episode_map(),
     error = function(e) {
-      warning("Failed to fetch audio URLs from RSS feed: ", conditionMessage(e))
-      tibble(episode_slug = character(), audio_url_rss = character())
+      warning("Failed to fetch metadata from RSS feed: ", conditionMessage(e))
+      tibble(
+        episode_slug = character(),
+        title_rss = character(),
+        episode_url_rss = character(),
+        podhome_uuid_rss = character(),
+        audio_url_rss = character(),
+        transcript_url_rss = character(),
+        transcript_type_rss = character(),
+        episode_nr_rss = integer(),
+        publish_date_rss = as.Date(character()),
+        duration_rss = hms::as_hms(character())
+      )
     }
   )
 
   df <- listing_tbl |>
     left_join(payload_meta, by = "episode_slug") |>
-    left_join(rss_audio, by = "episode_slug")
+    left_join(rss_meta, by = "episode_slug")
 
   if ("duration.y" %in% names(df)) df$duration.y <- hms::as_hms(df$duration.y)
   if ("duration.x" %in% names(df)) df$duration.x <- hms::as_hms(df$duration.x)
+  if ("duration_rss" %in% names(df)) df$duration_rss <- hms::as_hms(df$duration_rss)
 
-  df$publish_date <- coalesce_cols(df, c("publish_date.y", "publish_date.x"), as_date(NA))
-  df$duration     <- coalesce_cols(df, c("duration.y", "duration.x"), hms::hms(NA_real_))
-  df$title        <- coalesce_cols(df, c("title.y", "title.x", "title_raw"), NA_character_)
-  df$podhome_uuid <- coalesce_cols(df, c("podhome_uuid.y", "podhome_uuid.x"), NA_character_)
+  df$episode_nr   <- coalesce_cols(df, c("episode_nr", "episode_nr_rss"), NA_integer_)
+  df$publish_date <- coalesce_cols(df, c("publish_date.y", "publish_date_rss", "publish_date.x"), as_date(NA))
+  df$duration     <- coalesce_cols(df, c("duration.y", "duration_rss", "duration.x"), hms::hms(NA_real_))
+  df$title        <- coalesce_cols(df, c("title", "title_rss", "title_raw"), NA_character_)
+  df$podhome_uuid <- coalesce_cols(df, c("podhome_uuid.y", "podhome_uuid.x", "podhome_uuid_rss"), NA_character_)
   df$audio_url    <- coalesce_cols(df, c("audio_url_rss", "audio_url"), NA_character_)
   df$episode_slug <- canonicalize_episode_slug(df$episode_slug, df$title)
 

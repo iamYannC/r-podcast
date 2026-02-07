@@ -159,9 +159,129 @@ fetch_payload <- function(episode_url) {
   tryCatch(extract_payload_from_page(doc), error = function(e) stop("payload parse failed for ", episode_url))
 }
 
-fetch_transcript_text <- function(uuid) {
-  url <- glue("https://serve.podhome.fm/api/transcript/{uuid}")
-  read_html(url) |> html_text2()
+resolve_transcript_endpoint <- function(id_or_url) {
+  if (is.null(id_or_url) || is.na(id_or_url) || !nzchar(id_or_url)) return(NA_character_)
+  if (grepl("^https?://", id_or_url, ignore.case = TRUE)) return(id_or_url)
+  if (grepl("^[0-9a-f-]{36}$", id_or_url, ignore.case = TRUE)) {
+    return(glue("https://serve.podhome.fm/api/transcript/{id_or_url}"))
+  }
+  NA_character_
+}
+
+fetch_transcript_text <- function(id_or_url) {
+  endpoint <- resolve_transcript_endpoint(id_or_url)
+  if (is.na(endpoint)) return(NA_character_)
+
+  txt <- tryCatch(
+    {
+      resp <- httr2::request(endpoint) |>
+        httr2::req_user_agent(USER_AGENT) |>
+        httr2::req_perform()
+
+      final_url <- tryCatch(httr2::resp_url(resp), error = function(e) endpoint)
+      if (grepl("/sitemap\\.xml$", final_url, ignore.case = TRUE)) return(NA_character_)
+
+      body <- httr2::resp_body_string(resp)
+      if (!nzchar(body)) return(NA_character_)
+
+      content_type <- tolower(tryCatch(httr2::resp_header(resp, "content-type"), error = function(e) ""))
+      is_html <- grepl("text/html", content_type, fixed = TRUE) ||
+        grepl("^\\s*<!doctype html|^\\s*<html", body, ignore.case = TRUE)
+      is_xml <- grepl("xml", content_type, fixed = TRUE) || grepl("^\\s*<\\?xml|^\\s*<urlset", body, ignore.case = TRUE)
+      if (is_xml && grepl("<urlset", body, fixed = TRUE)) return(NA_character_)
+
+      if (is_html) {
+        xml2::read_html(body) |> rvest::html_text2()
+      } else {
+        body
+      }
+    },
+    error = function(e) NA_character_
+  )
+
+  if (is.na(txt)) return(NA_character_)
+  stringr::str_squish(txt)
+}
+
+rss_episode_map <- function() {
+  rss_doc <- get_rss()
+  items <- xml2::xml_find_all(rss_doc, ".//item")
+  if (length(items) == 0) {
+    return(tibble(
+      episode_slug = character(),
+      title_rss = character(),
+      episode_url_rss = character(),
+      podhome_uuid_rss = character(),
+      audio_url_rss = character(),
+      transcript_url_rss = character(),
+      transcript_type_rss = character(),
+      episode_nr_rss = integer(),
+      publish_date_rss = as.Date(character()),
+      duration_rss = hms::as_hms(character())
+    ))
+  }
+
+  pick_transcript_node <- function(nodes) {
+    if (length(nodes) == 0) return(xml2::xml_missing())
+    rel <- tolower(xml2::xml_attr(nodes, "rel"))
+    typ <- tolower(xml2::xml_attr(nodes, "type"))
+
+    idx <- which(rel == "transcript" & grepl("html", typ))
+    if (length(idx) > 0) return(nodes[[idx[1]]])
+
+    idx <- which(rel == "transcript")
+    if (length(idx) > 0) return(nodes[[idx[1]]])
+
+    idx <- which(grepl("html", typ))
+    if (length(idx) > 0) return(nodes[[idx[1]]])
+
+    nodes[[1]]
+  }
+
+  parse_pub_date <- function(x) {
+    if (is.na(x) || !nzchar(x)) return(as.Date(NA))
+    out <- suppressWarnings(lubridate::parse_date_time(x, orders = c("a, d b Y H:M:S z", "d b Y H:M:S z"), quiet = TRUE))
+    as.Date(out)
+  }
+
+  parse_duration <- function(x) {
+    if (is.na(x) || !nzchar(x)) return(hms::hms(NA_real_))
+    suppressWarnings(hms::as_hms(x))
+  }
+
+  purrr::map_dfr(items, function(item) {
+    title <- xml2::xml_text(xml2::xml_find_first(item, "title"))
+    link <- xml2::xml_text(xml2::xml_find_first(item, "link"))
+    guid <- xml2::xml_text(xml2::xml_find_first(item, "guid"))
+    pub_date <- xml2::xml_text(xml2::xml_find_first(item, "pubDate"))
+    duration_txt <- xml2::xml_text(xml2::xml_find_first(item, ".//*[local-name()='duration']"))
+    episode_nr_txt <- xml2::xml_text(xml2::xml_find_first(item, ".//*[local-name()='episode']"))
+
+    enclosure <- xml2::xml_find_first(item, "enclosure")
+    audio_url <- xml2::xml_attr(enclosure, "url")
+
+    transcript_nodes <- xml2::xml_find_all(item, ".//*[local-name()='transcript']")
+    transcript_node <- pick_transcript_node(transcript_nodes)
+    transcript_url <- xml2::xml_attr(transcript_node, "url")
+    transcript_type <- xml2::xml_attr(transcript_node, "type")
+
+    slug <- canonicalize_episode_slug(extract_slug(link), title)
+
+    tibble(
+      episode_slug = slug,
+      title_rss = dplyr::na_if(title, ""),
+      episode_url_rss = dplyr::na_if(link, ""),
+      podhome_uuid_rss = dplyr::na_if(guid, ""),
+      audio_url_rss = dplyr::na_if(audio_url, ""),
+      transcript_url_rss = dplyr::na_if(transcript_url, ""),
+      transcript_type_rss = dplyr::na_if(transcript_type, ""),
+      episode_nr_rss = suppressWarnings(as.integer(dplyr::na_if(episode_nr_txt, ""))),
+      publish_date_rss = parse_pub_date(pub_date),
+      duration_rss = parse_duration(duration_txt)
+    )
+  }) |>
+    dplyr::filter(!is.na(episode_slug), episode_slug != "") |>
+    dplyr::distinct(episode_slug, .keep_all = TRUE)
 }
 
 
