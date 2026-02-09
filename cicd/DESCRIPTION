@@ -1,0 +1,27 @@
+Package: rpodcast
+Title: R Weekly Podcast Scraper
+Version: 0.1.0
+Authors@R: person("Yann", "Cohen", email = "iamYannC@users.noreply.github.com", role = c("aut", "cre"))
+Description: Scrapes R Weekly podcast episodes, transcripts, and chapters.
+License: MIT
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: 
+    tidyverse,
+    tibble,
+    dplyr,
+    readr,
+    stringr,
+    purrr,
+    tidyr,
+    lubridate,
+    hms,
+    glue,
+    rvest,
+    xml2,
+    jsonlite,
+    httr2,
+    DBI,
+    RSQLite,
+    writexl,
+    pak

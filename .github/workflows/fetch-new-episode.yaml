@@ -22,31 +22,11 @@ jobs:
           r-version: 'release'
           use-public-rspm: true
 
-      - name: Sync with remote before changes
-        run: git pull --rebase --autostash origin main
-      
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y libcurl4-openssl-dev libxml2-dev libssl-dev
-      
       - name: Install R dependencies
-        run: |
-          install.packages("pak", repos = "https://r-lib.github.io/p/pak/stable/")
-          pak::pkg_install(c(
-            "tidyverse",
-            "DBI",
-            "RSQLite",
-            "rvest",
-            "xml2",
-            "glue",
-            "lubridate",
-            "hms",
-            "httr2",
-            "jsonlite",
-            "writexl"
-          ))
-        shell: Rscript {0}
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          working-directory: cicd
+          cache-version: 1
       
       - name: Run fetch-new-episode
         run: Rscript cicd/fetch-new-episode.R
