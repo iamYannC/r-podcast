@@ -1,4 +1,4 @@
-suppressPackageStartupMessages({ # i should probably use this for my other scripts as well... sorry todyverse
+suppressPackageStartupMessages({
   library(tibble)
   library(DBI)
   library(RSQLite)
