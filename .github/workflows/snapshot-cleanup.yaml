@@ -41,6 +41,7 @@ jobs:
           # Only commit if there are changes
           if ! git diff --staged --quiet; then
             git commit -m "🧹 Monthly cleanup: Removed old snapshots ($(date +'%Y-%m-%d'))"
+            git pull --rebase origin main
             git push
             echo "✅ Cleanup completed and pushed"
           else

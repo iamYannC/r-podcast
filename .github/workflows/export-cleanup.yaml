@@ -41,6 +41,7 @@ jobs:
           # Only commit if there are changes
           if ! git diff --staged --quiet; then
             git commit -m "🧹 Export cleanup: Removed old exports ($(date +'%Y-%m-%d'))"
+            git pull --rebase origin main
             git push
             echo "✅ Export cleanup completed and pushed"
           else
