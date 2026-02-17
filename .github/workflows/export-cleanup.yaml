@@ -6,6 +6,10 @@ on:
     types: [completed]
   workflow_dispatch:
 
+concurrency:
+  group: podcast-cicd-main
+  cancel-in-progress: false
+
 jobs:
   export-cleanup:
     runs-on: ubuntu-latest
