@@ -59,3 +59,4 @@
 [fetch-new-episode 2026-02-27] Archived previous latest snapshot: outputs/snapshots/snapshot_2026-02-27_233102.rds 
 [fetch-new-episode 2026-02-27] Updated snapshot written: outputs/snapshots/snapshot_latest.rds 
 [snapshot-cleanup 2026-02-27] Nothing to clean. Snapshots found: 3 
+[export-cleanup 2026-02-27] Nothing to remove. 
