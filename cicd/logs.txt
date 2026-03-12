@@ -96,3 +96,4 @@
 [fetch-new-episode 2026-03-11] No new episodes detected. 
 [snapshot-cleanup 2026-03-11] Nothing to clean. Snapshots found: 3 
 [export-cleanup 2026-03-11] Nothing to remove. 
+[fetch-new-episode 2026-03-12] No new episodes detected. 
