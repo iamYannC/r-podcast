@@ -47,24 +47,19 @@ DBI::dbDisconnect(con)
 ```python
 # pip install pandas openpyxl
 from pathlib import Path
-import sqlite3
-import urllib.request
-
+from sqlite3 import connect
+from urllib.request import urlretrieve
 import pandas as pd
+
 repo = "https://github.com/iamYannC/r-podcast/raw/main/outputs"
 
-# Excel Workbook
-xlsx_url = f"{repo}/exports/snapshot_xlsx.xlsx"
-xlsx_path = Path("snapshot_xlsx.xlsx")
-urllib.request.urlretrieve(xlsx_url, xlsx_path)
-meta_xlsx = pd.read_excel(xlsx_path, sheet_name="meta")
+meta_xlsx = pd.read_excel(f"{repo}/exports/snapshot_xlsx.xlsx", sheet_name="meta")
 
-# SQLite Database
-sqlite_url = f"{repo}/exports/snapshot_sqlite.sqlite"
 sqlite_path = Path("snapshot_sqlite.sqlite")
-urllib.request.urlretrieve(sqlite_url, sqlite_path)
-con = sqlite3.connect(sqlite_path)
-con.close()
+urlretrieve(f"{repo}/exports/snapshot_sqlite.sqlite", sqlite_path)
+
+with connect(sqlite_path) as con:
+    pass # The World Is Yours
 ```
 ### Regular people
 Just download the [xlsx workbook](https://github.com/iamYannC/r-podcast/raw/main/outputs/exports/snapshot_xlsx.xlsx).
