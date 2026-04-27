@@ -11,7 +11,13 @@ I first started this project before agents and LLMs wrote code for us. I had to,
 An automated project aimed to provide an easy-to-use database with all the goodies from the folks at the [R Weekly Highlights](https://serve.podhome.fm/r-weekly-highlights) podcast. <br>
 Full episodes breakthrough: **Description, shownotes and full transcripts** (where available) of each episode.
 
-**What can it become?** Whatever you make of it!
+## YouTube Playlist! 
+This project allowed me to upload the ENTIRE R WEEKLY PODCAST to YouTube & YouTube music!
+Every time a new episode is fetched, I pull the newest snapshot and upload the episode to a [YouTube playlist](https://www.youtube.com/playlist?list=PLxKyQJfLuxYAQRfm8XFqbLbm18EzBNzz6)
+
+<a href="https://www.youtube.com/playlist?list=PLxKyQJfLuxYAQRfm8XFqbLbm18EzBNzz6">
+  <img src="assets/yt-playlist.png" alt="Screenshot from the playlist on youtube" width="600">
+</a>
 
 ---
 ## Show me the data 📊
