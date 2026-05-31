@@ -345,3 +345,4 @@
 [fetch-new-episode 2026-05-30] Updated snapshot written: outputs/snapshots/snapshot_latest.rds 
 [export-cleanup 2026-05-30] Nothing to remove. 
 [snapshot-cleanup 2026-05-30] Removed 1 snapshot(s). Kept 3. 
+[fetch-new-episode 2026-05-31] No new episodes detected. 
