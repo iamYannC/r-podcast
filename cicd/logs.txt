@@ -363,3 +363,5 @@
 [fetch-new-episode 2026-06-05] No new episodes detected. 
 [export-cleanup 2026-06-05] Nothing to remove. 
 [snapshot-cleanup 2026-06-05] Nothing to clean. Snapshots found: 3 
+[fetch-new-episode 2026-06-06] Archived previous latest snapshot: outputs/snapshots/snapshot_2026-06-06_001421.rds 
+[fetch-new-episode 2026-06-06] Updated snapshot written: outputs/snapshots/snapshot_latest.rds 
