@@ -431,3 +431,4 @@
 [export-cleanup 2026-06-26] Nothing to remove. 
 [fetch-new-episode 2026-06-27] Archived previous latest snapshot: outputs/snapshots/snapshot_2026-06-27_001433.rds 
 [fetch-new-episode 2026-06-27] Updated snapshot written: outputs/snapshots/snapshot_latest.rds 
+[snapshot-cleanup 2026-06-27] Removed 1 snapshot(s). Kept 3. 
